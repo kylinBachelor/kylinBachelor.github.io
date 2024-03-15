@@ -8,14 +8,14 @@ title: 麒麟学士
 subtitle: 格物致知
 description: 山东女子学院 | 计算机科学与技术 | 软件开发
 keywords: kylinBachelor 计算机科学与技术
-author: kuylinBachelor
+author: kylinBachelor
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 # url: https://kylinBachelor.github.io/
-url: https://kuylinBachelor.github.io
+url: https://kylinBachelor.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -114,7 +114,7 @@ theme: matery
 # ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/kuylinBachelor/kuylinBachelor.github.io.git
+  repo: https://github.com/kylinBachelor/kylinBachelor.github.io.git
   branch: main
 # - type: baidu_url_submitter
 
