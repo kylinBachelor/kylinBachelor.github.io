@@ -27,7 +27,7 @@ https://blog.csdn.net/job_csdn/article/details/128136490
 
 一定要下载***对应操作架构***的JDK，否则会报错：可通过uname -a 命令查看
 
-![Linux系统版本查看](http://47.94.86.44/static/blog/Picture/java/查看kylin系统版本.png)
+![Linux系统版本查看](/static/Picture/java/查看kylin系统版本.png)
 
 #### 2. 将下载好的安装包xx.tar.gz放到安装目录
 
@@ -57,7 +57,7 @@ java -version
 
 如果出现如下情况
 
-![java安装权限问题](http://47.94.86.44/static/blog/Picture/java/java安装权限问题.png)
+![java安装权限问题](/static/Picture/java/java安装权限问题.png)
 
 
 

@@ -20,7 +20,7 @@ categories:
 
 在当前分支修改了代码，还没有commit当切换到其它分支的时候,就会弹出下面这个窗口
 
-![分支切换问题弹窗](http://47.94.86.44/static/blog/Picture/homes/Git分支切换问题.png)
+![分支切换问题弹窗](/static/Picture/homes/Git分支切换问题.png)
 
 #### Force Checkout
 

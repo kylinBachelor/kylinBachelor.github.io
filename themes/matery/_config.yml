@@ -83,7 +83,7 @@ video:
   enable: true
   showTitle: true
   title: 致我们的青春
-  url: http://47.94.86.44/static/blog/video/qingchun.mp4 # 必填
+  url: /static/video/qingchun.mp4 # 必填
   pic:
   thumbnails:
   height: # 如：400
@@ -101,8 +101,8 @@ recommend:
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
-favicon: http://47.94.86.44/static/blog/favicon.svg
-logo: http://47.94.86.44/static/blog/medias/logo.png
+favicon: /static/favicon.svg
+logo: /static/medias/logo.png
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
@@ -139,8 +139,8 @@ code:
 reward:
   enable: false
   title: 你的赏识是我前进的动力!
-  wechat: http://47.94.86.44/static/blog/medias/reward/wechat.bmp
-  alipay: http://47.94.86.44/static/blog/medias/reward/alipay.bmp
+  wechat: /static/medias/reward/wechat.bmp
+  alipay: /static/medias/reward/alipay.bmp
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
 # minCharNumber: Approve copyright information by copying at least how many characters.
@@ -178,7 +178,7 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: http://47.94.86.44/static/blog/medias/avatars/hwsun.jpg
+  avatar: /static/medias/avatars/hwsun.jpg
   career: 计算机科学与技术
   introduction: 在行中知，在知中行
 
@@ -236,15 +236,15 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - http://47.94.86.44/static/blog/medias/featureimages/0.jpg
-    - http://47.94.86.44/static/blog/medias/featureimages/1.jpg
-    - http://47.94.86.44/static/blog/medias/featureimages/2.jpg
-    - http://47.94.86.44/static/blog/medias/featureimages/4.jpg
-    - http://47.94.86.44/static/blog/medias/featureimages/5.jpg
-    - http://47.94.86.44/static/blog/medias/featureimages/6.jpg
-    - http://47.94.86.44/static/blog/medias/featureimages/7.jpg
-    - http://47.94.86.44/static/blog/medias/featureimages/8.jpg
-    - http://47.94.86.44/static/blog/medias/featureimages/9.jpg
+    - /static/medias/featureimages/0.jpg
+    - /static/medias/featureimages/1.jpg
+    - /static/medias/featureimages/2.jpg
+    - /static/medias/featureimages/4.jpg
+    - /static/medias/featureimages/5.jpg
+    - /static/medias/featureimages/6.jpg
+    - /static/medias/featureimages/7.jpg
+    - /static/medias/featureimages/8.jpg
+    - /static/medias/featureimages/9.jpg
 
 
 # Whether to display post-calender in the `archive` page
@@ -405,30 +405,30 @@ libs:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages: 
-- http://47.94.86.44/static/blog/medias/featureimages/0.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/1.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/2.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/3.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/4.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/5.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/6.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/7.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/8.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/9.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/10.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/11.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/12.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/13.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/14.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/15.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/16.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/17.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/18.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/19.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/20.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/21.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/22.jpg
-- http://47.94.86.44/static/blog/medias/featureimages/23.jpg
+- /static/medias/featureimages/0.jpg
+- /static/medias/featureimages/1.jpg
+- /static/medias/featureimages/2.jpg
+- /static/medias/featureimages/3.jpg
+- /static/medias/featureimages/4.jpg
+- /static/medias/featureimages/5.jpg
+- /static/medias/featureimages/6.jpg
+- /static/medias/featureimages/7.jpg
+- /static/medias/featureimages/8.jpg
+- /static/medias/featureimages/9.jpg
+- /static/medias/featureimages/10.jpg
+- /static/medias/featureimages/11.jpg
+- /static/medias/featureimages/12.jpg
+- /static/medias/featureimages/13.jpg
+- /static/medias/featureimages/14.jpg
+- /static/medias/featureimages/15.jpg
+- /static/medias/featureimages/16.jpg
+- /static/medias/featureimages/17.jpg
+- /static/medias/featureimages/18.jpg
+- /static/medias/featureimages/19.jpg
+- /static/medias/featureimages/20.jpg
+- /static/medias/featureimages/21.jpg
+- /static/medias/featureimages/22.jpg
+- /static/medias/featureimages/23.jpg
 
   # default configs that the default policy for every articles/posts
   # default 配置文章的默认转载规则

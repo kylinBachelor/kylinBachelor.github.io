@@ -18,7 +18,7 @@ categories:
 
 ### 先上图片
 
-![]( http://47.94.86.44/static/blog/Picturesjava/javaStream流的使用/stream.png)
+![]( /static/Picturesjava/javaStream流的使用/stream.png)
 
 ### Stream概述
 

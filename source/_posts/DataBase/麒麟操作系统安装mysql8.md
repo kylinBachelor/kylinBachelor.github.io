@@ -25,13 +25,13 @@ uname -a
 
 如下图所示：
 
-![查看麒麟操作系统图片](http://47.94.86.44/static/blog/Picture/sql/麒麟操作系统版本查看.png)
+![查看麒麟操作系统图片](/static/Picture/sql/麒麟操作系统版本查看.png)
 
 #### 下载对应架构的安装包!!!!!!***一定是对应架构***
 
 下载地址：https://downloads.mysql.com/archives/community/
 
-![mysql安装包截图](http://47.94.86.44/static/blog/Picture/sql/麒麟操作系统mysql下载截图.png)
+![mysql安装包截图](/static/Picture/sql/麒麟操作系统mysql下载截图.png)
 
 #### 检查是否自带Mysql   MariaDB
 
@@ -182,7 +182,7 @@ select User,authentication_string,Host from user;
 
 效果如下图所示
 
-![mysql远程访问权限查看效果图](http://47.94.86.44/static/blog/Picture/sql/查看mysql登录权限.png)
+![mysql远程访问权限查看效果图](/static/Picture/sql/查看mysql登录权限.png)
 
 
 

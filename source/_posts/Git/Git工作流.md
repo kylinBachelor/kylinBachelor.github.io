@@ -18,7 +18,7 @@ categories:
 
 #### Git工作流程
 
-![Git工作流程图片](http://47.94.86.44/static/blog/Picture/homes/git工作流程.png)
+![Git工作流程图片](/static/Picture/homes/git工作流程.png)
 
 1. 从远程仓库中克隆Git资源作为本地仓库。
 2. 从本地仓库中checkout代码然后进行代码修改。
