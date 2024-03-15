@@ -1,6 +1,6 @@
 ---
 title: about
-date: 2019-08-10 16:41:10
+date: 2023-08-10 16:41:10
 type: "about"
 layout: "about"
 ---
@@ -19,7 +19,7 @@ layout: "about"
 
 # 联系方式
 * <b>电子邮箱</b>
-kylinBachelor2022@163.com
+kylinBachelor@163.com
 * <b>地址</b>
 山东省济南市高新区，邮编：250000 
 * <b>QQ</b>
