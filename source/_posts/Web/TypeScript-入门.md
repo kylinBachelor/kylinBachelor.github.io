@@ -230,7 +230,25 @@ categories:
                 let strLength: number = (<string>someValue).length;
                 ```
 
-                
+- 类型别名
+    - 我们一直通过直接在类型注释中编写对象类型和联合类型来使用它们。这很方便，但通常希望多次使用同一个类型并用一个名称引用它
+        - 类型别名正是这样的 - 任何类型的名称。类型别名的语法是
+          - ```typescript
+              type Point = {
+                    x: number;
+                    y: number;
+                    };
+                    
+                    // Exactly the same as the earlier example
+                    function printCoord(pt: Point) {
+                    console.log("The coordinate's x value is " + pt.x);
+                    console.log("The coordinate's y value is " + pt.y);
+                    }
+                    
+                    printCoord({ x: 100, y: 100 });
+
+                    type ID = number | string;
+            ```                
 
 ## 3、编译选项
 
