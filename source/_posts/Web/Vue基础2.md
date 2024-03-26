@@ -1,5 +1,5 @@
 ---
-title: Vue基础
+title: Vue2基础
 author: 麒麟学士
 top: false
 cover: false
@@ -9,7 +9,7 @@ date: 2023-12-12 12:37:17
 img:
 coverImg:
 password:
-summary: Vue基础知识
+summary: Vue2基础知识
 tags:
 - Vue
 - Web
