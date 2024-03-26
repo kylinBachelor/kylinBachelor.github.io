@@ -27,7 +27,7 @@ categories:
 
 - 截止2023年10月，最新的公开版本为：`3.3.4`
 
-    <img src="/static/Picture/vue3/images/1695089947298-161c1b47-eb86-42fb-b1f8-d6a4fcab8ee2.png" alt="image.png" style="zoom:30%;" /> 
+    <img src="/static/Picture/vue3/images/1695089947298-161c1b47-eb86-42fb-b1f8-d6a4fcab8ee2.png" alt="image.png"/> 
 
 ## 1.1. 【性能的提升】
 
@@ -125,7 +125,7 @@ npm run serve
 - 对 `TypeScript`、`JSX`、`CSS` 等支持开箱即用。
 - 真正的按需编译，不再等待整个应用编译完成。
 - `webpack`构建 与 `vite`构建对比图如下：
-    <img src="/static/Picture/vue3/images/1683167182037-71c78210-8217-4e7d-9a83-e463035efbbe.png" alt="webpack构建" title="webpack构建" style="zoom:20%;box-shadow:0 0 10px black" />	<img src="/static/Picture/vue3/images/1683167204081-582dc237-72bc-499e-9589-2cdfd452e62f.png" alt="vite构建" title="vite构建" style="zoom: 20%;box-shadow:0 0 10px black" />
+    <img src="/static/Picture/vue3/images/1683167182037-71c78210-8217-4e7d-9a83-e463035efbbe.png" alt="webpack构建" title="webpack构建" />	<img src="/static/Picture/vue3/images/1683167204081-582dc237-72bc-499e-9589-2cdfd452e62f.png" alt="vite构建" title="vite构建" />
 
 * 具体操作如下（点击查看[官方文档](https://cn.vuejs.org/guide/quick-start.html#creating-a-vue-application)）
 
@@ -154,36 +154,36 @@ npm create vue@latest
 √ Add Prettier for code formatting?  No
 ```
 
-自己动手编写一个App组件
++ 自己动手编写一个App组件
 
 ```vue
-<template>
-  <div class="app">
-    <h1>你好啊！</h1>
-  </div>
-</template>
+    <template>
+        <div class="app">
+            <h1>你好啊！</h1>
+        </div>
+    </template>
 
-<script lang="ts">
-  export default {
-    name:'App' //组件名
-  }
-</script>
+    <script lang="ts">
+        export default {
+            name:'App'
+        }
+    </script>
 
-<style>
-  .app {
-    background-color: #ddd;
-    box-shadow: 0 0 10px;
-    border-radius: 10px;
-    padding: 20px;
-  }
-</style>
+    <style>
+        .app {
+            background-color: #ddd;
+            box-shadow: 0 0 10px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
 ```
 
 安装官方推荐的`vscode`插件：
 
-<img src="/static/Picture/vue3/images/volar.png" alt="Snipaste_2023-10-08_20-46-34" style="zoom:50%;" /> 
+<img src="/static/Picture/vue3/images/volar.png" alt="Snipaste_2023-10-08_20-46-34" /> 
 
-<img src="/static/Picture/vue3/images/image-20231218085906380.png" alt="image-20231218085906380" style="zoom:42%;" /> 
+<img src="/static/Picture/vue3/images/image-20231218085906380.png" alt="image-20231218085906380" /> 
 
 总结：
 
@@ -195,40 +195,40 @@ npm create vue@latest
 
 `Vue3`向下兼容`Vue2`语法，且`Vue3`中的模板中可以没有根标签
 
-```vue
-<template>
-  <div class="person">
-    <h2>姓名：{{name}}</h2>
-    <h2>年龄：{{age}}</h2>
-    <button @click="changeName">修改名字</button>
-    <button @click="changeAge">年龄+1</button>
-    <button @click="showTel">点我查看联系方式</button>
-  </div>
-</template>
+``` vue
+    <template>
+    <div class="person">
+        <h2>姓名：{{name}}</h2>
+        <h2>年龄：{{age}}</h2>
+        <button @click="changeName">修改名字</button>
+        <button @click="changeAge">年龄+1</button>
+        <button @click="showTel">点我查看联系方式</button>
+    </div>
+    </template>
 
-<script lang="ts">
-  export default {
-    name:'App',
-    data() {
-      return {
-        name:'张三',
-        age:18,
-        tel:'13888888888'
-      }
-    },
-    methods:{
-      changeName(){
-        this.name = 'zhang-san'
-      },
-      changeAge(){
-        this.age += 1
-      },
-      showTel(){
-        alert(this.tel)
-      }
-    },
-  }
-</script>
+    <script lang="ts">
+    export default {
+        name:'App',
+        data() {
+        return {
+            name:'张三',
+            age:18,
+            tel:'13888888888'
+        }
+        },
+        methods:{
+        changeName(){
+            this.name = 'zhang-san'
+        },
+        changeAge(){
+            this.age += 1
+        },
+        showTel(){
+            alert(this.tel)
+        }
+        },
+    }
+    </script>
 ```
 
 
@@ -243,7 +243,7 @@ npm create vue@latest
 
 `Options`类型的 `API`，数据、方法、计算属性等，是分散在：`data`、`methods`、`computed`中的，若想新增或者修改一个需求，就需要分别修改：`data`、`methods`、`computed`，不便于维护和复用。
 
-<img src="/static/Picture/vue3/images/1696662197101-55d2b251-f6e5-47f4-b3f1-d8531bbf9279.gif" alt="1.gif" style="zoom:70%;border-radius:20px" /><img src="/static/Picture/vue3/images/1696662200734-1bad8249-d7a2-423e-a3c3-ab4c110628be.gif" alt="2.gif" style="zoom:70%;border-radius:20px" />
+<img src="/static/Picture/vue3/images/1696662197101-55d2b251-f6e5-47f4-b3f1-d8531bbf9279.gif" alt="1.gif"/><img src="/static/Picture/vue3/images/1696662200734-1bad8249-d7a2-423e-a3c3-ab4c110628be.gif" alt="2.gif" />
 
 ### Composition API 的优势
 
@@ -549,7 +549,7 @@ function test(){
 
 > 1. `ref`创建的变量必须使用`.value`（可以使用`volar`插件自动添加`.value`）。
 >
->     <img src="/static/Picture/vue3/images/自动补充value.png" alt="自动补充value" style="zoom:50%;border-radius:20px" /> 
+>     <img src="/static/Picture/vue3/images/自动补充value.png" alt="自动补充value" /> 
 >
 > 2. `reactive`重新分配一个新对象，会**失去**响应式（可以使用`Object.assign`去整体替换）。
 
@@ -606,7 +606,7 @@ function test(){
 
 作用：根据已有数据计算出新数据（和`Vue2`中的`computed`作用一致）。
 
-<img src="/static/Picture/vue3/images/computed.gif" style="zoom:20%;" />  
+<img src="/static/Picture/vue3/images/computed.gif />  
 
 ```vue
 <template>
@@ -1322,7 +1322,7 @@ function test(){
 
 ## 4.1. 【对路由的理解】
 
-<img src="/static/Picture/vue3/images/image-20231018144351536.png" alt="image-20231018144351536" style="zoom:20%;border-radius:40px" /> 
+<img src="/static/Picture/vue3/images/image-20231018144351536.png" alt="image-20231018144351536" /> 
 
 ## 4.2. 【基本切换效果】
 
@@ -1678,7 +1678,7 @@ console.log(router.replace)
 
 ## 5.1【准备一个效果】
 
-<img src="/static/Picture/vue3/images/pinia_example.gif" alt="pinia_example" style="zoom:30%;border:3px solid" /> 
+<img src="/static/Picture/vue3/images/pinia_example.gif" alt="pinia_example" /> 
 
 ## 5.2【搭建 pinia 环境】
 
@@ -1704,7 +1704,7 @@ app.mount('#app')
 
 此时开发者工具中已经有了`pinia`选项
 
-<img src="https://cdn.nlark.com/yuque/0/2023/png/35780599/1684309952481-c67f67f9-d1a3-4d69-8bd6-2b381e003f31.png" style="zoom:80%;border:1px solid black;border-radius:10px" />
+<img src="https://cdn.nlark.com/yuque/0/2023/png/35780599/1684309952481-c67f67f9-d1a3-4d69-8bd6-2b381e003f31.png"/>
 
 ## 5.3【存储+读取数据】
 
@@ -1969,7 +1969,7 @@ export const useTalkStore = defineStore('talk',()=>{
 
 **常见搭配形式：**
 
-<img src="/static/Picture/vue3/images/image-20231119185900990.png" alt="image-20231119185900990" style="zoom:60%;" /> 
+<img src="/static/Picture/vue3/images/image-20231119185900990.png" alt="image-20231119185900990" /> 
 
 ## 6.1. 【props】
 
