@@ -606,7 +606,7 @@ function test(){
 
 作用：根据已有数据计算出新数据（和`Vue2`中的`computed`作用一致）。
 
-<img src="/static/Picture/vue3/images/computed.gif />  
+<img src="/static/Picture/vue3/images/computed.gif"/>  
 
 ```html
 <template>
