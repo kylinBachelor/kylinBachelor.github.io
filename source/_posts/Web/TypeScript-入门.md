@@ -171,6 +171,10 @@ categories:
 
     - ```typescript
         let obj: object = {};
+        // 定义对象的结构，[propName: string]: any   其中any表示任意类型的属性,[propName:string]表示任意key但必须为string类型
+        let obj2:object = {name: string, [propName: string]: any};
+        // 设置函数结构的类型声明 语法：(形参1: 类型1, 形参2:类型2,.......) =>返回值类型
+        let f: (n1: number, n2: number) => number;  
         ```
 
 - array
@@ -246,9 +250,9 @@ categories:
                     }
                     
                     printCoord({ x: 100, y: 100 });
-
+            
                     type ID = number | string;
-            ```                
+            ```
 
 ## 3、编译选项
 
