@@ -167,7 +167,7 @@ categories:
         }
         ```
 
-- object（没啥用）
+- object（对象类型）
 
     - ```typescript
         let obj: object = {};
