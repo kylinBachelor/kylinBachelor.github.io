@@ -1,5 +1,23 @@
 [
 	{
+		"name": "相约一九九八",
+		"artist": "那英-王菲",
+		"url": "/static/musices/相约一九九八.mp3",
+		"cover": ""
+	},
+	{
+		"name": "不是因为寂寞才想你",
+		"artist": "王小帅",
+		"url": "/static/musices/不是因为寂寞才想你.flac",
+		"cover": ""
+	},
+	{
+		"name": "爱就一个字",
+		"artist": "张信哲",
+		"url": "/static/musices/爱就一个字.mp3",
+		"cover": ""
+	},
+	{
 		"name": "River Flows in You",
 		"artist": "Yiruma",
 		"url": "/static/musices/River_Flows_in_You.mp3",
