@@ -1,6 +1,6 @@
 ---
 title: 麒麟操作系统安装mysql8
-author: 麒麟学士
+author: 野路子随笔
 top: false
 cover: false
 toc: true

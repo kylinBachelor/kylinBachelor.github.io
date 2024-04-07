@@ -1,4 +1,4 @@
-// kylinBachelor 麒麟学士  add 2019.08.15
+// kylinBachelor 野路子随笔  add 2019.08.15
 var gulp = require("gulp");
 var debug = require("gulp-debug");
 var cleancss = require("gulp-clean-css"); //css压缩组件

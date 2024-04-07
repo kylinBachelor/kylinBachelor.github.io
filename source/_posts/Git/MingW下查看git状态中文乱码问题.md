@@ -1,6 +1,6 @@
 ---
 title: MingW下查看git状态中文乱码问题
-author: 麒麟学士
+author: 野路子随笔
 top: false
 cover: false
 toc: true

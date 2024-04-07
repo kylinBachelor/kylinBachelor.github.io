@@ -1,4 +1,4 @@
-# kylinBachelor 麒麟学士  modify 2019.08.01
+# kylinBachelor 野路子随笔  modify 2019.08.01
 # main menu navigation url and icon
 # 配置菜单导航的名称、路径和图标icon.
 menu:
@@ -351,7 +351,7 @@ libs:
     #jqcloud: /libs/jqcloud/jqcloud.css
     jqcloud: https://cdn.bootcss.com/jqcloud/1.0.4/jqcloud.min.css
     tocbot: /libs/tocbot/tocbot.css
-    #  麒麟学士 kylinBachelor  add 2019.08.28
+    #  野路子随笔 kylinBachelor  add 2019.08.28
     fancybox: https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css
     justifiedGallery: https://cdn.staticfile.org/justifiedGallery/3.7.0/css/justifiedGallery.min.css
     share: /libs/share/css/share.min.css
@@ -384,20 +384,20 @@ libs:
     #jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
     jqcloud: https://cdn.bootcss.com/jqcloud/1.0.4/jqcloud-1.0.4.min.js
     tocbot: /libs/tocbot/tocbot.min.js
-    #  麒麟学士 kylinBachelor  add 2019.08.28
+    #  野路子随笔 kylinBachelor  add 2019.08.28
     fancybox: https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js
     justifiedGallery: https://cdn.staticfile.org/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js
     lazyload: /libs/lazyload/jquery.lazyload.js
     share: /libs/share/js/social-share.min.js
     matery: /js/matery.js
     search: /js/search.js
-    #  麒麟学士 kylinBachelor  add 2019.09.10
+    #  野路子随笔 kylinBachelor  add 2019.09.10
     sakura: /js/sakura.js  #这文件真大...里面编码了个图片
     fireworks: /js/fireworks.js
     wenzi: /js/wenzi.js
     xuehuapiaoluo: /js/xuehuapiaoluo.js
     instant.page: /js/instant.page.js
-    #  麒麟学士 kylinBachelor  add 2019.09.15
+    #  野路子随笔 kylinBachelor  add 2019.09.15
     canvas_nest: /libs/background/canvas-nest.js
     ribbon: /libs/background/ribbon.min.js
     ribbon_dynamic: /libs/background/ribbon-dynamic.js
@@ -457,7 +457,7 @@ reprint:
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
 baidu_push: true
 
-# 麒麟学士 kylinBachelor add 2019.09.09
+# 野路子随笔 kylinBachelor add 2019.09.09
 # 页面樱花飘落动效
 sakura:
   enable: false
@@ -466,17 +466,17 @@ sakura:
 fireworks:
   enable: false
 
-# 麒麟学士 kylinBachelor add 2019.09.10
+# 野路子随笔 kylinBachelor add 2019.09.10
 # 天气控件 Weather Widget
 weather:
   enable: false
 
-# 麒麟学士 kylinBachelor add 2019.09.10
+# 野路子随笔 kylinBachelor add 2019.09.10
 # 鼠标点击文字特效 
 wenzi:
   enable: true
 
-# 麒麟学士 kylinBachelor add 2019.09.10
+# 野路子随笔 kylinBachelor add 2019.09.10
 # 背景雪花飘落特效
 xuehuapiaoluo:
   enable: true
@@ -486,7 +486,7 @@ tidio:
   enable: false
   public_key: xxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-# 麒麟学士 kylinBachelor add 2019.09.15
+# 野路子随笔 kylinBachelor add 2019.09.15
 #背景canvas-nest
 canvas_nest:
   enable: true

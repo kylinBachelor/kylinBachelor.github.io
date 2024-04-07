@@ -1,6 +1,6 @@
 ---
 title: Linux下常用命令
-author: 麒麟学士
+author: 野路子随笔
 top: true
 cover: true
 toc: true

@@ -1,6 +1,6 @@
 ---
 title: Centos安装mysql5.7
-author: 麒麟学士
+author: 野路子随笔
 top: false
 cover: false
 toc: true

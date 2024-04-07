@@ -73,7 +73,7 @@ h6 {
     font-size: 1.1rem;
     line-height: 1.1rem;
 } */
-/* 麒麟学士 kylinBachelor modify 2019.08.31 */
+/* 野路子随笔 kylinBachelor modify 2019.08.31 */
 h1 {
     margin: 38px 0 22px -5px;
     font-size: 2.0rem;
@@ -143,7 +143,7 @@ pre {
     tab-size: 4;
 }
 */
-/*修改一下才能正确显示行号,而不是一条竖线 麒麟学士 kylinBachelor 2019.08.14  */
+/*修改一下才能正确显示行号,而不是一条竖线 野路子随笔 kylinBachelor 2019.08.14  */
 pre {
     padding: 1.5rem 1.5rem 1.5rem 3.3rem !important;
     margin: 1rem 0 !important;
@@ -422,9 +422,9 @@ header .go-back i {
 
 .bg-cover:after {
     -webkit-animation: rainbow 30s infinite;
-    /* 原值 60s, 麒麟学士 modify 2019.08*/
+    /* 原值 60s, 野路子随笔 modify 2019.08*/
     animation: rainbow 30s infinite;
-    /* 原值 60s, 麒麟学士 modify 2019.08*/
+    /* 原值 60s, 野路子随笔 modify 2019.08*/
 }
 
 .bg-cover:before,
@@ -544,7 +544,7 @@ header .go-back i {
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
 } */
-/* 换成:红橙黄绿青蓝紫 背景渐变 麒麟学士 kylinBachelor  add  2019.08.30  */
+/* 换成:红橙黄绿青蓝紫 背景渐变 野路子随笔 kylinBachelor  add  2019.08.30  */
 @keyframes rainbow {
     /* 0%,
     100% {
@@ -627,7 +627,7 @@ header .go-back i {
 /* .index-card .card .card-content {
     padding: 20px 40px;
 } */
-/* 麒麟学士 kylinBachelor modify 2019.08.31 */
+/* 野路子随笔 kylinBachelor modify 2019.08.31 */
 .index-card .card .card-content {
     padding: 5px 5px;
 }
@@ -791,7 +791,7 @@ article .card {
     border-radius: 5px;
     /*原值 8px*/
     overflow: hidden;
-    /* 解决文章卡片上方border-radius失效的bug, 麒麟学士 kylinBachelor add 2019.08.31 */
+    /* 解决文章卡片上方border-radius失效的bug, 野路子随笔 kylinBachelor add 2019.08.31 */
 }
 
 article .card-image {
@@ -942,7 +942,7 @@ article .article-tags .chip {
     padding: 20px 30px 1px 40px;
     margin-bottom: -5px;
 } */
-/* 麒麟学士 kylinBachelor modify 2019.08.31 */
+/* 野路子随笔 kylinBachelor modify 2019.08.31 */
 #artDetail .article-info {
     padding: 20px 20px 1px 25px;
     margin-bottom: -5px;
@@ -1033,7 +1033,7 @@ article .article-tags .chip {
         padding: 0 50px 20px 50px;
     }
 } */
-/* 麒麟学士 kylinBachelor modify 2019.08.31 */
+/* 野路子随笔 kylinBachelor modify 2019.08.31 */
 @media only screen and (min-width: 993px) {
     #artDetail .article-card-content {
         padding: 0 25px 20px 25px;
@@ -1750,14 +1750,14 @@ footer {
     padding-bottom: 1px;
 }
 
-/* 麒麟学士 kylinBachelor modify 2019.09.11 */
+/* 野路子随笔 kylinBachelor modify 2019.09.11 */
 footer .social-statis {
     margin-top: 26px;
     /* 原值 10px; */
     position: relative;
 }
 
-/* 麒麟学士 kylinBachelor modify 2019.09.11 */
+/* 野路子随笔 kylinBachelor modify 2019.09.11 */
 footer a {
     /* color: #fff; */
     color: #dbdbdb;
@@ -1878,7 +1878,7 @@ footer .copy-right {
 /* .img-margin {
     margin: 25px auto 10px auto;
 } */
-/* 麒麟学士 kylinBachelor modify 2019.08.31 */
+/* 野路子随笔 kylinBachelor modify 2019.08.31 */
 .img-margin {
     margin: 2px auto 5px auto;
 }
@@ -1913,7 +1913,7 @@ footer .copy-right {
     line-height: 1.5em;
     /* max-height = line-height (1.2) * lines max number (3) */
     max-height: 3em;
-    /* 原值4.5em三行,改为固定两行显示为3em 麒麟学士  2019.08.31*/
+    /* 原值4.5em三行,改为固定两行显示为3em 野路子随笔  2019.08.31*/
     /* fix problem when last visible word doesn't adjoin right side  */
     text-align: justify;
     /* place for '...' */
@@ -1948,7 +1948,7 @@ footer .copy-right {
     background: white;
 }
 
-/* 二级菜单样式定义 麒麟学士 kylinBachelor add 2019.09.17 */
+/* 二级菜单样式定义 野路子随笔 kylinBachelor add 2019.09.17 */
 .nav-menu {}
 
 .nav-menu li .sub-nav {

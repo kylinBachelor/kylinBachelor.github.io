@@ -1,6 +1,6 @@
 ---
 title: Windows下安装mysql服务
-author: 麒麟学士
+author: 野路子随笔
 top: false
 cover: false
 toc: true

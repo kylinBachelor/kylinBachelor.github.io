@@ -1,7 +1,7 @@
 ---
 title: Hexo博客部署
 date: 2023-12-15 12:37:38
-author: 麒麟学士
+author: 野路子随笔
 img: 
 coverImg: /medias/banner/0.jpg
 top: true

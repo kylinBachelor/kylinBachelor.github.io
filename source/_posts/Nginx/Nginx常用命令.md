@@ -1,6 +1,6 @@
 ---
 title: Nginx常用命令
-author: 麒麟学士
+author: 野路子随笔
 top: true
 cover: false
 toc: true

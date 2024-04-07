@@ -1,6 +1,6 @@
 ---
 title: CentOS下安装Redis
-author: 麒麟学士
+author: 野路子随笔
 top: false
 cover: false
 toc: true

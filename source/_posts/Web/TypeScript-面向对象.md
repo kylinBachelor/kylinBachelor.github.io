@@ -1,6 +1,6 @@
 ---
 title: TypeScript 面向对象
-author: 麒麟学士
+author: 野路子随笔
 top: false
 cover: false
 toc: true

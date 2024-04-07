@@ -110,7 +110,7 @@ $(function () {
             showThumbByDefault: false  //2018.08.14
         });
 
-        /*网站加载逻辑问题 网站加载逻辑问题：图片最后加载 麒麟学士 kylinBachelor modify 修改时间：2019.08.14*/
+        /*网站加载逻辑问题 网站加载逻辑问题：图片最后加载 野路子随笔 kylinBachelor modify 修改时间：2019.08.14*/
         // $(document).find('img[data-original]').each(function () {
         //     $(this).parent().attr("href", $(this).attr("data-original"));
         // });
@@ -150,7 +150,7 @@ $(function () {
         }
     });
 
-    // 增加二级菜单功能 麒麟学士 kylinBachelor add 2019.09.17
+    // 增加二级菜单功能 野路子随笔 kylinBachelor add 2019.09.17
     $(".nav-menu>li").hover(function(){
 		$(this).children('ul').stop(true,true).show();
 		$(this).addClass('nav-show').siblings('li').removeClass('nav-show');
