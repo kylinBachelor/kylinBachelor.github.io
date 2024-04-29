@@ -82,7 +82,7 @@ music:
 video:
   enable: true
   showTitle: true
-  title: 祝愿我们的祖国繁荣富强
+  title: 祝愿我们的祖国繁荣昌盛
   url: /static/video/qiangjunzhange.mp4 # 必填
   pic:
   thumbnails:
