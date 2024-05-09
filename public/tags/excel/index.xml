@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Excel on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/excel/</link>
+    <description>Recent content in Excel on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 18:51:24 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel常用操作</title>
+      <link>http://congpeitong.fun/posts/excel/excel%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Thu, 09 May 2024 18:51:24 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/excel/excel%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+      <description>列填充 将要填充的列的第一行录入将要填充的内容，先选择填充列的第一行，然后按住shift选择填充列的最后一行，就会全选填充列，然后Ctrl+d即可填充完成</description>
+    </item>
+    
+  </channel>
+</rss>

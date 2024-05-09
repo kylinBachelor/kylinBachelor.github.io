@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/web/</link>
+    <description>Recent content in Web on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 19:03:04 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue2基础</title>
+      <link>http://congpeitong.fun/posts/web/vue2%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Thu, 09 May 2024 19:03:04 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/vue2%E5%9F%BA%E7%A1%80/</guid>
+      <description>框架和库 一、JS 库 在原生 JS 中，如果我们要获取一个节点： 1 const app = document.getElementById(&amp;#39;app&amp;#39;); 在 jQuery 中，如果我们要获取一个节点： 1 const app = $(&amp;#39;#app&amp;#39;); 库的概念 库，就是一组方法的集合，通常这些方法都会有特定</description>
+    </item>
+    
+    <item>
+      <title>Vue3基础</title>
+      <link>http://congpeitong.fun/posts/web/vue3%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Thu, 09 May 2024 19:02:59 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/vue3%E5%9F%BA%E7%A1%80/</guid>
+      <description>1. Vue3简介 2020年9月18日，Vue.js发布版3.0版本，代号：One Piece（n 经历了：4800+次提交、40+个RFC、600+次PR、300+贡</description>
+    </item>
+    
+    <item>
+      <title>TS 入门</title>
+      <link>http://congpeitong.fun/posts/web/ts-%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Thu, 09 May 2024 19:02:55 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/ts-%E5%85%A5%E9%97%A8/</guid>
+      <description>0、TypeScript简介 TypeScript是JavaScript的超集。 它对JS进行了扩展，向JS中引入了类型的概念，并添加了许多新的特性。 TS代码需要通</description>
+    </item>
+    
+    <item>
+      <title>TS 面向对象</title>
+      <link>http://congpeitong.fun/posts/web/ts-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Thu, 09 May 2024 19:02:51 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/ts-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</guid>
+      <description>1、类（class） 要想面向对象，操作对象，首先便要拥有对象，那么下一个问题就是如何创建对象。要创建对象，必须要先定义类，所谓的类可以理解为对象的模型，程序中可</description>
+    </item>
+    
+    <item>
+      <title>Element表单自定义校验规则</title>
+      <link>http://congpeitong.fun/posts/web/element%E8%A1%A8%E5%8D%95%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%A1%E9%AA%8C%E8%A7%84%E5%88%99/</link>
+      <pubDate>Thu, 09 May 2024 19:02:46 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/element%E8%A1%A8%E5%8D%95%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%A1%E9%AA%8C%E8%A7%84%E5%88%99/</guid>
+      <description>Form表单提供了表单校验功能，只需要通过rules属性传入特定的验证规则，并将Form-Item的prop属性设置为需要校验的字段名即可。 普通表单验证 1 2 3 4</description>
+    </item>
+    
+    <item>
+      <title>El Table分页回显选中的数据</title>
+      <link>http://congpeitong.fun/posts/web/el-table%E5%88%86%E9%A1%B5%E5%9B%9E%E6%98%BE%E9%80%89%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Thu, 09 May 2024 19:02:41 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/el-table%E5%88%86%E9%A1%B5%E5%9B%9E%E6%98%BE%E9%80%89%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE/</guid>
+      <description>使用官方文档上的这两个方法 方法 解释说明 row-key 行数据的 Key，用来优化 Table 的渲染；在使用 reserve-selection 功能与显示树形数据时，该属性是必填的。类型为 String 时，支持多层访问：user.in</description>
+    </item>
+    
+    <item>
+      <title>El Table可录入</title>
+      <link>http://congpeitong.fun/posts/web/el-table%E5%8F%AF%E5%BD%95%E5%85%A5/</link>
+      <pubDate>Thu, 09 May 2024 19:02:36 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/el-table%E5%8F%AF%E5%BD%95%E5%85%A5/</guid>
+      <description>点击进入编辑 当鼠标移入单元格，显示可以编辑的样式，单击单元格进入编辑状态，鼠标移除单元格，则保存编辑的数据，key-value形式 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</description>
+    </item>
+    
+    <item>
+      <title>规避请求方式的方法</title>
+      <link>http://congpeitong.fun/posts/web/%E8%A7%84%E9%81%BF%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Thu, 09 May 2024 19:02:31 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/%E8%A7%84%E9%81%BF%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <description>vue-cli请求拦截器中添加以下代码 1 2 3 4 if (config.method === &amp;#39;delete&amp;#39; || config.method === &amp;#39;put&amp;#39; || config.method === &amp;#39;option&amp;#39;) { config.headers[&amp;#39;ORIGINAL_METHOD&amp;#39;] = config.method.toUpperCase(); config.method = &amp;#39;POST&amp;#39; } Nginx请求中的配置 location /xxxx请求/{ # 还原原始请求方法 set $ori_method $request_method; if ($http_ORIGINAL_METHOD != &amp;#39;&amp;#39;)</description>
+    </item>
+    
+    <item>
+      <title>常用的JS函数</title>
+      <link>http://congpeitong.fun/posts/web/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 09 May 2024 19:02:24 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%87%BD%E6%95%B0/</guid>
+      <description>时间格式化 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 function dateFormat(fmt, date) { let ret; const opt = { &amp;#34;Y+&amp;#34;: date.getFullYear().toString(), // 年 &amp;#34;m+&amp;#34;: (date.getMonth() + 1).toString(), // 月 &amp;#34;d+&amp;#34;: date.getDate().toString(), // 日 &amp;#34;H+&amp;#34;: date.getHours().toString(), // 时 &amp;#34;M+&amp;#34;: date.getMinutes().toString(), // 分 &amp;#34;S+&amp;#34;: date.getSeconds().toString() // 秒 // 有其他格式化字符需求可以继续添</description>
+    </item>
+    
+  </channel>
+</rss>

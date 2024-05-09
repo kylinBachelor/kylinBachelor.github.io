@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kylin on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/kylin/</link>
+    <description>Recent content in kylin on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 13:17:33 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/kylin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>麒麟操作系统安装MySQL8</title>
+      <link>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85mysql8/</link>
+      <pubDate>Thu, 09 May 2024 13:17:33 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85mysql8/</guid>
+      <description>查看麒麟操作系统版本 1 uname -a 如下图所示： 下载对应架构的安装包!!!!!!一定是对应架构 下载地址：https://downloads.mysql.com/archi</description>
+    </item>
+    
+    <item>
+      <title>麒麟操作系统安装Java环境</title>
+      <link>http://congpeitong.fun/posts/java/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85java%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/java/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85java%E7%8E%AF%E5%A2%83/</guid>
+      <description>参考文章 https://blog.csdn.net/job_csdn/article/details/128136490 1. 下载Linux版本的JDK1.8 https://www.oracle.com/java/technologies/downloads/#java8 一定要下载对应操作架构的JDK，否则会报错：可通过uname -a 命令查看 2. 将下载好的安装包xx.tar.gz放到安装</description>
+    </item>
+    
+  </channel>
+</rss>

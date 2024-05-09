@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>设计模式 on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+    <description>Recent content in 设计模式 on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 13:12:36 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>设计原则</title>
+      <link>http://congpeitong.fun/posts/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</link>
+      <pubDate>Thu, 09 May 2024 13:12:36 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</guid>
+      <description>单一职责原则 降低类的复杂度，一个类只负责一项职责。 提高类的可读性，可维护性。 降低变更引起的风险。 通常情况下，我们应当遵守单一职责原则，只有逻辑足够简单，才可以在</description>
+    </item>
+    
+    <item>
+      <title>单例模式</title>
+      <link>http://congpeitong.fun/posts/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Thu, 09 May 2024 13:12:31 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <description>饿汉式（静态常量） 构造器私有化，防止使用new构造对象 类的内部创建对象 向外暴露一个静态的公共方法：getInstance 1 2 3 4 5 6 7 8 9 10 class Singleton { // 1. 构造器私有</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,111 @@
+.container-ship {
+    background: $gray-white-500;
+    // background : linear-gradient(45deg, #dd669966, #eedbdb66 50%, #8cc6d166);
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    position: relative;
+
+    > .contact {
+        .container-contact {
+            .icons {
+                // 使联系栏图标居中
+                justify-content: center;
+            }
+        }
+    }
+
+    .sc-icon img {
+        border-radius: 0;
+    }
+
+    .ship {
+        > #local-search {
+            text-align: center;
+        }
+
+        > #search {
+            text-align: center;
+            padding: 8px 0 16px 0;
+            position: relative;
+
+            #ship-clear {
+                cursor: pointer;
+                transition: 0.5s opacity ease;
+                position: absolute;
+                top: 16px;
+                // right: 48px;
+            }
+
+            #ship-input {
+                text-align: center;
+                font-family: $font-family--base;
+                color: #333;
+                outline-style: none;
+                border: 0px;
+                border-bottom: 1px solid #0d6efd;
+                padding: 12px 0;
+                width: 500px;
+                background: rgba(255, 255, 255, 0);
+
+                &:focus {
+                    border-color: #0dcaf0;
+                    animation: oh-my-line 0.8s;
+
+                    &::placeholder {
+                        // color: $gray-300;
+                        opacity: 0;
+                    }
+                }
+
+                &::placeholder {
+                    color: $gray-400;
+                    font-family: $font-family--some;
+                }
+
+                @keyframes oh-my-line {
+                    0% {
+                    }
+                    50% {
+                        width: 0px;
+                        border-color: #0d6efd;
+                    }
+                    100% {
+                        border-color: #0dcaf0;
+                    }
+                }
+            }
+        }
+
+        > #engine {
+            padding: 16px 0;
+            text-align: center;
+
+            .activated {
+                position: relative;
+                background: $gray-200;
+                &::before {
+                    content: '➭ ';
+                }
+            }
+
+            span {
+                cursor: pointer;
+                display: inline-block;
+                background: $gray-200;
+                padding: 2px 4px;
+                border-radius: 4px;
+                width: 64px;
+                // white-space: nowrap;
+
+                &:hover {
+                    box-shadow: 0 0 3px #666;
+                }
+            }
+        }
+    }
+
+    .github-star {
+        text-align: right;
+    }
+}

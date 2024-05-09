@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xml on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/xml/</link>
+    <description>Recent content in xml on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/xml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>xml解析</title>
+      <link>http://congpeitong.fun/posts/java/xml%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/java/xml%E8%A7%A3%E6%9E%90/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 public class test { public static void main(String[] args) { try { xmlString = &amp;#34;&amp;lt;?xml version=\&amp;#34;1.0\&amp;#34; encoding=\&amp;#34;UTF-8\&amp;#34; standalone=\&amp;#34;no\&amp;#34;?&amp;gt;\n&amp;#34; + &amp;#34;&amp;lt;soap:Envelope xmlns:soap=\&amp;#34;http://schemas.xmlsoap.org/soap/envelope/\&amp;#34;&amp;gt;\n&amp;#34; + &amp;#34; &amp;lt;soap:Body&amp;gt;\n&amp;#34; + &amp;#34; &amp;lt;ns2:importFilesForXMLResponse xmlns:ns2=\&amp;#34;http://service.webservice.archive.component.ces.com/\&amp;#34;&amp;gt;\n&amp;#34; + &amp;#34; &amp;lt;return&amp;gt;{\&amp;#34;s</description>
+    </item>
+    
+  </channel>
+</rss>

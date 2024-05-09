@@ -1,0 +1,176 @@
+.container-search {
+    // font-size: 0.16rem;
+
+    #search {
+        // padding: 32px 0;
+        position: relative;
+        #sc-clear {
+            cursor: pointer;
+            transition: 0.5s opacity ease;
+            position: absolute;
+            top: 12px;
+            // right: 48px;
+            // opacity: 1 !important;
+        }
+
+        #sc-input {
+            // outline-style: none;
+            // border: 0px;
+            // border-bottom: 1px solid #5DADE2;
+            // padding-bottom: 8px;
+            // padding-left: 32px;
+            // font-family: $font-family--base;
+            // width: 500px;
+            // background: $white-000;
+
+            // &:focus-visible {
+            //     border-color: #0dcaf0;
+            // }
+
+            // &::placeholder {
+            //     color: $gray-300;
+            //     font-family: $font-family--some;
+            // }
+
+            text-align: center;
+            font-family: $font-family--base;
+            color: #333;
+            outline-style: none;
+            border: 0px;
+            border-bottom: 1px solid #0d6efd;
+            padding: 12px 0;
+            width: 500px;
+            background: rgba(255, 255, 255, 0);
+
+            &:focus {
+                border-color: #0dcaf0;
+                animation: oh-my-line 0.8s;
+
+                &::placeholder {
+                    // color: $gray-300;
+                    opacity: 0;
+                }
+            }
+
+            &::placeholder {
+                color: $gray-400;
+                font-family: $font-family--some;
+            }
+
+            @keyframes oh-my-line {
+                0% {
+                }
+                50% {
+                    width: 0px;
+                    border-color: #0d6efd;
+                }
+                100% {
+                    border-color: #0dcaf0;
+                }
+            }
+        }
+
+        #sc-res {
+            .statistics {
+                padding: 16px 0 8px 56px;
+                color: $gray-500;
+            }
+
+            hr {
+                border: 1px solid $gray-200;
+                margin: 16px 0;
+            }
+        }
+    }
+
+    .list {
+        // background: #0003;
+        max-height: 400px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 1px;
+            width: 0px;
+            height: 1px;
+        }
+
+        // &::-webkit-scrollbar-thumb {
+        //     background-color: $gray-300;
+        // }
+
+        .item {
+            background: $white-300;
+            margin-right: 32px;
+            margin-top: 48px;
+            overflow: hidden;
+            margin: 24px auto;
+            border-radius: 4px;
+            animation: fadeInUp 2s;
+
+            .num {
+                position: absolute;
+                top: 0;
+                left: 16px;
+                width: 20px;
+                height: 20px;
+                border-radius: 0 0 50% 50%;
+                font-size: 0.12rem;
+                // background: #D49BCE99;
+                background: #ffd6d999;
+            }
+
+            > a {
+                box-sizing: border-box;
+                width: 100%;
+                display: block;
+                background: $white-300;
+                margin-bottom: 8px;
+                padding: 6px 4px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                transition: 0.3s padding ease;
+
+                &:hover {
+                    // padding-left: 16px;
+                    // padding: 16px;
+
+                    // &::before {
+                    //     // content: '➭ ';
+                    //     // content: '📖 ';
+                    //     content: '⇨ ';
+                    // }
+                    // &::after {
+                    //     // content: '➭ ';
+                    //     // content: '📖 ';
+                    //     content: ' ⇦';
+                    // }
+                }
+
+                .date {
+                    color: #999;
+                    font-size: 0.12rem;
+                    font-family: $font-family--some;
+                    margin-right: 4px;
+                }
+            }
+
+            .summary {
+                font-size: 0.15rem;
+                padding: 8px;
+                color: $gray-700;
+                transition: 0.3s padding ease;
+            }
+
+            &:last-child::after {
+                content: '⇨ 🚫 最后一条了 ⇦';
+                display: inline-block;
+                color: $gray-500;
+                margin: 24px 0;
+                padding: 8px 0;
+                border-top: 1px solid #0d6efd99;
+                border-bottom: 1px solid #0d6efd99;
+                font-size: .12rem;
+            }
+        }
+    }
+}

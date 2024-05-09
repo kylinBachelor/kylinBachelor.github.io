@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>maven on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/maven/</link>
+    <description>Recent content in maven on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/maven/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>maven多模块无法扫描到xml问题</title>
+      <link>http://congpeitong.fun/posts/java/maven%E5%A4%9A%E6%A8%A1%E5%9D%97%E6%97%A0%E6%B3%95%E6%89%AB%E6%8F%8F%E5%88%B0xml%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/java/maven%E5%A4%9A%E6%A8%A1%E5%9D%97%E6%97%A0%E6%B3%95%E6%89%AB%E6%8F%8F%E5%88%B0xml%E9%97%AE%E9%A2%98/</guid>
+      <description>一个SpringBoot项目，有多个模块，每个模块都有自己的pom.xml，但是maven无法扫描其它模块的xml文件。 查询解决办法：application.y</description>
+    </item>
+    
+  </channel>
+</rss>

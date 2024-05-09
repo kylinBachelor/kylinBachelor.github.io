@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/linux/</link>
+    <description>Recent content in Linux on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 12:59:44 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux下安装Nginx</title>
+      <link>http://congpeitong.fun/posts/nginx/linux%E4%B8%8B%E5%AE%89%E8%A3%85nginx/</link>
+      <pubDate>Thu, 09 May 2024 12:59:44 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/nginx/linux%E4%B8%8B%E5%AE%89%E8%A3%85nginx/</guid>
+      <description>下载Nginx 下载地址：【http://nginx.org/en/download.html】 解压并放到服务器上 进入Nginx目录 1 2 3 4 # 如果出现 -bash: ./configure: Permission denied 则执</description>
+    </item>
+    
+    <item>
+      <title>Shell编程基础</title>
+      <link>http://congpeitong.fun/posts/linux/shell%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Thu, 09 May 2024 12:52:13 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/linux/shell%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/</guid>
+      <description>简介 shell是一个用C语言编写的程序，通过shell用户可以访问操作系统内核服务。 shell既是一种命令语言又是一种程序设计语言。 Shell script 是一种为shell编写的</description>
+    </item>
+    
+    <item>
+      <title>Linux下常用的命令</title>
+      <link>http://congpeitong.fun/posts/linux/linux%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Thu, 09 May 2024 12:52:09 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/linux/linux%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4/</guid>
+      <description>排查某端口是否被占用 1 netstat -anp | grep [端口号] 查看网络连接网络接口信息等 1 netstat -nlpt 查看系统版本 1 2 3 uname -a # 适用于redhat系列 cat redhat-release 防火墙相关 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
+    </item>
+    
+    <item>
+      <title>Centos下安装Redis</title>
+      <link>http://congpeitong.fun/posts/linux/centos%E4%B8%8B%E5%AE%89%E8%A3%85redis/</link>
+      <pubDate>Thu, 09 May 2024 12:52:05 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/linux/centos%E4%B8%8B%E5%AE%89%E8%A3%85redis/</guid>
+      <description>下载Redis安装包并解压 1 2 # Linux解压命令 tar -zvxf redis-3.2.10.tar.gz 进入解压后的Redis目录 进入后可看到配置文件redis.conf 配置环境及安装Redis 查看gcc是否</description>
+    </item>
+    
+    <item>
+      <title>Centos下安装Nacos</title>
+      <link>http://congpeitong.fun/posts/linux/centos%E4%B8%8B%E5%AE%89%E8%A3%85nacos/</link>
+      <pubDate>Thu, 09 May 2024 12:51:54 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/linux/centos%E4%B8%8B%E5%AE%89%E8%A3%85nacos/</guid>
+      <description>下载安装包 https://github.com/alibaba/nacos/releases 解压并移动至安装目录 1 2 tar -zxvf nacos-server-2.2.3.tar.gz mv nacos /usr/local 需要配置Java环境 1 2 3 4 export JAVA_HOME=/usr/local/java/jdk17.0.4.1 export JRE_HOME=${JAVA_HOME}/jre export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib export PATH={JAVA_HOME}/bin:$PATH 编辑application.properties 1 2 3 4 5 6 7 8 cd /usr/local/nacos/conf</description>
+    </item>
+    
+  </channel>
+</rss>

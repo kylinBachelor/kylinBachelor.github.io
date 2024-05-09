@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="TS 入门 - http://congpeitong.fun/posts/web/ts-%E5%85%A5%E9%97%A8/">
+    <meta name="author" content="kylinBachelor - http://congpeitong.fun/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>TS 入门</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="http://congpeitong.fun/style.min.0ce482e7fe60e52d6bb1b58fe99756ace4945251a4773ccf58959820882c496d.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div class="container-floating-box">
+	<div class="box box1"></div>
+	<div class="box box11"></div>
+	<div class="box box12"></div>
+	<div class="box box2"></div>
+	<div class="box box3"></div>
+	<div class="box box4"></div>
+	<div class="box box5"></div>
+	<div class="box box6"></div>
+	<div class="box box7"></div>
+	<div class="box box8"></div>
+	<div class="box box9"></div>
+</div>
+        <div class="cool-before" style="background: url('/imgs/bg/default.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">TS 入门</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="http://congpeitong.fun/tags/web/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：Web <sup>9</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="http://congpeitong.fun/posts/web/el-table%E5%88%86%E9%A1%B5%E5%9B%9E%E6%98%BE%E9%80%89%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE/">El Table分页回显选中的数据</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="http://congpeitong.fun/posts/web/el-table%E5%8F%AF%E5%BD%95%E5%85%A5/">El Table可录入</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="http://congpeitong.fun/posts/web/element%E8%A1%A8%E5%8D%95%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%A1%E9%AA%8C%E8%A7%84%E5%88%99/">Element表单自定义校验规则</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="http://congpeitong.fun/posts/web/ts-%E5%85%A5%E9%97%A8/">TS 入门</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="http://congpeitong.fun/posts/web/ts-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">TS 面向对象</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="http://congpeitong.fun/posts/web/vue2%E5%9F%BA%E7%A1%80/">Vue2基础</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="http://congpeitong.fun/posts/web/vue3%E5%9F%BA%E7%A1%80/">Vue3基础</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="http://congpeitong.fun/posts/web/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%87%BD%E6%95%B0/">常用的JS函数</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="http://congpeitong.fun/posts/web/%E8%A7%84%E9%81%BF%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95/">规避请求方式的方法</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2024-05-09&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2024-05-09&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            4222 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            9 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/web">Web</a>
+			
+			<a href="/tags/ts">TS</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#0typescript简介">0、TypeScript简介</a></li>
+        <li><a href="#1typescript-开发环境搭建">1、TypeScript 开发环境搭建</a></li>
+        <li><a href="#2基本类型">2、基本类型</a></li>
+        <li><a href="#3编译选项">3、编译选项</a></li>
+        <li><a href="#4webpack">4、webpack</a></li>
+        <li><a href="#5babel">5、Babel</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <h2 id="0typescript简介">0、TypeScript简介</h2>
+<ol>
+<li>TypeScript是JavaScript的超集。</li>
+<li>它对JS进行了扩展，向JS中引入了类型的概念，并添加了许多新的特性。</li>
+<li>TS代码需要通过编译器编译为JS，然后再交由JS解析器执行。</li>
+<li>TS完全兼容JS，换言之，任何的JS代码都可以直接当成JS使用。</li>
+<li>相较于JS而言，TS拥有了静态类型，更加严格的语法，更强大的功能；TS可以在代码执行前就完成代码的检查，减小了运行时异常的出现的几率；TS代码可以编译为任意版本的JS代码，可有效解决不同JS运行环境的兼容问题；同样的功能，TS的代码量要大于JS，但由于TS的代码结构更加清晰，变量类型更加明确，在后期代码的维护中TS却远远胜于JS。</li>
+</ol>
+<h2 id="1typescript-开发环境搭建">1、TypeScript 开发环境搭建</h2>
+<ol>
+<li>
+<p>下载Node.js</p>
+<ul>
+<li>64位：https://nodejs.org/dist/v14.15.1/node-v14.15.1-x64.msi</li>
+<li>32位：https://nodejs.org/dist/v14.15.1/node-v14.15.1-x86.msi</li>
+</ul>
+</li>
+<li>
+<p>安装Node.js</p>
+</li>
+<li>
+<p>使用npm全局安装typescript</p>
+<ul>
+<li>进入命令行</li>
+<li>输入：npm i -g typescript</li>
+</ul>
+</li>
+<li>
+<p>创建一个ts文件</p>
+</li>
+<li>
+<p>使用tsc对ts文件进行编译</p>
+<ul>
+<li>
+<p>进入命令行</p>
+</li>
+<li>
+<p>进入ts文件所在目录</p>
+</li>
+<li>
+<p>执行命令：tsc xxx.ts</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="2基本类型">2、基本类型</h2>
+<ul>
+<li>
+<p>类型声明</p>
+<ul>
+<li>
+<p>类型声明是TS非常重要的一个特点</p>
+</li>
+<li>
+<p>通过类型声明可以指定TS中变量（参数、形参）的类型</p>
+</li>
+<li>
+<p>指定类型后，当为变量赋值时，TS编译器会自动检查值是否符合类型声明，符合则赋值，否则报错</p>
+</li>
+<li>
+<p>简而言之，类型声明给变量设置了类型，使得变量只能存储某种类型的值</p>
+</li>
+<li>
+<p>语法：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> 变量: <span style="color:#458;font-weight:bold">类型</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> 变量: <span style="color:#458;font-weight:bold">类型</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#a61717;background-color:#e3d2d2">值</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">function</span> fn(参数: <span style="color:#458;font-weight:bold">类型</span>, 参数: <span style="color:#458;font-weight:bold">类型</span>)<span style="color:#000;font-weight:bold">:</span> <span style="color:#a61717;background-color:#e3d2d2">类型</span>{
+</span></span><span style="display:flex;"><span>      ...
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>自动类型判断</p>
+<ul>
+<li>TS拥有自动的类型判断机制</li>
+<li>当对变量的声明和赋值是同时进行的，TS编译器会自动判断变量的类型</li>
+<li>所以如果你的变量的声明和赋值时同时进行的，可以省略掉类型声明</li>
+</ul>
+</li>
+<li>
+<p>类型：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">例子</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">number</td>
+<td style="text-align:center">1, -33, 2.5</td>
+<td style="text-align:center">任意数字</td>
+</tr>
+<tr>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&lsquo;hi&rsquo;, &ldquo;hi&rdquo;, <code>hi</code></td>
+<td style="text-align:center">任意字符串</td>
+</tr>
+<tr>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">true、false</td>
+<td style="text-align:center">布尔值true或false</td>
+</tr>
+<tr>
+<td style="text-align:center">字面量</td>
+<td style="text-align:center">其本身</td>
+<td style="text-align:center">限制变量的值就是该字面量的值</td>
+</tr>
+<tr>
+<td style="text-align:center">any</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">任意类型</td>
+</tr>
+<tr>
+<td style="text-align:center">unknown</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">类型安全的any</td>
+</tr>
+<tr>
+<td style="text-align:center">void</td>
+<td style="text-align:center">空值（undefined）</td>
+<td style="text-align:center">没有值（或undefined）</td>
+</tr>
+<tr>
+<td style="text-align:center">never</td>
+<td style="text-align:center">没有值</td>
+<td style="text-align:center">不能是任何值</td>
+</tr>
+<tr>
+<td style="text-align:center">object</td>
+<td style="text-align:center">{name:&lsquo;孙悟空&rsquo;}</td>
+<td style="text-align:center">任意的JS对象</td>
+</tr>
+<tr>
+<td style="text-align:center">array</td>
+<td style="text-align:center">[1,2,3]</td>
+<td style="text-align:center">任意JS数组</td>
+</tr>
+<tr>
+<td style="text-align:center">tuple</td>
+<td style="text-align:center">[4,5]</td>
+<td style="text-align:center">元素，TS新增类型，固定长度数组</td>
+</tr>
+<tr>
+<td style="text-align:center">enum</td>
+<td style="text-align:center">enum{A, B}</td>
+<td style="text-align:center">枚举，TS中新增类型</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>number</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> decimal: <span style="color:#458;font-weight:bold">number</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> hex: <span style="color:#458;font-weight:bold">number</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0xf00d</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> binary: <span style="color:#458;font-weight:bold">number</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>b1010;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> octal: <span style="color:#458;font-weight:bold">number</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>o744;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> big: <span style="color:#458;font-weight:bold">bigint</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>n;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>boolean</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> isDone: <span style="color:#458;font-weight:bold">boolean</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">false</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>string</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> color: <span style="color:#458;font-weight:bold">string</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;blue&#34;</span>;
+</span></span><span style="display:flex;"><span>  color <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;red&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> fullName: <span style="color:#458;font-weight:bold">string</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">`Bob Bobbington`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> age: <span style="color:#458;font-weight:bold">number</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">37</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> sentence: <span style="color:#458;font-weight:bold">string</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">`Hello, my name is </span><span style="color:#d14">${</span>fullName<span style="color:#d14">}</span><span style="color:#d14">.
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">  I&#39;ll be </span><span style="color:#d14">${</span>age <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">1</span><span style="color:#d14">}</span><span style="color:#d14"> years old next month.`</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>字面量</p>
+<ul>
+<li>
+<p>也可以使用字面量去指定变量的类型，通过字面量可以确定变量的取值范围</p>
+</li>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> color<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;red&#39;</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#d14">&#39;blue&#39;</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#d14">&#39;black&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> num: <span style="color:#458;font-weight:bold">1</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#099">3</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#099">4</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#099">5</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>any</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> d: <span style="color:#458;font-weight:bold">any</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>;
+</span></span><span style="display:flex;"><span>  d <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;hello&#39;</span>;
+</span></span><span style="display:flex;"><span>  d <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">true</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>unknown</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> notSure: <span style="color:#458;font-weight:bold">unknown</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>;
+</span></span><span style="display:flex;"><span>  notSure <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;hello&#39;</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>void</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> unusable: <span style="color:#458;font-weight:bold">void</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">undefined</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>never</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">function</span> error(message: <span style="color:#458;font-weight:bold">string</span>)<span style="color:#000;font-weight:bold">:</span> <span style="color:#458;font-weight:bold">never</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">throw</span> <span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Error</span>(message);
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>object（对象类型）</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> obj: <span style="color:#458;font-weight:bold">object</span> <span style="color:#000;font-weight:bold">=</span> {};
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// 定义对象的结构，[propName: string]: any   其中any表示任意类型的属性,[propName:string]表示任意key但必须为string类型
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  <span style="color:#000;font-weight:bold">let</span> obj2:<span style="color:#458;font-weight:bold">object</span> <span style="color:#000;font-weight:bold">=</span> {name: <span style="color:#458;font-weight:bold">string</span>, [propName: <span style="color:#458;font-weight:bold">string</span>]<span style="color:#000;font-weight:bold">:</span> <span style="color:#458;font-weight:bold">any</span>};
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// 设置函数结构的类型声明 语法：(形参1: 类型1, 形参2:类型2,.......) =&gt;返回值类型
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  <span style="color:#000;font-weight:bold">let</span> f<span style="color:#000;font-weight:bold">:</span> (n1: <span style="color:#458;font-weight:bold">number</span>, n2: <span style="color:#458;font-weight:bold">number</span>) <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#458;font-weight:bold">number</span>;  
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>array</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> list: <span style="color:#458;font-weight:bold">number</span>[] <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> list: <span style="color:#458;font-weight:bold">Array</span>&lt;<span style="color:#000080">number</span>&gt; <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>];
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>tuple</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> x<span style="color:#000;font-weight:bold">:</span> [<span style="color:#458;font-weight:bold">string</span>, <span style="color:#458;font-weight:bold">number</span>];
+</span></span><span style="display:flex;"><span>  x <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#34;hello&#34;</span>, <span style="color:#099">10</span>]; 
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>enum</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">enum</span> Color {
+</span></span><span style="display:flex;"><span>    Red,
+</span></span><span style="display:flex;"><span>    Green,
+</span></span><span style="display:flex;"><span>    Blue,
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> c: <span style="color:#458;font-weight:bold">Color</span> <span style="color:#000;font-weight:bold">=</span> Color.Green;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">enum</span> Color {
+</span></span><span style="display:flex;"><span>    Red <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>,
+</span></span><span style="display:flex;"><span>    Green,
+</span></span><span style="display:flex;"><span>    Blue,
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> c: <span style="color:#458;font-weight:bold">Color</span> <span style="color:#000;font-weight:bold">=</span> Color.Green;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">enum</span> Color {
+</span></span><span style="display:flex;"><span>    Red <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>,
+</span></span><span style="display:flex;"><span>    Green <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span>,
+</span></span><span style="display:flex;"><span>    Blue <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>,
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> c: <span style="color:#458;font-weight:bold">Color</span> <span style="color:#000;font-weight:bold">=</span> Color.Green;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>类型断言</p>
+<ul>
+<li>
+<p>有些情况下，变量的类型对于我们来说是很明确，但是TS编译器却并不清楚，此时，可以通过类型断言来告诉编译器变量的类型，断言有两种形式：</p>
+<ul>
+<li>
+<p>第一种</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> someValue: <span style="color:#458;font-weight:bold">unknown</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;this is a string&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> strLength: <span style="color:#458;font-weight:bold">number</span> <span style="color:#000;font-weight:bold">=</span> (someValue <span style="color:#000;font-weight:bold">as</span> <span style="color:#458;font-weight:bold">string</span>).length;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>第二种</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> someValue: <span style="color:#458;font-weight:bold">unknown</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;this is a string&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> strLength: <span style="color:#458;font-weight:bold">number</span> <span style="color:#000;font-weight:bold">=</span> (&lt;<span style="color:#000080">string</span>&gt;someValue).length;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>类型别名</p>
+<ul>
+<li>我们一直通过直接在类型注释中编写对象类型和联合类型来使用它们。这很方便，但通常希望多次使用同一个类型并用一个名称引用它
+<ul>
+<li>类型别名正是这样的 - 任何类型的名称。类型别名的语法是
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">type</span> Point <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>        x: <span style="color:#458;font-weight:bold">number</span>;
+</span></span><span style="display:flex;"><span>        y: <span style="color:#458;font-weight:bold">number</span>;
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">// Exactly the same as the earlier example
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>        <span style="color:#000;font-weight:bold">function</span> printCoord(pt: <span style="color:#458;font-weight:bold">Point</span>) {
+</span></span><span style="display:flex;"><span>        console.log(<span style="color:#d14">&#34;The coordinate&#39;s x value is &#34;</span> <span style="color:#000;font-weight:bold">+</span> pt.x);
+</span></span><span style="display:flex;"><span>        console.log(<span style="color:#d14">&#34;The coordinate&#39;s y value is &#34;</span> <span style="color:#000;font-weight:bold">+</span> pt.y);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        printCoord({ x: <span style="color:#458;font-weight:bold">100</span>, y: <span style="color:#458;font-weight:bold">100</span> });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">type</span> ID <span style="color:#000;font-weight:bold">=</span> <span style="color:#458;font-weight:bold">number</span> <span style="color:#000;font-weight:bold">|</span> <span style="color:#458;font-weight:bold">string</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="3编译选项">3、编译选项</h2>
+<ul>
+<li>
+<p>自动编译文件</p>
+<ul>
+<li>
+<p>编译文件时，使用 -w 指令后，TS编译器会自动监视文件的变化，并在文件发生变化时对文件进行重新编译。</p>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>  tsc xxx.ts -w
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>自动编译整个项目</p>
+<ul>
+<li>
+<p>如果直接使用tsc指令，则可以自动将当前项目下的所有ts文件编译为js文件。</p>
+</li>
+<li>
+<p>但是能直接使用tsc命令的前提时，要先在项目根目录下创建一个ts的配置文件 tsconfig.json</p>
+</li>
+<li>
+<p>tsconfig.json是一个JSON文件，添加配置文件后，只需只需 tsc 命令即可完成对整个项目的编译</p>
+</li>
+<li>
+<p>配置选项：</p>
+<ul>
+<li>
+<p>include</p>
+<ul>
+<li>
+<p>定义希望被编译文件所在的目录</p>
+</li>
+<li>
+<p>默认值：[&quot;**/*&quot;]</p>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#d14">&#34;include&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span>[<span style="color:#d14">&#34;src/**/*&#34;</span>, <span style="color:#d14">&#34;tests/**/*&#34;</span>]
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>上述示例中，所有src目录和tests目录下的文件都会被编译</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>exclude</p>
+<ul>
+<li>
+<p>定义需要排除在外的目录</p>
+</li>
+<li>
+<p>默认值：[&ldquo;node_modules&rdquo;, &ldquo;bower_components&rdquo;, &ldquo;jspm_packages&rdquo;]</p>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#d14">&#34;exclude&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span> [<span style="color:#d14">&#34;./src/hello/**/*&#34;</span>]
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>上述示例中，src下hello目录下的文件都不会被编译</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>extends</p>
+<ul>
+<li>
+<p>定义被继承的配置文件</p>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#d14">&#34;extends&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#d14">&#34;./configs/base&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>上述示例中，当前配置文件中会自动包含config目录下base.json中的所有配置信息</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>files</p>
+<ul>
+<li>
+<p>指定被编译文件的列表，只有需要编译的文件少时才会用到</p>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#d14">&#34;files&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span> [
+</span></span><span style="display:flex;"><span>      <span style="color:#d14">&#34;core.ts&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#d14">&#34;sys.ts&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#d14">&#34;types.ts&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#d14">&#34;scanner.ts&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#d14">&#34;parser.ts&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#d14">&#34;utilities.ts&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#d14">&#34;binder.ts&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#d14">&#34;checker.ts&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#d14">&#34;tsc.ts&#34;</span>
+</span></span><span style="display:flex;"><span>    ]
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>列表中的文件都会被TS编译器所编译</p>
+</li>
+</ul>
+</li>
+<li>
+<p>compilerOptions</p>
+<ul>
+<li>
+<p>编译选项是配置文件中非常重要也比较复杂的配置选项</p>
+</li>
+<li>
+<p>在compilerOptions中包含多个子选项，用来完成对编译的配置</p>
+<ul>
+<li>
+<p>项目选项</p>
+<ul>
+<li>
+<p>target</p>
+<ul>
+<li>
+<p>设置ts代码编译的目标版本</p>
+</li>
+<li>
+<p>可选值：</p>
+<ul>
+<li>ES3（默认）、ES5、ES6/ES2015、ES7/ES2016、ES2017、ES2018、ES2019、ES2020、ESNext</li>
+</ul>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#d14">&#34;compilerOptions&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;target&#34;</span>: <span style="color:#d14">&#34;ES6&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>如上设置，我们所编写的ts代码将会被编译为ES6版本的js代码</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>lib</p>
+<ul>
+<li>
+<p>指定代码运行时所包含的库（宿主环境）</p>
+</li>
+<li>
+<p>可选值：</p>
+<ul>
+<li>ES5、ES6/ES2015、ES7/ES2016、ES2017、ES2018、ES2019、ES2020、ESNext、DOM、WebWorker、ScriptHost &hellip;&hellip;</li>
+</ul>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#d14">&#34;compilerOptions&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;target&#34;</span>: <span style="color:#d14">&#34;ES6&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;lib&#34;</span>: [<span style="color:#d14">&#34;ES6&#34;</span>, <span style="color:#d14">&#34;DOM&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;outDir&#34;</span>: <span style="color:#d14">&#34;dist&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;outFile&#34;</span>: <span style="color:#d14">&#34;dist/aa.js&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>module</p>
+<ul>
+<li>
+<p>设置编译后代码使用的模块化系统</p>
+</li>
+<li>
+<p>可选值：</p>
+<ul>
+<li>CommonJS、UMD、AMD、System、ES2020、ESNext、None</li>
+</ul>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>  <span style="color:#d14">&#34;compilerOptions&#34;</span><span style="color:#000;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#d14">&#34;module&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;CommonJS&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>outDir</p>
+<ul>
+<li>
+<p>编译后文件的所在目录</p>
+</li>
+<li>
+<p>默认情况下，编译后的js文件会和ts文件位于相同的目录，设置outDir后可以改变编译后文件的位置</p>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#d14">&#34;compilerOptions&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;outDir&#34;</span>: <span style="color:#d14">&#34;dist&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>设置后编译后的js文件将会生成到dist目录</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>outFile</p>
+<ul>
+<li>
+<p>将所有的文件编译为一个js文件</p>
+</li>
+<li>
+<p>默认会将所有的编写在全局作用域中的代码合并为一个js文件，如果module制定了None、System或AMD则会将模块一起合并到文件之中</p>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#d14">&#34;compilerOptions&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;outFile&#34;</span>: <span style="color:#d14">&#34;dist/app.js&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>rootDir</p>
+<ul>
+<li>
+<p>指定代码的根目录，默认情况下编译后文件的目录结构会以最长的公共目录为根目录，通过rootDir可以手动指定根目录</p>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#d14">&#34;compilerOptions&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;rootDir&#34;</span>: <span style="color:#d14">&#34;./src&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>allowJs</p>
+<ul>
+<li>是否对js文件编译</li>
+</ul>
+</li>
+<li>
+<p>checkJs</p>
+<ul>
+<li>
+<p>是否对js文件进行检查</p>
+</li>
+<li>
+<p>示例：</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#d14">&#34;compilerOptions&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;allowJs&#34;</span>: <span style="color:#000;font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;checkJs&#34;</span>: <span style="color:#000;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>removeComments</p>
+<ul>
+<li>是否删除注释</li>
+<li>默认值：false</li>
+</ul>
+</li>
+<li>
+<p>noEmit</p>
+<ul>
+<li>不对代码进行编译</li>
+<li>默认值：false</li>
+</ul>
+</li>
+<li>
+<p>sourceMap</p>
+<ul>
+<li>是否生成sourceMap</li>
+<li>默认值：false</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>严格检查</p>
+<ul>
+<li>strict
+<ul>
+<li>启用所有的严格检查，默认值为true，设置后相当于开启了所有的严格检查</li>
+</ul>
+</li>
+<li>alwaysStrict
+<ul>
+<li>总是以严格模式对代码进行编译</li>
+</ul>
+</li>
+<li>noImplicitAny
+<ul>
+<li>禁止隐式的any类型</li>
+</ul>
+</li>
+<li>noImplicitThis
+<ul>
+<li>禁止类型不明确的this</li>
+</ul>
+</li>
+<li>strictBindCallApply
+<ul>
+<li>严格检查bind、call和apply的参数列表</li>
+</ul>
+</li>
+<li>strictFunctionTypes
+<ul>
+<li>严格检查函数的类型</li>
+</ul>
+</li>
+<li>strictNullChecks
+<ul>
+<li>严格的空值检查</li>
+</ul>
+</li>
+<li>strictPropertyInitialization
+<ul>
+<li>严格检查属性是否初始化</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>额外检查</p>
+<ul>
+<li>noFallthroughCasesInSwitch
+<ul>
+<li>检查switch语句包含正确的break</li>
+</ul>
+</li>
+<li>noImplicitReturns
+<ul>
+<li>检查函数没有隐式的返回值</li>
+</ul>
+</li>
+<li>noUnusedLocals
+<ul>
+<li>检查未使用的局部变量</li>
+</ul>
+</li>
+<li>noUnusedParameters
+<ul>
+<li>检查未使用的参数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>高级</p>
+<ul>
+<li>allowUnreachableCode
+<ul>
+<li>检查不可达代码</li>
+<li>可选值：
+<ul>
+<li>true，忽略不可达代码</li>
+<li>false，不可达代码将引起错误</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>noEmitOnError
+<ul>
+<li>有错误的情况下不进行编译</li>
+<li>默认值：false</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="4webpack">4、webpack</h2>
+<ul>
+<li>
+<p>通常情况下，实际开发中我们都需要使用构建工具对代码进行打包，TS同样也可以结合构建工具一起使用，下边以webpack为例介绍一下如何结合构建工具使用TS。</p>
+</li>
+<li>
+<p>步骤：</p>
+<ol>
+<li>
+<p>初始化项目</p>
+<ul>
+<li>进入项目根目录，执行命令 <code> npm init -y</code>
+<ul>
+<li>主要作用：创建package.json文件</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>下载构建工具</p>
+<ul>
+<li><code>npm i -D webpack webpack-cli webpack-dev-server typescript ts-loader clean-webpack-plugin</code>
+<ul>
+<li>共安装了7个包
+<ul>
+<li>webpack
+<ul>
+<li>构建工具webpack</li>
+</ul>
+</li>
+<li>webpack-cli
+<ul>
+<li>webpack的命令行工具</li>
+</ul>
+</li>
+<li>webpack-dev-server
+<ul>
+<li>webpack的开发服务器</li>
+</ul>
+</li>
+<li>typescript
+<ul>
+<li>ts编译器</li>
+</ul>
+</li>
+<li>ts-loader
+<ul>
+<li>ts加载器，用于在webpack中编译ts文件</li>
+</ul>
+</li>
+<li>html-webpack-plugin
+<ul>
+<li>webpack中html插件，用来自动创建html文件</li>
+</ul>
+</li>
+<li>clean-webpack-plugin
+<ul>
+<li>webpack中的清除插件，每次构建都会先清除目录</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>根目录下创建webpack的配置文件webpack.config.js</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">const</span> path <span style="color:#000;font-weight:bold">=</span> require(<span style="color:#d14">&#34;path&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">const</span> HtmlWebpackPlugin <span style="color:#000;font-weight:bold">=</span> require(<span style="color:#d14">&#34;html-webpack-plugin&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">const</span> { CleanWebpackPlugin } <span style="color:#000;font-weight:bold">=</span> require(<span style="color:#d14">&#34;clean-webpack-plugin&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  module.exports <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>      optimization<span style="color:#000;font-weight:bold">:</span>{
+</span></span><span style="display:flex;"><span>          minimize<span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">false</span> <span style="color:#998;font-style:italic">// 关闭代码压缩，可选
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>      },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      entry<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;./src/index.ts&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      devtool<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;inline-source-map&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      devServer<span style="color:#000;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>          contentBase<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;./dist&#39;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      output<span style="color:#000;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>          path<span style="color:#000;font-weight:bold">:</span> path.resolve(__dirname, <span style="color:#d14">&#34;dist&#34;</span>),
+</span></span><span style="display:flex;"><span>          filename<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;bundle.js&#34;</span>,
+</span></span><span style="display:flex;"><span>          environment<span style="color:#000;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>              arrowFunction<span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">false</span> <span style="color:#998;font-style:italic">// 关闭webpack的箭头函数，可选
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>          }
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      resolve<span style="color:#000;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>          extensions<span style="color:#000;font-weight:bold">:</span> [<span style="color:#d14">&#34;.ts&#34;</span>, <span style="color:#d14">&#34;.js&#34;</span>]
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      module<span style="color:#000;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>          rules<span style="color:#000;font-weight:bold">:</span> [
+</span></span><span style="display:flex;"><span>              {
+</span></span><span style="display:flex;"><span>                  test<span style="color:#000;font-weight:bold">:</span> <span style="color:#009926">/\.ts$/</span>,
+</span></span><span style="display:flex;"><span>                  use<span style="color:#000;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>                     loader<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;ts-loader&#34;</span>     
+</span></span><span style="display:flex;"><span>                  },
+</span></span><span style="display:flex;"><span>                  exclude<span style="color:#000;font-weight:bold">:</span> <span style="color:#009926">/node_modules/</span>
+</span></span><span style="display:flex;"><span>              }
+</span></span><span style="display:flex;"><span>          ]
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      plugins<span style="color:#000;font-weight:bold">:</span> [
+</span></span><span style="display:flex;"><span>          <span style="color:#000;font-weight:bold">new</span> CleanWebpackPlugin(),
+</span></span><span style="display:flex;"><span>          <span style="color:#000;font-weight:bold">new</span> HtmlWebpackPlugin({
+</span></span><span style="display:flex;"><span>              title<span style="color:#000;font-weight:bold">:</span><span style="color:#d14">&#39;TS测试&#39;</span>
+</span></span><span style="display:flex;"><span>          }),
+</span></span><span style="display:flex;"><span>      ]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>根目录下创建tsconfig.json，配置可以根据自己需要</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;compilerOptions&#34;</span>: {
+</span></span><span style="display:flex;"><span>          <span style="color:#000080">&#34;target&#34;</span>: <span style="color:#d14">&#34;ES2015&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#000080">&#34;module&#34;</span>: <span style="color:#d14">&#34;ES2015&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#000080">&#34;strict&#34;</span>: <span style="color:#000;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>修改package.json添加如下配置</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a61717;background-color:#e3d2d2">...略...</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000080">&#34;scripts&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;test&#34;</span>: <span style="color:#d14">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;build&#34;</span>: <span style="color:#d14">&#34;webpack&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#000080">&#34;start&#34;</span>: <span style="color:#d14">&#34;webpack serve --open chrome.exe&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a61717;background-color:#e3d2d2">...略...</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>在src下创建ts文件，并在并命令行执行<code>npm run build</code>对代码进行编译，或者执行<code>npm start</code>来启动开发服务器</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="5babel">5、Babel</h2>
+<ul>
+<li>
+<p>经过一系列的配置，使得TS和webpack已经结合到了一起，除了webpack，开发中还经常需要结合babel来对代码进行转换以使其可以兼容到更多的浏览器，在上述步骤的基础上，通过以下步骤再将babel引入到项目中。</p>
+<ol>
+<li>
+<p>安装依赖包：</p>
+<ul>
+<li><code>npm i -D @babel/core @babel/preset-env babel-loader core-js</code></li>
+<li>共安装了4个包，分别是：
+<ul>
+<li>@babel/core
+<ul>
+<li>babel的核心工具</li>
+</ul>
+</li>
+<li>@babel/preset-env
+<ul>
+<li>babel的预定义环境</li>
+</ul>
+</li>
+<li>@babel-loader
+<ul>
+<li>babel在webpack中的加载器</li>
+</ul>
+</li>
+<li>core-js
+<ul>
+<li>core-js用来使老版本的浏览器支持新版ES语法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>修改webpack.config.js配置文件</p>
+<ul>
+<li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  ...略...
+</span></span><span style="display:flex;"><span>  module<span style="color:#000;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>      rules<span style="color:#000;font-weight:bold">:</span> [
+</span></span><span style="display:flex;"><span>          {
+</span></span><span style="display:flex;"><span>              test<span style="color:#000;font-weight:bold">:</span> <span style="color:#009926">/\.ts$/</span>,
+</span></span><span style="display:flex;"><span>              use<span style="color:#000;font-weight:bold">:</span> [
+</span></span><span style="display:flex;"><span>                  {
+</span></span><span style="display:flex;"><span>                      loader<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;babel-loader&#34;</span>,
+</span></span><span style="display:flex;"><span>                      options<span style="color:#000;font-weight:bold">:</span>{
+</span></span><span style="display:flex;"><span>                          presets<span style="color:#000;font-weight:bold">:</span> [
+</span></span><span style="display:flex;"><span>                              [
+</span></span><span style="display:flex;"><span>                                  <span style="color:#d14">&#34;@babel/preset-env&#34;</span>,
+</span></span><span style="display:flex;"><span>                                  {
+</span></span><span style="display:flex;"><span>                                      <span style="color:#d14">&#34;targets&#34;</span><span style="color:#000;font-weight:bold">:</span>{
+</span></span><span style="display:flex;"><span>                                          <span style="color:#d14">&#34;chrome&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;58&#34;</span>,
+</span></span><span style="display:flex;"><span>                                          <span style="color:#d14">&#34;ie&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;11&#34;</span>
+</span></span><span style="display:flex;"><span>                                      },
+</span></span><span style="display:flex;"><span>                                      <span style="color:#d14">&#34;corejs&#34;</span><span style="color:#000;font-weight:bold">:</span><span style="color:#d14">&#34;3&#34;</span>,
+</span></span><span style="display:flex;"><span>                                      <span style="color:#d14">&#34;useBuiltIns&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;usage&#34;</span>
+</span></span><span style="display:flex;"><span>                                  }
+</span></span><span style="display:flex;"><span>                              ]
+</span></span><span style="display:flex;"><span>                          ]
+</span></span><span style="display:flex;"><span>                      }
+</span></span><span style="display:flex;"><span>                  },
+</span></span><span style="display:flex;"><span>                  {
+</span></span><span style="display:flex;"><span>                      loader<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#34;ts-loader&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                  }
+</span></span><span style="display:flex;"><span>              ],
+</span></span><span style="display:flex;"><span>              exclude<span style="color:#000;font-weight:bold">:</span> <span style="color:#009926">/node_modules/</span>
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>      ]
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  ...略...
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>如此一来，使用ts编译后的文件将会再次被babel处理，使得代码可以在大部分浏览器中直接使用，可以在配置选项的targets中指定要兼容的浏览器版本。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+
+    </div>
+
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="//beian.miit.gov.cn" target="_blank">
+            
+            <span class="some">icp...<span>
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2023 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

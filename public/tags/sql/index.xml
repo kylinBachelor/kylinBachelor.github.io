@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/sql/</link>
+    <description>Recent content in SQL on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 13:17:46 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL常见问题</title>
+      <link>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/sql%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 09 May 2024 13:17:46 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/sql%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>1. Extracted SQL state class ‘22’ from value ‘22001’ 再插入数据时报错如下 1 Extracted SQL state class &amp;#39;22&amp;#39; from value &amp;#39;22001&amp;#39; 经过查看日志，数据库中缺少一个字段 sql执行状态表如下： SQLSTATE 值 含义 22001 字符数据，发生右截断</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/vim/</link>
+    <description>Recent content in vim on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 13:07:18 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim常用快捷键操作</title>
+      <link>http://congpeitong.fun/posts/vim/vim%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Thu, 09 May 2024 13:07:18 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/vim/vim%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%93%8D%E4%BD%9C/</guid>
+      <description>移动光标 h：左移 j：下移 k：上移 l：右移 w：移动到下一个单词的开头 e：移动到下一个单词的结尾 b：移动到上一个单词的开头 0：移动到行首 $：移动到行尾 gg：移动到文</description>
+    </item>
+    
+  </channel>
+</rss>

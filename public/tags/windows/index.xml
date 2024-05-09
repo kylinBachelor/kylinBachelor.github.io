@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/windows/</link>
+    <description>Recent content in Windows on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 13:17:58 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows下MySQL备份</title>
+      <link>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/windows%E4%B8%8Bmysql%E5%A4%87%E4%BB%BD/</link>
+      <pubDate>Thu, 09 May 2024 13:17:58 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/windows%E4%B8%8Bmysql%E5%A4%87%E4%BB%BD/</guid>
+      <description>前期工作 需要为Windows创建定时任务，按时执行bat文件 以天为单位备份（ AutoBackUpMysqlDbByDay.bat） 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</description>
+    </item>
+    
+    <item>
+      <title>Windows下安装MySQL</title>
+      <link>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/windows%E4%B8%8B%E5%AE%89%E8%A3%85mysql/</link>
+      <pubDate>Thu, 09 May 2024 13:17:53 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/windows%E4%B8%8B%E5%AE%89%E8%A3%85mysql/</guid>
+      <description>windows下安装绿色版mysql 版本 mysql.5.7 安装过程 解压mysql绿色版文件夹，放置于你想要安装的位置。 进入解压的mysql文件夹，创建data文件夹和my.in</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ElementUI on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/elementui/</link>
+    <description>Recent content in ElementUI on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 19:02:46 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/elementui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Element表单自定义校验规则</title>
+      <link>http://congpeitong.fun/posts/web/element%E8%A1%A8%E5%8D%95%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%A1%E9%AA%8C%E8%A7%84%E5%88%99/</link>
+      <pubDate>Thu, 09 May 2024 19:02:46 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/element%E8%A1%A8%E5%8D%95%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%A1%E9%AA%8C%E8%A7%84%E5%88%99/</guid>
+      <description>Form表单提供了表单校验功能，只需要通过rules属性传入特定的验证规则，并将Form-Item的prop属性设置为需要校验的字段名即可。 普通表单验证 1 2 3 4</description>
+    </item>
+    
+    <item>
+      <title>El Table分页回显选中的数据</title>
+      <link>http://congpeitong.fun/posts/web/el-table%E5%88%86%E9%A1%B5%E5%9B%9E%E6%98%BE%E9%80%89%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Thu, 09 May 2024 19:02:41 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/el-table%E5%88%86%E9%A1%B5%E5%9B%9E%E6%98%BE%E9%80%89%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE/</guid>
+      <description>使用官方文档上的这两个方法 方法 解释说明 row-key 行数据的 Key，用来优化 Table 的渲染；在使用 reserve-selection 功能与显示树形数据时，该属性是必填的。类型为 String 时，支持多层访问：user.in</description>
+    </item>
+    
+    <item>
+      <title>El Table可录入</title>
+      <link>http://congpeitong.fun/posts/web/el-table%E5%8F%AF%E5%BD%95%E5%85%A5/</link>
+      <pubDate>Thu, 09 May 2024 19:02:36 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/el-table%E5%8F%AF%E5%BD%95%E5%85%A5/</guid>
+      <description>点击进入编辑 当鼠标移入单元格，显示可以编辑的样式，单击单元格进入编辑状态，鼠标移除单元格，则保存编辑的数据，key-value形式 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</description>
+    </item>
+    
+  </channel>
+</rss>

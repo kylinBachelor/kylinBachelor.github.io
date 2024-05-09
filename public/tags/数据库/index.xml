@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据库 on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <description>Recent content in 数据库 on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 13:17:28 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>常见达梦数据库操作</title>
+      <link>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%B8%B8%E8%A7%81%E8%BE%BE%E6%A2%A6%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Thu, 09 May 2024 13:17:28 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%B8%B8%E8%A7%81%E8%BE%BE%E6%A2%A6%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/</guid>
+      <description>查看表结构 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 select distinct utc.COLUMN_ID 排序, ucc.comments as 中文名, utc.column_name as 字段名, concat(utc.data_type,&amp;#39;(&amp;#39;,utc.data_length, &amp;#39;)&amp;#39;) as 类型, &amp;#39;否&amp;#39; as 主键, &amp;#39;否&amp;#39; as 外键, &amp;#39;&amp;#39; as 备注 from user_tab_columns</description>
+    </item>
+    
+  </channel>
+</rss>

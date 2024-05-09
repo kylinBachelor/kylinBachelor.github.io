@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container-main container-home">
+<!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md-->
+   <div class="content-md">
+       {{.Content}}
+   </div>
+
+   <!-- 微导航栏 -->
+    {{- partial "partials/_contact.html" . -}}
+
+    <!-- 引入归档页 -->
+    {{- partial "partials/_archive.html" . -}}
+
+</div>
+{{ end }}

@@ -1,0 +1,231 @@
+@media screen and (max-width: 1026px) {
+    @mixin toc {
+        transition: 0.3s all linear;
+        right: -300px;
+        z-index: 1000;
+        background: $white-900;
+        height: 400px;
+        top: 120px;
+        padding-top: 48px;
+        border-radius: 8px;
+
+        .page-operation {
+            z-index: 1001;
+            transition: 0.5s all linear;
+            top: 128px;
+            background: $white-900;
+            border-radius: 24px;
+
+            right: -300px;
+        }
+    }
+
+    body {
+        $site-padding-lr: 0;
+        .container-floating-box {
+            display: none;
+        }
+
+        #header {
+            padding: 0 8px;
+
+            .container-header {
+                .left {
+                    display: none;
+                }
+
+                .right {
+                    max-width: 100%;
+                    .title {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        &:hover {
+                            overflow: auto;
+                        }
+                    }
+
+                    #toc {
+                        z-index: 10000;
+                        position: fixed;
+                        right: 0px;
+                        top: 81px;
+                        display: initial;
+                        background: $white-900;
+                        width: 36px;
+                        border-radius: 12px 0 0 12px;
+                        padding-left: 12px;
+                        box-shadow: -1px 1px 1px #ccc;
+                    }
+                }
+            }
+            &.header-home {
+                .container-header .right {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        #content {
+            padding: 0;
+            .container-main {
+                overflow: hidden;
+            }
+
+            .container-home {
+                .img-wrapper {
+                    display: none !important;
+                }
+            }
+
+            .container-nav {
+                padding: 0 4px;
+
+                .freq {
+                    justify-content: space-between;
+                    a {
+                        width: 48%;
+
+                        &:nth-child(even) {
+                            margin-right: 0;
+                        }
+                    }
+
+                }
+
+                .content-nav {
+                    .nav ul {
+                        justify-content: space-between;
+                        li {
+                            width: 50%;
+                        }
+                    }
+
+                    table {
+                        td {
+                            float: left;
+                            width: 50%;
+
+                            a {
+                                width: 98.6%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .container-list {
+                .toc {
+                    @include toc;
+                }
+
+                .count {
+                    padding-left: 12px;
+                }
+
+                .list {
+                    .recentf {
+                        margin: 12px;
+                    }
+
+                    .item,
+                    .item-term {
+                        margin: 12px;
+                        background: $post-item-bg-color;
+
+                        > a {
+                            background: $gray-white-500;
+                        }
+                    }
+
+                    .item-term {
+                        border-radius: 0 16px 0 16px;
+                    }
+                }
+
+                .list-single-col {
+                    display: flex;
+                    width: 100%;
+                    padding: 0;
+                    border-left-width: 0;
+
+                    .item {
+                        width: 100%;
+                        overflow: hidden;
+
+                        .desc {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .container-page {
+                padding: 0 8px 16px;
+
+                .ship {
+                    #local-search #sc-input, 
+                    #search #ship-input {
+                        // max-width: 80%;
+                        // min-width: 260px;
+                        width: 80%;
+                    }
+                }
+
+                .rel {
+                    display: none;
+                }
+
+                .desc {
+                    font-size: 0.13rem;
+                }
+
+                .toc {
+                    @include toc;
+                }
+            }
+
+            .container-archive {
+                .categories,
+                .tags {
+                    .arc-item {
+                        width: 96%;
+                    }
+                }
+
+                padding-bottom: 8px;
+            }
+
+            .container-contact {
+                .contact .icons {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+
+        #footer {
+            padding: 16px 8px;
+            margin-top: 64px;
+
+            .beian {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                height: 48px;
+            }
+        }
+
+        .oh-essay {
+            padding-left: 16px;
+            // border-left: 1px dashed $essay-color;
+        }
+
+        // 修复移动端下背景图片没有 cover 的问题
+        &.cool {
+            .cool-before {
+                background-position: center center !important;
+                background-size: cover !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+#+DATE: {{ .Date }}
+#+TITLE: {{ replace .Name "-" " " | title }}
+#+CATEGORIES[]: _Misc
+#+TAGS[]: 
+#+CARD: 
+#+WEIGHT: 0
+

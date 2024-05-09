@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="麒麟操作系统安装MySQL8 - http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85mysql8/">
+    <meta name="author" content="kylinBachelor - http://congpeitong.fun/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>麒麟操作系统安装MySQL8</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="http://congpeitong.fun/style.min.0ce482e7fe60e52d6bb1b58fe99756ace4945251a4773ccf58959820882c496d.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div class="container-floating-box">
+	<div class="box box1"></div>
+	<div class="box box11"></div>
+	<div class="box box12"></div>
+	<div class="box box2"></div>
+	<div class="box box3"></div>
+	<div class="box box4"></div>
+	<div class="box box5"></div>
+	<div class="box box6"></div>
+	<div class="box box7"></div>
+	<div class="box box8"></div>
+	<div class="box box9"></div>
+</div>
+        <div class="cool-before" style="background: url('/imgs/bg/default.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">麒麟操作系统安装MySQL8</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="http://congpeitong.fun/tags/kylin/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：kylin <sup>2</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item ">
+                    <a href="http://congpeitong.fun/posts/java/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85java%E7%8E%AF%E5%A2%83/">麒麟操作系统安装Java环境</a>
+                </div>
+                
+                
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85mysql8/">麒麟操作系统安装MySQL8</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2024-05-09&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2024-05-09&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            1034 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            3 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/kylin">kylin</a>
+			
+			<a href="/tags/mysql">MySQL</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li>
+          <ol>
+            <li>
+              <ol>
+                <li><a href="#查看麒麟操作系统版本">查看麒麟操作系统版本</a></li>
+                <li><a href="#下载对应架构的安装包一定是对应架构">下载对应架构的安装包!!!!!!<em><strong>一定是对应架构</strong></em></a></li>
+                <li><a href="#检查是否自带mysql---mariadb">检查是否自带Mysql   MariaDB</a></li>
+                <li><a href="#将下载好的安装包解压传至服务器并依次执行如下命令">将下载好的安装包解压传至服务器，并依次执行如下命令</a></li>
+                <li><a href="#修改配置文件">修改配置文件</a></li>
+                <li><a href="#初始化数据库">初始化数据库</a></li>
+                <li><a href="#目录授权">目录授权</a></li>
+                <li><a href="#启动mysql服务">启动MySQL服务</a></li>
+                <li><a href="#查看临时密码">查看临时密码</a></li>
+                <li><a href="#使用临时密码登录">使用临时密码登录</a></li>
+                <li><a href="#修改临时密码">修改临时密码</a></li>
+                <li><a href="#编辑环境变量">编辑环境变量</a></li>
+                <li><a href="#开启远程访问mysql服务登录mysql设置远程连接">开启远程访问MySQL服务，登录MySQL设置远程连接</a></li>
+                <li><a href="#新建用户并赋予权限">新建用户并赋予权限</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <h4 id="查看麒麟操作系统版本">查看麒麟操作系统版本</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>uname -a
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如下图所示：</p>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%BA%93/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC%E6%9F%A5%E7%9C%8B.png" alt="查看麒麟操作系统图片"></p>
+<h4 id="下载对应架构的安装包一定是对应架构">下载对应架构的安装包!!!!!!<em><strong>一定是对应架构</strong></em></h4>
+<p>下载地址：https://downloads.mysql.com/archives/community/</p>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%BA%93/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fmysql%E4%B8%8B%E8%BD%BD%E6%88%AA%E5%9B%BE.png" alt="mysql安装包截图"></p>
+<h4 id="检查是否自带mysql---mariadb">检查是否自带Mysql   MariaDB</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SH" data-lang="SH"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 1. 查看是否自带mysql  mariaDb</span>
+</span></span><span style="display:flex;"><span>rpm -qa | grep mysql
+</span></span><span style="display:flex;"><span>rpm -qa | grep mariadb
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 删除方式一（建议）将列出的mysql逐个删除</span>
+</span></span><span style="display:flex;"><span>rpm -e --nodeps mysql-community-client-8.0.28-1.el8.aarch64
+</span></span><span style="display:flex;"><span>rpm -e --nodeps mysql-community-client-8.0.34-1.el8.aarch64
+</span></span><span style="display:flex;"><span>rpm -e --nodeps mysql-community-common-8.0.28-1.el8.aarch64
+</span></span><span style="display:flex;"><span>rpm -e --nodeps mysql-community-libs-8.0.28-1.el8.aarch64
+</span></span><span style="display:flex;"><span>rpm -e --nodeps mysql-community-icu-data-files-8.0.28-1.el8.aarch64
+</span></span><span style="display:flex;"><span>rpm -e --nodeps mysql-community-libs-8.0.34-1.el8.aarch64
+</span></span><span style="display:flex;"><span>rpm -e --nodeps mysql-community-server-8.0.34-1.el8.aarch64
+</span></span><span style="display:flex;"><span>rpm -e --nodeps mysql-community-client-plugins-8.0.28-1.el8.aarch64
+</span></span><span style="display:flex;"><span>rpm -e --nodeps mysql-community-server-8.0.28-1.el8.aarch64
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 如果存在则进行删除：删除方式二</span>
+</span></span><span style="display:flex;"><span>yum -y remove mysql*
+</span></span><span style="display:flex;"><span>yum -y remove mariadb*
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 2. 再次检查</span>
+</span></span><span style="display:flex;"><span>find / -name mysql
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 将列出的全部删除</span>
+</span></span><span style="display:flex;"><span>rm -rf /usr/lib64/mysql
+</span></span><span style="display:flex;"><span>rm -rf /usr/share/selinux/targeted/default/active/modules/100/mysql
+</span></span><span style="display:flex;"><span>rm -rf /usr/share/selinux/ukmcs/default/active/modules/100/mysql
+</span></span><span style="display:flex;"><span>rm -rf /var/lib/selinux/targeted/active/modules/100/mysql
+</span></span><span style="display:flex;"><span>rm -rf /var/lib/selinux/ukmcs/active/modules/100/mysql
+</span></span><span style="display:flex;"><span>rm -rf /var/lib/selinux/ukmcs/tmp/modules/100/mysql
+</span></span><span style="display:flex;"><span>rm -rf /var/lib/mysql
+</span></span><span style="display:flex;"><span>rm -rf /var/lib/mysql/mysql
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 3. 如果之前安装过可以删除mysql log</span>
+</span></span><span style="display:flex;"><span>/var/log/mysqld.log
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="将下载好的安装包解压传至服务器并依次执行如下命令">将下载好的安装包解压传至服务器，并依次执行如下命令</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 如果报错可以在后面加   --nodeps --force</span>
+</span></span><span style="display:flex;"><span>rpm -ivh mysql-community-common-8.0.28-1.el8.aarch64.rpm
+</span></span><span style="display:flex;"><span>rpm -ivh mysql-community-client-plugins-8.0.28-1.el8.aarch64.rpm
+</span></span><span style="display:flex;"><span>rpm -ivh mysql-community-libs-8.0.28-1.el8.aarch64.rpm
+</span></span><span style="display:flex;"><span>rpm -ivh mysql-community-client-8.0.28-1.el8.aarch64.rpm
+</span></span><span style="display:flex;"><span>rpm -ivh mysql-community-icu-data-files-8.0.28-1.el8.aarch64.rpm
+</span></span><span style="display:flex;"><span>rpm -ivh mysql-community-server-8.0.28-1.el8.aarch64.rpm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="修改配置文件">修改配置文件</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>vim /etc/my.cnf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 在末尾补一行：1：数据库大小写不敏感， 0：数据库大小写敏感</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">lower_case_table_names</span><span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="初始化数据库">初始化数据库</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mysqld --initialize --console
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="目录授权">目录授权</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>chown -R mysql:mysql /var/lib/mysql/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="启动mysql服务">启动MySQL服务</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>systemctl start mysqld
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="查看临时密码">查看临时密码</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat /var/log/mysqld.log
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="使用临时密码登录">使用临时密码登录</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mysql -u root -p
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="修改临时密码">修改临时密码</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>alter USER <span style="color:#d14">&#39;root&#39;</span>@<span style="color:#d14">&#39;localhost&#39;</span> IDENTIFIED BY <span style="color:#d14">&#39;需要设置的密码&#39;</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="编辑环境变量">编辑环境变量</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 打开配置文件</span>
+</span></span><span style="display:flex;"><span>vim  /etc/profile
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 增加配置</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">export</span> <span style="color:#008080">PATH</span><span style="color:#000;font-weight:bold">=</span><span style="color:#008080">$PATH</span>:/usr/bin/mysq
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="开启远程访问mysql服务登录mysql设置远程连接">开启远程访问MySQL服务，登录MySQL设置远程连接</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 这个暂时废弃，也可作为参考
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>mysql<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>mysql<span style="color:#000;font-weight:bold">&gt;</span>use<span style="color:#bbb"> </span>mysql;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>mysql<span style="color:#000;font-weight:bold">&gt;</span>use<span style="color:#bbb"> </span>mysql;<span style="color:#bbb">                </span><span style="color:#000;font-weight:bold">#</span><span style="color:#a61717;background-color:#e3d2d2">打开</span>mysql数据库<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>mysql<span style="color:#000;font-weight:bold">&gt;</span><span style="color:#000;font-weight:bold">update</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">user</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">set</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">host</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;localhost&#39;</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">where</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">user</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;root&#39;</span>;<span style="color:#bbb">   </span><span style="color:#000;font-weight:bold">#</span><span style="color:#a61717;background-color:#e3d2d2">将</span>host设置为localhost表示只能本地连接mysql<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>mysql<span style="color:#000;font-weight:bold">&gt;</span>flush<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">privileges</span>;<span style="color:#bbb">        </span><span style="color:#000;font-weight:bold">#</span><span style="color:#a61717;background-color:#e3d2d2">刷新权限表，使配置生效</span><span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol>
+<li>
+<p>方式一：改表法</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 顾名思义,该方法就是直接修改更改&#34;mysql&#34;数据库里的&#34;user&#34;表里的&#34;host&#34;项，从&#34;localhost&#34;改为&#34;%&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">update</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">user</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">set</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">host</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;%&#39;</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">where</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">user</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;root&#39;</span>;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>方式二：授权法</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 通过GRANT命令可以赋予主机远程访问权限
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic">-- 赋予任何主机访问权限
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">GRANT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ALL</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">PRIVILEGES</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ON</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">*</span>.<span style="color:#000;font-weight:bold">*</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TO</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;root&#39;</span><span style="color:#000;font-weight:bold">@</span><span style="color:#d14">&#39;%&#39;</span><span style="color:#bbb"> </span>IDENTIFIED<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">BY</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;password&#39;</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">WITH</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">GRANT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">OPTION</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic">-- 允许指定主机（IP地址）访问权限
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>RANT<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ALL</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">PRIVILEGES</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ON</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">*</span>.<span style="color:#000;font-weight:bold">*</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TO</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;myuser&#39;</span><span style="color:#000;font-weight:bold">@</span><span style="color:#d14">&#39;192.168.1.3&#39;</span><span style="color:#bbb"> </span>IDENTIFIED<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">BY</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;root&#39;</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">WITH</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">GRANT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">OPTION</span>;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<p>刷新权限表</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 通过GRANT命令赋权后,需要通过FLUSH PRIVILEGES刷新权限表使修改生效
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>flush<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">privileges</span>;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>查看MySql远程访问权限配置</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">select</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">User</span>,authentication_string,<span style="color:#000;font-weight:bold">Host</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">from</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">user</span>;<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>效果如下图所示</p>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%BA%93/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8/%E6%9F%A5%E7%9C%8Bmysql%E7%99%BB%E5%BD%95%E6%9D%83%E9%99%90.png" alt="mysql远程访问权限查看效果图"></p>
+<h4 id="新建用户并赋予权限">新建用户并赋予权限</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 创建用户
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">create</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">user</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;用户名&#39;</span><span style="color:#000;font-weight:bold">@</span><span style="color:#d14">&#39;%&#39;</span><span style="color:#bbb"> </span>identified<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">by</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;密码&#39;</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic">-- 赋予权限
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">GRANT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ALL</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">PRIVILEGES</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">ON</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">*</span>.<span style="color:#000;font-weight:bold">*</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">TO</span><span style="color:#bbb"> </span><span style="color:#d14">&#39;用户名&#39;</span><span style="color:#000;font-weight:bold">@</span><span style="color:#d14">&#39;%&#39;</span><span style="color:#bbb">  </span><span style="color:#000;font-weight:bold">WITH</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">GRANT</span><span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">OPTION</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic">-- 刷新权限表
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>flush<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">privileges</span><span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="//beian.miit.gov.cn" target="_blank">
+            
+            <span class="some">icp...<span>
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2023 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

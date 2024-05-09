@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Centos on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/centos/</link>
+    <description>Recent content in Centos on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 13:17:37 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Centos安装MySQL5.7</title>
+      <link>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/centos%E5%AE%89%E8%A3%85mysql5.7/</link>
+      <pubDate>Thu, 09 May 2024 13:17:37 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/centos%E5%AE%89%E8%A3%85mysql5.7/</guid>
+      <description>删除关于mysql的文件 下载rpm文件 进入rpm文件夹 执行 yum install *.rpm 初始化：mysqld &amp;ndash;initialize &amp;ndash;console 启动：systemctl startmysqld 查看初始密码：登录后修改密码</description>
+    </item>
+    
+  </channel>
+</rss>

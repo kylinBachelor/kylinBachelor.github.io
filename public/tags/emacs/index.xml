@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/emacs/</link>
+    <description>Recent content in Emacs on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 13:09:29 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs快捷键</title>
+      <link>http://congpeitong.fun/posts/emacs/emacs%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <pubDate>Thu, 09 May 2024 13:09:29 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/emacs/emacs%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <description>移动光标 ctrl + p : 光标上移 ctrl + n : 光标下移 ctrl + j : 相当于Enter ctrl + f : 光标后移 ctrl + b : 光标前移 Alt + f : 以词向后移动光标 Alt + b : 以词向前移动光标 ctrl + a : 光标移动</description>
+    </item>
+    
+    <item>
+      <title>Emacs安装</title>
+      <link>http://congpeitong.fun/posts/emacs/emacs%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Thu, 09 May 2024 13:09:24 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/emacs/emacs%E5%AE%89%E8%A3%85/</guid>
+      <description>下载Emacs安装包 tar.gz https://mirrors.ustc.edu.cn/gnu/emacs/ 安装依赖 1 2 3 4 5 6 7 8 yum list gtk3-devel yum install libXpm-devel yum install libtiff-devel yum install gnutls-devel yum install giflib-devel yum install libjpeg-turbo-devel yum install ncurses-devel yum install libpng-devel 安装 1 2 3 4 cd emacs目录 ./configure --prefix=/home/xxx # prefix为安装目录 make make install</description>
+    </item>
+    
+  </channel>
+</rss>

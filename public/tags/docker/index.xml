@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/docker/</link>
+    <description>Recent content in Docker on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 12:44:28 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker安装</title>
+      <link>http://congpeitong.fun/posts/docker/docker%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Thu, 09 May 2024 12:44:28 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/docker/docker%E5%AE%89%E8%A3%85/</guid>
+      <description>请保证机器可以访问外网 安装gcc yum -y install gcc 安装c++ yum -y install gcc-c++ 安装包管理 sudo yum install -y yum-utils 设置仓库 yum-config-manager -add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo 更新yum软件包索引 yum makecache fast 安装docker 引擎 sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin 启动D</description>
+    </item>
+    
+  </channel>
+</rss>

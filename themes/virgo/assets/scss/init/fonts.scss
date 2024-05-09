@@ -1,0 +1,17 @@
+@font-face {
+    font-family: romanFont;
+    src: url('fonts/roman/Code-New-Roman-5.otf') format('TrueType'),
+        url('fonts/roman/Code-New-Roman-6.woff') format('TrueType'),
+        url('fonts/roman/Code-New-Roman-i-3.otf') format('TrueType'),
+        url('fonts/roman/Code-New-Roman-i-4.woff') format('TrueType'),
+        url('fonts/roman/Code-New-Roman-b-1.otf') format('TrueType'),
+        url('fonts/roman/Code-New-Roman-b-2.woff') format('TrueType');
+}
+
+@font-face {
+    font-family: jinkaiFont;
+    src: url('fonts/ttfs/jinkai.ttf') format('TrueType');
+}
+
+@import 'fonts/lxgw-wenkai-screen-webfont/style.css';
+@import 'fonts/lxgw-wenkai-mono-webfont/style.css';

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/vue/</link>
+    <description>Recent content in Vue on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 19:03:04 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue2基础</title>
+      <link>http://congpeitong.fun/posts/web/vue2%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Thu, 09 May 2024 19:03:04 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/vue2%E5%9F%BA%E7%A1%80/</guid>
+      <description>框架和库 一、JS 库 在原生 JS 中，如果我们要获取一个节点： 1 const app = document.getElementById(&amp;#39;app&amp;#39;); 在 jQuery 中，如果我们要获取一个节点： 1 const app = $(&amp;#39;#app&amp;#39;); 库的概念 库，就是一组方法的集合，通常这些方法都会有特定</description>
+    </item>
+    
+    <item>
+      <title>Vue3基础</title>
+      <link>http://congpeitong.fun/posts/web/vue3%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Thu, 09 May 2024 19:02:59 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/vue3%E5%9F%BA%E7%A1%80/</guid>
+      <description>1. Vue3简介 2020年9月18日，Vue.js发布版3.0版本，代号：One Piece（n 经历了：4800+次提交、40+个RFC、600+次PR、300+贡</description>
+    </item>
+    
+  </channel>
+</rss>

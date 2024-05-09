@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vscode on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/vscode/</link>
+    <description>Recent content in Vscode on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 18:58:28 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode使用</title>
+      <link>http://congpeitong.fun/posts/vscode/vscode%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Thu, 09 May 2024 18:58:28 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/vscode/vscode%E4%BD%BF%E7%94%A8/</guid>
+      <description>vue-cli项目中引用的外部JS之间无法跳转的问题 项目中创建jsconfig.json文件，标记@的路径，如下所示 1 2 3 4 5 6 7 8 9 { &amp;#34;compilerOptions&amp;#34;: { &amp;#34;target&amp;#34;: &amp;#34;es2020&amp;#34;, &amp;#34;baseUrl&amp;#34;: &amp;#34;./&amp;#34;, &amp;#34;paths&amp;#34;: { &amp;#34;@/*&amp;#34;: [&amp;#34;src/*&amp;#34;] } }</description>
+    </item>
+    
+  </channel>
+</rss>

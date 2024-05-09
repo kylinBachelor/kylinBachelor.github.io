@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="RocketMQ初识 - http://congpeitong.fun/posts/rocketmq/rocketmq%E5%88%9D%E8%AF%86/">
+    <meta name="author" content="kylinBachelor - http://congpeitong.fun/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>RocketMQ初识</title>
+    
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="http://congpeitong.fun/style.min.0ce482e7fe60e52d6bb1b58fe99756ace4945251a4773ccf58959820882c496d.css">
+    
+    <script>const DARK =  false ;</script>
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div class="container-floating-box">
+	<div class="box box1"></div>
+	<div class="box box11"></div>
+	<div class="box box12"></div>
+	<div class="box box2"></div>
+	<div class="box box3"></div>
+	<div class="box box4"></div>
+	<div class="box box5"></div>
+	<div class="box box6"></div>
+	<div class="box box7"></div>
+	<div class="box box8"></div>
+	<div class="box box9"></div>
+</div>
+        <div class="cool-before" style="background: url('/imgs/bg/default.jpg') left top/100% no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+
+    
+    
+    
+    <div class="right">
+        
+        <h1 class="title">RocketMQ初识</h1>
+    
+        
+        
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    
+
+    
+    
+    
+    <div class="rel">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="curtag-desc">
+            <a href="http://congpeitong.fun/tags/rocketmq/"><img src="/imgs/icons/tag.svg" width="16" /> 相关文章：RocketMQ <sup>1</sup></a>
+        </div>
+
+        <div class="curtag-post">
+            
+            
+            
+                <div class="curtag-post-item curtag-post-item--active">
+                    <a href="http://congpeitong.fun/posts/rocketmq/rocketmq%E5%88%9D%E8%AF%86/">RocketMQ初识</a>
+                </div>
+                
+                
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7409" width="12" height="12">
+                <path
+                    d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z"
+                    p-id="7410" fill="#adb5bd"></path>
+            </svg>
+            2024-05-09&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="23838" width="11" height="11">
+                <path
+                    d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z"
+                    p-id="23839" fill="#adb5bd"></path>
+            </svg>
+            2024-05-09&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="33866" width="12" height="12">
+                <path
+                    d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z"
+                    fill="#adb5bd" p-id="33867"></path>
+                <path
+                    d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z"
+                    fill="#adb5bd" p-id="33868"></path>
+            </svg>
+            2758 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="32892" width="12" height="12">
+                <path
+                    d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z"
+                    p-id="32893" fill="#adb5bd"></path>
+                <path
+                    d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z"
+                    p-id="32894" fill="#adb5bd"></path>
+            </svg>
+            6 分钟</span>
+        <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/rocketmq">RocketMQ</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/wiki"><img src="/imgs/icons/wiki.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li>
+          <ol>
+            <li>
+              <ol>
+                <li><a href="#rocketmq概述">RocketMQ概述</a>
+                  <ol>
+                    <li><a href="#消息生产者producer">消息生产者（Producer）</a></li>
+                    <li><a href="#消息存储">消息存储</a></li>
+                    <li><a href="#消息消费">消息消费</a></li>
+                  </ol>
+                </li>
+                <li><a href="#rocketmq基本概念">RocketMQ基本概念</a></li>
+                <li><a href="#rocketmq四部分">RocketMQ四部分</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <h4 id="rocketmq概述">RocketMQ概述</h4>
+<p>官网：https://rocketmq.apache.org/zh/docs/domainModel/01main</p>
+<p>RocketMQ中消息的生命周期分为三部分：消息生产，消息存储，消息消费。</p>
+<p>生产者生产消息并发送至RocketMQ服务端，消息被存储在服务端的主题中，消费者通过订阅主题消费消息。</p>
+<h5 id="消息生产者producer">消息生产者（Producer）</h5>
+<p>用于产生消息的运行实体，一般集成于业务调用链路的上游。生产者是轻量级、匿名、无身份的。</p>
+<h5 id="消息存储">消息存储</h5>
+<ul>
+<li>
+<p>主题（Topic）</p>
+<p>消息传输和存储的分组容器，主题内部由多个队列组成，消息的存储和水平扩展实际是通过主题内的队列实现的。</p>
+</li>
+<li>
+<p>队列（MessageQueue）</p>
+<p>消息传输和存储的实际单元容器，类比于其它消息队列中的分区。RocketMQ通过流式特性的无限队列结构来存储消息，消息在队列内具备顺序性存储特性。</p>
+</li>
+<li>
+<p>消息（Message）</p>
+<p>最小的传输单元。消息具备不可变性，在初始化发送和完成存储后即不可变</p>
+</li>
+</ul>
+<h5 id="消息消费">消息消费</h5>
+<ul>
+<li>
+<p>消费分组（ConsumerGroup）</p>
+<p>RocketMQ发布订阅模型中定义的独立的消费身份，用于统一管理底层运行的多个消费者（Consumer）。同一个消费组的多个消费者必须保持<strong>消费逻辑和配置一致</strong>，共同分担该消费组订阅的消息，实现消费能力的水平扩展。</p>
+</li>
+<li>
+<p>消费者（Consumer）</p>
+<p>消费消息的运行实体，一般集成在业务调用链路的下游。消费者必须被指定到某一个消费组中。</p>
+</li>
+<li>
+<p>订阅关系（Subscription）</p>
+<p>发布订阅模型中消息过滤、重试、消费进度的规则配置。订阅关系以消费组粒度进行管理，消费组通过定义订阅关系控制指定消费组下的消费者如何实现消息过滤、消费重试及消费进度恢复等。</p>
+<p>RocketMQ的订阅关系除过滤表达式之外都是持久化的，即服务器重启或请求断开，订阅关系依然保留。</p>
+</li>
+</ul>
+<h4 id="rocketmq基本概念">RocketMQ基本概念</h4>
+<ol>
+<li>
+<p>消息（Message）</p>
+<p>消息是消息系统所传输信息的物理载体，生产和消费数据的最小单位，每条消息必须属于一个主题。</p>
+</li>
+<li>
+<p>主题（Topic）</p>
+<p>Topic表示一类消息的集合，每个主题必须包含若干条消息，每条消息只能属于一个主题，是RocketMQ进行消费订阅的基本单位。topic:message  1:n,  message:topic: 1:1</p>
+<p>一个生产者可以同时发送多种topic的消息；而一个消费者只对某种特定的Topic感兴趣，即只可以订阅和消费一种topic的消息。producer:topic   1:n, consumer:topic  1:1</p>
+</li>
+<li>
+<p>标签（Tag）</p>
+<p>为消息设置的标签，用于同一主题下区分不同类型的消息。来自同一业务单元的消息，可以根据不同业务目的，在同一主题下设置不同的标签，标签能够有效地保持代码的清晰度和连贯性，并优化RocketMQ提 供的查询系统。消费者可以根据Tag实现对不同子主题的不同消费逻辑，实现更好的扩展性。</p>
+<p>Topic是消息的一级分类，Tag是消息的二级分类。</p>
+</li>
+<li>
+<p>队列</p>
+<p>存储消息的物理实体。一个Topic中可以包含多个Queue，每个Queue中存放的就是该Topic的消息。一 个Topic的Queue也被称为一个Topic中消息的分区（Partition）。</p>
+<p>一个Topic的Queue中的消息只能被一个消费者组中的一个消费者消费。<strong>一个Queue中的消息不允许同 一个消费者组中的多个消费者同时消费。</strong></p>
+</li>
+<li>
+<p>消息标识</p>
+<p>RocketMQ中每个消息拥有唯一的MessageId，且可以携带具有业务标识的key，以方便对消息的查询。不过需要注意的是，MessageId有两个：在生产者send()消息时会自动生成一个MessageId(msgId)，当消息到达Broker之后，Broker也会自动生成一个MessageId(offsetMsgId)。msgId、offsetMsgId与key都称为消息标识。</p>
+<ul>
+<li>
+<p>msgId：由producer端生成，</p>
+<p>其生成规则为： producerIp + 进程pid + MessageClientIDSetter类的ClassLoader的hashCode + 当前时间 + AutomicInteger自增计数器</p>
+</li>
+<li>
+<p>offsetMsgId：由broker端生成，其生成规则为：brokerIp + 物理分区的offset（Queue中的 偏移量）</p>
+</li>
+<li>
+<p>key：由用户指定的业务相关的唯一标识</p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="rocketmq四部分">RocketMQ四部分</h4>
+<ol>
+<li>
+<p>Producer</p>
+<p>消息生产者，负责生产消息。Producer通过MQ的负载均衡模块选择相应的Broker集群队列进行消息投 递，投递的过程支持快速失败并且低延迟。</p>
+<p>RocketMQ中的消息生产者都是以生产者组（Producer Group）的形式出现的。生产者组是同一类生产者的集合，这类Producer发送相同Topic类型的消息。一个生产者组可以同时发送多个主题的消息。</p>
+</li>
+<li>
+<p>Consumer</p>
+<p>消息消费者，负责消费消息。一个消息消费者会从Broker服务器中获取到消息，并对消息进行相关业务 处理。</p>
+<p>RocketMQ中的消息消费者都是以消费者组（Consumer Group）的形式出现的。消费者组是同一类消 费者的集合，这类Consumer消费的是同一个Topic类型的消息。消费者组使得在消息消费方面，实现 负载均衡（将一个Topic中的不同的Queue平均分配给同一个Consumer Group的不同的Consumer，注 意，并不是将消息负载均衡）和容错（一个Consmer挂了，该Consumer Group中的其它Consumer可 以接着消费原Consumer消费的Queue）的目标变得非常容易。</p>
+</li>
+<li>
+<p>Name Server</p>
+<p>NameServer是一个Broker与Topic路由的注册中心，支持Broker的动态注册与发现。</p>
+<p>主要包括两个功能：</p>
+<ul>
+<li><strong>Broker管理</strong>：接受Broker集群的注册信息并且保存下来作为路由信息的基本数据；提供心跳检测 机制，检查Broker是否还存活。</li>
+<li><strong>路由信息管理</strong>：每个NameServer中都保存着Broker集群的整个路由信息和用于客户端查询的队列 信息。Producer和Conumser通过NameServer可以获取整个Broker集群的路由信息，从而进行消 息的投递和消费。</li>
+</ul>
+<p>路由注册：</p>
+<p>NameServer通常也是以集群的方式部署，不过，NameServer是无状态的，即NameServer集群中的各 个节点间是无差异的，各节点间相互不进行信息通讯。那各节点中的数据是如何进行数据同步的呢？在 Broker节点启动时，轮询NameServer列表，与每个NameServer节点建立长连接，发起注册请求。在 NameServer内部维护着⼀个Broker列表，用来动态存储Broker的信息。</p>
+</li>
+<li>
+<p>Broker</p>
+<p>Broker充当着消息中转角色，负责存储消息、转发消息。Broker在RocketMQ系统中负责接收并存储从 生产者发送来的消息，同时为消费者的拉取请求作准备。Broker同时也存储着消息相关的元数据，包括 消费者组消费进度偏移offset、主题、队列等。</p>
+</li>
+</ol>
+
+    </div>
+
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        
+        <a href="//beian.miit.gov.cn" target="_blank">
+            
+            <span class="some">icp...<span>
+            
+        </a>
+    </div>
+
+    
+    <div class="info">
+        
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> 2023 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="
+            
+                background-color: rgba(255, 255, 255, 0.69); 
+                backdrop-filter: saturate(180%) blur(6px);
+            
+            "></div>
+    </body>
+</html>

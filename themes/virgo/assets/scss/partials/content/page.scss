@@ -1,0 +1,231 @@
+.container-page {
+    position: relative;
+    font-size: 0.16rem;
+    margin: 0 auto;
+    // padding: 0 24% 0 16%;
+    max-width: 700px;
+
+    .rel {
+        position: fixed;
+        width: 260px;
+        max-height: 566px;
+        top: 176px;
+        left: 16px;
+        font-size: 0.14rem;
+        overflow: scroll;
+        z-index: 999;
+
+        .curtag-desc {
+            padding-bottom: 12px;
+            a {
+                color: $gray-500;
+                font-weight: 700;
+            }
+        }
+
+        .curtag-post {
+            .curtag-post-item {
+                // border-top: 1px solid $gray-white-300;
+                // background: $gray-white-300;
+                margin: 2px 0;
+                overflow-x: hidden;
+
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    color: $gray-600;
+                    // padding: 2px;
+                    line-height: 1.5;
+                }
+            }
+
+            .curtag-post-item--active {
+                a {
+                    color: $blue;
+                    &::before {
+                        content: '➭ ';
+                    }
+                }
+            }
+        }
+
+        // 滚动条宽度、颜色
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $gray-300;
+        }
+
+        // 条目节点样式
+        // li {
+        //     list-style: none;
+        //     a {
+        //         color: $gray-600;
+        //         &:hover {
+        //             color: $link-hover-color;
+        //         }
+        //     }
+        // }
+    }
+
+    .desc {
+        color: $gray-500;
+        font-size: 0.14rem;
+    }
+
+    .toc {
+        position: fixed;
+        border-left: 1px solid $gray-300;
+        width: 260px;
+        max-height: 566px;
+        top: 176px;
+        right: 16px;
+        font-size: 0.14rem;
+        overflow: scroll;
+
+        // 滚动条宽度、颜色
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $gray-300;
+        }
+
+        // 条目节点样式
+        li {
+            list-style: none;
+            a {
+                line-height: 1.5;
+                color: $gray-600;
+                &:hover {
+                    color: $link-hover-color;
+                }
+            }
+        }
+
+        .toc-link--active {
+            color: #d14;
+        }
+
+        .page-operation {
+            display: flex;
+            position: fixed;
+            top: 136px;
+            right: 114px;
+            a {
+                cursor: pointer;
+                img,
+                svg {
+                    padding: 2px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        #TableOfContents {
+            ul,
+            ol {
+                margin-bottom: 4px;
+            }
+
+            li a:not(:first-child) {
+                color: $gray-300;
+                font-size: 0.01rem;
+            }
+        }
+    }
+
+    .content {
+        p,
+        li,
+        td {
+            & > code {
+                color: $code-inline-color;
+            }
+        }
+    }
+
+    .content-card {
+        h3 {
+            color: $gray-500;
+            font-size: 0.18rem;
+
+            &::before {
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                content: '';
+                border-top: 1px dashed $gray-500;
+                padding-top: 16px;
+            }
+        }
+
+        h4 {
+            color: $gray-500;
+            font-size: 0.16rem;
+        }
+    }
+
+    // 统一处理语言标识
+    .lang {
+        box-sizing: border-box;
+        position: absolute;
+        right: 0;
+        padding-right: 8px;
+        font-family: $font-family--some;
+        text-align: right;
+        // background: #f003;
+        color: $gray-500;
+        // width: 100%;
+        min-width: 48px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .highlight {
+        position: relative;
+        margin: 16px 0;
+        border-radius: 8px;
+        font-size: 0.14rem;
+        overflow: hidden;
+        &:hover {
+            overflow: auto;
+        }
+
+        // 代码块背景半透明
+        > div {
+            background-color: #fff0 !important;
+        }
+
+        pre {
+            border-radius: 0;
+        }
+
+        table {
+            overflow: hidden !important;
+            &:hover {
+                overflow: auto !important;
+            }
+        }
+    }
+
+    pre {
+        background: $gray-white-500 !important;
+        font-size: 0.14rem;
+        border-radius: 8px;
+
+        padding: 20px 10px;
+        overflow: hidden;
+        position: relative;
+
+        &:hover {
+            overflow: auto;
+        }
+    }
+
+    em {
+        font-style: italic;
+    }
+}

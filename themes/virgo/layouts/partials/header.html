@@ -1,0 +1,35 @@
+<div class="container-header">
+
+    <!-- 首页 Slogan 图链 -->
+    {{ if .IsHome }}
+    <div class="left">
+        <div class="desc">
+            <a href="{{ with .Site.Params.img.link }}{{.}}{{else}}/about{{end}}">
+                <div class="img-wrapper" style="background: {{ with .Site.Params.img.background }}{{.}}{{end}};">
+                    {{if .Site.Params.img.src }}
+                    <img src="/imgs/{{ .Site.Params.img.src }}" width="{{ with .Site.Params.img.width }}{{.}}{{end}}" />
+                    {{ else }}
+                    <img src="/imgs/cat.svg" width="100" />
+                    {{ end }}
+                </div>
+            </a>
+        </div>
+    </div>
+    {{ end }}
+    
+    <div class="right">
+        <!-- 文档页眉：所有页面标题 -->
+        <h1 class="title">{{ .Title }}</h1>
+    
+        <!-- 首页 Slogan 标语显示 -->
+        {{ if .IsHome }}
+            <div class="some">
+                &nbsp;
+                <span id="light-dark"><a><svg t="1695287541521" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6596" width="16" height="16"><path d="M512 938.666667a426.666667 426.666667 0 0 1 0-853.333334 42.666667 42.666667 0 0 1 42.666667 42.666667 341.333333 341.333333 0 0 0 341.333333 341.333333 42.666667 42.666667 0 0 1 42.666667 42.666667 426.666667 426.666667 0 0 1-426.666667 426.666667z m-40.106667-765.44a341.333333 341.333333 0 1 0 378.88 378.88 426.666667 426.666667 0 0 1-378.88-378.88z" fill="#8a8a8a" p-id="6597"></path></svg></a></span>
+                {{ .Site.Params.slogan }}
+            </div>
+        {{ else }}
+            <div id="toc">📜</div>
+        {{ end }}
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MySQL on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/mysql/</link>
+    <description>Recent content in MySQL on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 13:17:58 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows下MySQL备份</title>
+      <link>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/windows%E4%B8%8Bmysql%E5%A4%87%E4%BB%BD/</link>
+      <pubDate>Thu, 09 May 2024 13:17:58 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/windows%E4%B8%8Bmysql%E5%A4%87%E4%BB%BD/</guid>
+      <description>前期工作 需要为Windows创建定时任务，按时执行bat文件 以天为单位备份（ AutoBackUpMysqlDbByDay.bat） 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</description>
+    </item>
+    
+    <item>
+      <title>Windows下安装MySQL</title>
+      <link>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/windows%E4%B8%8B%E5%AE%89%E8%A3%85mysql/</link>
+      <pubDate>Thu, 09 May 2024 13:17:53 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/windows%E4%B8%8B%E5%AE%89%E8%A3%85mysql/</guid>
+      <description>windows下安装绿色版mysql 版本 mysql.5.7 安装过程 解压mysql绿色版文件夹，放置于你想要安装的位置。 进入解压的mysql文件夹，创建data文件夹和my.in</description>
+    </item>
+    
+    <item>
+      <title>MySQL常用函数</title>
+      <link>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 09 May 2024 13:17:42 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</guid>
+      <description>1. with&amp;hellip;.as with&amp;hellip;as也叫子查询，用来定义一个sql片段，且该片段会被整个sql语句反复使用很多次，这个sql片段就相当于是一个公用临时表 例如： 1 2 3</description>
+    </item>
+    
+    <item>
+      <title>Centos安装MySQL5.7</title>
+      <link>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/centos%E5%AE%89%E8%A3%85mysql5.7/</link>
+      <pubDate>Thu, 09 May 2024 13:17:37 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/centos%E5%AE%89%E8%A3%85mysql5.7/</guid>
+      <description>删除关于mysql的文件 下载rpm文件 进入rpm文件夹 执行 yum install *.rpm 初始化：mysqld &amp;ndash;initialize &amp;ndash;console 启动：systemctl startmysqld 查看初始密码：登录后修改密码</description>
+    </item>
+    
+    <item>
+      <title>麒麟操作系统安装MySQL8</title>
+      <link>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85mysql8/</link>
+      <pubDate>Thu, 09 May 2024 13:17:33 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/%E6%95%B0%E6%8D%AE%E5%BA%93/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85mysql8/</guid>
+      <description>查看麒麟操作系统版本 1 uname -a 如下图所示： 下载对应架构的安装包!!!!!!一定是对应架构 下载地址：https://downloads.mysql.com/archi</description>
+    </item>
+    
+  </channel>
+</rss>

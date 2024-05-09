@@ -1,0 +1,240 @@
+html {
+    font-size: 100px;
+    scroll-behavior: smooth;
+    // filter: grayscale(100%);
+}
+
+body {
+    // color: $gray-800;
+    font-family: $font-family--base;
+    font-size: 0.16rem;
+    line-height: 1.5;
+}
+
+li::marker {
+    color: #ccc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    // background: $headline-bg-color;
+    padding: 16px 0;
+    margin: 16px 0;
+
+    a {
+        display: inline-block;
+        margin: 4px;
+        font-size: 0.14rem;
+    }
+}
+
+h1 {
+    &,
+    & code {
+        font-size: 0.32rem;
+    }
+}
+
+h2 {
+    &,
+    & code {
+        font-size: 0.28rem;
+    }
+
+    &:before {
+        content: '♪² ';
+    }
+}
+
+h3 {
+    &,
+    & code {
+        font-size: 0.24rem;
+    }
+
+    &:before {
+        content: '♪³ ';
+    }
+}
+
+h4 {
+    &,
+    & code {
+        font-size: 0.2rem;
+    }
+
+    &:before {
+        content: '♪⁴ ';
+    }
+}
+
+h5 {
+    &,
+    & code {
+        font-size: 0.2rem;
+    }
+
+    &:before {
+        content: '♪⁵ ';
+    }
+}
+
+h6 {
+    &,
+    & code {
+        font-size: 0.2rem;
+    }
+
+    &:before {
+        content: '♪⁶ ';
+    }
+}
+
+img {
+    max-width: 100%;
+    border: 1px solid $img-border-color;
+    border-radius: 8px;
+}
+
+a {
+    color: $link-color;
+
+    &:hover {
+        text-decoration: none;
+        color: $link-hover-color;
+        text-shadow: 0px 0px 1px $link-hover-color;
+    }
+}
+
+p {
+    margin: 16px 0;
+}
+
+hr {
+    margin: 0.24rem 0;
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: $gray-white-500;
+}
+
+table {
+    margin: 0.24rem 0;
+    width: 100%;
+
+    thead tr {
+        border-top: 2px solid $table-color;
+    }
+
+    tbody {
+        border-top: 2px solid $table-color;
+
+        tr {
+            border-bottom: 1px solid $table-color;
+
+            &:last-child {
+                border-bottom: 2px solid $table-color;
+            }
+        }
+    }
+
+    th,
+    td {
+        padding: 3px 6px;
+        border-right: 1px solid $table-color;
+
+        &:first-child {
+            border-left: $white-000;
+        }
+
+        &:last-child {
+            border-right: $white-000;
+        }
+    }
+}
+
+blockquote {
+    padding-left: 16px;
+    border-left: 1px solid $gray-500;
+    color: $blockquote-color;
+}
+
+pre,
+* code {
+    font-family: $font-family--code;
+    font-size: 0.14rem;
+    // color: $code-inline-color;
+}
+
+blockquote,
+.oh-essay {
+    code {
+        color: $code-inline-color;
+    }
+}
+
+// 用于文章随笔中的时间戳样式
+// .oh-essay code
+// 标签钉样式，类似于 `> *` 的格式
+.oh-tag {
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.1rem;
+
+    color: #f56c6c;
+    background: #fef0f0;
+    border-color: #fbc4c4;
+}
+
+ul,
+ol {
+    list-style-position: outside;
+    padding-left: 20px;
+    margin-bottom: 16px;
+
+    li p {
+        margin: 0;
+    }
+}
+
+ol {
+    // padding-left: 28px;
+}
+
+.some {
+    font-family: $font-family--some;
+}
+
+.oh-essay {
+    position: relative;
+    margin: 16px auto;
+    padding-left: 16px;
+    border-left: 0px dashed $essay-color;
+    font-size: 0.15rem;
+    // color: $essay-color;
+
+    @include light;
+
+    padding: 16px;
+    border-radius: 8px;
+
+    &:before {
+        content: '💭'; //'💭'; //'💬'; //'🗨️';
+        // position: absolute;
+        // left: -32px;
+        float: left;
+        padding-right: 12px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.oh-hl {
+    background: #fef9e7;
+    padding: 0 4px;
+    border-radius: 4px;
+}

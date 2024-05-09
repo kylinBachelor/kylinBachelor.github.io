@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TS on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/ts/</link>
+    <description>Recent content in TS on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 19:02:55 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/ts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TS 入门</title>
+      <link>http://congpeitong.fun/posts/web/ts-%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Thu, 09 May 2024 19:02:55 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/ts-%E5%85%A5%E9%97%A8/</guid>
+      <description>0、TypeScript简介 TypeScript是JavaScript的超集。 它对JS进行了扩展，向JS中引入了类型的概念，并添加了许多新的特性。 TS代码需要通</description>
+    </item>
+    
+    <item>
+      <title>TS 面向对象</title>
+      <link>http://congpeitong.fun/posts/web/ts-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Thu, 09 May 2024 19:02:51 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/ts-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</guid>
+      <description>1、类（class） 要想面向对象，操作对象，首先便要拥有对象，那么下一个问题就是如何创建对象。要创建对象，必须要先定义类，所谓的类可以理解为对象的模型，程序中可</description>
+    </item>
+    
+  </channel>
+</rss>

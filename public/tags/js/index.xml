@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JS on 小丛路子野</title>
+    <link>http://congpeitong.fun/tags/js/</link>
+    <description>Recent content in JS on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 19:02:24 +0800</lastBuildDate><atom:link href="http://congpeitong.fun/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>常用的JS函数</title>
+      <link>http://congpeitong.fun/posts/web/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 09 May 2024 19:02:24 +0800</pubDate>
+      
+      <guid>http://congpeitong.fun/posts/web/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%87%BD%E6%95%B0/</guid>
+      <description>时间格式化 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 function dateFormat(fmt, date) { let ret; const opt = { &amp;#34;Y+&amp;#34;: date.getFullYear().toString(), // 年 &amp;#34;m+&amp;#34;: (date.getMonth() + 1).toString(), // 月 &amp;#34;d+&amp;#34;: date.getDate().toString(), // 日 &amp;#34;H+&amp;#34;: date.getHours().toString(), // 时 &amp;#34;M+&amp;#34;: date.getMinutes().toString(), // 分 &amp;#34;S+&amp;#34;: date.getSeconds().toString() // 秒 // 有其他格式化字符需求可以继续添</description>
+    </item>
+    
+  </channel>
+</rss>

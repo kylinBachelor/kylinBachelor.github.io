@@ -1,0 +1,30 @@
+<div class="container-footer">
+    <!-- 文档页脚 -->
+
+    <div class="beian">
+        <!-- 公安备案号 -->
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={{ .Site.Params.contact.beiancode }}">
+            {{ with .Site.Params.contact.beian }}
+            <img src="/imgs/beian.png" />
+            <p>{{ . }}</p>
+            {{ end }}
+
+        </a>
+
+        <!-- ICP 备案号 -->
+        <a href="{{ .Site.Params.contact.icplink }}" target="_blank">
+            {{ with .Site.Params.contact.icp }}
+            {{ . }}
+            {{ else }}
+            <span class="some">icp...<span>
+            {{ end }}
+        </a>
+    </div>
+
+    <!-- 额外站点信息 -->
+    <div class="info">
+        <!-- <a href="https://github.com/loveminimal/hugo-theme-virgo">Copyright</a> © {{ .Site.Params.startDate }} - <span id="info-date"></span> -->
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">🕊️</a> {{ .Site.Params.startDate }} - <span id="info-date"></span>
+    </div>
+
+</div>

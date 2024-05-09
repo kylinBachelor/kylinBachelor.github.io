@@ -1,0 +1,23 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="{{ .Title }} - {{ .Permalink }}">
+    <meta name="author" content="{{ .Site.Params.Author }} - {{ .Site.BaseURL }}">
+    <!-- 必应分析 -->
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>{{ .Title }}</title>
+    <!-- 默认在新标签页中打开超链接 -->
+    <base target="_blank">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <!-- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.7.0/style.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.min.css"> -->
+    {{ $style := resources.Get "style.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <!-- 传递配置参数 -->
+    <script>const DARK = {{.Site.Params.dark}};</script>
+    {{ $built := resources.Get "main.js" | js.Build "main.js" }}
+    <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+    <!-- <script type="module" src="/main.js"></script> -->
+</head>
