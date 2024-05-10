@@ -16,8 +16,9 @@ date: 2024-05-08 18:26
 
 |       |       |       |       |       |
 |-------|-------|-------|-------|-------|
-| [>手绘形式的画图工具](https://excalidraw.com/) | [坐标转换](https://tool.lu/coordinate/) | [草料二维码](https://cli.im/) | [Html取色器](https://m.runoob.com/tags/html-colorpicker.html) | [图标制作](https://www.bitbug.net/) |
-| [阿里巴巴图库](https://www.iconfont.cn/) | [SSH工具](https://mobaxterm.mobatek.net/download.html) | [在线时间戳转换工具](https://www.beijing-time.org/shijianchuo/) | [工具侠](http://tool.6zkx.com/Tools/Certificate/CertNumMakeUp) |       |
+| [>画图工具-手绘](https://excalidraw.com/) | [坐标转换](https://tool.lu/coordinate/) | [草料二维码](https://cli.im/) | [Html取色器](https://m.runoob.com/tags/html-colorpicker.html) | [图标制作](https://www.bitbug.net/) |
+| [阿里巴巴图库](https://www.iconfont.cn/) | [SSH工具](https://mobaxterm.mobatek.net/download.html) | [在线时间戳转换工具](https://www.beijing-time.org/shijianchuo/) | [工具侠](http://tool.6zkx.com/Tools/Certificate/CertNumMakeUp) | [>视频解析](https://shuiyinla.com/cn/) |
+| [>IP地址查询](https://tool.lu/ip/) |
 
 
 ### 📑 文档
