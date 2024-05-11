@@ -1,4 +1,4 @@
-baseURL = 'http://congpeitong.fun/'
+baseURL = 'http://congpeitong.online/'
 languageCode = 'zh-cn'
 title = '小丛路子野'
 
@@ -15,7 +15,7 @@ timeZone = 'Asia/Shanghai'
     dark = false                             # 默认开启暗色主题
     author = 'kylinBachelor'
     slogan = 'Life should be interesting.'  # 'Life is just a joker.'
-    startDate = 2023                        # 'Copyright © 2016 - now'
+    startDate = 'Copyright © 2023'                        # 'Copyright © 2016 - now'
     # 激活页面加载时的过渡动画
     hasActiveAnimate = true
     # 激活页面浮动盒子动画
@@ -64,7 +64,7 @@ timeZone = 'Asia/Shanghai'
 
     [params.contact]
         icp = ''             # 备案号，如果你不想显示，设置为 '' 空即可
-        icplink = '//beian.miit.gov.cn'           # 备案链接
+        icplink = ''           # 备案链接
         beian = ''     # 公安备案，如果你不想显示，设置为 '' 空即可
         beiancode = ''              # 公安备案识别码
         #weibo = '6867589681'                      # e.g. https://weibo.com/u/6867589681
