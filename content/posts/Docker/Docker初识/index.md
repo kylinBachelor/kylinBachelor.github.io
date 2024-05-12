@@ -4,7 +4,7 @@ aliases:
 tags: ["Docker"]
 description: "描述"
 date: 2024-05-09T12:46:57+08:00
-draft: true
+draft: false
 ---
 
 Docker是开源的容器技术，采用的是容器虚拟化技术，是容器运行的载体。
