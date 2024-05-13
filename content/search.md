@@ -4,6 +4,10 @@ date: 2024-05-08T18:08:28+08:00
 draft: false
 ---
 
+<video src="/video/qiangjunzhange.mp4" style="width: 100%; height: 400px" poster="" controls >
+  如需下载：<a href="/video/qiangjunzhange.mp4">MP4</a>
+</video>
+
 {{< music url="/music/相约一九九八.mp3" name="相约一九九八" artist="那英-王菲" cover="">}}
 {{< music url="/music/不是因为寂寞才想你.flac" name="不是因为寂寞才想你" artist="王小帅" cover="">}}
 {{< music url="/music/爱就一个字.mp3" name="爱就一个字" artist="张信哲" cover="">}}
