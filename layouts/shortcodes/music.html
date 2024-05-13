@@ -1,62 +1,19 @@
-<!-- 使用meting-js的方式  https://immmmm.com/hugo-shortcodes-music/ -->
-<!-- require APlayer https://aplayer.js.org/#/zh-Hans/?id=%E5%85%A5%E9%97%A8 -->
+{{- $scratch := .Page.Scratch.Get "scratch" -}}
+<!-- require APlayer -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
 {{- if .IsNamedParams -}}
-
-<div id="player"></div>
-
-{{- if .Get "url" -}}
-<script>
-    const ap1 = new APlayer({
-        container: document.getElementById('player'),
-        lrcType: 3,
-        audio: [{
-            name: '{{ .Get `name` }}',
-            artist: '{{ .Get `artist` }}',
-            url: '{{ .Get `url` }}',
-            cover: '{{ .Get `cover` }}',
-            lrc: '{{ .Get `lrc` }}',
-            theme: '#f44336'
-        }]
-    });
-</script>
-{{- else if .Get "auto" -}}
-<script>
-    const ap = new APlayer({
-        container: document.getElementById('player'),
-        mini: false,
-        autoplay: false,
-        theme: '#FADFA3',
-        loop: 'all',
-        order: 'random',
-        preload: 'auto',
-        volume: 0.7,
-        mutex: true,
-        listFolded: false,
-        listMaxHeight: 90,
-        lrcType: 3,
-        audio: [
-            {
-                name: '{{ .Get `name1` }}',
-                artist: '{{ .Get `artist1` }}',
-                url: '{{ .Get `url1` }}',
-                cover: '{{ .Get `cover1` }}',
-                lrc: '{{ .Get `lrc1` }}',
-                theme: '#f44336'
-            },
-            {
-                name: '{{ .Get `name2` }}',
-                artist: '{{ .Get `artist2` }}',
-                url: '{{ .Get `url2` }}',
-                cover: '{{ .Get `cover2` }}',
-                lrc: '{{ .Get `lrc2` }}',
-                theme: '#46718b'
-            }
-        ]
-    });
-</script>
+    {{- if .Get "url" -}}
+        <meting-js url="{{ .Get `url` }}" name="{{ .Get `name` }}" artist="{{ .Get `artist` }}" cover="{{ .Get `cover` }}" theme="{{ .Get `theme` | default `#2980b9` }}"
+        {{- with .Get "fixed" }} fixed="{{ . }}"{{ end -}}
+        {{- with .Get "mini" }} mini="{{ . }}"{{ end -}}
+        {{- with .Get "autoplay" }} autoplay="{{ . }}"{{ end -}}
+        {{- with .Get "volume" }} volume="{{ . }}"{{ end -}}
+        {{- with .Get "mutex" }} mutex="{{ . }}"{{ end -}}
+        ></meting-js>
+    {{- end -}}
 {{- end -}}
-
-{{- end -}}
-
+{{- $scratch.Set "music" true -}}
