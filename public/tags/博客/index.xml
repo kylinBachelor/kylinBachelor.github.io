@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客 on 小丛路子野</title>
+    <link>http://congpeitong.online/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on 小丛路子野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2024 21:43:20 +0800</lastBuildDate><atom:link href="http://congpeitong.online/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows下安装Hexo</title>
+      <link>http://congpeitong.online/posts/windows/windows%E4%B8%8B%E5%AE%89%E8%A3%85hexo/</link>
+      <pubDate>Thu, 09 May 2024 21:43:20 +0800</pubDate>
+      
+      <guid>http://congpeitong.online/posts/windows/windows%E4%B8%8B%E5%AE%89%E8%A3%85hexo/</guid>
+      <description>博客源码 可以直接拷贝我的源码 http://github.com/kylinBachelor/kylinBachelor.github.io 这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了 浏览Hexo官方网站 https://hexo.io/zh-cn/docs/ 根据官方文档，</description>
+    </item>
+    
+    <item>
+      <title>Windows下安装Jekyll</title>
+      <link>http://congpeitong.online/posts/windows/windows%E4%B8%8B%E5%AE%89%E8%A3%85jekyll/</link>
+      <pubDate>Thu, 09 May 2024 21:43:14 +0800</pubDate>
+      
+      <guid>http://congpeitong.online/posts/windows/windows%E4%B8%8B%E5%AE%89%E8%A3%85jekyll/</guid>
+      <description>网站托管 在这里就不进行赘述 安装Jekyll jekyll相当于一个编译工具，安装后可以通过jekyll创建一个网站模板，可以实时修改内容，并可以实时通过本地url</description>
+    </item>
+    
+    <item>
+      <title>Windows下安装Hugo</title>
+      <link>http://congpeitong.online/posts/windows/windows%E4%B8%8B%E5%AE%89%E8%A3%85hugo/</link>
+      <pubDate>Thu, 09 May 2024 21:42:57 +0800</pubDate>
+      
+      <guid>http://congpeitong.online/posts/windows/windows%E4%B8%8B%E5%AE%89%E8%A3%85hugo/</guid>
+      <description>windows下安装hugo 各平台安装hugo的方法可以参考官方教程hugo安装教程 使用安卓 choco 包管理器安装hugo 使用管理员权限打开powershell并运行 1</description>
+    </item>
+    
+  </channel>
+</rss>
