@@ -33,7 +33,7 @@ date: 2024-05-08 18:26
 |       |       |       |       |       |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
 | [>懒猫Emacser](https://manateelazycat.github.io/) | [廖雪峰](https://www.liaoxuefeng.com/) | [>Emacs中文论坛](https://emacs-china.org/) | [软件激活](https://www.exception.site/) |[>爱涂鸦啊](https://aituyaa.com/) |
-| [Remacs](https://remacs.fun/) | [子龙山人](https://zilongshanren.com) |  |  | |
+| [Remacs](https://remacs.fun/) | [子龙山人](https://zilongshanren.com) | [>软件整理](https://soft.xubin.org/) |  | |
 
 
 ### 📚 书籍
