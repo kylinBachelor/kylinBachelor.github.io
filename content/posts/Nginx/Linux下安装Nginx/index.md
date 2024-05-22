@@ -17,7 +17,7 @@ draft: false
 
     ```bash
     # 如果出现 -bash: ./configure: Permission denied  则执行 bash ./configure 
-    ./configure
+    ./configure --prefix=/usr/local/nginx
     make
     make install
     ```
