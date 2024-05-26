@@ -1,6 +1,6 @@
 baseURL = 'http://congpeitong.online/'
 languageCode = 'zh-cn'
-title = '小丛路子野'
+title = '丛中笑'
 
 # 启用主题
 theme = 'virgo'
@@ -12,7 +12,7 @@ enableGitInfo = true
 timeZone = 'Asia/Shanghai'
 
 [params]
-    dark = false                             # 默认开启暗色主题
+    dark = true                             # 默认开启暗色主题
     author = 'kylinBachelor'
     slogan = 'Life should be interesting.'  # 'Life is just a joker.'
     startDate = 'Copyright © 2023'                        # 'Copyright © 2016 - now'
