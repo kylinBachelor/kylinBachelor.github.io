@@ -6,6 +6,12 @@ description: "RabbitMQ"
 date: 2024-05-09T18:05:15+08:00
 draft: false
 ---
+1. Topic类型和Direct类型相比，都是可以根据Routing key把消息路由绑定到不同的队列。只不过Topic类型Exchange可以让队列在绑定Routing key 的时候使用通配符。
+2. Routing key 一般都是由一个或者多个单词组成，多个单词之间使用 "." 分割，例如 item.name
+3. 通配符规则：
+   + #: 匹配零个或多个单词
+   + *: 匹配一个单词
+![Topic](/img/MQ/RabbitMQ20240525/image-202405261122.png)
 
 # 一、生产者代码
 
