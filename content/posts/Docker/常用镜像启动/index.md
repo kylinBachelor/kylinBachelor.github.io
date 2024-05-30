@@ -1,0 +1,32 @@
+---
+title: "常用镜像启动"
+aliases: 
+tags: [Docker]
+description: "常用镜像启动"
+date: 2024-05-30T08:59:02+08:00
+draft: false
+---
+
+
+
+## Mysql
+
+```sh
+docker run -p 3306:3306 --name mysql8 -e MYSQL_ROOT_PASSWORD=root123 -v /usr/mysqlDatadir:/var/lib/mysql -d mysql:8.0 --lower_case_table_names=1
+```
+
+- 3306:3306  物理机的3306端口对应镜像内部3306端口
+- ---name 名称
+- -e root密码
+- -v 数据持久化物理机目录映射到镜像目录
+- -d 指定镜像
+- --lower_case_table_name 设置不区分大小写
+
+
+
+## Redis
+
+```sh
+docker run --name redis -d -p 6379:6379  -d redis
+```
+
