@@ -12,7 +12,12 @@ draft: false
 ## Mysql
 
 ```sh
-docker run -p 3306:3306 --name mysql8 -e MYSQL_ROOT_PASSWORD=root123 -v /usr/mysqlDatadir:/var/lib/mysql -d mysql:8.0 --lower_case_table_names=1
+docker run -p 3306:3306 --name mysql8 -e MYSQL_ROOT_PASSWORD=root123
+-v /usr/mysqlConf:/etc/mysql/conf.d 
+-v /usr/mysqlLog:/var/log/mysql
+-v /usr/mysqlData:/var/lib/mysql 
+-d mysql:8.0 
+--lower_case_table_names=1
 ```
 
 - 3306:3306  物理机的3306端口对应镜像内部3306端口
@@ -27,6 +32,9 @@ docker run -p 3306:3306 --name mysql8 -e MYSQL_ROOT_PASSWORD=root123 -v /usr/mys
 ## Redis
 
 ```sh
-docker run --name redis -d -p 6379:6379  -d redis
+docker run -p 6379:6379 --name redis6 --privileged=true 
+-v /usr/redis/redis.conf:/etc/redis/redis.conf
+-v /usr/redis/data:/data
+-d redis:6.0.8 redis-server /etc/redis/redis.conf
 ```
 
