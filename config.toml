@@ -1,6 +1,6 @@
 baseURL = 'http://congpeitong.online/'
 languageCode = 'zh-cn'
-title = '丛中笑'
+title = 'China'
 
 # 启用主题
 theme = 'virgo'
@@ -12,9 +12,9 @@ enableGitInfo = true
 timeZone = 'Asia/Shanghai'
 
 [params]
-    dark = true                             # 默认开启暗色主题
+    dark = false                             # 默认开启暗色主题
     author = 'kylinBachelor'
-    slogan = 'Life should be interesting.'  # 'Life is just a joker.'
+    slogan = '富强、民主、文明、和谐、自由、平等、公正、法制、爱国、敬业、诚信、友善'  # 'Life is just a joker.'
     startDate = 'Copyright © 2023'                        # 'Copyright © 2016 - now'
     # 激活页面加载时的过渡动画
     hasActiveAnimate = true
