@@ -1,6 +1,6 @@
-baseURL = 'http://congpeitong.online/'
+baseURL = 'https://congpeitong.fun/'
 languageCode = 'zh-cn'
-title = 'China'
+title = '社会主义接班人'
 
 # 启用主题
 theme = 'virgo'
