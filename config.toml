@@ -55,7 +55,7 @@ timeZone = 'Asia/Shanghai'
         # 新增支持设置背景色，
         # 将 background 设置为 ''，默认为 `#000`
         # ！ 为保证显示效果，建议选用 1：1 比例图片
-        src = 'cat.svg'
+        src = 'websiteTitle.jpg'
         # src = 'manyi1.jpg'
         background = '#0003'
         # 为该图片附加一个点击链接功能，缺省为 `/about`，当然
@@ -63,7 +63,7 @@ timeZone = 'Asia/Shanghai'
         link = '/about'
 
     [params.contact]
-        icp = ''             # 备案号，如果你不想显示，设置为 '' 空即可
+        icp = '鲁ICP备2024052362号'             # 备案号，如果你不想显示，设置为 '' 空即可
         icplink = ''           # 备案链接
         beian = ''     # 公安备案，如果你不想显示，设置为 '' 空即可
         beiancode = ''              # 公安备案识别码
