@@ -9,7 +9,7 @@ date: 2024-05-08 18:26
 
 |                                            |                                                              |                                       |                                                              |                                      |
 | :----------------------------------------: | :----------------------------------------------------------: | :-----------------------------------: | :----------------------------------------------------------: | :----------------------------------: |
-| [>博の客](https://kylinBachelor.github.io) | [服务器处理能力预算的方法](https://www.cnblogs.com/ngd-mzl/p/16903919.html) | [讯飞星火](https://xinghuo.xfyun.cn/) | [百度翻译](https://fanyi.baidu.com/mtpe-individual/multimodal#/) | [懂车帝](https://www.dongchedi.com/) |
+| [服务器处理能力预算的方法](https://www.cnblogs.com/ngd-mzl/p/16903919.html) | [讯飞星火](https://xinghuo.xfyun.cn/) | [百度翻译](https://fanyi.baidu.com/mtpe-individual/multimodal#/) | [懂车帝](https://www.dongchedi.com/) |
 
 
 ### 🔨 工具
@@ -33,7 +33,7 @@ date: 2024-05-08 18:26
 |       |       |       |       |       |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
 | [>懒猫Emacser](https://manateelazycat.github.io/) | [廖雪峰](https://www.liaoxuefeng.com/) | [>Emacs中文论坛](https://emacs-china.org/) | [软件激活](https://www.exception.site/) |[>爱涂鸦啊](https://aituyaa.com/) |
-| [Remacs](https://remacs.fun/) | [子龙山人](https://zilongshanren.com) | [>软件整理](https://soft.xubin.org/) |  | |
+| [Remacs](https://remacs.fun/) | [子龙山人](https://zilongshanren.com) | [>软件整理](https://soft.xubin.org/) | [>程序员风筝](https://www.moonkite.cn/) | |
 
 
 ### 📚 书籍
