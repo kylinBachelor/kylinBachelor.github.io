@@ -1,6 +1,6 @@
 baseURL = 'https://congpeitong.online/'
 languageCode = 'zh-cn'
-title = '社会主义接班人'
+title = '阅微草堂'
 
 # 启用主题
 theme = 'virgo'
@@ -14,7 +14,7 @@ timeZone = 'Asia/Shanghai'
 [params]
     dark = false                             # 默认开启暗色主题
     author = 'kylinBachelor'
-    slogan = '富强、民主、文明、和谐、自由、平等、公正、法制、爱国、敬业、诚信、友善'  # 'Life is just a joker.'
+    slogan = '文化与自然和谐共生'  # 'Life is just a joker.'
     startDate = 'Copyright © 2023'                        # 'Copyright © 2016 - now'
     # 激活页面加载时的过渡动画
     hasActiveAnimate = true
