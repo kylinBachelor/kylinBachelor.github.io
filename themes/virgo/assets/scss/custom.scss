@@ -156,9 +156,12 @@ table {
 }
 
 blockquote {
-    padding-left: 16px;
-    border-left: 1px solid $gray-500;
-    color: $blockquote-color;
+    padding: 10px 15px;
+    // padding-left: 16px;
+    background-color: #ecf2f2;
+    border-left: 1px solid #06c;
+    color: #04c;
+    margin-bottom: 50px;
 }
 
 pre,
@@ -187,7 +190,6 @@ blockquote,
     background: #fef0f0;
     border-color: #fbc4c4;
 }
-
 ul,
 ol {
     list-style-position: outside;
