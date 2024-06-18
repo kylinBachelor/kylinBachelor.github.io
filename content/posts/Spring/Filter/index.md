@@ -396,27 +396,201 @@ public class CustomWebFilter extends HttpFilter{
 
 
 
+## 5. Spring-webMvc
 
+> === spring-webMvc  |  spring-web 是spring框架的web功能模块而非框架
 
+- [x] spring-web抽象  |  封装web http相关的技术基础的API
+- [x] spring-webmvc  围绕servlet.api 规范进行实现的
 
++ **Dependendy**
 
+    ```xml
+    <dependency>
+        <groupId>org.springframework </groupId>
+        <artifactId>spring-webmvc </artifactId>
+        <version>6.1.8 </version>
+    </dependency>
+    ```
 
+### 5.1 OncePerRequestFilter
 
+> === OncePerRequestFilter Filter 的实现之一 保证规范实现外的单次请求仅执行一次
 
++ **org.springframework.web.filter.GenericFilterBean**
 
+    ```java
+    public abstract class GenericFilterBean implements
+        Filter,
+        BeanNameAware,
+        EnvironmentAware,
+        EnvironmentCapable,
+        ServletContextAware,
+        InitializingBean,
+        DisposableBean {
+        public final void init(FilterConfig filterConfig) throws ServletException {
+            // 已实现
+        }
+    }
+    ```
 
++ **org.springframework.web.filter.OncePerRequestFilter**
 
+    ```java
+    // 根据封装逻辑 你需要实现 doFilterInternal 生命周期
+    public abstract class OncePerRequestFilter extends GenericFilterBean {
+        public final void doFilter(ServletRequest request,
+                                   ServletResponse response,
+                                   FilterChain filterChain)
+            throws ServletException, IOException {
+            // ...
+            doFilterInternal(request, response, filterChain);
+        }
+        // 子类需要实现这个 doFilterInternal
+        protected abstract void doFilterInternal(
+            HttpServletRequest request,
+            HttpServletResponse response,
+            FilterChain filterChain)
+            throws ServletException, IOException;
+    }
+    ```
 
+    
 
+### 5.2 **CharacterEncodingFilter**
 
+> === spring-web 抽象并实现编码控制过滤器
 
++ **org.springframework.web.filter.CharacterEncodingFilter**
 
+    ```java
+    public class CharacterEncodingFilter extends OncePerRequestFilter {
+        private String encoding;
+        private boolean forceRequestEncoding = false;
+        private boolean forceResponseEncoding = false;
+    }
+    ```
 
+    > :notes:
+    >
+    > - [x] request.setCharacterEncoding(encoding) - 仅 POST 有效 [GET 需 URL 参数转换]
+    >
+    > - [x] response.setCharacterEncoding(encoding) - 不区分请求方式
 
+### 5.3 CorsFilter
 
+> === spring-web 提供的跨域 filter 处理 [CorsFilter 只能通过 API 方式注册]
 
++ **org.springframework.web.filter.CorsFilter**
 
+    ```java
+    public class CorsFilter extends OncePerRequestFilter {
+        private final CorsConfigurationSource configSource;
+        private CorsProcessor processor = new DefaultCorsProcessor();
+        public CorsFilter(CorsConfigurationSource configSource) {
+            Assert.notNull(configSource, "CorsConfigurationSource must not benull");
+            this.configSource = configSource;
+        }
+    }
+    ```
 
+    > :warning:
+    >
+    > 1. CorsFilter 会根据 request 对象进行跨域判断和处理
+    > 2. CorsFilter 会使用 response 对象进行跨域响应头相关的添加
+
++ **CorsFilter:doFilterInternal**
+
+    ```java
+    @Override
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse
+                                    response,
+                                    FilterChain filterChain) throws ServletException, IOException {
+        CorsConfiguration corsConfiguration =
+            this.configSource.getCorsConfiguration(request);
+        boolean isValid = this.processor.processRequest(corsConfiguration, request,
+                                                        response);
+        if (!isValid | CorsUtils.isPreFlightRequest(request)) {
+            return;
+        }
+        filterChain.doFilter(request, response);
+    }
+    ```
+
++ **org.springframework.web.cors.DefaultCorsProcessor**
+
+    ```java
+    import java.io.IOException;
+    import java.nio.charset.StandardCharsets;
+    import java.util.ArrayList;
+    import java.util.Collection;
+    import java.util.List;
+    import jakarta.servlet.http.HttpServletRequest;
+    import jakarta.servlet.http.HttpServletResponse;
+    import org.apache.commons.logging.Log;
+    import org.apache.commons.logging.LogFactory;
+    import org.springframework.http.HttpHeaders;
+    import org.springframework.http.HttpMethod;
+    import org.springframework.http.HttpStatus;
+    import org.springframework.http.server.ServerHttpRequest;
+    import org.springframework.http.server.ServerHttpResponse;
+    import org.springframework.http.server.ServletServerHttpRequest;
+    import org.springframework.http.server.ServletServerHttpResponse;
+    import org.springframework.lang.Nullable;
+    import org.springframework.util.CollectionUtils;
+    public class DefaultCorsProcessor implements CorsProcessor {
+        private static final Log logger = LogFactory.getLog(DefaultCorsProcessor.class);
+        static final String ACCESS_CONTROL_REQUEST_PRIVATE_NETWORK ="Access-Control-Request-Private-Network";
+        static final String ACCESS_CONTROL_ALLOW_PRIVATE_NETWORK = "Access-ControlAllow-Private-Network";
+        @Override
+        @SuppressWarnings("resource")
+        public boolean processRequest(@Nullable CorsConfiguration config,
+                                      HttpServletRequest request,
+                                      HttpServletResponse response) throws IOException {
+            Collection<String> varyHeaders = response.getHeaders(HttpHeaders.VARY);
+            if (!varyHeaders.contains(HttpHeaders.ORIGIN)) {
+                response.addHeader(HttpHeaders.VARY, HttpHeaders.ORIGIN);
+            }
+            if (!varyHeaders.contains(HttpHeaders.ACCESS_CONTROL_REQUEST_METHOD)) {
+                response.addHeader(HttpHeaders.VARY,
+                                   HttpHeaders.ACCESS_CONTROL_REQUEST_METHOD);
+            }
+            if (!varyHeaders.contains(HttpHeaders.ACCESS_CONTROL_REQUEST_HEADERS)) {
+                response.addHeader(HttpHeaders.VARY,
+                                   HttpHeaders.ACCESS_CONTROL_REQUEST_HEADERS);
+            }
+            if (!CorsUtils.isCorsRequest(request)) {
+                return true;
+            }
+            if (response.getHeader(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN) = null)
+            {
+                logger.trace("Skip: response already contains \"Access-ControlAllow-Origin\"");
+                return true;
+            }
+            boolean preFlightRequest = CorsUtils.isPreFlightRequest(request);
+            if (config = null) {
+                if (preFlightRequest) {
+                    rejectRequest(new ServletServerHttpResponse(response));
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+            return handleInternal(new ServletServerHttpRequest(request),
+                                  new ServletServerHttpResponse(response),
+                                  config,
+                                  preFlightRequest);
+        }
+    }
+    ```
+
+    > :warning:
+    >
+    > 1. spring-webmvc 提供的 Filter 也是人提供的 同样需要注册 [注册给 Tomcat]
+    > 2. Filter 作为 Spring 容器对象 通常没有意义[方便你取得该对象] Spring 不会帮你注册
+    > 3. Filter 作为 Spring 容器对象 在 SpringBoot 环境会利用 SCI 帮你注册
+    > 4. SpringBoot 环境你应该使用 SpringBoot 提供的 SCI 机制注册 Web 组件
 
 
 
