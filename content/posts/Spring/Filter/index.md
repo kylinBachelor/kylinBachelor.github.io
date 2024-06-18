@@ -592,5 +592,142 @@ public class CustomWebFilter extends HttpFilter{
     > 3. Filter 作为 Spring 容器对象 在 SpringBoot 环境会利用 SCI 帮你注册
     > 4. SpringBoot 环境你应该使用 SpringBoot 提供的 SCI 机制注册 Web 组件
 
+### 5.4 **SpringServletContainerInitializer**
+
+> === spring-web 提供的 SCI 引擎 可完成 spring-webmvc 环境初始化 | Web组件注册
+
++ **org.springframework.web.SpringServletContainerInitializer**
+
+    ```java
+    import java.lang.reflect.Modifier;
+    import java.util.ArrayList;
+    import java.util.Collections;
+    import java.util.List;
+    import java.util.ServiceLoader;
+    import java.util.Set;
+    import jakarta.servlet.ServletContainerInitializer;
+    import jakarta.servlet.ServletContext;
+    import jakarta.servlet.ServletException;
+    import jakarta.servlet.annotation.HandlesTypes;
+    import org.springframework.core.annotation.AnnotationAwareOrderComparator;
+    import org.springframework.lang.Nullable;
+    import org.springframework.util.ReflectionUtils;
+    @HandlesTypes(WebApplicationInitializer.class)
+    public class SpringServletContainerInitializer implements
+        ServletContainerInitializer {
+        @Override
+        public void onStartup(@Nullable Set<Class<? > webAppInitializerClasses,
+                              ServletContext servletContext)
+            throws ServletException {
+            
+        }
+    }
+    ```
+
++ **org.springframework.web.WebApplicationInitializer**
+
+    ```java
+    public interface WebApplicationInitializer {
+        void onStartup(ServletContext servletContext) throws ServletException;
+    }
+    ```
+
++ **spring-web-6.1.8.jar/META-INF/services/jakarta.servlet.ServletContainerInitializer**
+
+    ```java
+    org.springframework.web.SpringServletContainerInitializer
+    ```
+
+
+
+### 5.5 **初始化**
+
+> === SCI 搭建 spring-webmvc
+
+* **Dependency**
+
+    ```xml
+    <dependency>
+        <groupId>org.springframework </groupId>
+        <artifactId>spring-webmvc </artifactId>
+        <version>6.1.8 </version>
+    </dependency>
+    <dependency>
+        <groupId>com.fasterxml.jackson.core </groupId>
+        <artifactId>jackson-databind </artifactId>
+        <version>2.17.1 </version>
+    </dependency>
+    ```
+
+* **SpringContextConfiguration**
+
+    ```java
+    import org.springframework.context.annotation.ComponentScan;
+    import org.springframework.context.annotation.Configuration;
+    import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+    @Configuration
+    @ComponentScan
+    @EnableWebMvc
+    public class SpringContextConfiguration {
+    }
+    ```
+
+    
+
++ **SpringWebmvcInitializer**
+
+    ```java
+    import jakarta.servlet.Filter;
+    import org.springframework.web.cors.CorsConfiguration;
+    import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+    import org.springframework.web.filter.CharacterEncodingFilter;
+    import org.springframework.web.filter.CorsFilter;
+    import org.springframework.web.servlet.support
+        .AbstractAnnotationConfigDispatcherServletInitializer;
+    import java.nio.charset.StandardCharsets;
+    public class SpringWebmvcInitializer extends
+        AbstractAnnotationConfigDispatcherServletInitializer {
+        @Override
+        protected Class<?>[] getRootConfigClasses() {
+            return null;
+        }
+        @Override
+        protected Class<?>[] getServletConfigClasses() {
+            return new Class[]{SpringContextConfiguration.class};
+        }
+        public static final String DISPATCHER_SERVLET_URL_MAPPING = "/*";
+        @Override
+        protected String[] getServletMappings() {
+            return new String[]{DISPATCHER_SERVLET_URL_MAPPING};
+        }
+        @Override
+        protected boolean isAsyncSupported() {
+            return super.isAsyncSupported();
+        }
+        @Override
+        protected Filter[] getServletFilters() {
+            CorsConfiguration config = new CorsConfiguration();
+            config.setAllowCredentials(true);
+            config.addAllowedOrigin("*");
+            config.addAllowedHeader("*");
+            config.addAllowedMethod("*");
+            UrlBasedCorsConfigurationSource source = new
+                UrlBasedCorsConfigurationSource();
+            source.registerCorsConfiguration(" * ", config);
+            return new Filter[] {
+                new CharacterEncodingFilter(StandardCharsets.UTF_8.name(), true,
+                                            false),
+                new CorsFilter(source)
+            };
+        }
+    }
+    ```
+
+    
+
+
+
+
+
 
 
