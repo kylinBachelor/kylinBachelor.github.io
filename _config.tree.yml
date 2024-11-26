@@ -1,0 +1,68 @@
+########## The following are all optional #########
+####### footer bar #####
+# footer, author name
+author: kylinBachelor
+# footer, author name link
+website: /
+# footer, copyright start year, default this year
+#siteStartYear: 2018
+# favicon, replaceable
+favicon: /favicon.ico
+
+####### header bar #####
+# before set to true, please maker sure you've created hexo tags\categories\about pages
+tags: true
+categories: true
+about: true
+nav: true
+links:
+    github: https://github.com/kylinBachelor
+    custom:
+      - name: Spring论坛
+        URL: https://forum.springdoc.cn/
+      - name: 懒猫
+        URL: https://manateelazycat.github.io/
+      - name: 程序员风筝
+        URL: https://www.moonkite.cn/
+      - name: 奇客
+        URL: https://www.solidot.org/
+
+####### sidebar #####
+sidebar:
+    # name for left sidebar post list. true: title name; false: file name
+    usePostTitle: false
+
+####### plug-in #####
+# optional, giscus comment
+# get generated configurations from https://giscus.app/
+# when enable is true, full out your repo、repo_id、category_id
+giscus:
+    enable: false
+    repo:
+    repo_id:
+    category_id:
+    reactions_enabled: "1"
+    emit_metadata: "0"
+    input_position: "top"
+    theme: "preferred_color_scheme"
+    lang: "en"
+# optional, valine
+valine:
+    enableComment: false
+    enableCounter: false
+    # valine appID
+    appID:
+    # valine appKey
+    appKey:
+    placeholder: Please enter a comment
+    avatar: retro
+#optional, busuanzi, statistics of visits
+busuanzi: false
+
+####### Off-page search #####
+# If the site is [included by a search engine]
+# searchEngine：default google, can replace with other searchEngine
+#searchEngine: https://www.baidu.com/s?wd=
+searchEngine: https://www.google.com/search?q=
+# homeHost：target domain, default current page domain
+# homeHost: wujun234.com

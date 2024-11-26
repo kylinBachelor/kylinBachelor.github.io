@@ -1,0 +1,45 @@
+<div id="footer">
+	<p>
+	©<span id="footerYear-start"><%- theme.siteStartYear %></span>-<span id="footerYear-end"></span>
+
+	<% if (config.website){ %>
+        <a href='<%- config.website %>' target="_blank"><%- config.author %></a>
+	<% } else { %>
+	    <a href="/"><%- config.author %></a>
+	<% } %>
+	
+	<% if (theme.busuanzi){ %>
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	<% } %>
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//wujun.me" target="_blank">Wu Jun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+
+<% if (theme.siteStartYear == undefined) { %>
+<script type="text/javascript">
+	document.getElementById('footerYear-start').innerHTML = new Date().getFullYear() + '';
+</script>
+<% } %>
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
+<% if (config.mermaid && config.mermaid.enable) { %>
+    <script src='https://unpkg.com/mermaid@<%= config.mermaid.version %>/dist/mermaid.min.js'></script>
+    <script>
+      if (window.mermaid) {
+        mermaid.initialize({theme: 'forest'});
+      }
+    </script>
+<% } %>

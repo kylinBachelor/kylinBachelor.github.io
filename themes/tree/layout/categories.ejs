@@ -1,0 +1,34 @@
+<h1 id="article-title">
+	<i class="fa fa-folder-open" aria-hidden="true"></i><%= __('categories.title') %>
+</h1>
+<h3>
+	<%= __('categories.counts') %> <%- site.categories.length %>
+</h3>
+
+<div id="article-content">
+    <% if (theme.style && theme.style.categories && theme.style.categories.display=="line") { %>
+        <% if (site.categories && site.categories.length) { %>
+          <%
+            var categories = [];
+            site.categories.forEach(function(category){
+              categories.push('<a href="' + config.root + category.path + '">' + category.name + '</a>');
+            });
+          %>
+          <div class="categories">
+            <%- categories.join(', ') %>
+          </div>
+        <% } %>
+    <% } else { %>
+        <ul>
+            <% if (site.categories && site.categories.length) { %>
+                <% site.categories.forEach(function(category){ %>
+                    <li class="menu-item">
+                        <span>
+                            <a href="/<%- category.path %>"><%- category.name %>(<%- category.length %>)</a>
+                        </span>
+                    </li>
+                <% }); %>
+            <% } %>
+        </ul>
+    <% } %>
+</div>

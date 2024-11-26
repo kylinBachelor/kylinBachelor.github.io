@@ -1,0 +1,40 @@
+<div id="index">
+	<% page.posts.each(function(post){ %>
+		<div class="index-li">
+			<a href="<%- url_for(post.path) %>">
+				<h2 class="index-title">
+					<%- post.title || post.slug.split("/")[post.slug.split("/").length-1] %>
+				</h2>
+				<div class="index-brief">
+					<%- post.more.replace(/<\/?.+?\/?>/g, "").substring(0, 150) %>
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span><%- date(post.date, "YYYY-MM-DD") %></span>
+                    <% if (post.categories) { %>
+                            <% for (var j=0; j < post.categories.data.length; j++) { %>
+                                <% if (post.categories.data[j] && post.categories.data[j].name) { %>
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/<%- post.categories.data[j].path %>"><%- post.categories.data[j].name %></a>
+										<% if (j < post.categories.data.length - 1) { %>
+											>
+										<% } %>
+                                    </span>
+                                <% } %>
+                            <% } %>
+                    <% } %>
+                </div>
+		</div>	
+	<% }); %>
+	
+	<div id="index-paginator">
+		<% if (page.total > 1){ %>
+			<%- paginator({
+			  prev_text: '<',
+			  next_text: '>'
+			}) %>
+		<% } %>
+	</div>
+</div>

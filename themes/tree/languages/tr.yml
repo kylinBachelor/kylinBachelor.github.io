@@ -1,0 +1,20 @@
+header:
+  menu:
+    about: Hakkımda
+    tags: Etiketler
+    categories: Kategoriler
+
+sidebar:
+  site-toc:
+    search: Aramak için Enter'a basın
+
+about:
+  title: Hakkımda
+
+categories:
+  title: Kategoriler
+  counts: Toplam
+
+tags:
+  title: Etiketler
+  counts: Toplam

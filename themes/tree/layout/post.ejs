@@ -1,0 +1,152 @@
+<h1 id="article-title">
+	<%- page.title || page.slug.split("/")[page.slug.split("/").length-1] %>
+</h1>
+
+<!-- meta -->
+<div class="article-meta">
+	<% if (theme.valine && theme.valine.enableCounter){ %>
+		<span>
+			阅读量:<span id="<%= url_for(page.path) %>" class="leancloud_visitors" data-flag-title="<%- page.title %>"></span>
+		</span>
+	<% } %>
+
+	<span><%- config.author %></span>
+	<span><%- date(page.date, "YYYY-MM-DD HH:mm:ss") %></span>
+
+  <div id="article-categories">
+    <% if (page.categories) { %>
+		  <span>Categories：</span>
+      <% for (var j=0; j < page.categories.data.length; j++) { %>
+          <% if (page.categories.data[j] && page.categories.data[j].name) { %>
+              <span>
+                  <i class="fa fa-folder" aria-hidden="true">
+                  <a href="/<%- page.categories.data[j].path %>"><%- page.categories.data[j].name %></a>
+                  </i>
+                <% if (j < page.categories.data.length - 1) { %>
+                  >
+                <% } %>
+              </span>
+          <% } %>
+      <% } %>
+    <% } %>
+
+    <% if (page.tags) { %>
+		    <span>Tags：</span>
+        <% for (var j=0; j < page.tags.data.length; j++) { %>
+            <% if (page.tags.data[j] && page.tags.data[j].name) { %>
+                <span>
+                    <i class="fa fa-tag" aria-hidden="true">
+                    <a href="/<%- page.tags.data[j].path %>"><%- page.tags.data[j].name %></a>
+                    </i>
+                </span>
+            <% } %>
+        <% } %>
+    <% } %>
+  </div>
+
+</div>
+
+<!-- content -->
+<div id="article-content">
+	<%- page.content %>
+</div>
+
+<!-- post-guide -->
+<% if (is_post()){ %>
+    <div class="post-guide">
+        <div class="item left">
+            <% if (page.prev){ %>
+              <a href="<%- url_for(page.prev.path) %>">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  <%- page.prev.title || page.prev.slug.split("/")[page.prev.slug.split("/").length-1] %>
+              </a>
+            <% } %>
+        </div>
+        <div class="item right">
+            <% if (page.next){ %>
+              <a href="<%- url_for(page.next.path) %>">
+                <%- page.next.title || page.next.slug.split("/")[page.next.slug.split("/").length-1] %>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            <% } %>
+        </div>
+    </div>
+<% } %>
+
+<!-- comment - giscus -->
+<% if(theme.giscus && theme.giscus.enable) { %>
+  <meta property="og:title" content="<%= page.title || page.path %>"/>
+
+  <script src="https://giscus.app/client.js"
+          data-repo="<%=theme.giscus.repo %>"
+          data-repo-id="<%=theme.giscus.repo_id %>"
+          data-category="Announcements"
+          data-category-id="<%=theme.giscus.category_id %>"
+          data-mapping="og:title"
+          data-strict="1"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="<%=theme.giscus.input_position%>"
+          data-theme="<%=theme.giscus.theme%>"
+          data-lang="<%=theme.giscus.lang%>"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+<% } %>
+
+<!-- comment - valine -->
+<% if (theme.valine && theme.valine.enableComment){ %>
+	<div id="vcomments"></div>
+<% } %>
+
+<script>
+	<% if (theme.valine && theme.valine.enableComment){ %>
+		// 评论
+		new Valine({
+			el: '#vcomments',
+			appId: '<%- theme.valine.appID %>',
+			appKey: '<%- theme.valine.appKey %>',
+			placeholder: '<%- theme.valine.placeholder %>',
+			path: window.location.pathname,
+			avatar: '<%- theme.valine.avatar %>',
+			highlight: false,
+      recordIP: true,
+      enableQQ: true,
+			requiredFields: ['nick','mail']
+		})
+	<% } %>
+	<% if (theme.valine && theme.valine.enableCounter){ %>
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
+	<% } %>
+</script>
