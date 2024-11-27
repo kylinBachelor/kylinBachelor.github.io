@@ -3,7 +3,9 @@ menu:
   主页: /
   导航: /nav
   分类: /categories
+  Java: /tags/Java
   Spring: /tags/Spring
+  Linux: /tags/Linux
   设计模式: /tags/设计模式
 
 
@@ -52,9 +54,9 @@ mathjax: false
 
 # Open link in a new tab | 是否在新窗口打开链接
 open_in_new:
-  article: true  # 文章链接
-  menu: true   # 导航菜单
-  subNav: true  # 子菜单
+  article: false  # 文章链接
+  menu: false   # 导航菜单
+  subNav: false  # 子菜单
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
@@ -179,7 +181,7 @@ since: 2019
 #       loading-bar|mac-osx|minimal
 # color: black|blue|green|orange|pink|purple|red|silver|white|yellow|
 progressBar:
-  enable: false
+  enable: true
   type: 'minimal'  # Keep Quotes | 保留引号避免出错(某些type会导致样式重叠排版错误)
   color: blue
 
@@ -235,8 +237,8 @@ live2d:
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
-  # header: '#D3D1DC'
-  header: '#4d4d4d'
+  header: '#D3D1DC'
+  # header: '#4d4d4d'
   gif:
     # 是否启用左侧边栏动态图效果
     enable: true
@@ -271,4 +273,4 @@ friends:
       url: www.baidu.com
 
 # 关于我
-aboutme: 主要涉及技术：<br>Java后端开发、前端vue、<br>Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: 主要涉及技术：<br>Java后端开发、前端vue、<br>Linux<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
