@@ -1,5 +1,5 @@
 .left-col {
-  background: #fff;
+  background: aqua;
   width: 300px;
   position: fixed;
   opacity: 1;
@@ -9,6 +9,7 @@
   overflow: hidden;
   overflow-y: auto;
   margin-bottom: 15px;
+  background-color: aqua;
 
   &::-webkit-scrollbar {
     display: none;
