@@ -1,5 +1,5 @@
 ---
-title: "2.Rabbitmq初识"
+title: "Rabbitmq初识"
 aliases: 
 tags: [RabbitMQ, MQ]
 description: "RabbitMQ"
