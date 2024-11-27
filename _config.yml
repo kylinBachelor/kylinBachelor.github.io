@@ -4,8 +4,8 @@
 
 # Site
 title: 人间彷徨客
-subtitle: ''
-description: ''
+subtitle: '不喝鸡汤、不诉离殇'
+description: '以梦为马、仗剑天涯'
 keywords:
 author: kylinBachelor
 language: en
@@ -100,9 +100,29 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: tree
+theme: yilia-plus
+
+jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: false
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
