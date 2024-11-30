@@ -186,17 +186,17 @@
 <ul>
 <li>
 <p>逻辑</p>
-<div class="language-tex line-numbers-mode" data-ext="tex" data-title="tex"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>加密</span></span>
-<span class="line"><span>	原始值A1 + 随机盐 => 运算结果A11</span></span>
-<span class="line"><span>    </span></span>
-<span class="line"><span>校验</span></span>
-<span class="line"><span>	原始值A2 + 随机盐 => 运算结果A22</span></span>
-<span class="line"><span>    </span></span>
-<span class="line"><span>比较</span></span>
-<span class="line"><span>	结果A11 &#x3C;=> 结果A22 是否相同 即可得出 原始值A1 > 原始值A2 是否相同</span></span>
-<span class="line"><span>    </span></span>
-<span class="line"><span>注意点</span></span>
-<span class="line"><span>	原始值A2 加密 需要获取 原始值A1 所使用 随机盐</span></span></code></pre>
+<div class="language-tex line-numbers-mode" data-ext="tex" data-title="tex"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">加密</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	原始值A1 + 随机盐 => 运算结果A11</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">    </span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">校验</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	原始值A2 + 随机盐 => 运算结果A22</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">    </span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">比较</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	结果A11 &#x3C;=> 结果A22 是否相同 即可得出 原始值A1 > 原始值A2 是否相同</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">    </span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">注意点</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	原始值A2 加密 需要获取 原始值A1 所使用 随机盐</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 </ul>

@@ -29,25 +29,25 @@
 <span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">start</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> nginx</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -c</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> conf/nginx.conf</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="windows下nginx脚本-xxx-bat" tabindex="-1"><a class="header-anchor" href="#windows下nginx脚本-xxx-bat"><span>Windows下Nginx脚本（xxx.bat）</span></a></h4>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span># 重启</span></span>
-<span class="line"><span>@echo off</span></span>
-<span class="line"><span>nginx -s reload</span></span>
-<span class="line"><span>pause</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span># 启动</span></span>
-<span class="line"><span>@echo off</span></span>
-<span class="line"><span>start nginx.exe</span></span>
-<span class="line"><span>pause</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span># 停止</span></span>
-<span class="line"><span>@echo off</span></span>
-<span class="line"><span>nginx -s stop</span></span>
-<span class="line"><span>pause</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span># 查看进程（查看Nginx是否启动）</span></span>
-<span class="line"><span>@echo off</span></span>
-<span class="line"><span>tasklist /fi "imagename eq nginx.exe"</span></span>
-<span class="line"><span>pause</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"># 重启</span></span>
+<span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">@</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">echo</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> off</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">nginx -s reload</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">pause</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"># 启动</span></span>
+<span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">@</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">echo</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> off</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">start</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> nginx.exe</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">pause</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"># 停止</span></span>
+<span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">@</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">echo</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> off</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">nginx -s stop</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">pause</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"># 查看进程（查看Nginx是否启动）</span></span>
+<span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">@</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">echo</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> off</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">tasklist</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /fi </span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">imagename eq nginx.exe</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">pause</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 

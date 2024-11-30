@@ -1,120 +1,120 @@
 <template><div><h1 id="mysql常用操作" tabindex="-1"><a class="header-anchor" href="#mysql常用操作"><span>MySQL常用操作</span></a></h1>
 <h2 id="_1-数据库基本操作" tabindex="-1"><a class="header-anchor" href="#_1-数据库基本操作"><span>1. 数据库基本操作</span></a></h2>
-<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>#查看数据库</span></span>
-<span class="line"><span>show databases</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#创建数据库</span></span>
-<span class="line"><span>create database db DEFAULT CHARSET utf8 COLLATE utf8_general_ci;</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#使用数据库</span></span>
-<span class="line"><span>use db;</span></span></code></pre>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#查看数据库</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">show databases</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#创建数据库</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">create</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> database</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665"> db</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> DEFAULT</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> CHARSET utf8 </span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">COLLATE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> utf8_general_ci;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#使用数据库</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">use</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> db;</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2-用户操作" tabindex="-1"><a class="header-anchor" href="#_2-用户操作"><span>2. 用户操作</span></a></h2>
-<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>#创建用户</span></span>
-<span class="line"><span>create user '用户名'@'IP地址' identified by '密码';</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#删除用户</span></span>
-<span class="line"><span>drop user '用户名'@'IP地址';</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#修改用户</span></span>
-<span class="line"><span>rename user '用户名'@'IP地址' to '新用户名'@'IP地址';</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#修改密码</span></span>
-<span class="line"><span>set password for '用户名'@'IP地址' = Password('新密码')</span></span></code></pre>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#创建用户</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">create</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> user</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> '</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">用户名</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">'@</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">IP地址</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> identified </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">by</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">密码</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#删除用户</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">drop</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> user</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">用户名</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">@</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">IP地址</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#修改用户</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">rename user </span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">用户名</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">@</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">IP地址</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> to</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">新用户名</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">@</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">IP地址</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#修改密码</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">set</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> password</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> for</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">用户名</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">@</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">IP地址</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> =</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> Password</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">(</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">新密码</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">)</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>创建用户时：</p>
 <p>用户名：创建的用户名称</p>
 <p>IP地址：指定用户可以从哪个服务器登陆，本地用户localhost，任意远程机用“%”</p>
 <p>密码：该用户登陆的密码</p>
 <h2 id="_3-权限相关" tabindex="-1"><a class="header-anchor" href="#_3-权限相关"><span>3. 权限相关</span></a></h2>
-<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span></span></span>
-<span class="line"><span>#查看权限：</span></span>
-<span class="line"><span>show grants for '用户'@'IP地址' </span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#授权：</span></span>
-<span class="line"><span>grant 权限 on 数据库.表 to '用户'@'IP地址'</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#取消授权：</span></span>
-<span class="line"><span>revoke 权限 on 数据库.表 from '用户'@'IP地址'</span></span></code></pre>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#查看权限：</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">show grants </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">for</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">用户</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">@</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">IP地址</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#授权：</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">grant</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 权限 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">on</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> 数据库</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076">表</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> to</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">用户</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">@</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">IP地址</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#取消授权：</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">revoke</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 权限 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">on</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> 数据库</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076">表</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> from</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">用户</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">@</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">IP地址</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>权限：用户的操作权限，如SELECT，INSERT，UPDATE等，如果要授予所的权限则使用ALL。</p>
-<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>GRANT SELECT, INSERT ON student.user TO 'scott'@'%';</span></span></code></pre>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">GRANT</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> SELECT</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">, </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">INSERT</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> ON</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> student</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076">user</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> TO</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">scott</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">@</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">%</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">;</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>通过下面的命令让指定用户可以给其他用户授权</p>
-<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>GRANT privileges ON databasename.tablename TO 'username'@'host' WITH GRANT OPTION;</span></span></code></pre>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">GRANT</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> privileges </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ON</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> databasename</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076">tablename</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> TO</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">username</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">@</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">host</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> WITH</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> GRANT</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> OPTION</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">;</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="_4-对表的操作" tabindex="-1"><a class="header-anchor" href="#_4-对表的操作"><span>4. 对表的操作</span></a></h2>
-<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>#查询所有的表</span></span>
-<span class="line"><span>show tables;</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#创建表</span></span>
-<span class="line"><span>CREATE TABLE `user` (</span></span>
-<span class="line"><span>  `id` int(11) NOT NULL auto_increment,   # not null表示不能为空,auto_increment表示自增</span></span>
-<span class="line"><span>  `name` varchar(255) DEFAULT 'javayz',   # default 表示默认值</span></span>
-<span class="line"><span>  PRIMARY KEY (`id`)                       # 把id列设置成主键</span></span>
-<span class="line"><span>) ENGINE=InnoDB DEFAULT CHARSET=utf8;</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#清空表</span></span>
-<span class="line"><span>truncate table 表名</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#删除表</span></span>
-<span class="line"><span>drop table 表名</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#添加列</span></span>
-<span class="line"><span>alter table 表名 add 列名 类型</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#删除列</span></span>
-<span class="line"><span>alter table 表名 drop column 列名</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#修改列类型</span></span>
-<span class="line"><span>alter table 表名 modify column 列名 类型;</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#修改列名、列类型</span></span>
-<span class="line"><span>alter table 表名 change 原列名 新列名 类型;</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#添加主键</span></span>
-<span class="line"><span>alter table 表名 add primary key(列名);</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#删除主键</span></span>
-<span class="line"><span>alter table 表名 drop primary key;</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#添加外键</span></span>
-<span class="line"><span>alter table 从表 add constraint 外键名称（形如：FK_从表_主表） foreign key 从表(外键字段) references 主表(主键字段);</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#删除外键</span></span>
-<span class="line"><span>alter table 表名 drop foreign key 外键名称</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#修改默认值</span></span>
-<span class="line"><span>ALTER TABLE user ALTER name SET DEFAULT 'javayz2';</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#删除默认值</span></span>
-<span class="line"><span>ALTER TABLE user ALTER name DROP DEFAULT;</span></span></code></pre>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#查询所有的表</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">show tables;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#创建表</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">CREATE</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> TABLE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> `</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">user</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">` (</span></span>
+<span class="line"><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">  `</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">id</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">`</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> int</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">(</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">11</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">) </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">NOT NULL</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> auto_increment,   # </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">not</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> null表示不能为空,auto_increment表示自增</span></span>
+<span class="line"><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">  `</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">name</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">`</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> varchar</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">(</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">255</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">) </span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">DEFAULT</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">javayz</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">,   # </span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">default</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表示默认值</span></span>
+<span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">  PRIMARY KEY</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> (</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">`</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">id</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">`</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">)                       # 把id列设置成主键</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">) ENGINE</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">InnoDB </span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">DEFAULT</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> CHARSET</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">utf8;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#清空表</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">truncate</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> table</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表名</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#删除表</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">drop</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> table</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表名</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#添加列</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">alter</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> table</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表名 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">add</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 列名 类型</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#删除列</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">alter</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> table</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表名 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">drop</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> column 列名</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#修改列类型</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">alter</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> table</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表名 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">modify</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> column 列名 类型;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#修改列名、列类型</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">alter</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> table</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表名 change 原列名 新列名 类型;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#添加主键</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">alter</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> table</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表名 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">add</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> primary key</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">(列名);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#删除主键</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">alter</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> table</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表名 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">drop</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> primary key</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#添加外键</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">alter</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> table</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 从表 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">add</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> constraint</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 外键名称（形如：FK_从表_主表） </span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">foreign key</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 从表(外键字段) </span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">references</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 主表(主键字段);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#删除外键</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">alter</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> table</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表名 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">drop</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> foreign key</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 外键名称</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#修改默认值</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ALTER</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> TABLE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> user </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ALTER</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> name</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> SET</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> DEFAULT</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">javayz2</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#删除默认值</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ALTER</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> TABLE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> user </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ALTER</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> name</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> DROP</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> DEFAULT</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">;</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_5-对数据的操作" tabindex="-1"><a class="header-anchor" href="#_5-对数据的操作"><span>5. 对数据的操作</span></a></h2>
-<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>#增</span></span>
-<span class="line"><span>insert into 表 (列名,列名...) values (值,值,...)</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#删</span></span>
-<span class="line"><span>delete from 表 where 条件</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#改</span></span>
-<span class="line"><span>update 表 set 字段='值' where 条件</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#查</span></span>
-<span class="line"><span>select 值 from 表 where 条件</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#通配符like %匹配多个字符,_匹配单个字符</span></span>
-<span class="line"><span>select * from 表 where name like '%java_'  </span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#limit 限制输出行数</span></span>
-<span class="line"><span>select * from 表 limit 3   #前3行</span></span>
-<span class="line"><span>select * from 表 limit 3,5;  #从第3行开始的5行</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#order by 排序   </span></span>
-<span class="line"><span>select * from 表 order by 列 asc  #asc正序，desc逆序</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>#group by分组（group by 必须在where之后，order by之前）</span></span>
-<span class="line"><span>select name from 表 group by name</span></span></code></pre>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#增</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">insert into</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表 (列名,列名...) </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">values</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> (值,值,...)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#删</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">delete</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> from</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">where</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 条件</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#改</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">update</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">set</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 字段</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">值</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> where</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 条件</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#查</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">select</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 值 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">from</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">where</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 条件</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#通配符like %匹配多个字符,_匹配单个字符</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">select</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> *</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> from</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">where</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> name</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> like</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> '</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">%java_</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">  </span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">limit</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 限制输出行数</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">select</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> *</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> from</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">limit</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91"> 3</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">   #前3行</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">select</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> *</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> from</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">limit</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91"> 3</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">,</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">5</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">;  #从第3行开始的5行</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">order by</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 排序   </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">select</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> *</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> from</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">order by</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 列 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">asc</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">  #asc正序，desc逆序</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">#group by分组（</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">group by</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 必须在where之后，order by之前）</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">select</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> name</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> from</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 表 </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">group by</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> name</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 

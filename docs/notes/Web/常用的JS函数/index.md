@@ -186,3 +186,31 @@ function accAdd(arg1, arg2) {
   return (arg1 + arg2) / m;
 }
 ```
+
+
+### 比较两个对象（深比较） 相等是true  不等 false
+```js
+//比较两个对象（深比较） 相等是true  不等 false
+        function deepEqual(compareObj1, compareObj2) {
+            if (typeof compareObj1 != 'object' ||  typeof compareObj1 != 'object') {
+                if (compareObj1 != compareObj2) return false;
+            }
+            // 当 compareObj1 和 compareObj2 都是对象 都不为空时开始比较
+            let obj1Keys = Object.keys(compareObj1); // compare1的key  这是一个key数组
+            let obj2Keys = Object.keys(compareObj2); // compare2的key  这是一个key数组
+            if (obj1Keys.length !== obj2Keys.length) return false; // 长度不一样直接返回false
+            for (let i = 0; i < obj1Keys.length; i++) {
+                // 总体规则就是如果是true则继续比较，如果发现一个false则直接返回
+                let compareObj1Value = compareObj1[obj1Keys[i]];
+                let compareObj2Value = compareObj2[obj1Keys[i]];
+                if (typeof compareObj1Value == 'object' && typeof compareObj2Value == 'object') {
+                    if (!deepEqual(compareObj1Value, compareObj2Value)) {
+                        return false;
+                    }
+                } else if (compareObj1Value != compareObj2Value) { // 有一个不为对象类型时直接比较值
+                    return false;
+                } 
+            }
+            return true;
+        }
+```

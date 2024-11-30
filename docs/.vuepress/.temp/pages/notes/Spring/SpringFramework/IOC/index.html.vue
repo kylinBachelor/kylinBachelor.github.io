@@ -486,10 +486,10 @@
 <p><strong>src/main/resources/hikaricp.properties</strong></p>
 </li>
 </ul>
-<div class="language-properties line-numbers-mode" data-ext="properties" data-title="properties"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>hikaricp.driverClassName=com.mysql.cj.jdbc.Driver</span></span>
-<span class="line"><span>hikaricp.jdbcUrl=jdbc:mysql://127.0.0.1:3306/legou?serverTimezone=Asia/Shanghai</span></span>
-<span class="line"><span>hikaricp.username=root</span></span>
-<span class="line"><span>hikaricp.password=root</span></span></code></pre>
+<div class="language-properties line-numbers-mode" data-ext="properties" data-title="properties"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">hikaricp.driverClassName</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">com.mysql.cj.jdbc.Driver</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">hikaricp.jdbcUrl</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">jdbc:mysql://127.0.0.1:3306/legou?</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">serverTimezone</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">Asia/Shanghai</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">hikaricp.username</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">root</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">hikaricp.password</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">root</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li><strong>DataSourceConfiguration.java</strong></li>
@@ -583,7 +583,7 @@
 <ul>
 <li><strong>src/main/resources/application.properties</strong></li>
 </ul>
-<div class="language-properties line-numbers-mode" data-ext="properties" data-title="properties"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>global.custom.apple.create=true</span></span></code></pre>
+<div class="language-properties line-numbers-mode" data-ext="properties" data-title="properties"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">global.custom.apple.create</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">true</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ul>
 <li><strong>Apple.java</strong></li>
@@ -661,8 +661,8 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li><strong>Console</strong></li>
 </ul>
-<div class="language-properties line-numbers-mode" data-ext="properties" data-title="properties"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>global.custom.apple.create=true   # 可注入spring容器，可获得 Apple 对象</span></span>
-<span class="line"><span>global.custom.apple.create=false  # 未注入spring容器</span></span></code></pre>
+<div class="language-properties line-numbers-mode" data-ext="properties" data-title="properties"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">global.custom.apple.create</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">true   </span><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 可注入spring容器，可获得 Apple 对象</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">global.custom.apple.create</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">false  </span><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 未注入spring容器</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 

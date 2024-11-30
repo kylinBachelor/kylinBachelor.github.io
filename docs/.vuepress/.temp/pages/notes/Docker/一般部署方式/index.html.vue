@@ -5,48 +5,48 @@
 </blockquote>
 <h3 id="_1-1-前提准备" tabindex="-1"><a class="header-anchor" href="#_1-1-前提准备"><span>1.1 前提准备</span></a></h3>
 <h4 id="_1-1-1-maven-docker打包插件-fabric8及远程docker配置" tabindex="-1"><a class="header-anchor" href="#_1-1-1-maven-docker打包插件-fabric8及远程docker配置"><span>1.1.1 maven docker打包插件：fabric8及远程Docker配置</span></a></h4>
-<div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>&#x3C;!--maven  docker 打包插件 --></span></span>
-<span class="line"><span>&#x3C;plugin></span></span>
-<span class="line"><span>    &#x3C;groupId>io.fabric8&#x3C;/groupId></span></span>
-<span class="line"><span>    &#x3C;artifactId>docker-maven-plugin&#x3C;/artifactId></span></span>
-<span class="line"><span>    &#x3C;version>${docker.plugin.version}&#x3C;/version></span></span>
-<span class="line"><span>    &#x3C;configuration></span></span>
-<span class="line"><span>        &#x3C;dockerHost>${docker.host}&#x3C;/dockerHost></span></span>
-<span class="line"><span>        &#x3C;registry>${docker.registry}&#x3C;/registry></span></span>
-<span class="line"><span>        &#x3C;authConfig></span></span>
-<span class="line"><span>            &#x3C;push></span></span>
-<span class="line"><span>                &#x3C;username>${docker.username}&#x3C;/username></span></span>
-<span class="line"><span>                &#x3C;password>${docker.password}&#x3C;/password></span></span>
-<span class="line"><span>            &#x3C;/push></span></span>
-<span class="line"><span>        &#x3C;/authConfig></span></span>
-<span class="line"><span>        &#x3C;images></span></span>
-<span class="line"><span>            &#x3C;image></span></span>
-<span class="line"><span>                &#x3C;name>${docker.registry}/${docker.namespace}/${project.name}:${project.version}&#x3C;/name></span></span>
-<span class="line"><span>                &#x3C;build></span></span>
-<span class="line"><span>                    &#x3C;dockerFile>${project.basedir}/Dockerfile&#x3C;/dockerFile></span></span>
-<span class="line"><span>                &#x3C;/build></span></span>
-<span class="line"><span>            &#x3C;/image></span></span>
-<span class="line"><span>        &#x3C;/images></span></span>
-<span class="line"><span>    &#x3C;/configuration></span></span>
-<span class="line"><span>&#x3C;/plugin></span></span></code></pre>
+<div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">&#x3C;!--maven  docker 打包插件 --></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">plugin</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">    &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">groupId</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">io.fabric8</span><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">groupId</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">    &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">artifactId</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">docker-maven-plugin</span><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">artifactId</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">    &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">version</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">${docker.plugin.version}</span><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">version</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">    &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">configuration</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">        &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">dockerHost</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">${docker.host}</span><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">dockerHost</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">        &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">registry</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">${docker.registry}</span><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">registry</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">        &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">authConfig</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">            &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">push</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">                &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">username</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">${docker.username}</span><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">username</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">                &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">password</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">${docker.password}</span><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">password</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">            &#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">push</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">        &#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">authConfig</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">        &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">images</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">            &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">image</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">                &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">name</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">${docker.registry}/${docker.namespace}/${project.name}:${project.version}</span><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">name</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">                &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">build</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">                    &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">dockerFile</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">${project.basedir}/Dockerfile</span><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">dockerFile</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">                &#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">build</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">            &#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">image</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">        &#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">images</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">    &#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">configuration</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">plugin</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_1-1-2-构建镜像的dockerfile文件" tabindex="-1"><a class="header-anchor" href="#_1-1-2-构建镜像的dockerfile文件"><span>1.1.2 构建镜像的Dockerfile文件</span></a></h4>
-<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>FROM ubuntu</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>MAINTAINER congpeitong@shundesoft.com</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span># 设置工作目录</span></span>
-<span class="line"><span>WORKDIR /pigx-boot</span></span>
-<span class="line"><span># 设置JAR位置</span></span>
-<span class="line"><span>ARG JAR_FILE=target/pigx-boot.jar</span></span>
-<span class="line"><span># 将本地的Java源代码赋值到容器内</span></span>
-<span class="line"><span>COPY ${JAR_FILE} app.jar</span></span>
-<span class="line"><span># 暴露端口给物理机映射</span></span>
-<span class="line"><span>EXPOSE 9999</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>ENV TZ=Asia/Shanghai JAVA_OPTS="-Xms512m -Xmx1024m -Djava.security.egd=file:/dev/./urandom"</span></span>
-<span class="line"><span># 运行编译后的Java程序</span></span>
-<span class="line"><span>CMD sleep 60; java $JAVA_OPTS -jar app.jar</span></span></code></pre>
+<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">FROM</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> ubuntu</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">MAINTAINER</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> congpeitong@shundesoft.com</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 设置工作目录</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">WORKDIR</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /pigx-boot</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 设置JAR位置</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ARG</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> JAR_FILE=target/pigx-boot.jar</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 将本地的Java源代码赋值到容器内</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">COPY</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> ${JAR_FILE} app.jar</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 暴露端口给物理机映射</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">EXPOSE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 9999</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> TZ=Asia/Shanghai JAVA_OPTS=</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"-Xms512m -Xmx1024m -Djava.security.egd=file:/dev/./urandom"</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 运行编译后的Java程序</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">CMD</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> sleep 60; java $JAVA_OPTS -jar app.jar</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_1-1-3-生成好的程序jar包" tabindex="-1"><a class="header-anchor" href="#_1-1-3-生成好的程序jar包"><span>1.1.3 生成好的程序jar包</span></a></h4>
 <h3 id="_1-2-部署" tabindex="-1"><a class="header-anchor" href="#_1-2-部署"><span>1.2 部署</span></a></h3>

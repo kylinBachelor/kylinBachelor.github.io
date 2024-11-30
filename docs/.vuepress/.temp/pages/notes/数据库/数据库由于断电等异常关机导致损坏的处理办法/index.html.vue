@@ -19,12 +19,12 @@
 </li>
 <li>
 <p>创建好新数据库表之后使用下面的命令删除<code v-pre>新建表的表空间</code></p>
-<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>ALTER TABLE tableName DISCARD TABLESPACE;</span></span></code></pre>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ALTER</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> TABLE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> tableName DISCARD TABLESPACE;</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>将备份好的.idb文件复制到目标数据库<code v-pre>数据文件夹（data）</code>下，并使用以下命令导入表空间恢复数据库即可</p>
-<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>ALTER TABLE tableName IMPORT TABLESPACE;</span></span></code></pre>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ALTER</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> TABLE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> tableName IMPORT TABLESPACE;</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 </ol>
@@ -40,7 +40,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>重新安装服务</p>
-<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>mysqld --install mysql</span></span></code></pre>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">mysqld </span><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">--install mysql</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>

@@ -4,15 +4,15 @@
 </blockquote>
 <h2 id="_1-制作java17的dockerfile" tabindex="-1"><a class="header-anchor" href="#_1-制作java17的dockerfile"><span>1. 制作java17的Dockerfile</span></a></h2>
 <h3 id="_1-1-dockerfile文件" tabindex="-1"><a class="header-anchor" href="#_1-1-dockerfile文件"><span>1.1 Dockerfile文件</span></a></h3>
-<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>FROM centos:7</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span># 配置Java17环境变量</span></span>
-<span class="line"><span>ADD jdk-17_linux-x64_bin.tar.gz /usr/lib/</span></span>
-<span class="line"><span>ENV JAVA_HOME=/usr/lib/jdk-17.0.10</span></span>
-<span class="line"><span>ENV CLASSPATH=.:${JAVA_HOME}/jre/lib/rt.jar:${JAVA_HOME}/lib/dt.jar:${JAVA_HOME}/lib/tools.jar</span></span>
-<span class="line"><span>ENV PATH=$PATH:${JAVA_HOME}/bin</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>CMD /bin/bash</span></span></code></pre>
+<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">FROM</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> centos:7</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 配置Java17环境变量</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ADD</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> jdk-17_linux-x64_bin.tar.gz /usr/lib/</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> JAVA_HOME=/usr/lib/jdk-17.0.10</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> CLASSPATH=.:${JAVA_HOME}/jre/lib/rt.jar:${JAVA_HOME}/lib/dt.jar:${JAVA_HOME}/lib/tools.jar</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> PATH=$PATH:${JAVA_HOME}/bin</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">CMD</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /bin/bash</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container warning">
 <p class="hint-container-title">注意</p>

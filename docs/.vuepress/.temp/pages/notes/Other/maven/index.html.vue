@@ -668,48 +668,48 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 </li>
 <li>
 <p>或者可以将清除<strong>lastUpdated文件</strong>的操作写在一个脚本文件中，手动创建文件&quot;clearLastUpdated.bat&quot;，名字任意，但是后缀必须是bat，将以下内容复制到文件中</p>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>cls </span></span>
-<span class="line"><span>@ECHO OFF </span></span>
-<span class="line"><span>SET CLEAR_PATH=D: </span></span>
-<span class="line"><span>SET CLEAR_DIR=D:\maven-repository(本地仓库路径)</span></span>
-<span class="line"><span>color 0a </span></span>
-<span class="line"><span>TITLE ClearLastUpdated For Windows </span></span>
-<span class="line"><span>GOTO MENU </span></span>
-<span class="line"><span>:MENU </span></span>
-<span class="line"><span>CLS</span></span>
-<span class="line"><span>ECHO. </span></span>
-<span class="line"><span>ECHO. * * * *  ClearLastUpdated For Windows  * * * * </span></span>
-<span class="line"><span>ECHO. * * </span></span>
-<span class="line"><span>ECHO. * 1 清理*.lastUpdated * </span></span>
-<span class="line"><span>ECHO. * * </span></span>
-<span class="line"><span>ECHO. * 2 查看*.lastUpdated * </span></span>
-<span class="line"><span>ECHO. * * </span></span>
-<span class="line"><span>ECHO. * 3 退 出 * </span></span>
-<span class="line"><span>ECHO. * * </span></span>
-<span class="line"><span>ECHO. * * * * * * * * * * * * * * * * * * * * * * * * </span></span>
-<span class="line"><span>ECHO. </span></span>
-<span class="line"><span>ECHO.请输入选择项目的序号： </span></span>
-<span class="line"><span>set /p ID= </span></span>
-<span class="line"><span>IF "%id%"=="1" GOTO cmd1 </span></span>
-<span class="line"><span>IF "%id%"=="2" GOTO cmd2 </span></span>
-<span class="line"><span>IF "%id%"=="3" EXIT </span></span>
-<span class="line"><span>PAUSE </span></span>
-<span class="line"><span>:cmd1 </span></span>
-<span class="line"><span>ECHO. 开始清理</span></span>
-<span class="line"><span>%CLEAR_PATH%</span></span>
-<span class="line"><span>cd %CLEAR_DIR%</span></span>
-<span class="line"><span>for /r %%i in (*.lastUpdated) do del %%i</span></span>
-<span class="line"><span>ECHO.OK </span></span>
-<span class="line"><span>PAUSE </span></span>
-<span class="line"><span>GOTO MENU </span></span>
-<span class="line"><span>:cmd2 </span></span>
-<span class="line"><span>ECHO. 查看*.lastUpdated文件</span></span>
-<span class="line"><span>%CLEAR_PATH%</span></span>
-<span class="line"><span>cd %CLEAR_DIR%</span></span>
-<span class="line"><span>for /r %%i in (*.lastUpdated) do echo %%i</span></span>
-<span class="line"><span>ECHO.OK </span></span>
-<span class="line"><span>PAUSE </span></span>
-<span class="line"><span>GOTO MENU</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">cls</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">@</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> OFF</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">SET</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> CLEAR_PATH</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">D: </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">SET</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> CLEAR_DIR</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">D:\maven-repository</span><span style="--shiki-light:#999999;--shiki-dark:#666666">(</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">本地仓库路径</span><span style="--shiki-light:#999999;--shiki-dark:#666666">)</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">color</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 0a </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">TITLE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> ClearLastUpdated </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">For</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> Windows </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">GOTO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> MENU </span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">:</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">MENU</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">CLS</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * * *  ClearLastUpdated For Windows  * * * * </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * </span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">1</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 清理*.lastUpdated * </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * </span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">2</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 查看*.lastUpdated * </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * </span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">3</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 退 出 * </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * * * * * * * * * * * * * * * * * * * * * * * </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.请输入选择项目的序号： </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">set</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /p </span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">ID</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">IF</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> "</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">id</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">==</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">1</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> GOTO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> cmd1 </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">IF</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> "</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">id</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">==</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">2</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> GOTO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> cmd2 </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">IF</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> "</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">id</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">==</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">3</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> EXIT</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">PAUSE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">:</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">cmd1</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. 开始清理</span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">CLEAR_PATH</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">cd</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> %</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">CLEAR_DIR</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">for</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /r </span><span style="--shiki-light:#999999;--shiki-dark:#666666">%%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">i</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> in</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> (</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">*.lastUpdated</span><span style="--shiki-light:#999999;--shiki-dark:#666666">)</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> do</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> del</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> %%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">i</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.OK </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">PAUSE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">GOTO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> MENU </span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">:</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">cmd2</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. 查看*.lastUpdated文件</span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">CLEAR_PATH</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">cd</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> %</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">CLEAR_DIR</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">for</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /r </span><span style="--shiki-light:#999999;--shiki-dark:#666666">%%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">i</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> in</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> (</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">*.lastUpdated</span><span style="--shiki-light:#999999;--shiki-dark:#666666">)</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> do</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> echo</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> %%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">i</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.OK </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">PAUSE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">GOTO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> MENU</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="@source/notes/Other/maven/assets/image-20231021161615994.png" alt="image-20231021161615994"></p>
 </li>
