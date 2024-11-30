@@ -1,0 +1,16 @@
+import comp from "C:/Users/kylinBachelor/Desktop/my-project/docs/.vuepress/.temp/pages/notes/Web/Vue3基础/index.html.vue"
+const data = JSON.parse("{\"path\":\"/notes/Web/Vue3%E5%9F%BA%E7%A1%80/\",\"title\":\"Vue3基础\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Vue3基础\",\"aliases\":null,\"tags\":[\"Web\",\"Vue\",\"_\"],\"description\":\"Vue3基础\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":36.79,\"words\":11036},\"filePathRelative\":\"notes/Web/Vue3基础/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"eac769\",\"sort\":10015,\"name\":\"Web\"},{\"id\":\"d162f4\",\"sort\":10079,\"name\":\"Vue3基础\"}],\"bulletin\":false}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

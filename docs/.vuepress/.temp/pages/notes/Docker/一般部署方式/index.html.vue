@@ -1,0 +1,71 @@
+<template><div><h1 id="使用docker部署方式" tabindex="-1"><a class="header-anchor" href="#使用docker部署方式"><span>使用Docker部署方式</span></a></h1>
+<h2 id="_1-不使用harbor仓库部署" tabindex="-1"><a class="header-anchor" href="#_1-不使用harbor仓库部署"><span>1. 不使用Harbor仓库部署</span></a></h2>
+<blockquote>
+<p>本地可以连接远程Docker，以Dcoker进行构建镜像（该Docker需为部署自己服务程序的服务器上的Docker,因为构建镜像时是直接构建到远程Docker上的）。</p>
+</blockquote>
+<h3 id="_1-1-前提准备" tabindex="-1"><a class="header-anchor" href="#_1-1-前提准备"><span>1.1 前提准备</span></a></h3>
+<h4 id="_1-1-1-maven-docker打包插件-fabric8及远程docker配置" tabindex="-1"><a class="header-anchor" href="#_1-1-1-maven-docker打包插件-fabric8及远程docker配置"><span>1.1.1 maven docker打包插件：fabric8及远程Docker配置</span></a></h4>
+<div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>&#x3C;!--maven  docker 打包插件 --></span></span>
+<span class="line"><span>&#x3C;plugin></span></span>
+<span class="line"><span>    &#x3C;groupId>io.fabric8&#x3C;/groupId></span></span>
+<span class="line"><span>    &#x3C;artifactId>docker-maven-plugin&#x3C;/artifactId></span></span>
+<span class="line"><span>    &#x3C;version>${docker.plugin.version}&#x3C;/version></span></span>
+<span class="line"><span>    &#x3C;configuration></span></span>
+<span class="line"><span>        &#x3C;dockerHost>${docker.host}&#x3C;/dockerHost></span></span>
+<span class="line"><span>        &#x3C;registry>${docker.registry}&#x3C;/registry></span></span>
+<span class="line"><span>        &#x3C;authConfig></span></span>
+<span class="line"><span>            &#x3C;push></span></span>
+<span class="line"><span>                &#x3C;username>${docker.username}&#x3C;/username></span></span>
+<span class="line"><span>                &#x3C;password>${docker.password}&#x3C;/password></span></span>
+<span class="line"><span>            &#x3C;/push></span></span>
+<span class="line"><span>        &#x3C;/authConfig></span></span>
+<span class="line"><span>        &#x3C;images></span></span>
+<span class="line"><span>            &#x3C;image></span></span>
+<span class="line"><span>                &#x3C;name>${docker.registry}/${docker.namespace}/${project.name}:${project.version}&#x3C;/name></span></span>
+<span class="line"><span>                &#x3C;build></span></span>
+<span class="line"><span>                    &#x3C;dockerFile>${project.basedir}/Dockerfile&#x3C;/dockerFile></span></span>
+<span class="line"><span>                &#x3C;/build></span></span>
+<span class="line"><span>            &#x3C;/image></span></span>
+<span class="line"><span>        &#x3C;/images></span></span>
+<span class="line"><span>    &#x3C;/configuration></span></span>
+<span class="line"><span>&#x3C;/plugin></span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_1-1-2-构建镜像的dockerfile文件" tabindex="-1"><a class="header-anchor" href="#_1-1-2-构建镜像的dockerfile文件"><span>1.1.2 构建镜像的Dockerfile文件</span></a></h4>
+<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>FROM ubuntu</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>MAINTAINER congpeitong@shundesoft.com</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 设置工作目录</span></span>
+<span class="line"><span>WORKDIR /pigx-boot</span></span>
+<span class="line"><span># 设置JAR位置</span></span>
+<span class="line"><span>ARG JAR_FILE=target/pigx-boot.jar</span></span>
+<span class="line"><span># 将本地的Java源代码赋值到容器内</span></span>
+<span class="line"><span>COPY ${JAR_FILE} app.jar</span></span>
+<span class="line"><span># 暴露端口给物理机映射</span></span>
+<span class="line"><span>EXPOSE 9999</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ENV TZ=Asia/Shanghai JAVA_OPTS="-Xms512m -Xmx1024m -Djava.security.egd=file:/dev/./urandom"</span></span>
+<span class="line"><span># 运行编译后的Java程序</span></span>
+<span class="line"><span>CMD sleep 60; java $JAVA_OPTS -jar app.jar</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_1-1-3-生成好的程序jar包" tabindex="-1"><a class="header-anchor" href="#_1-1-3-生成好的程序jar包"><span>1.1.3 生成好的程序jar包</span></a></h4>
+<h3 id="_1-2-部署" tabindex="-1"><a class="header-anchor" href="#_1-2-部署"><span>1.2 部署</span></a></h3>
+<h4 id="_1-2-1-maven命令部署" tabindex="-1"><a class="header-anchor" href="#_1-2-1-maven命令部署"><span>1.2.1 maven命令部署</span></a></h4>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">mvn</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> clean</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> package</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> docker:stop</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> docker:remove</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> docker:build</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> docker:run</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ul>
+<li>docker:stop 停止并删除docker容器</li>
+<li>docker:remove 删除镜像</li>
+<li>docker:build 构建镜像</li>
+<li>docker:run 创建并启动docker容器</li>
+</ul>
+<h4 id="_1-2-2-idea部署" tabindex="-1"><a class="header-anchor" href="#_1-2-2-idea部署"><span>1.2.2 idea部署</span></a></h4>
+<p><img src="@source/notes/Docker/一般部署方式/assets/image-20240716094139983.png" alt="image-20240716094139983"></p>
+<h2 id="_2-使用harbor仓库部署" tabindex="-1"><a class="header-anchor" href="#_2-使用harbor仓库部署"><span>2. 使用Harbor仓库部署</span></a></h2>
+<h3 id="_2-1-前提准备" tabindex="-1"><a class="header-anchor" href="#_2-1-前提准备"><span>2.1 前提准备</span></a></h3>
+<p>和不使用Harbor的前提准备一致，配置好Harbor信息就行了</p>
+<h3 id="_2-2-部署" tabindex="-1"><a class="header-anchor" href="#_2-2-部署"><span>2.2 部署</span></a></h3>
+<p>本地使用build生成镜像-》通过push将生成的镜像上传到Harbor仓库-》部署服务器通过docker pull命令从Harbor仓库拉取然后run启动就行了。</p>
+</div></template>
+
+

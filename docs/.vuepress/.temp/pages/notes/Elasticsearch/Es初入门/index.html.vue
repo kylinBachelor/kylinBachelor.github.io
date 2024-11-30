@@ -1,0 +1,128 @@
+<template><div><h1 id="elasticsearch" tabindex="-1"><a class="header-anchor" href="#elasticsearch"><span>Elasticsearch</span></a></h1>
+<h3 id="作者-丛培通" tabindex="-1"><a class="header-anchor" href="#作者-丛培通"><span>作者:丛培通</span></a></h3>
+<h3 id="时间-2024-07-01" tabindex="-1"><a class="header-anchor" href="#时间-2024-07-01"><span>时间:2024-07-01</span></a></h3>
+<p><strong>Elaticsearch，简称为 ES，ES 是一个开源的高扩展的分布式全文搜索引擎，是整个 Elastic Stack 技术栈的核心。它可以近乎实时的存储、检索数据；本身扩展性很好，可以扩展到上百台服务器，处理 PB 级别的数据。</strong></p>
+<p>##　１.　入门</p>
+<h3 id="_1-1-说明" tabindex="-1"><a class="header-anchor" href="#_1-1-说明"><span>1.1 说明</span></a></h3>
+<ul>
+<li>官方地址:https://www.elastic.co/cn/</li>
+<li>下载地址:https://www.elastic.co/cn/downloads/past-releases#elasticsearch</li>
+</ul>
+<p><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701130252646.png" alt="image-20240701130252646"></p>
+<p>Elasticsearch 支持 Windows, Macos,Linux</p>
+<p><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701130429766.png" alt="image-20240701130429766"></p>
+<h3 id="_1-2-windows安装" tabindex="-1"><a class="header-anchor" href="#_1-2-windows安装"><span>1.2 Windows安装</span></a></h3>
+<p>Windows安装比较简单,几乎是开箱即用,下载好后目录结构如下:</p>
+<p><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701130940289.png" alt="image-20240701130940289"></p>
+<p>目录说明:</p>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bin</td>
+<td>可执行脚本目录</td>
+</tr>
+<tr>
+<td>config</td>
+<td>配置目录</td>
+</tr>
+<tr>
+<td>jdk</td>
+<td>内置jdk目录</td>
+</tr>
+<tr>
+<td>lib</td>
+<td>类库</td>
+</tr>
+<tr>
+<td>log</td>
+<td>日志目录</td>
+</tr>
+<tr>
+<td>modules</td>
+<td>模块目录</td>
+</tr>
+<tr>
+<td>plugins</td>
+<td>插件目录</td>
+</tr>
+</tbody>
+</table>
+<p>解压之后进入 <strong>bin</strong> 目录,找到 <strong>elasticsearch.bat</strong> 文件双击启动服务</p>
+<p><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701131951732.png" alt="image-20240701131951732"></p>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p><strong>9300</strong> 端口为 <strong>Elasticsearch</strong> 集群间组件的通信端口，<strong>9200</strong> 端口为浏览器访问的 http 协议 <strong>RESTful</strong> 口。</p>
+</div>
+<p>打开浏览器测试结果如下:</p>
+<p><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701132205234.png" alt="image-20240701132205234"></p>
+<h3 id="_1-3-linux下安装" tabindex="-1"><a class="header-anchor" href="#_1-3-linux下安装"><span>1.3 Linux下安装</span></a></h3>
+<h4 id="_1-3-1-下载地址" tabindex="-1"><a class="header-anchor" href="#_1-3-1-下载地址"><span>1.3.1 下载地址</span></a></h4>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">https://www.elastic.co/cn/downloads/past-releases/elasticsearch-7-14-0</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h4 id="_1-3-2-步骤" tabindex="-1"><a class="header-anchor" href="#_1-3-2-步骤"><span>1.3.2 步骤</span></a></h4>
+<ol>
+<li>检查jdk版本 建议 7.14.0 使用jdk17版本</li>
+<li>上传至服务器并解压</li>
+<li>更改文件夹所属者,不能用root用户启动,需用普通用户启动</li>
+</ol>
+<h3 id="_1-4-存在的以下问题" tabindex="-1"><a class="header-anchor" href="#_1-4-存在的以下问题"><span>1.4 存在的以下问题</span></a></h3>
+<ol>
+<li>
+<p>Elasticsearch 是 Java 开发的,且 7.8 版本的 ES 需要 JDK 版本 1.8 以上，默认安装包带有 jdk 环境，如果系统配置 JAVA_HOME，那么使用系统默认的 JDK，如果没有配置使用自带的 JDK，一般建议使用系统配置的 JDK。</p>
+</li>
+<li>
+<p>双击启动窗口闪退, 通过路径追踪访问错误,如果是 <strong>空间不足</strong> 请修改 <strong>config/jvm.options</strong> 配置文件.</p>
+<div class="language-options line-numbers-mode" data-ext="options" data-title="options"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span># Xms represents the initial size of total heap space</span></span>
+<span class="line"><span># Xmx represents the maximum size of total heap space</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>-Xms1g</span></span>
+<span class="line"><span>-Xmx1g</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## GC configuration</span></span>
+<span class="line"><span>8-13:-XX:+UseConcMarkSweepGC</span></span>
+<span class="line"><span>8-13:-XX:CMSInitiatingOccupancyFraction=75</span></span>
+<span class="line"><span>8-13:-XX:+UseCMSInitiatingOccupancyOnly</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## 解决中文乱码问题</span></span>
+<span class="line"><span>-Dfile.encoding=GBK</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ol>
+<h3 id="_1-5-jdk版本说明" tabindex="-1"><a class="header-anchor" href="#_1-5-jdk版本说明"><span>1.5 jdk版本说明</span></a></h3>
+<table>
+<thead>
+<tr>
+<th>elasticsearch版本</th>
+<th>jdk版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7.14.0(由于pigx框架给的是这个版本,所以我们用这个)</td>
+<td>17.0.1</td>
+</tr>
+<tr>
+<td>8.14.1(目前最新版本,该版本需要登录校验)</td>
+<td>22</td>
+</tr>
+<tr>
+<td>7.8.0</td>
+<td>1.8版本就可以</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2-基本操作" tabindex="-1"><a class="header-anchor" href="#_2-基本操作"><span>2. 基本操作</span></a></h2>
+<h3 id="_2-1-restful" tabindex="-1"><a class="header-anchor" href="#_2-1-restful"><span>2.1 RESTful</span></a></h3>
+<p>REST 指的是一组架构约束条件和原则。满足这些约束条件和原则的应用程序或设计就是 RESTful。Web 应用程序最重要的 REST 原则是，客户端和服务器之间的交互在请求之间是无状态的。从客户端到服务器的每个请求都必须包含理解请求所必需的信息。如果服务器在请求之间的任何时间点重启，客户端不会得到通知。此外，无状态请求可以由任何可用服务器回答，这十分适合云计算之类的环境。客户端可以缓存数据以改进性能。</p>
+<p>在服务器端，应用程序状态和功能可以分为各种资源。资源是一个有趣的概念实体，它向客户端公开。资源的例子有：应用程序对象、数据库记录、算法等等。每个资源都使用 URI (Universal Resource Identifier) 得到一个唯一的地址。所有资源都共享统一的接口，以便在客户端和服务器之间传输状态。使用的是标准的 HTTP 方法，比如 GET、PUT、POST 和DELETE。</p>
+<p>在 REST 样式的 Web 服务中，每个资源都有一个地址。资源本身都是方法调用的目标，方法列表对所有资源都是一样的。这些方法都是标准方法，包括 HTTP GET、POST、PUT、DELETE，还可能包括 HEAD 和 OPTIONS。简单的理解就是，如果想要访问互联网上的资源，就必须向资源所在的服务器发出请求，请求体中必须包含资源的网络路径，以及对资源进行的操作(增删改查)。</p>
+</div></template>
+
+

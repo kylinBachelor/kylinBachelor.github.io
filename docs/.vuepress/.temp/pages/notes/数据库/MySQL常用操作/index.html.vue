@@ -1,0 +1,121 @@
+<template><div><h1 id="mysql常用操作" tabindex="-1"><a class="header-anchor" href="#mysql常用操作"><span>MySQL常用操作</span></a></h1>
+<h2 id="_1-数据库基本操作" tabindex="-1"><a class="header-anchor" href="#_1-数据库基本操作"><span>1. 数据库基本操作</span></a></h2>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>#查看数据库</span></span>
+<span class="line"><span>show databases</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#创建数据库</span></span>
+<span class="line"><span>create database db DEFAULT CHARSET utf8 COLLATE utf8_general_ci;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#使用数据库</span></span>
+<span class="line"><span>use db;</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2-用户操作" tabindex="-1"><a class="header-anchor" href="#_2-用户操作"><span>2. 用户操作</span></a></h2>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>#创建用户</span></span>
+<span class="line"><span>create user '用户名'@'IP地址' identified by '密码';</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#删除用户</span></span>
+<span class="line"><span>drop user '用户名'@'IP地址';</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#修改用户</span></span>
+<span class="line"><span>rename user '用户名'@'IP地址' to '新用户名'@'IP地址';</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#修改密码</span></span>
+<span class="line"><span>set password for '用户名'@'IP地址' = Password('新密码')</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>创建用户时：</p>
+<p>用户名：创建的用户名称</p>
+<p>IP地址：指定用户可以从哪个服务器登陆，本地用户localhost，任意远程机用“%”</p>
+<p>密码：该用户登陆的密码</p>
+<h2 id="_3-权限相关" tabindex="-1"><a class="header-anchor" href="#_3-权限相关"><span>3. 权限相关</span></a></h2>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span></span></span>
+<span class="line"><span>#查看权限：</span></span>
+<span class="line"><span>show grants for '用户'@'IP地址' </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#授权：</span></span>
+<span class="line"><span>grant 权限 on 数据库.表 to '用户'@'IP地址'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#取消授权：</span></span>
+<span class="line"><span>revoke 权限 on 数据库.表 from '用户'@'IP地址'</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>权限：用户的操作权限，如SELECT，INSERT，UPDATE等，如果要授予所的权限则使用ALL。</p>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>GRANT SELECT, INSERT ON student.user TO 'scott'@'%';</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>通过下面的命令让指定用户可以给其他用户授权</p>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>GRANT privileges ON databasename.tablename TO 'username'@'host' WITH GRANT OPTION;</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="_4-对表的操作" tabindex="-1"><a class="header-anchor" href="#_4-对表的操作"><span>4. 对表的操作</span></a></h2>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>#查询所有的表</span></span>
+<span class="line"><span>show tables;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#创建表</span></span>
+<span class="line"><span>CREATE TABLE `user` (</span></span>
+<span class="line"><span>  `id` int(11) NOT NULL auto_increment,   # not null表示不能为空,auto_increment表示自增</span></span>
+<span class="line"><span>  `name` varchar(255) DEFAULT 'javayz',   # default 表示默认值</span></span>
+<span class="line"><span>  PRIMARY KEY (`id`)                       # 把id列设置成主键</span></span>
+<span class="line"><span>) ENGINE=InnoDB DEFAULT CHARSET=utf8;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#清空表</span></span>
+<span class="line"><span>truncate table 表名</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#删除表</span></span>
+<span class="line"><span>drop table 表名</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#添加列</span></span>
+<span class="line"><span>alter table 表名 add 列名 类型</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#删除列</span></span>
+<span class="line"><span>alter table 表名 drop column 列名</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#修改列类型</span></span>
+<span class="line"><span>alter table 表名 modify column 列名 类型;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#修改列名、列类型</span></span>
+<span class="line"><span>alter table 表名 change 原列名 新列名 类型;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#添加主键</span></span>
+<span class="line"><span>alter table 表名 add primary key(列名);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#删除主键</span></span>
+<span class="line"><span>alter table 表名 drop primary key;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#添加外键</span></span>
+<span class="line"><span>alter table 从表 add constraint 外键名称（形如：FK_从表_主表） foreign key 从表(外键字段) references 主表(主键字段);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#删除外键</span></span>
+<span class="line"><span>alter table 表名 drop foreign key 外键名称</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#修改默认值</span></span>
+<span class="line"><span>ALTER TABLE user ALTER name SET DEFAULT 'javayz2';</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#删除默认值</span></span>
+<span class="line"><span>ALTER TABLE user ALTER name DROP DEFAULT;</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_5-对数据的操作" tabindex="-1"><a class="header-anchor" href="#_5-对数据的操作"><span>5. 对数据的操作</span></a></h2>
+<div class="language-sql line-numbers-mode" data-ext="sql" data-title="sql"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>#增</span></span>
+<span class="line"><span>insert into 表 (列名,列名...) values (值,值,...)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#删</span></span>
+<span class="line"><span>delete from 表 where 条件</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#改</span></span>
+<span class="line"><span>update 表 set 字段='值' where 条件</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#查</span></span>
+<span class="line"><span>select 值 from 表 where 条件</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#通配符like %匹配多个字符,_匹配单个字符</span></span>
+<span class="line"><span>select * from 表 where name like '%java_'  </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#limit 限制输出行数</span></span>
+<span class="line"><span>select * from 表 limit 3   #前3行</span></span>
+<span class="line"><span>select * from 表 limit 3,5;  #从第3行开始的5行</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#order by 排序   </span></span>
+<span class="line"><span>select * from 表 order by 列 asc  #asc正序，desc逆序</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#group by分组（group by 必须在where之后，order by之前）</span></span>
+<span class="line"><span>select name from 表 group by name</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+
+

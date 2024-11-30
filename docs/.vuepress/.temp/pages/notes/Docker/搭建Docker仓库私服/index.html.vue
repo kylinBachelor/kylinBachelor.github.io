@@ -1,0 +1,169 @@
+<template><div><h1 id="搭建docker仓库私服-harbor" tabindex="-1"><a class="header-anchor" href="#搭建docker仓库私服-harbor"><span>搭建Docker仓库私服（Harbor）</span></a></h1>
+<blockquote>
+<p>=== Docker私服使用Docker环境搭建的，首先需要有Docker环境</p>
+</blockquote>
+<p>很多时候，开发者本地是没有Docker的，但是可以使用远程的Docker服务来build镜像，通过远程Docker服务将本地镜像推送到 <strong>Harbor</strong> 仓库私服。</p>
+<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705125934120.png" alt="image-20240705125934120"></p>
+<h2 id="_1-安装docker" tabindex="-1"><a class="header-anchor" href="#_1-安装docker"><span>1. 安装Docker</span></a></h2>
+<blockquote>
+<p>=== 保证机器可以访问外网</p>
+</blockquote>
+<ol>
+<li>
+<p>安装gcc
+yum -y install gcc</p>
+</li>
+<li>
+<p>安装c++
+yum -y install gcc-c++</p>
+</li>
+<li>
+<p>安装包管理
+sudo yum install -y yum-utils</p>
+</li>
+<li>
+<p>设置仓库
+yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</p>
+</li>
+<li>
+<p>更新yum软件包索引
+yum makecache fast</p>
+</li>
+<li>
+<p>安装docker 引擎
+sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</p>
+</li>
+<li>
+<p>启动Docker
+systemctl start docker</p>
+</li>
+<li>
+<p>查看Docker版本
+docker version</p>
+</li>
+<li>
+<p>校验Docker Engine 是否安装成功
+docker run hello-world</p>
+</li>
+<li>
+<p>配置阿里云镜像加速器 https://cr.console.aliyun.com/cn-beijing/instances/mirrors
+阿里云中有容器镜像服务，创建一个个人版本的就可以,针对Docker客户端版本大于 1.10.0 的用户,您可以通过修改daemon配置文件/etc/docker/daemon.json来使用加速器</p>
+<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705124456342.png" alt="image-20240705124456342"></p>
+<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705124612056.png" alt="image-20240705124612056"></p>
+<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705124631737.png" alt="image-20240705124631737"></p>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">sudo</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> mkdir</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -p</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> /etc/docker</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">sudo</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> tee</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> /etc/docker/daemon.json</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> &#x3C;&#x3C;-</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'EOF'</span></span>
+<span class="line"><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">{</span></span>
+<span class="line"><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">  "registry-mirrors": ["https://cfst52be.mirror.aliyuncs.com"]</span></span>
+<span class="line"><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">}</span></span>
+<span class="line"><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">EOF</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">sudo</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> systemctl</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> daemon-reload</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">sudo</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> systemctl</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> restart</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> docker</span><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"> # 感觉restart不管用，最好是stop之后再start</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ol>
+<h2 id="_2-开启docker-remote-api" tabindex="-1"><a class="header-anchor" href="#_2-开启docker-remote-api"><span>2. 开启Docker Remote Api</span></a></h2>
+<blockquote>
+<p>=== Docker RemoteAPI是为了保证其它机器能够通过url访问到Docker提供的服务（例如：build、push）</p>
+</blockquote>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">vim</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> /usr/lib/systemd/system/docker.service</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">#14 行 修改为</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">ExecStart</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">/usr/bin/dockerd</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665"> -H</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> tcp://0.0.0.0:2375</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -H</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> unix://var/run/docker.sock</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 重新加载配置</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">systemctl</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> daemon-reload</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 重启Docker</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">systemctl</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> restart</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> docker</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>初始化镜像（pigx官方给的，应该不初始化也行）</p>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">docker</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> pull</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> java:8-jre</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">docker</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> pull</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> pig4cloud/java:8-jre</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_3-安装docker-compose" tabindex="-1"><a class="header-anchor" href="#_3-安装docker-compose"><span>3. 安装docker-compose</span></a></h2>
+<p>将提供的 <strong>docker-compose-Linux-x86_64</strong> 文件拷贝至相应位置即可</p>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">mv</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> docker-compose-Linux-x86_64</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> /usr/local/bin/docker-compose</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">chmod</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> +x</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> /usr/local/bin/docker-compose</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_4-安装harbor" tabindex="-1"><a class="header-anchor" href="#_4-安装harbor"><span>4. 安装Harbor</span></a></h2>
+<blockquote>
+<p>=== 前提：已经安装完成docker-compose</p>
+</blockquote>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 前提条件 已安装docker-compose</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"> # 解压harbor 离线包</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665"> tar</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -zxvf</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> harbor-offline-installer-v1.9.3.tgz</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"> # 修改 harbor.yml hostname配置</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665"> vim</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> harbor.yml</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"> # 执行安装</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665"> sh</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> install.sh</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"> # 重启 docker</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665"> systemctl</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> restart</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> docker</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"> # 重启 harbor 建议先关闭再重启</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665"> docker-compose</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> stop</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665"> docker-compose</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> start</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>hostname配置不能是 localhost 或者 127.0.0.1 必须是具体的ip地址或者域名</p>
+<p><strong>harbor.yml</strong> 也可配置端口（默认80），登录密码等信息，可自行调整</p>
+</div>
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>sh install.sh 其实是安装了harbor所需的docker镜像</p>
+</div>
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p><strong>建议重启时使用docker-compose命令</strong></p>
+</div>
+<h2 id="_5-配置docker连接私服" tabindex="-1"><a class="header-anchor" href="#_5-配置docker连接私服"><span>5. 配置Docker连接私服</span></a></h2>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">vim</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> /etc/docker/daemon.json</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 修改insecure-registries 的IP, insecure-registries 即为 harbor的地址，如果安装时更改了端口则是:  ip:端口</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">{</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">"registry-mirrors"</span><span style="--shiki-light:#998418;--shiki-dark:#B8A965">:</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">[</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">"https://3wzyb32e.mirror.aliyuncs.com"</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">],</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">"insecure-registries"</span><span style="--shiki-light:#998418;--shiki-dark:#B8A965">:</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">[</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">"192.168.1.100"</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">]}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 更新配置</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">systemctl</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> daemon-reload</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 重启docker</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">systemctl</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> restart</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> docker</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 重启harbor</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">docker-compose</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> stop</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">docker-compose</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> start</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>正常来说，Docker服务 和 Harbor仓库 可以不在一个服务器，通过该配置将Docker连接到Harbor私服，为了可以push到Harbor仓库</p>
+</div>
+<h2 id="_6-具体操作生成镜像-推送私服-仅对于pigx这个框架来说" tabindex="-1"><a class="header-anchor" href="#_6-具体操作生成镜像-推送私服-仅对于pigx这个框架来说"><span>6. 具体操作生成镜像，推送私服（仅对于pigx这个框架来说）</span></a></h2>
+<blockquote>
+<p>=== 首先得配置好 <strong>Dockerfile</strong> , 这里不作阐述，我也没研究过</p>
+</blockquote>
+<p>配置 Docker 服务地址 和 Harbor地址</p>
+<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705135534009.png" alt="image-20240705135534009"></p>
+<h3 id="_6-1-idea方式" tabindex="-1"><a class="header-anchor" href="#_6-1-idea方式"><span>6.1 IDEA方式</span></a></h3>
+<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705135633621.png" alt="image-20240705135633621"></p>
+<h3 id="_6-2-maven-fabric8-docker-构建插件" tabindex="-1"><a class="header-anchor" href="#_6-2-maven-fabric8-docker-构建插件"><span>6.2 maven fabric8 docker 构建插件</span></a></h3>
+<blockquote>
+<p>=== 即命令行的方式，需要构建哪个模块，相应的目录就是对应模块的pom.xml同一个目录（biz）</p>
+</blockquote>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#998418;--shiki-dark:#B8A965">cd</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> pigx-upms/pigx-upms-biz/</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">mvn</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> install</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> docker:build</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">mvn</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> docker:push</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>使用远程服务的前提是远程Docker服务必须登录至Harbor才能进行push操作</p>
+<p>需要在Docker端服务器登录Harbor,登录方式如下：</p>
+<p>​	docker login harbor的ip地址:harbor的端口</p>
+<p>然后输入harbor的登录用户和密码即可</p>
+</div>
+</div></template>
+
+

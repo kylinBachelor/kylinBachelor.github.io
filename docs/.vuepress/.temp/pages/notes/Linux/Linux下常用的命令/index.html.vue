@@ -1,0 +1,236 @@
+<template><div><h2 id="排查某端口是否被占用" tabindex="-1"><a class="header-anchor" href="#排查某端口是否被占用"><span>排查某端口是否被占用</span></a></h2>
+<div class="language-bash line-numbers-mode" data-ext="bash" data-title="bash"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">netstat</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -anp</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> |</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665"> grep</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> [端口号]</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="查看网络连接网络接口信息等" tabindex="-1"><a class="header-anchor" href="#查看网络连接网络接口信息等"><span>查看网络连接网络接口信息等</span></a></h2>
+<div class="language-bash line-numbers-mode" data-ext="bash" data-title="bash"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">netstat</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -nlpt</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="查看系统版本" tabindex="-1"><a class="header-anchor" href="#查看系统版本"><span>查看系统版本</span></a></h2>
+<div class="language-bash line-numbers-mode" data-ext="bash" data-title="bash"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">uname</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -a</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 适用于redhat系列</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">cat</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> redhat-release</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="防火墙相关" tabindex="-1"><a class="header-anchor" href="#防火墙相关"><span>防火墙相关</span></a></h2>
+<div class="language-bash line-numbers-mode" data-ext="bash" data-title="bash"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 1. 查看防火墙放行的服务</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">firewall-cmd</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --list-all</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 2. 在防火墙中放行某服务，并设为永久生效</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">firewall-cmd</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --permanent</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --add-service=</span><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x26;</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">协议名</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 3. 放开端口</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">firewall-cmd</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --zone=public</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --add-port=3306/tcp</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --permanent</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">firewall-cmd</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --permanent</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --add-port=8088/tcp</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 关闭端口</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">firewall-cmd</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --zone=public</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --remove-port=3306/tcp</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --permanent</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">firewall-cmd</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --permanent</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --remove-port=8088/tcp</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 4. 刷新（重新加载防火墙配置）</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">firewall-cmd</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> --reload</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 5. 查看防火墙状态</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">systemctl</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> status</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> firewalld</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 6. 关闭防火墙 </span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">systemctl</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> stop</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> firewalld</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 7. 开启防火墙</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">systemctl</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> start</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> firewalld</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="scp命令" tabindex="-1"><a class="header-anchor" href="#scp命令"><span>scp命令</span></a></h2>
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>scp命令用于服务器之间文件的传输</p>
+<p>执行命令之后需要输入 <strong>源服务器用户的登录密码</strong></p>
+</div>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">scp</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -r</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> root@192.168.1.205:/Users/lengleng/Downloads/files/local</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> /Users/lengleng/Downloads/files</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 解释说明</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">scp</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -r</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> 源用户@源ip:源目录</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> 目标目录</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="ssh服务命令" tabindex="-1"><a class="header-anchor" href="#ssh服务命令"><span>SSH服务命令</span></a></h2>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 启动SSH服务</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">service</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> sshd</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> start</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 重启SSH服务</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">service</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> sshd</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> restart</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 关闭SSH服务</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">service</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> sshd</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> stop</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="查看文件夹大小" tabindex="-1"><a class="header-anchor" href="#查看文件夹大小"><span>查看文件夹大小</span></a></h2>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">du</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -sh</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> &#x3C;</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">文件夹路</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">径</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">df</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -h</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> &#x3C;</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">文件夹路</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">径</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">></span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="常用软件安装" tabindex="-1"><a class="header-anchor" href="#常用软件安装"><span>常用软件安装</span></a></h2>
+<ol>
+<li>Linux下常用的软件安装方式有三种
+<ul>
+<li><strong>tar安装</strong>： 如果开发商提供的是 tar、tar.gz、tar.bz 格式的包（其中 tar 格式的为打包后没有压缩的包，gz 结尾的是按照 gzip 打包并压缩的软件包，tar.bz 是按照二进制方式打包并压缩的软件包），可以采用 tar 包安装，tar 安装方式本质上是解压软件开发商提供的软件包，之后在通过相应配置，完成软件的安装。</li>
+<li><strong>rpm安装</strong>：rpm 安装方式是 redhat Linux 系列推出的一个软件包管理器，类似于 Windows 下的 exe 安装程序，可以直接使用 rpm 命令安装。</li>
+<li><strong>yum安装</strong>：yum 安装本质上依然是 rpm 包安装，和 rpm 安装方式的不同之处是用户可以通过 yum 参数，指定安装的软件包，系统将自动从互联网上下载相应的 rpm 软件包。而无需用户关心软件包的下载地址，以及软件包的依赖关系。</li>
+</ul>
+</li>
+<li>软件安装常用命令
+<ul>
+<li>解压压缩命令：<code v-pre>tar</code></li>
+<li>语法：<code v-pre>tar [选项] [压缩包]</code></li>
+<li>解压gzip包：<code v-pre>tar -zxvf [包名]</code></li>
+<li>解压 bz 包：<code v-pre>tar -jxvf [包名]</code></li>
+<li>解压普通包：<code v-pre>tar -xvf [包名]</code></li>
+</ul>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">取值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:center">指定特定目录压缩</td>
+</tr>
+<tr>
+<td style="text-align:center">-x</td>
+<td style="text-align:center">从备份文件中还原文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:center">列出备份文件的内容</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:center">添加文件到已经压缩的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-z</td>
+<td style="text-align:center">有gzip属性的（后缀是gz的）</td>
+</tr>
+<tr>
+<td style="text-align:center">-j</td>
+<td style="text-align:center">有bz2属性的（后缀是bz的）</td>
+</tr>
+<tr>
+<td style="text-align:center">-Z</td>
+<td style="text-align:center">有cpmpress属性的</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:center">显示所有进程</td>
+</tr>
+<tr>
+<td style="text-align:center">-O</td>
+<td style="text-align:center">将文件解压到标准输出</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:center">使用档案名称</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
+<li>安装卸载命令
+<ul>
+<li>语法：<code v-pre>rpm [选项] [安装包]</code></li>
+<li>查询是否安装了某软件：<code v-pre>rpm -qa|grep [软件包关键词]</code></li>
+<li>卸载已经安装的软件包：<code v-pre>rpm -e 软件包全名</code></li>
+<li>安装软件包并查看进度：<code v-pre>rpm -ivh 软件包路径</code></li>
+</ul>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">取值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-ivh</td>
+<td style="text-align:center">安装显示安装进度</td>
+</tr>
+<tr>
+<td style="text-align:center">-Uvh</td>
+<td style="text-align:center">升级软件包</td>
+</tr>
+<tr>
+<td style="text-align:center">-qpl</td>
+<td style="text-align:center">列出rpm软件包内的文件信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-qpi</td>
+<td style="text-align:center">列出rpm软件包的描述信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-qr</td>
+<td style="text-align:center">查找指定文件属于哪个rpm软件包</td>
+</tr>
+<tr>
+<td style="text-align:center">-Va</td>
+<td style="text-align:center">校验所有的rpm软件包，查找丢失的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:center">删除包</td>
+</tr>
+<tr>
+<td style="text-align:center">-qa</td>
+<td style="text-align:center">查找已经安装的rpm包</td>
+</tr>
+</tbody>
+</table>
+<h2 id="权限操作" tabindex="-1"><a class="header-anchor" href="#权限操作"><span>权限操作</span></a></h2>
+<p>​    Linux 操作系统为文件定义了读、写、执行三种权限，不同的用户或者用户组可以具有不同的权限，系统采用 “r”、“w”、“x” 来分别表示文件的读、写、执行权限。使用 <strong>ls  -l</strong>+命令可以查看到用户在当前目录或者文件的操作权限。</p>
+<p>举例：</p>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">drwxr</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -xr</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -x.</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91"> 2</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> root</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> root</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91"> 4096</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> Sep</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91"> 23</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91"> 2011</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> bin</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>从左至右分别代表以下含义：</p>
+<ul>
+<li><code v-pre>d</code>：代表bin是目录而不是文件</li>
+<li>rwx：代表拥有者具有读、写、执行的权限</li>
+<li>r  -x：代表同组用户具有读、执行的权限，但是没有写的权限</li>
+<li>r -x：代表其他组用户具有读、执行的权限，没有写权限</li>
+</ul>
+<p>常用的变更权限命令为：<code v-pre>chmod</code></p>
+<p>语法：<code v-pre>chmod [选项] [参数]</code></p>
+<table>
+<thead>
+<tr>
+<th>取值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-c</td>
+<td>显示指令执行过程，但只返回更改的部分</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>不显示错误信息</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>递归授权</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示指令过程</td>
+</tr>
+</tbody>
+</table>
+<p>chmod的参数可以分为两种，分别是权限模式和数字模式</p>
+<p><strong>权限模式</strong></p>
+<p>权限模式使用u，g，o分别代表拥有者、同组用户、其它组用户，使用加号（+）和减号（-）代表赋予和收回权限，使用r、w、x代表读、写、执行权限。</p>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 例如：将文件F01的的执行权限给当前用户，写权限赋给用户所在的用户组和其它用户。</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">chmod</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -r</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> U+X,G+W</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> F01</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 将文件F01的读、写、执行权限赋给当前用户，将读、写权限赋给用户所在的用户组和其它用户</span></span>
+<span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">chmod</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -r</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> u=rwx,g=rw,o=rw</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> F01</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>数字模式</strong></p>
+<p>为了简化授权步骤，用户也可以采用数字模式进行授权，使用二进制的形式代表r、w、x三种权限，如<code v-pre>101(5) = r -x, 111(7) = rwx, 100(3) = r- -</code></p>
+<p>例如：将文件<strong>f01</strong>的读、写、执行权限赋给当前用户，将读和执行的权限赋给用户组、将写和执行权限赋给其它用户。</p>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">chmod</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91"> 753</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -r</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> f01</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>例如：将文件 f01 的读、写、执行权限赋给所有用户。</p>
+<div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">chmod</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91"> 777</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -r</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> f01</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></div></template>
+
+
