@@ -6,7 +6,6 @@ tags:
 description: RabbitMQ
 createTime: 2024/11/30 14:15:41
 draft: false
-permalink: /article/ff969yrg/
 ---
 
 # 一、目标
