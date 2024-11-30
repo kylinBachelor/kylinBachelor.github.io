@@ -1,4 +1,4 @@
-import comp from "C:/Users/kylinBachelor/Desktop/my-project/docs/.vuepress/.temp/pages/notes/Spring/SpringFramework/IOC/index.html.vue"
+import comp from "C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Spring/SpringFramework/IOC/index.html.vue"
 const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/IOC/\",\"title\":\"IOC\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"IOC\",\"aliases\":null,\"tags\":[\"Spring\"],\"description\":\"IOC\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":true,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":4.66,\"words\":1398},\"filePathRelative\":\"notes/Spring/SpringFramework/IOC/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10014,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10070,\"name\":\"SpringFramework\"},{\"id\":\"8a6de3\",\"sort\":10102,\"name\":\"IOC\"}],\"bulletin\":false}")
 export { comp, data }
 

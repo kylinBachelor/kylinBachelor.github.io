@@ -1,4 +1,4 @@
-import comp from "C:/Users/kylinBachelor/Desktop/my-project/docs/.vuepress/.temp/pages/Windows/index.html.vue"
+import comp from "C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/pages/Windows/index.html.vue"
 const data = JSON.parse("{\"path\":\"/Windows/\",\"title\":\"Windows\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Windows\",\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/Windows/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.23,\"words\":70},\"filePathRelative\":\"notes/Windows/README.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"fac604\",\"sort\":10016,\"name\":\"Windows\"}],\"bulletin\":false}")
 export { comp, data }
 

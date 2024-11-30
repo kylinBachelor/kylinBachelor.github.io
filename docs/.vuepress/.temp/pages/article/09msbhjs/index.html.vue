@@ -10,123 +10,123 @@
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="_2加入配置内容" tabindex="-1"><a class="header-anchor" href="#_2加入配置内容"><span>②加入配置内容</span></a></h3>
 <p>以下内容来自官方文档：https://www.rabbitmq.com/docs/install-rpm</p>
-<div class="language-properties line-numbers-mode" data-ext="properties" data-title="properties"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span># In /etc/yum.repos.d/rabbitmq.repo</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>##</span></span>
-<span class="line"><span>## Zero dependency Erlang RPM</span></span>
-<span class="line"><span>##</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>[modern-erlang]</span></span>
-<span class="line"><span>name=modern-erlang-el8</span></span>
-<span class="line"><span># uses a Cloudsmith mirror @ yum.novemberain.com in addition to its Cloudsmith upstream.</span></span>
-<span class="line"><span># Unlike Cloudsmith, the mirror does not have any traffic quotas</span></span>
-<span class="line"><span>baseurl=https://yum1.novemberain.com/erlang/el/8/$basearch</span></span>
-<span class="line"><span>        https://yum2.novemberain.com/erlang/el/8/$basearch</span></span>
-<span class="line"><span>        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-erlang/rpm/el/8/$basearch</span></span>
-<span class="line"><span>repo_gpgcheck=1</span></span>
-<span class="line"><span>enabled=1</span></span>
-<span class="line"><span>gpgkey=https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-erlang.E495BB49CC4BBE5B.key</span></span>
-<span class="line"><span>gpgcheck=1</span></span>
-<span class="line"><span>sslverify=1</span></span>
-<span class="line"><span>sslcacert=/etc/pki/tls/certs/ca-bundle.crt</span></span>
-<span class="line"><span>metadata_expire=300</span></span>
-<span class="line"><span>pkg_gpgcheck=1</span></span>
-<span class="line"><span>autorefresh=1</span></span>
-<span class="line"><span>type=rpm-md</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>[modern-erlang-noarch]</span></span>
-<span class="line"><span>name=modern-erlang-el8-noarch</span></span>
-<span class="line"><span># uses a Cloudsmith mirror @ yum.novemberain.com.</span></span>
-<span class="line"><span># Unlike Cloudsmith, it does not have any traffic quotas</span></span>
-<span class="line"><span>baseurl=https://yum1.novemberain.com/erlang/el/8/noarch</span></span>
-<span class="line"><span>        https://yum2.novemberain.com/erlang/el/8/noarch</span></span>
-<span class="line"><span>        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-erlang/rpm/el/8/noarch</span></span>
-<span class="line"><span>repo_gpgcheck=1</span></span>
-<span class="line"><span>enabled=1</span></span>
-<span class="line"><span>gpgkey=https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-erlang.E495BB49CC4BBE5B.key</span></span>
-<span class="line"><span>       https://github.com/rabbitmq/signing-keys/releases/download/3.0/rabbitmq-release-signing-key.asc</span></span>
-<span class="line"><span>gpgcheck=1</span></span>
-<span class="line"><span>sslverify=1</span></span>
-<span class="line"><span>sslcacert=/etc/pki/tls/certs/ca-bundle.crt</span></span>
-<span class="line"><span>metadata_expire=300</span></span>
-<span class="line"><span>pkg_gpgcheck=1</span></span>
-<span class="line"><span>autorefresh=1</span></span>
-<span class="line"><span>type=rpm-md</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>[modern-erlang-source]</span></span>
-<span class="line"><span>name=modern-erlang-el8-source</span></span>
-<span class="line"><span># uses a Cloudsmith mirror @ yum.novemberain.com.</span></span>
-<span class="line"><span># Unlike Cloudsmith, it does not have any traffic quotas</span></span>
-<span class="line"><span>baseurl=https://yum1.novemberain.com/erlang/el/8/SRPMS</span></span>
-<span class="line"><span>        https://yum2.novemberain.com/erlang/el/8/SRPMS</span></span>
-<span class="line"><span>        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-erlang/rpm/el/8/SRPMS</span></span>
-<span class="line"><span>repo_gpgcheck=1</span></span>
-<span class="line"><span>enabled=1</span></span>
-<span class="line"><span>gpgkey=https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-erlang.E495BB49CC4BBE5B.key</span></span>
-<span class="line"><span>       https://github.com/rabbitmq/signing-keys/releases/download/3.0/rabbitmq-release-signing-key.asc</span></span>
-<span class="line"><span>gpgcheck=1</span></span>
-<span class="line"><span>sslverify=1</span></span>
-<span class="line"><span>sslcacert=/etc/pki/tls/certs/ca-bundle.crt</span></span>
-<span class="line"><span>metadata_expire=300</span></span>
-<span class="line"><span>pkg_gpgcheck=1</span></span>
-<span class="line"><span>autorefresh=1</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>##</span></span>
-<span class="line"><span>## RabbitMQ Server</span></span>
-<span class="line"><span>##</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>[rabbitmq-el8]</span></span>
-<span class="line"><span>name=rabbitmq-el8</span></span>
-<span class="line"><span>baseurl=https://yum2.novemberain.com/rabbitmq/el/8/$basearch</span></span>
-<span class="line"><span>        https://yum1.novemberain.com/rabbitmq/el/8/$basearch</span></span>
-<span class="line"><span>        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-server/rpm/el/8/$basearch</span></span>
-<span class="line"><span>repo_gpgcheck=1</span></span>
-<span class="line"><span>enabled=1</span></span>
-<span class="line"><span># Cloudsmith's repository key and RabbitMQ package signing key</span></span>
-<span class="line"><span>gpgkey=https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key</span></span>
-<span class="line"><span>       https://github.com/rabbitmq/signing-keys/releases/download/3.0/rabbitmq-release-signing-key.asc</span></span>
-<span class="line"><span>gpgcheck=1</span></span>
-<span class="line"><span>sslverify=1</span></span>
-<span class="line"><span>sslcacert=/etc/pki/tls/certs/ca-bundle.crt</span></span>
-<span class="line"><span>metadata_expire=300</span></span>
-<span class="line"><span>pkg_gpgcheck=1</span></span>
-<span class="line"><span>autorefresh=1</span></span>
-<span class="line"><span>type=rpm-md</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>[rabbitmq-el8-noarch]</span></span>
-<span class="line"><span>name=rabbitmq-el8-noarch</span></span>
-<span class="line"><span>baseurl=https://yum2.novemberain.com/rabbitmq/el/8/noarch</span></span>
-<span class="line"><span>        https://yum1.novemberain.com/rabbitmq/el/8/noarch</span></span>
-<span class="line"><span>        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-server/rpm/el/8/noarch</span></span>
-<span class="line"><span>repo_gpgcheck=1</span></span>
-<span class="line"><span>enabled=1</span></span>
-<span class="line"><span># Cloudsmith's repository key and RabbitMQ package signing key</span></span>
-<span class="line"><span>gpgkey=https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key</span></span>
-<span class="line"><span>       https://github.com/rabbitmq/signing-keys/releases/download/3.0/rabbitmq-release-signing-key.asc</span></span>
-<span class="line"><span>gpgcheck=1</span></span>
-<span class="line"><span>sslverify=1</span></span>
-<span class="line"><span>sslcacert=/etc/pki/tls/certs/ca-bundle.crt</span></span>
-<span class="line"><span>metadata_expire=300</span></span>
-<span class="line"><span>pkg_gpgcheck=1</span></span>
-<span class="line"><span>autorefresh=1</span></span>
-<span class="line"><span>type=rpm-md</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>[rabbitmq-el8-source]</span></span>
-<span class="line"><span>name=rabbitmq-el8-source</span></span>
-<span class="line"><span>baseurl=https://yum2.novemberain.com/rabbitmq/el/8/SRPMS</span></span>
-<span class="line"><span>        https://yum1.novemberain.com/rabbitmq/el/8/SRPMS</span></span>
-<span class="line"><span>        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-server/rpm/el/8/SRPMS</span></span>
-<span class="line"><span>repo_gpgcheck=1</span></span>
-<span class="line"><span>enabled=1</span></span>
-<span class="line"><span>gpgkey=https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key</span></span>
-<span class="line"><span>gpgcheck=0</span></span>
-<span class="line"><span>sslverify=1</span></span>
-<span class="line"><span>sslcacert=/etc/pki/tls/certs/ca-bundle.crt</span></span>
-<span class="line"><span>metadata_expire=300</span></span>
-<span class="line"><span>pkg_gpgcheck=1</span></span>
-<span class="line"><span>autorefresh=1</span></span>
-<span class="line"><span>type=rpm-md</span></span></code></pre>
+<div class="language-properties line-numbers-mode" data-ext="properties" data-title="properties"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># In /etc/yum.repos.d/rabbitmq.repo</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">##</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## Zero dependency Erlang RPM</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">##</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">[</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">modern-erlang</span><span style="--shiki-light:#999999;--shiki-dark:#666666">]</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">name</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">modern-erlang-el8</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># uses a Cloudsmith mirror @ yum.novemberain.com in addition to its Cloudsmith upstream.</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># Unlike Cloudsmith, the mirror does not have any traffic quotas</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">baseurl</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://yum1.novemberain.com/erlang/el/8/$basearch</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://yum2.novemberain.com/erlang/el/8/$basearch</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-erlang/rpm/el/8/$basearch</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">repo_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">enabled</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgkey</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-erlang.E495BB49CC4BBE5B.key</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslverify</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslcacert</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">/etc/pki/tls/certs/ca-bundle.crt</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">metadata_expire</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">300</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">pkg_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">autorefresh</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">type</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">rpm-md</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">[</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">modern-erlang-noarch</span><span style="--shiki-light:#999999;--shiki-dark:#666666">]</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">name</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">modern-erlang-el8-noarch</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># uses a Cloudsmith mirror @ yum.novemberain.com.</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># Unlike Cloudsmith, it does not have any traffic quotas</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">baseurl</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://yum1.novemberain.com/erlang/el/8/noarch</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://yum2.novemberain.com/erlang/el/8/noarch</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-erlang/rpm/el/8/noarch</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">repo_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">enabled</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgkey</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-erlang.E495BB49CC4BBE5B.key</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">       https://github.com/rabbitmq/signing-keys/releases/download/3.0/rabbitmq-release-signing-key.asc</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslverify</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslcacert</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">/etc/pki/tls/certs/ca-bundle.crt</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">metadata_expire</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">300</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">pkg_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">autorefresh</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">type</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">rpm-md</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">[</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">modern-erlang-source</span><span style="--shiki-light:#999999;--shiki-dark:#666666">]</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">name</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">modern-erlang-el8-source</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># uses a Cloudsmith mirror @ yum.novemberain.com.</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># Unlike Cloudsmith, it does not have any traffic quotas</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">baseurl</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://yum1.novemberain.com/erlang/el/8/SRPMS</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://yum2.novemberain.com/erlang/el/8/SRPMS</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-erlang/rpm/el/8/SRPMS</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">repo_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">enabled</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgkey</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-erlang.E495BB49CC4BBE5B.key</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">       https://github.com/rabbitmq/signing-keys/releases/download/3.0/rabbitmq-release-signing-key.asc</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslverify</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslcacert</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">/etc/pki/tls/certs/ca-bundle.crt</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">metadata_expire</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">300</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">pkg_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">autorefresh</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">##</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## RabbitMQ Server</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">##</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">[</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">rabbitmq-el8</span><span style="--shiki-light:#999999;--shiki-dark:#666666">]</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">name</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">rabbitmq-el8</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">baseurl</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://yum2.novemberain.com/rabbitmq/el/8/$basearch</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://yum1.novemberain.com/rabbitmq/el/8/$basearch</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-server/rpm/el/8/$basearch</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">repo_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">enabled</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># Cloudsmith's repository key and RabbitMQ package signing key</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgkey</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">       https://github.com/rabbitmq/signing-keys/releases/download/3.0/rabbitmq-release-signing-key.asc</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslverify</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslcacert</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">/etc/pki/tls/certs/ca-bundle.crt</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">metadata_expire</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">300</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">pkg_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">autorefresh</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">type</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">rpm-md</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">[</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">rabbitmq-el8-noarch</span><span style="--shiki-light:#999999;--shiki-dark:#666666">]</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">name</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">rabbitmq-el8-noarch</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">baseurl</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://yum2.novemberain.com/rabbitmq/el/8/noarch</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://yum1.novemberain.com/rabbitmq/el/8/noarch</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-server/rpm/el/8/noarch</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">repo_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">enabled</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># Cloudsmith's repository key and RabbitMQ package signing key</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgkey</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">       https://github.com/rabbitmq/signing-keys/releases/download/3.0/rabbitmq-release-signing-key.asc</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslverify</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslcacert</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">/etc/pki/tls/certs/ca-bundle.crt</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">metadata_expire</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">300</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">pkg_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">autorefresh</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">type</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">rpm-md</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">[</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">rabbitmq-el8-source</span><span style="--shiki-light:#999999;--shiki-dark:#666666">]</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">name</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">rabbitmq-el8-source</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">baseurl</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://yum2.novemberain.com/rabbitmq/el/8/SRPMS</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://yum1.novemberain.com/rabbitmq/el/8/SRPMS</span></span>
+<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-server/rpm/el/8/SRPMS</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">repo_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">enabled</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgkey</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">0</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslverify</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">sslcacert</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">/etc/pki/tls/certs/ca-bundle.crt</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">metadata_expire</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">300</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">pkg_gpgcheck</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">autorefresh</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1</span></span>
+<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">type</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">rpm-md</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3更新yum库" tabindex="-1"><a class="header-anchor" href="#_3更新yum库"><span>③更新yum库</span></a></h3>
 <p>--nobest表示所需安装包即使不是最佳选择也接受</p>

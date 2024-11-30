@@ -1,5 +1,5 @@
-import comp from "C:/Users/kylinBachelor/Desktop/my-project/docs/.vuepress/.temp/pages/notes/Docker/Docker-compose/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Docker/Docker-compose/\",\"title\":\"Docker-compose\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.74,\"words\":821},\"filePathRelative\":\"notes/Docker/Docker-compose/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10008,\"name\":\"Docker\"},{\"id\":\"799164\",\"sort\":10024,\"name\":\"Docker-compose\"}],\"bulletin\":false}")
+import comp from "C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Docker/Docker-compose/index.html.vue"
+const data = JSON.parse("{\"path\":\"/notes/Docker/Docker-compose/\",\"title\":\"Docker-compose\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.74,\"words\":821},\"filePathRelative\":\"notes/Docker/Docker-compose/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10004,\"name\":\"Docker\"},{\"id\":\"799164\",\"sort\":10021,\"name\":\"Docker-compose\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
