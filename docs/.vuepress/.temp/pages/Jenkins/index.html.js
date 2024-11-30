@@ -1,5 +1,5 @@
 import comp from "C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/pages/Jenkins/index.html.vue"
-const data = JSON.parse("{\"path\":\"/Jenkins/\",\"title\":\"Jenkins\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Jenkins\",\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/Jenkins/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.09,\"words\":27},\"filePathRelative\":\"notes/jenkins/README.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"ecdc7b\",\"sort\":10005,\"name\":\"jenkins\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/Jenkins/\",\"title\":\"Jenkins\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Jenkins\",\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/Jenkins/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.09,\"words\":27},\"filePathRelative\":\"notes/jenkins/README.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"ecdc7b\",\"sort\":10006,\"name\":\"jenkins\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
