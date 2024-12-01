@@ -1,5 +1,5 @@
 import comp from "C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Docker/Dockerfile/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Docker/Dockerfile/\",\"title\":\"Dockerfile\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":4.79,\"words\":1437},\"filePathRelative\":\"notes/Docker/Dockerfile/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10002,\"name\":\"Docker\"},{\"id\":\"feb8ab\",\"sort\":10021,\"name\":\"Dockerfile\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Docker/Dockerfile/\",\"title\":\"Dockerfile\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":4.79,\"words\":1437},\"filePathRelative\":\"notes/Docker/Dockerfile/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10002,\"name\":\"Docker\"},{\"id\":\"feb8ab\",\"sort\":10020,\"name\":\"Dockerfile\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
