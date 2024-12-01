@@ -1,4 +1,4 @@
-<template><div><p><img src="@source/notes/Java/Java流的使用/assets/stream.png" alt=""></p>
+<template><div><figure><img src="@source/notes/Java/Java流的使用/assets/stream.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="stream概述" tabindex="-1"><a class="header-anchor" href="#stream概述"><span>Stream概述</span></a></h3>
 <p>Stream将要处理的元素集合看作一种流，在流的过程中，借助<strong>Stream API</strong>对流中的元素进行操作，可以由数组或者集合创建，比如：筛选、排序、聚合等</p>
 <p><strong>Stream</strong> 可以由数组或集合创建，对流的操作访问两种：</p>

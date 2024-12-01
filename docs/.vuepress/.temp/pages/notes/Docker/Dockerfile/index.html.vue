@@ -5,51 +5,51 @@
 <blockquote>
 <p>=== Dockerfile 是用来构建 Docker 镜像的文本文件，是由一条条构建镜像所需的指令和参数构成的脚本</p>
 </blockquote>
-<p><img src="@source/notes/Docker/Dockerfile/assets/image-20240709130302870.png" alt="image-20240709130302870"></p>
+<figure><img src="@source/notes/Docker/Dockerfile/assets/image-20240709130302870.png" alt="image-20240709130302870" tabindex="0" loading="lazy"><figcaption>image-20240709130302870</figcaption></figure>
 <p>示例</p>
-<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">FROM</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> centos:7</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 配置Java17环境变量</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ADD</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> jdk-17_linux-x64_bin.tar /usr/lib/</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> JAVA_HOME /usr/lib/jdk-17.0.11</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> CLASSPATH .:${JAVA_HOME}/jre/lib/rt.jar:${JAVA_HOME}/lib/dt.jar:${JAVA_HOME}/lib/tools.jar</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> PATH $PATH:${JAVA_HOME}/bin</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">CMD</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /bin/bash</span></span>
-<span class="line"></span>
-<span class="line"></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">FROM</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> centos</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">  </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">MAINTAINER</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> Linkaiqiang</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">COPY</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> readme.txt /usr/local/readme.txt</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ADD</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> jdk1.8.0_291.tar.gz /usr/local/</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ADD</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> tomcat.tar.gz /usr/local/</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">RUN</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> cd /etc/yum.repos.d/</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">RUN</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> sed -i </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">'s/mirrorlist/#mirrorlist/g'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /etc/yum.repos.d/CentOS-*</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">RUN</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> sed -i </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">'s|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /etc/yum.repos.d/CentOS-*</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">RUN</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> yum -y install vim wget</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">VOLUME</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> [</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"/data1"</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">,</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"/data2"</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">]</span></span>
-<span class="line"></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> MYPATH /usr/local</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">WORKDIR</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> $MYPATH</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> JAVA_HOME /usr/local/jdk1.8.0_291</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> CLASSPATH $JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> CATALINA_HOME /usr/local/tomcat</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> CATALINA_BASE /usr/local/tomcat</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> PATH $PATH:$JAVA_HOME/bin:$CLASSPATH:$CATALINA_HOME/lib:$CATALINA_HOME/bin</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">EXPOSE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 8080</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">CMD</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /usr/local/tomcat/bin/startup.sh &#x26;&#x26; tail -f /usr/local/tomcat/logs/catalina.out</span></span></code></pre>
+<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>FROM centos:7</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 配置Java17环境变量</span></span>
+<span class="line"><span>ADD jdk-17_linux-x64_bin.tar /usr/lib/</span></span>
+<span class="line"><span>ENV JAVA_HOME /usr/lib/jdk-17.0.11</span></span>
+<span class="line"><span>ENV CLASSPATH .:${JAVA_HOME}/jre/lib/rt.jar:${JAVA_HOME}/lib/dt.jar:${JAVA_HOME}/lib/tools.jar</span></span>
+<span class="line"><span>ENV PATH $PATH:${JAVA_HOME}/bin</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>CMD /bin/bash</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>FROM centos</span></span>
+<span class="line"><span>  </span></span>
+<span class="line"><span>MAINTAINER Linkaiqiang</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>COPY readme.txt /usr/local/readme.txt</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ADD jdk1.8.0_291.tar.gz /usr/local/</span></span>
+<span class="line"><span>ADD tomcat.tar.gz /usr/local/</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>RUN cd /etc/yum.repos.d/</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*</span></span>
+<span class="line"><span>RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>RUN yum -y install vim wget</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>VOLUME ["/data1","/data2"]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ENV MYPATH /usr/local</span></span>
+<span class="line"><span>WORKDIR $MYPATH</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ENV JAVA_HOME /usr/local/jdk1.8.0_291</span></span>
+<span class="line"><span>ENV CLASSPATH $JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</span></span>
+<span class="line"><span>ENV CATALINA_HOME /usr/local/tomcat</span></span>
+<span class="line"><span>ENV CATALINA_BASE /usr/local/tomcat</span></span>
+<span class="line"><span>ENV PATH $PATH:$JAVA_HOME/bin:$CLASSPATH:$CATALINA_HOME/lib:$CATALINA_HOME/bin</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>EXPOSE 8080</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>CMD /usr/local/tomcat/bin/startup.sh &#x26;&#x26; tail -f /usr/local/tomcat/logs/catalina.out</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_1-2-构建格式" tabindex="-1"><a class="header-anchor" href="#_1-2-构建格式"><span>1.2 构建格式</span></a></h3>
 <ol>
@@ -73,12 +73,12 @@
 <p>Dockerfile文件的第一个非注释的指令。</p>
 <p>基础镜像，当前新镜像是基于哪个镜像来生成新镜像的，指定一个已经存在的镜像作为模板。</p>
 <p>默认情况下，当执行 <strong>docker build</strong> 命令时会在docker主机上查找镜像，如果镜像不存在，则会自动从Docker仓库pull下来，当然了，再找不到镜像就会报错了。</p>
-<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">FROM</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 镜像名:镜像标签</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 默认镜像标签为 latest, 即最新的镜像</span></span></code></pre>
+<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>FROM 镜像名:镜像标签</span></span>
+<span class="line"><span># 默认镜像标签为 latest, 即最新的镜像</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-2-maintainer" tabindex="-1"><a class="header-anchor" href="#_2-2-maintainer"><span>2.2 MAINTAINER</span></a></h3>
 <p>用于提供镜像维护者的姓名和邮箱地址</p>
-<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">MAINTAINER</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> 'zhangsan&#x3C;zhangsan@163.com>'</span></span></code></pre>
+<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>MAINTAINER 'zhangsan&#x3C;zhangsan@163.com>'</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="_2-3-run" tabindex="-1"><a class="header-anchor" href="#_2-3-run"><span>2.3 RUN</span></a></h3>
 <p>容器构建时需要运行的命令（build）</p>
@@ -109,8 +109,8 @@
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-8-copy" tabindex="-1"><a class="header-anchor" href="#_2-8-copy"><span>2.8 COPY</span></a></h3>
 <p>用于从docker主机赋值文件或目录至创建的新镜像指定的路径中</p>
-<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">COPY</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> [源] [目标]</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">COPY</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> [</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"源"</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">, </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"目标"</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">]</span></span></code></pre>
+<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>COPY [源] [目标]</span></span>
+<span class="line"><span>COPY ["源", "目标"]</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>文件复制准则</p>
 <ul>
@@ -120,11 +120,11 @@
 <li>如果事先不存在，他将会被自动创建，这包括父目录路径</li>
 </ul>
 <p>示例</p>
-<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># copy 文件</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">COPY</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> index.html /data/web/html/      //要确保Dockerfile同级路径下有index.html文件</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># copy 目录  如果是复制目录，则其内部文件或子目录会被递归复制，但目录自身不会被复制；需要把复制目录名字也写在容器中要复制的路径下！</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">COPY</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> yum.repos.d /etc/yum.repos.d/</span></span></code></pre>
+<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span># copy 文件</span></span>
+<span class="line"><span>COPY index.html /data/web/html/      //要确保Dockerfile同级路径下有index.html文件</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># copy 目录  如果是复制目录，则其内部文件或子目录会被递归复制，但目录自身不会被复制；需要把复制目录名字也写在容器中要复制的路径下！</span></span>
+<span class="line"><span>COPY yum.repos.d /etc/yum.repos.d/</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-9-add" tabindex="-1"><a class="header-anchor" href="#_2-9-add"><span>2.9 ADD</span></a></h3>
 <p>同 copy 只是提供了URL 和 解压压缩包的功能</p>
@@ -138,7 +138,7 @@
 <p>​    VOLUME /home/data /home2/data</p>
 <p>​    VOLUMN [&quot;/home/data&quot;,&quot;/home2/data&quot;]</p>
 <p>如果使用 docker run xx  命令启动容器时若没有使用 -v 挂载 VOLUME指定的目录，则会在创建容器时自动在Docker安装目录生成从一个匿名目录用以存储VOLUME声明的文件夹内的内容。一般是在 <strong>/var/lib/docker/volumes/</strong> 下</p>
-<p><img src="@source/notes/Docker/Dockerfile/assets/image-20240710101007424.png" alt="image-20240710101007424"></p>
+<figure><img src="@source/notes/Docker/Dockerfile/assets/image-20240710101007424.png" alt="image-20240710101007424" tabindex="0" loading="lazy"><figcaption>image-20240710101007424</figcaption></figure>
 <p>一个目录会生成一个文件夹，例如 VOLUME /home/data /home2/data 则会生成两个文件夹。</p>
 <p>如果使用 -v 声明了，则会被 -v 声明的覆盖。</p>
 <h3 id="_2-11-cmd" tabindex="-1"><a class="header-anchor" href="#_2-11-cmd"><span>2.11 CMD</span></a></h3>
@@ -154,9 +154,9 @@
 <p><code v-pre>ENTRYPOINT [&quot;&lt;executable&gt;&quot;, &quot;&lt;param1&gt;&quot;, &quot;&lt;param2&gt;&quot;]</code></p>
 <p>案例：假设有一个nginx:test镜像</p>
 <p>Dockerfile:</p>
-<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">FROM</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> nginx</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENTRYPOINT</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> [</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">'nginx'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">,</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">'-c'</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">] #定参</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">CMD</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> [</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"/etc/nginx/nginx.conf"</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">] #变参</span></span></code></pre>
+<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>FROM nginx</span></span>
+<span class="line"><span>ENTRYPOINT ['nginx','-c'] #定参</span></span>
+<span class="line"><span>CMD ["/etc/nginx/nginx.conf"] #变参</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><table>
 <thead>

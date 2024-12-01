@@ -3,7 +3,7 @@
 <h4 id="_1-下载linux版本的jdk1-8" tabindex="-1"><a class="header-anchor" href="#_1-下载linux版本的jdk1-8"><span>1. 下载Linux版本的JDK1.8</span></a></h4>
 <p>https://www.oracle.com/java/technologies/downloads/#java8</p>
 <p>一定要下载<em><strong>对应操作架构</strong></em>的JDK，否则会报错：可通过uname -a 命令查看</p>
-<p><img src="@source/notes/Java/麒麟操作系统安装JAVA环境/assets/查看kylin系统版本.png" alt="Linux系统版本查看"></p>
+<figure><img src="@source/notes/Java/麒麟操作系统安装JAVA环境/assets/查看kylin系统版本.png" alt="Linux系统版本查看" tabindex="0" loading="lazy"><figcaption>Linux系统版本查看</figcaption></figure>
 <h4 id="_2-将下载好的安装包xx-tar-gz放到安装目录" tabindex="-1"><a class="header-anchor" href="#_2-将下载好的安装包xx-tar-gz放到安装目录"><span>2. 将下载好的安装包xx.tar.gz放到安装目录</span></a></h4>
 <div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 例如放到如下目录</span></span>
 <span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">/usr/local/jdk8</span></span></code></pre>
@@ -20,7 +20,7 @@
 <div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">java</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -version</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>如果出现如下情况</p>
-<p><img src="@source/notes/Java/麒麟操作系统安装JAVA环境/assets/java安装权限问题.png" alt="java安装权限问题"></p>
+<figure><img src="@source/notes/Java/麒麟操作系统安装JAVA环境/assets/java安装权限问题.png" alt="java安装权限问题" tabindex="0" loading="lazy"><figcaption>java安装权限问题</figcaption></figure>
 <p>需要设置文件/目录权限</p>
 <div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 提升权限命令  【用于改变文件或目录的访问权限】</span></span>
 <span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">chmod</span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91"> 775</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> [提示Permission </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">denied的目录路径]</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>

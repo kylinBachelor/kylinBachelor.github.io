@@ -1,5 +1,5 @@
 <template><div><h4 id="git工作流程" tabindex="-1"><a class="header-anchor" href="#git工作流程"><span>Git工作流程</span></a></h4>
-<p><img src="@source/notes/版本控制/Git/Git工作流/assets/git工作流程.png" alt="Git工作流程图片"></p>
+<figure><img src="@source/notes/版本控制/Git/Git工作流/assets/git工作流程.png" alt="Git工作流程图片" tabindex="0" loading="lazy"><figcaption>Git工作流程图片</figcaption></figure>
 <ol>
 <li>从远程仓库中克隆Git资源作为本地仓库。</li>
 <li>从本地仓库中checkout代码然后进行代码修改。</li>

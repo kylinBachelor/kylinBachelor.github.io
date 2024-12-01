@@ -100,7 +100,7 @@
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">}</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>以下两种方式是相等的：</p>
-<p><img src="@source/notes/Spring/SpringFramework/DI/assets/image-20240629115548723.png" alt="image-20240629115548723"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/DI/assets/image-20240629115548723.png" alt="image-20240629115548723" tabindex="0" loading="lazy"><figcaption>image-20240629115548723</figcaption></figure>
 <ul>
 <li><strong>Book.java</strong></li>
 </ul>
@@ -465,7 +465,7 @@
 <ul>
 <li>
 <p>官方说明</p>
-<p><img src="@source/notes/Spring/SpringFramework/DI/assets/image-20240629123037023.png" alt="image-20240629123037023"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/DI/assets/image-20240629123037023.png" alt="image-20240629123037023" tabindex="0" loading="lazy"><figcaption>image-20240629123037023</figcaption></figure>
 </li>
 </ul>
 <h4 id="_02-解决方式" tabindex="-1"><a class="header-anchor" href="#_02-解决方式"><span>02. 解决方式</span></a></h4>
@@ -581,7 +581,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li><strong>官网示例</strong></li>
 </ul>
-<p><img src="@source/notes/Spring/SpringFramework/DI/assets/image-20240629123320714.png" alt="image-20240629123320714"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/DI/assets/image-20240629123320714.png" alt="image-20240629123320714" tabindex="0" loading="lazy"><figcaption>image-20240629123320714</figcaption></figure>
 <h1 id="_4-循环依赖" tabindex="-1"><a class="header-anchor" href="#_4-循环依赖"><span>4. 循环依赖</span></a></h1>
 <blockquote>
 <p>=== 循环依赖 是指容器对象互相依赖注入的问题 [应当避免该设计]</p>

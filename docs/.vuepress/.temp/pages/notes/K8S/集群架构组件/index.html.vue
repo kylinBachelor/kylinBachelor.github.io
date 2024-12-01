@@ -1,5 +1,5 @@
 <template><div><h1 id="k8s集群架构组件" tabindex="-1"><a class="header-anchor" href="#k8s集群架构组件"><span>k8s集群架构组件</span></a></h1>
-<p><img src="@source/notes/K8S/集群架构组件/assets/image-20240711160204601.png" alt="image-20240711160204601"></p>
+<figure><img src="@source/notes/K8S/集群架构组件/assets/image-20240711160204601.png" alt="image-20240711160204601" tabindex="0" loading="lazy"><figcaption>image-20240711160204601</figcaption></figure>
 <h2 id="_1-集群架构节点角色功能" tabindex="-1"><a class="header-anchor" href="#_1-集群架构节点角色功能"><span>1. 集群架构节点角色功能</span></a></h2>
 <h3 id="_1-1-master-node-主控节点" tabindex="-1"><a class="header-anchor" href="#_1-1-master-node-主控节点"><span>1.1 Master Node（主控节点）</span></a></h3>
 <p>k8s集群控制节点，对集群进行调度管理，接受集群外的用户去集群操作请求。</p>

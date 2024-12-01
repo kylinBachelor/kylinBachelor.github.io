@@ -78,7 +78,7 @@
 <blockquote>
 <p>=== Cron 表达式可更精确间隔、日期执行定时器</p>
 </blockquote>
-<p><img src="@source/notes/Spring/SpringFramework/定时任务/assets/image-20240707152014254.png" alt="image-20240707152014254"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/定时任务/assets/image-20240707152014254.png" alt="image-20240707152014254" tabindex="0" loading="lazy"><figcaption>image-20240707152014254</figcaption></figure>
 <ul>
 <li><strong>规则</strong></li>
 </ul>
@@ -143,7 +143,7 @@
 </li>
 <li>
 <p><strong>官网</strong></p>
-<p><img src="@source/notes/Spring/SpringFramework/定时任务/assets/image-20240707152102089.png" alt="image-20240707152102089"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/定时任务/assets/image-20240707152102089.png" alt="image-20240707152102089" tabindex="0" loading="lazy"><figcaption>image-20240707152102089</figcaption></figure>
 </li>
 </ul>
 <h3 id="_02-环境" tabindex="-1"><a class="header-anchor" href="#_02-环境"><span>02. 环境</span></a></h3>

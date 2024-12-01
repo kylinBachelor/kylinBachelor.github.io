@@ -7,23 +7,23 @@
 <li>进入解压的mysql文件夹，创建data文件夹和my.ini文件</li>
 <li>打开my.ini文件写入一下内容</li>
 </ol>
-<div class="language-ini line-numbers-mode" data-ext="ini" data-title="ini"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">    [mysqld]</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    bind-address</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> =</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 0.0.0.0</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">    #mysql端口号设置</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    port</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> =</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 3307</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">    #basedir（刚创建的data文件夹目录） 和 datadir视自己情况而定</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    basedir</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">D:\Program Files\mysqls\mysql-5.7.21-winx64</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    datadir</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">D:\Program Files\mysqls\mysql-5.7.21-winx64\data\</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    max_connections</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">1000</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    character_set_server</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> =</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> utf8</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">    #mysql7</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    sql_mode</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">    #mysql8</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">    #sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">    [client]</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    default-character-set</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">utf8</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">    [mysql]</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    default-character-set</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">utf8</span></span></code></pre>
+<div class="language-ini line-numbers-mode" data-ext="ini" data-title="ini"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>    [mysqld]</span></span>
+<span class="line"><span>    bind-address = 0.0.0.0</span></span>
+<span class="line"><span>    #mysql端口号设置</span></span>
+<span class="line"><span>    port = 3307</span></span>
+<span class="line"><span>    #basedir（刚创建的data文件夹目录） 和 datadir视自己情况而定</span></span>
+<span class="line"><span>    basedir=D:\Program Files\mysqls\mysql-5.7.21-winx64</span></span>
+<span class="line"><span>    datadir=D:\Program Files\mysqls\mysql-5.7.21-winx64\data\</span></span>
+<span class="line"><span>    max_connections=1000</span></span>
+<span class="line"><span>    character_set_server = utf8</span></span>
+<span class="line"><span>    #mysql7</span></span>
+<span class="line"><span>    sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER</span></span>
+<span class="line"><span>    #mysql8</span></span>
+<span class="line"><span>    #sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span></span>
+<span class="line"><span>    [client]</span></span>
+<span class="line"><span>    default-character-set=utf8</span></span>
+<span class="line"><span>    [mysql]</span></span>
+<span class="line"><span>    default-character-set=utf8</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="4">
 <li>将bin目录加入到环境变量之中。</li>

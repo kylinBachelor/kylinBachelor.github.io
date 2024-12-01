@@ -1,12 +1,12 @@
 <template><div><h2 id="_1-问题出现" tabindex="-1"><a class="header-anchor" href="#_1-问题出现"><span>1. 问题出现</span></a></h2>
 <p>遇到的这个问题是因为突然停电，由于电脑是一个台式机导致电脑突然关机，就导致了MySQL数据库损坏的问题（无法启动）</p>
-<p><img src="@source/notes/数据库/数据库由于断电等异常关机导致损坏的处理办法/assets/image-20241024085841542.png" alt="image-20241024085841542"></p>
+<figure><img src="@source/notes/数据库/数据库由于断电等异常关机导致损坏的处理办法/assets/image-20241024085841542.png" alt="image-20241024085841542" tabindex="0" loading="lazy"><figcaption>image-20241024085841542</figcaption></figure>
 <h2 id="_2-解决方式" tabindex="-1"><a class="header-anchor" href="#_2-解决方式"><span>2. 解决方式</span></a></h2>
 <div class="hint-container warning">
 <p class="hint-container-title">注意</p>
 <p><code v-pre>首先备份首先备份MySQL的data文件夹</code>！！！！！！！！！！！！！！</p>
 </div>
-<p><img src="@source/notes/数据库/数据库由于断电等异常关机导致损坏的处理办法/assets/image-20241024090602489.png" alt="image-20241024090602489"></p>
+<figure><img src="@source/notes/数据库/数据库由于断电等异常关机导致损坏的处理办法/assets/image-20241024090602489.png" alt="image-20241024090602489" tabindex="0" loading="lazy"><figcaption>image-20241024090602489</figcaption></figure>
 <p>在MySQL中每一个数据库在data文件夹下的体现就是一个目录。我们要恢复数据库时就是使用每个文件夹下的<code v-pre>xxx.idb</code>文件,</p>
 <p>每个<code v-pre>idb</code>文件其实就是一个数据库表。</p>
 <h2 id="_3-开始恢复" tabindex="-1"><a class="header-anchor" href="#_3-开始恢复"><span>3. 开始恢复</span></a></h2>
@@ -30,7 +30,7 @@
 </ol>
 <h2 id="_4-恢复损坏的mysql数据库-其实就是重新初始化-重新安装了" tabindex="-1"><a class="header-anchor" href="#_4-恢复损坏的mysql数据库-其实就是重新初始化-重新安装了"><span>4. 恢复损坏的MySQL数据库（其实就是重新初始化，重新安装了）</span></a></h2>
 <p>找到data目录，没有就创建一个，有就清空data目录下的内容</p>
-<p><img src="@source/notes/数据库/数据库由于断电等异常关机导致损坏的处理办法/assets/image-20241024091849514.png" alt="image-20241024091849514"></p>
+<figure><img src="@source/notes/数据库/数据库由于断电等异常关机导致损坏的处理办法/assets/image-20241024091849514.png" alt="image-20241024091849514" tabindex="0" loading="lazy"><figcaption>image-20241024091849514</figcaption></figure>
 <ol>
 <li>
 <p>删除MySQL服务</p>

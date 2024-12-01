@@ -60,7 +60,7 @@
 <h3 id="概念" tabindex="-1"><a class="header-anchor" href="#概念"><span>概念</span></a></h3>
 <p>当父组件将数据传递给子组件后，父组件如果更新数据，子组件会同步更新，但是，<strong>子组件中不能修改 props 接收到的数据</strong>。</p>
 <p>如果修改 props 的值，会出现类似以下的报错：</p>
-<p><img src="https://woniumd.oss-cn-hangzhou.aliyuncs.com/web/jianglan/20220726110221.png" alt="image-20220726110221300"></p>
+<figure><img src="https://woniumd.oss-cn-hangzhou.aliyuncs.com/web/jianglan/20220726110221.png" alt="image-20220726110221300" tabindex="0" loading="lazy"><figcaption>image-20220726110221300</figcaption></figure>
 <h3 id="解决方案" tabindex="-1"><a class="header-anchor" href="#解决方案"><span>解决方案</span></a></h3>
 <p>如果确实有需要修改 props 的需求，可以有如下两种解决方案：</p>
 <h4 id="_1、将-props-赋值给-data" tabindex="-1"><a class="header-anchor" href="#_1、将-props-赋值给-data"><span>1、将 props 赋值给 data</span></a></h4>
@@ -940,7 +940,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="准备工作" tabindex="-1"><a class="header-anchor" href="#准备工作"><span>准备工作</span></a></h1>
 <h2 id="一、vscode-安装插件" tabindex="-1"><a class="header-anchor" href="#一、vscode-安装插件"><span>一、VSCode 安装插件</span></a></h2>
 <p>在 VSCode 中安装以下插件：</p>
-<p><img src="https://woniumd.oss-cn-hangzhou.aliyuncs.com/web/jianglan/20220719124911.png" alt="image-20220719124911669"></p>
+<figure><img src="https://woniumd.oss-cn-hangzhou.aliyuncs.com/web/jianglan/20220719124911.png" alt="image-20220719124911669" tabindex="0" loading="lazy"><figcaption>image-20220719124911669</figcaption></figure>
 <h2 id="二、项目结构" tabindex="-1"><a class="header-anchor" href="#二、项目结构"><span>二、项目结构</span></a></h2>
 <div class="language-bash line-numbers-mode" data-ext="bash" data-title="bash"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">vue-demo</span></span>
 <span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> |</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665">---</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> node_modules</span></span>
@@ -1069,7 +1069,7 @@
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="三、防止重复添加动态路由" tabindex="-1"><a class="header-anchor" href="#三、防止重复添加动态路由"><span>三、防止重复添加动态路由</span></a></h2>
 <p>由于我们是在导航守卫中进行的“动态路由”的添加，所以每次进入导航守卫时，都有可能重复的添加动态路由，导致我们浏览器的控制台的中会不断的抛出黄色警告说路由重复：</p>
-<p><img src="https://woniumd.oss-cn-hangzhou.aliyuncs.com/web/jianglan/20220804183105.png" alt="image-20220804183105018"></p>
+<figure><img src="https://woniumd.oss-cn-hangzhou.aliyuncs.com/web/jianglan/20220804183105.png" alt="image-20220804183105018" tabindex="0" loading="lazy"><figcaption>image-20220804183105018</figcaption></figure>
 <p>因此，我们需要在 <code v-pre>router/addRoutes.js</code> 中添加一个判断，来阻止动态路由的重复添加：</p>
 <div class="language-js line-numbers-mode" data-ext="js" data-title="js"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">const</span><span style="--shiki-light:#59873A;--shiki-dark:#80A665"> addRoutes</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> =</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> async</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> ()</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> =></span><span style="--shiki-light:#999999;--shiki-dark:#666666"> {</span></span>
 <span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">    // 判断权限数据是否为空，为空的话才进入 if 请求权限数据、添加动态路由</span></span>
@@ -1227,7 +1227,7 @@
 <h2 id="一、工作原理" tabindex="-1"><a class="header-anchor" href="#一、工作原理"><span>一、工作原理</span></a></h2>
 <p>事件总线，主要用来是实现非父子组件之间的传值。它的工作原理：通过 <code v-pre>new Vue()</code> 再创建一个新的 vue 实例对象 <code v-pre>bus</code>，将这个新的实例对象作为桥梁，来实现两个组件之间的传值。</p>
 <p>例如：当组件 A 想要传值给组件 B 时，步骤如下图所示：</p>
-<p><img src="https://woniumd.oss-cn-hangzhou.aliyuncs.com/web/jianglan/20220726140840.png" alt=""></p>
+<figure><img src="https://woniumd.oss-cn-hangzhou.aliyuncs.com/web/jianglan/20220726140840.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h2 id="二、工作步骤" tabindex="-1"><a class="header-anchor" href="#二、工作步骤"><span>二、工作步骤</span></a></h2>
 <h3 id="_1、创建事件总线-bus" tabindex="-1"><a class="header-anchor" href="#_1、创建事件总线-bus"><span>1、创建事件总线 bus</span></a></h3>
 <p>我们可以在项目的 <code v-pre>src</code> 目录中，新建一个 <code v-pre>/utils/bus.js</code> 文件，然后在该文件中，来生成 bus 对象：</p>
@@ -2964,7 +2964,7 @@ JS 表达式，指的就是这一段代码执行完成后，会留下一个最�
 <p>但是，<strong>当计算属性中依赖的原数据发生变化时，计算属性会重新计算。</strong></p>
 <h2 id="五、计算属性的修改" tabindex="-1"><a class="header-anchor" href="#五、计算属性的修改"><span>五、计算属性的修改</span></a></h2>
 <p>默认情况下，计算属性不能修改，如果修改计算属性，会出现类似以下的报错：</p>
-<p><img src="https://woniumd.oss-cn-hangzhou.aliyuncs.com/web/jianglan/20220721152643.png" alt="image-20220721152643216"></p>
+<figure><img src="https://woniumd.oss-cn-hangzhou.aliyuncs.com/web/jianglan/20220721152643.png" alt="image-20220721152643216" tabindex="0" loading="lazy"><figcaption>image-20220721152643216</figcaption></figure>
 <p>如果要修改计算属性，我们需要手动给计算属性添加一个 <code v-pre>set</code> 方法：</p>
 <div class="language-js line-numbers-mode" data-ext="js" data-title="js"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">export</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> default</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> {</span></span>
 <span class="line"><span style="--shiki-light:#998418;--shiki-dark:#B8A965">    computed</span><span style="--shiki-light:#999999;--shiki-dark:#666666">:</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> {</span></span>

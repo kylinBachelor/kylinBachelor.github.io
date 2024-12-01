@@ -186,17 +186,17 @@
 <ul>
 <li>
 <p>逻辑</p>
-<div class="language-tex line-numbers-mode" data-ext="tex" data-title="tex"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">加密</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	原始值A1 + 随机盐 => 运算结果A11</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">    </span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">校验</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	原始值A2 + 随机盐 => 运算结果A22</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">    </span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">比较</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	结果A11 &#x3C;=> 结果A22 是否相同 即可得出 原始值A1 > 原始值A2 是否相同</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">    </span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">注意点</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	原始值A2 加密 需要获取 原始值A1 所使用 随机盐</span></span></code></pre>
+<div class="language-tex line-numbers-mode" data-ext="tex" data-title="tex"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>加密</span></span>
+<span class="line"><span>	原始值A1 + 随机盐 => 运算结果A11</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>校验</span></span>
+<span class="line"><span>	原始值A2 + 随机盐 => 运算结果A22</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>比较</span></span>
+<span class="line"><span>	结果A11 &#x3C;=> 结果A22 是否相同 即可得出 原始值A1 > 原始值A2 是否相同</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>注意点</span></span>
+<span class="line"><span>	原始值A2 加密 需要获取 原始值A1 所使用 随机盐</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 </ul>
@@ -489,7 +489,7 @@
 </div>
 <h4 id="_6-1-3-providermanager" tabindex="-1"><a class="header-anchor" href="#_6-1-3-providermanager"><span>6.1.3 ProviderManager</span></a></h4>
 <p>ProviderManager 和 AuthenticationProvider 之间的关系</p>
-<p><img src="@source/notes/Spring/SpringSecurity/image/Snipaste_2024-06-24_12-16-55.png" alt="ProviderManager 和 AuthenticationProvider 之间的关系"></p>
+<figure><img src="@source/notes/Spring/SpringSecurity/image/Snipaste_2024-06-24_12-16-55.png" alt="ProviderManager 和 AuthenticationProvider 之间的关系" tabindex="0" loading="lazy"><figcaption>ProviderManager 和 AuthenticationProvider 之间的关系</figcaption></figure>
 <div class="hint-container note">
 <p class="hint-container-title">注</p>
 <p>在Spring Security中，由于系统可能同时支持多种不同的认证方式，例如同时支持用户名 /密码认证、RememberMe认证、手机号码动态认证等，而不同的认证方式对应了不同的 AuthenticationProvider，所以一个完整的认证流程可能由多个AuthenticationProvider来提供。</p>

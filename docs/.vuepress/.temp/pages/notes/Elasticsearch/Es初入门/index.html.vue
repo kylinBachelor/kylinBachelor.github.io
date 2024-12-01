@@ -8,12 +8,12 @@
 <li>官方地址:https://www.elastic.co/cn/</li>
 <li>下载地址:https://www.elastic.co/cn/downloads/past-releases#elasticsearch</li>
 </ul>
-<p><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701130252646.png" alt="image-20240701130252646"></p>
+<figure><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701130252646.png" alt="image-20240701130252646" tabindex="0" loading="lazy"><figcaption>image-20240701130252646</figcaption></figure>
 <p>Elasticsearch 支持 Windows, Macos,Linux</p>
-<p><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701130429766.png" alt="image-20240701130429766"></p>
+<figure><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701130429766.png" alt="image-20240701130429766" tabindex="0" loading="lazy"><figcaption>image-20240701130429766</figcaption></figure>
 <h3 id="_1-2-windows安装" tabindex="-1"><a class="header-anchor" href="#_1-2-windows安装"><span>1.2 Windows安装</span></a></h3>
 <p>Windows安装比较简单,几乎是开箱即用,下载好后目录结构如下:</p>
-<p><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701130940289.png" alt="image-20240701130940289"></p>
+<figure><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701130940289.png" alt="image-20240701130940289" tabindex="0" loading="lazy"><figcaption>image-20240701130940289</figcaption></figure>
 <p>目录说明:</p>
 <table>
 <thead>
@@ -54,13 +54,13 @@
 </tbody>
 </table>
 <p>解压之后进入 <strong>bin</strong> 目录,找到 <strong>elasticsearch.bat</strong> 文件双击启动服务</p>
-<p><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701131951732.png" alt="image-20240701131951732"></p>
+<figure><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701131951732.png" alt="image-20240701131951732" tabindex="0" loading="lazy"><figcaption>image-20240701131951732</figcaption></figure>
 <div class="hint-container warning">
 <p class="hint-container-title">注意</p>
 <p><strong>9300</strong> 端口为 <strong>Elasticsearch</strong> 集群间组件的通信端口，<strong>9200</strong> 端口为浏览器访问的 http 协议 <strong>RESTful</strong> 口。</p>
 </div>
 <p>打开浏览器测试结果如下:</p>
-<p><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701132205234.png" alt="image-20240701132205234"></p>
+<figure><img src="@source/notes/Elasticsearch/Es初入门/assets/image-20240701132205234.png" alt="image-20240701132205234" tabindex="0" loading="lazy"><figcaption>image-20240701132205234</figcaption></figure>
 <h3 id="_1-3-linux下安装" tabindex="-1"><a class="header-anchor" href="#_1-3-linux下安装"><span>1.3 Linux下安装</span></a></h3>
 <h4 id="_1-3-1-下载地址" tabindex="-1"><a class="header-anchor" href="#_1-3-1-下载地址"><span>1.3.1 下载地址</span></a></h4>
 <div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">https://www.elastic.co/cn/downloads/past-releases/elasticsearch-7-14-0</span></span></code></pre>

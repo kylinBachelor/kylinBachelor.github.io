@@ -73,66 +73,66 @@
 <li><strong>docker-compose stop : 停止服务</strong></li>
 </ul>
 <h2 id="_3-伪示例" tabindex="-1"><a class="header-anchor" href="#_3-伪示例"><span>3. 伪示例</span></a></h2>
-<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">version 3</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">services:</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">	# build1</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	mycentos: # 服务名称, 构建镜像时的镜像名就是该服务名</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		build: . # 相对当前docker-compose.yml 文件所在目录，基于Dockerfile构建镜像</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		container_name: mycentosContainer # 容器名称</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		ports: # 宿主机与容器端口的映射关系</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"8080:8080"</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">	# build2</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	mycentos: # 服务名称</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		build:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			context: . # 相对当前 docker-compose.yml 文件所在目录</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			dockerfile: Dockerfile-alternate # 基于名称为 Dockerfile-alternate 的文件构建镜像</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		container_name: mycentosContainer # 容器名称</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		ports: # 宿主机与容器端口的映射关系</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"8080:8080"</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	microservice:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		image: order_docker:1.0</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		container_name: ms01</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		ports:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"1000:100"</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"6000:6000"</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		volumns:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- /data1:/dta</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- /data2:/data2</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		depends_on:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- redis</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- mysql</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		networks:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- xx_net</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	redis:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		image: redis:6.8.0</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		ports::</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"6379:6379"</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		volumns:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- /app/redis/redis.conf:/etc/redis/redis.conf</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- /app/redis/data:/data</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		command: redis-server /etc/redis/redis.conf</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		networks:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- xx_net</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	mysql:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		image: mysql:5.7</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		environment:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			MYSQL_ROOT_PASSWORD: </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">'12345'</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			MYSQL_ALLOW_EMPTY_PASSWORD: </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">'no'</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			MYSQL_DATABASE: </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">'db1'</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			MYSQL_USER: </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">'ROOT'</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			MYSQL_PASSWROD: </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">'ROOT'</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		ports:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- </span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"3306:3306"</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">		volumes:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			- /app/mysql/db:/var/lib/mysql</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">            - /app/mysql/conf/my.cnf:/etc/my.cnf</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">            - /app/mysql/init:/docker-entrypoint-initdb.d</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        networks:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        	- xx_net</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">        command: --default-authentication-plugin=mysql_native_password # 解决外部无法访问</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">			</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">networks:</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">	- xx_net:</span></span></code></pre>
+<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>version 3</span></span>
+<span class="line"><span>services:</span></span>
+<span class="line"><span>	# build1</span></span>
+<span class="line"><span>	mycentos: # 服务名称, 构建镜像时的镜像名就是该服务名</span></span>
+<span class="line"><span>		build: . # 相对当前docker-compose.yml 文件所在目录，基于Dockerfile构建镜像</span></span>
+<span class="line"><span>		container_name: mycentosContainer # 容器名称</span></span>
+<span class="line"><span>		ports: # 宿主机与容器端口的映射关系</span></span>
+<span class="line"><span>			- "8080:8080"</span></span>
+<span class="line"><span>	# build2</span></span>
+<span class="line"><span>	mycentos: # 服务名称</span></span>
+<span class="line"><span>		build:</span></span>
+<span class="line"><span>			context: . # 相对当前 docker-compose.yml 文件所在目录</span></span>
+<span class="line"><span>			dockerfile: Dockerfile-alternate # 基于名称为 Dockerfile-alternate 的文件构建镜像</span></span>
+<span class="line"><span>		container_name: mycentosContainer # 容器名称</span></span>
+<span class="line"><span>		ports: # 宿主机与容器端口的映射关系</span></span>
+<span class="line"><span>			- "8080:8080"</span></span>
+<span class="line"><span>	microservice:</span></span>
+<span class="line"><span>		image: order_docker:1.0</span></span>
+<span class="line"><span>		container_name: ms01</span></span>
+<span class="line"><span>		ports:</span></span>
+<span class="line"><span>			- "1000:100"</span></span>
+<span class="line"><span>			- "6000:6000"</span></span>
+<span class="line"><span>		volumns:</span></span>
+<span class="line"><span>			- /data1:/dta</span></span>
+<span class="line"><span>			- /data2:/data2</span></span>
+<span class="line"><span>		depends_on:</span></span>
+<span class="line"><span>			- redis</span></span>
+<span class="line"><span>			- mysql</span></span>
+<span class="line"><span>		networks:</span></span>
+<span class="line"><span>			- xx_net</span></span>
+<span class="line"><span>	redis:</span></span>
+<span class="line"><span>		image: redis:6.8.0</span></span>
+<span class="line"><span>		ports::</span></span>
+<span class="line"><span>			- "6379:6379"</span></span>
+<span class="line"><span>		volumns:</span></span>
+<span class="line"><span>			- /app/redis/redis.conf:/etc/redis/redis.conf</span></span>
+<span class="line"><span>			- /app/redis/data:/data</span></span>
+<span class="line"><span>		command: redis-server /etc/redis/redis.conf</span></span>
+<span class="line"><span>		networks:</span></span>
+<span class="line"><span>			- xx_net</span></span>
+<span class="line"><span>	mysql:</span></span>
+<span class="line"><span>		image: mysql:5.7</span></span>
+<span class="line"><span>		environment:</span></span>
+<span class="line"><span>			MYSQL_ROOT_PASSWORD: '12345'</span></span>
+<span class="line"><span>			MYSQL_ALLOW_EMPTY_PASSWORD: 'no'</span></span>
+<span class="line"><span>			MYSQL_DATABASE: 'db1'</span></span>
+<span class="line"><span>			MYSQL_USER: 'ROOT'</span></span>
+<span class="line"><span>			MYSQL_PASSWROD: 'ROOT'</span></span>
+<span class="line"><span>		ports:</span></span>
+<span class="line"><span>			- "3306:3306"</span></span>
+<span class="line"><span>		volumes:</span></span>
+<span class="line"><span>			- /app/mysql/db:/var/lib/mysql</span></span>
+<span class="line"><span>            - /app/mysql/conf/my.cnf:/etc/my.cnf</span></span>
+<span class="line"><span>            - /app/mysql/init:/docker-entrypoint-initdb.d</span></span>
+<span class="line"><span>        networks:</span></span>
+<span class="line"><span>        	- xx_net</span></span>
+<span class="line"><span>        command: --default-authentication-plugin=mysql_native_password # 解决外部无法访问</span></span>
+<span class="line"><span>			</span></span>
+<span class="line"><span>networks:</span></span>
+<span class="line"><span>	- xx_net:</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 

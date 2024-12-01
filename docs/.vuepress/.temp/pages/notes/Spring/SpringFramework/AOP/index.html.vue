@@ -46,11 +46,11 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 <li>
 <p>dependency</p>
-<p><img src="@source/notes/Spring/SpringFramework/AOP/assets/image-20240630212324783.png" alt="image-20240630212324783"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/AOP/assets/image-20240630212324783.png" alt="image-20240630212324783" tabindex="0" loading="lazy"><figcaption>image-20240630212324783</figcaption></figure>
 </li>
 <li>
 <p>AOP 功能属于 Spring 核心模块部分</p>
-<p><img src="@source/notes/Spring/SpringFramework/AOP/assets/image-20240630212405537.png" alt="image-20240630212405537"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/AOP/assets/image-20240630212405537.png" alt="image-20240630212405537" tabindex="0" loading="lazy"><figcaption>image-20240630212405537</figcaption></figure>
 </li>
 </ul>
 <h2 id="_2-动态代理逻辑" tabindex="-1"><a class="header-anchor" href="#_2-动态代理逻辑"><span>2. 动态代理逻辑</span></a></h2>
@@ -121,7 +121,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 </ul>
 <h2 id="_3-动态代理使用手段" tabindex="-1"><a class="header-anchor" href="#_3-动态代理使用手段"><span>3. 动态代理使用手段</span></a></h2>
-<p><img src="@source/notes/Spring/SpringFramework/AOP/assets/image-20240630212805867.png" alt="image-20240630212805867"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/AOP/assets/image-20240630212805867.png" alt="image-20240630212805867" tabindex="0" loading="lazy"><figcaption>image-20240630212805867</figcaption></figure>
 <p>== 动态代理使用手段逻辑过程 ==</p>
 <ol>
 <li><code v-pre>真实类型 class TargetA { a1()  a2()  a3()  }</code></li>
@@ -329,7 +329,7 @@
 <li></li>
 <li>
 <p>图例</p>
-<p><img src="@source/notes/Spring/SpringFramework/AOP/assets/image-20240630215616693.png" alt="image-20240630215616693"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/AOP/assets/image-20240630215616693.png" alt="image-20240630215616693" tabindex="0" loading="lazy"><figcaption>image-20240630215616693</figcaption></figure>
 </li>
 </ul>
 <h3 id="_05-after" tabindex="-1"><a class="header-anchor" href="#_05-after"><span>05. @After</span></a></h3>

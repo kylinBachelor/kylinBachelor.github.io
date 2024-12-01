@@ -7,7 +7,7 @@
 </li>
 <li>
 <p>官方手册截图</p>
-<p><img src="@source/notes/Spring/SpringFramework/异步任务/assets/image-20240630220741469.png" alt="image-20240630220741469"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/异步任务/assets/image-20240630220741469.png" alt="image-20240630220741469" tabindex="0" loading="lazy"><figcaption>image-20240630220741469</figcaption></figure>
 </li>
 </ul>
 <h2 id="_1-容器对象异步" tabindex="-1"><a class="header-anchor" href="#_1-容器对象异步"><span>1. 容器对象异步</span></a></h2>

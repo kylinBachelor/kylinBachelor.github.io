@@ -93,23 +93,23 @@
 <blockquote>
 <p>备注：目前<code v-pre>vue-cli</code>已处于维护模式，官方推荐基于 <code v-pre>Vite</code> 创建项目。</p>
 </blockquote>
-<div class="language-powershell line-numbers-mode" data-ext="powershell" data-title="powershell"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 查看@vue/cli版本，确保@vue/cli版本在4.5.0以上</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">vue </span><span style="--shiki-light:#999999;--shiki-dark:#666666">--</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">version</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 安装或者升级你的@vue/cli </span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">npm install </span><span style="--shiki-light:#999999;--shiki-dark:#666666">-</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">g </span><span style="--shiki-light:#999999;--shiki-dark:#666666">@</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">vue</span><span style="--shiki-light:#999999;--shiki-dark:#666666">/</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">cli</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 执行创建命令</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">vue create vue_test</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">##  随后选择3.x</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">##  Choose a version of Vue.js that you want to start the project with (Use arrow keys)</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">##  > 3.x</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">##    2.x</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 启动</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">cd vue_test</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">npm run serve</span></span></code></pre>
+<div class="language-powershell line-numbers-mode" data-ext="powershell" data-title="powershell"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>## 查看@vue/cli版本，确保@vue/cli版本在4.5.0以上</span></span>
+<span class="line"><span>vue --version</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## 安装或者升级你的@vue/cli </span></span>
+<span class="line"><span>npm install -g @vue/cli</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## 执行创建命令</span></span>
+<span class="line"><span>vue create vue_test</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>##  随后选择3.x</span></span>
+<span class="line"><span>##  Choose a version of Vue.js that you want to start the project with (Use arrow keys)</span></span>
+<span class="line"><span>##  > 3.x</span></span>
+<span class="line"><span>##    2.x</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## 启动</span></span>
+<span class="line"><span>cd vue_test</span></span>
+<span class="line"><span>npm run serve</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><hr>
 <h2 id="_2-2-【基于-vite-创建】-推荐" tabindex="-1"><a class="header-anchor" href="#_2-2-【基于-vite-创建】-推荐"><span>2.2. 【基于 vite 创建】(推荐)</span></a></h2>
@@ -124,28 +124,28 @@
 <ul>
 <li>具体操作如下（点击查看<a href="https://cn.vuejs.org/guide/quick-start.html#creating-a-vue-application" target="_blank" rel="noopener noreferrer">官方文档</a>）</li>
 </ul>
-<div class="language-powershell line-numbers-mode" data-ext="powershell" data-title="powershell"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 1.创建命令</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">npm create vue</span><span style="--shiki-light:#999999;--shiki-dark:#666666">@</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">latest</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 2.具体配置</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 配置项目名称</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">√ Project name: vue3_test</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 是否添加TypeScript支持</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">√ Add TypeScript?  Yes</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 是否添加JSX支持</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">√ Add JSX Support?  No</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 是否添加路由环境</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">√ Add Vue Router </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">for</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> Single Page Application development?  No</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 是否添加pinia环境</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">√ Add Pinia </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">for</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> state management?  No</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 是否添加单元测试</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">√ Add Vitest </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">for</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> Unit Testing?  No</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 是否添加端到端测试方案</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">√ Add an </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">End</span><span style="--shiki-light:#999999;--shiki-dark:#666666">-</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">to</span><span style="--shiki-light:#999999;--shiki-dark:#666666">-</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">End Testing Solution? » No</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 是否添加ESLint语法检查</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">√ Add ESLint </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">for</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> code quality?  Yes</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">## 是否添加Prettiert代码格式化</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">√ Add Prettier </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">for</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> code formatting?  No</span></span></code></pre>
+<div class="language-powershell line-numbers-mode" data-ext="powershell" data-title="powershell"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>## 1.创建命令</span></span>
+<span class="line"><span>npm create vue@latest</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>## 2.具体配置</span></span>
+<span class="line"><span>## 配置项目名称</span></span>
+<span class="line"><span>√ Project name: vue3_test</span></span>
+<span class="line"><span>## 是否添加TypeScript支持</span></span>
+<span class="line"><span>√ Add TypeScript?  Yes</span></span>
+<span class="line"><span>## 是否添加JSX支持</span></span>
+<span class="line"><span>√ Add JSX Support?  No</span></span>
+<span class="line"><span>## 是否添加路由环境</span></span>
+<span class="line"><span>√ Add Vue Router for Single Page Application development?  No</span></span>
+<span class="line"><span>## 是否添加pinia环境</span></span>
+<span class="line"><span>√ Add Pinia for state management?  No</span></span>
+<span class="line"><span>## 是否添加单元测试</span></span>
+<span class="line"><span>√ Add Vitest for Unit Testing?  No</span></span>
+<span class="line"><span>## 是否添加端到端测试方案</span></span>
+<span class="line"><span>√ Add an End-to-End Testing Solution? » No</span></span>
+<span class="line"><span>## 是否添加ESLint语法检查</span></span>
+<span class="line"><span>√ Add ESLint for code quality?  Yes</span></span>
+<span class="line"><span>## 是否添加Prettiert代码格式化</span></span>
+<span class="line"><span>√ Add Prettier for code formatting?  No</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>自己动手编写一个App组件</li>
@@ -2246,7 +2246,7 @@
 <p>参考之前<code v-pre>pinia</code>部分的讲解</p>
 <h2 id="_6-9-【slot】" tabindex="-1"><a class="header-anchor" href="#_6-9-【slot】"><span>6.9. 【slot】</span></a></h2>
 <h3 id="_1-默认插槽" tabindex="-1"><a class="header-anchor" href="#_1-默认插槽"><span>1. 默认插槽</span></a></h3>
-<p><img src="@source/notes/Web/Vue3基础/assets/default_slot.png" alt="img"></p>
+<figure><img src="@source/notes/Web/Vue3基础/assets/default_slot.png" alt="img" tabindex="0" loading="lazy"><figcaption>img</figcaption></figure>
 <div class="language-html line-numbers-mode" data-ext="html" data-title="html"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">父组件中：</span></span>
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">        &#x3C;</span><span style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7">Category</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> title</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">今日热门游戏</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">          &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ul</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>

@@ -8,8 +8,9 @@ import * as clientConfig6 from 'C:/Users/kylinBachelor/Desktop/kylinBachelor.git
 import * as clientConfig7 from 'C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/md-enhance/config.js'
 import * as clientConfig8 from 'C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/md-power/config.js'
 import * as clientConfig9 from 'C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/markdown-math/config.js'
-import * as clientConfig10 from 'C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/node_modules/vuepress-theme-plume/lib/client/config.js'
-import * as clientConfig11 from 'C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/client.ts'
+import * as clientConfig10 from 'C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/markdown-image/client.js'
+import * as clientConfig11 from 'C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/node_modules/vuepress-theme-plume/lib/client/config.js'
+import * as clientConfig12 from 'C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/client.ts'
 
 export const clientConfigs = [
   clientConfig0,
@@ -24,4 +25,5 @@ export const clientConfigs = [
   clientConfig9,
   clientConfig10,
   clientConfig11,
+  clientConfig12,
 ].map((m) => m.default).filter(Boolean)

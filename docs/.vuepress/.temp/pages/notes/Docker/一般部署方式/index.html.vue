@@ -31,22 +31,22 @@
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">plugin</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_1-1-2-构建镜像的dockerfile文件" tabindex="-1"><a class="header-anchor" href="#_1-1-2-构建镜像的dockerfile文件"><span>1.1.2 构建镜像的Dockerfile文件</span></a></h4>
-<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">FROM</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> ubuntu</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">MAINTAINER</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> congpeitong@shundesoft.com</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 设置工作目录</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">WORKDIR</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /pigx-boot</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 设置JAR位置</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ARG</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> JAR_FILE=target/pigx-boot.jar</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 将本地的Java源代码赋值到容器内</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">COPY</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> ${JAR_FILE} app.jar</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 暴露端口给物理机映射</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">EXPOSE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 9999</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ENV</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> TZ=Asia/Shanghai JAVA_OPTS=</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">"-Xms512m -Xmx1024m -Djava.security.egd=file:/dev/./urandom"</span></span>
-<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 运行编译后的Java程序</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">CMD</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> sleep 60; java $JAVA_OPTS -jar app.jar</span></span></code></pre>
+<div class="language-dockerfile line-numbers-mode" data-ext="dockerfile" data-title="dockerfile"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>FROM ubuntu</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>MAINTAINER congpeitong@shundesoft.com</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 设置工作目录</span></span>
+<span class="line"><span>WORKDIR /pigx-boot</span></span>
+<span class="line"><span># 设置JAR位置</span></span>
+<span class="line"><span>ARG JAR_FILE=target/pigx-boot.jar</span></span>
+<span class="line"><span># 将本地的Java源代码赋值到容器内</span></span>
+<span class="line"><span>COPY ${JAR_FILE} app.jar</span></span>
+<span class="line"><span># 暴露端口给物理机映射</span></span>
+<span class="line"><span>EXPOSE 9999</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ENV TZ=Asia/Shanghai JAVA_OPTS="-Xms512m -Xmx1024m -Djava.security.egd=file:/dev/./urandom"</span></span>
+<span class="line"><span># 运行编译后的Java程序</span></span>
+<span class="line"><span>CMD sleep 60; java $JAVA_OPTS -jar app.jar</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_1-1-3-生成好的程序jar包" tabindex="-1"><a class="header-anchor" href="#_1-1-3-生成好的程序jar包"><span>1.1.3 生成好的程序jar包</span></a></h4>
 <h3 id="_1-2-部署" tabindex="-1"><a class="header-anchor" href="#_1-2-部署"><span>1.2 部署</span></a></h3>
@@ -60,7 +60,7 @@
 <li>docker:run 创建并启动docker容器</li>
 </ul>
 <h4 id="_1-2-2-idea部署" tabindex="-1"><a class="header-anchor" href="#_1-2-2-idea部署"><span>1.2.2 idea部署</span></a></h4>
-<p><img src="@source/notes/Docker/一般部署方式/assets/image-20240716094139983.png" alt="image-20240716094139983"></p>
+<figure><img src="@source/notes/Docker/一般部署方式/assets/image-20240716094139983.png" alt="image-20240716094139983" tabindex="0" loading="lazy"><figcaption>image-20240716094139983</figcaption></figure>
 <h2 id="_2-使用harbor仓库部署" tabindex="-1"><a class="header-anchor" href="#_2-使用harbor仓库部署"><span>2. 使用Harbor仓库部署</span></a></h2>
 <h3 id="_2-1-前提准备" tabindex="-1"><a class="header-anchor" href="#_2-1-前提准备"><span>2.1 前提准备</span></a></h3>
 <p>和不使用Harbor的前提准备一致，配置好Harbor信息就行了</p>

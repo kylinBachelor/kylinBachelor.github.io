@@ -3,7 +3,7 @@
 <p>下载地址：https://www.elastic.co/cn/downloads/past-releases</p>
 <p>相应的版本对应相应地址规则，例如：https://www.elastic.co/cn/downloads/past-releases/elasticsearch-7-8-0</p>
 <p>如图：</p>
-<p><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012101124866.png" alt="image-20241012101124866"></p>
+<figure><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012101124866.png" alt="image-20241012101124866" tabindex="0" loading="lazy"><figcaption>image-20241012101124866</figcaption></figure>
 <p>ES版本和jdk版本对应关系：https://www.elastic.co/cn/support/matrix#matrix_jvm</p>
 <div class="hint-container warning">
 <p class="hint-container-title">注意</p>
@@ -29,9 +29,9 @@
 <h3 id="_5-1-8-x版本" tabindex="-1"><a class="header-anchor" href="#_5-1-8-x版本"><span>5.1  <code v-pre>8.x版本</code></span></a></h3>
 <p>对应 <code v-pre>8.15.1</code>,<code v-pre>8.15.2</code> 版本或者说 <code v-pre>8.x</code>版本（8.x其他版本没试，只是猜测）的变化不大，设置方式如下：</p>
 <p>进入到es安装包目录的<code v-pre>bin</code> 目录下找到<code v-pre>elasticsearch</code> 文件</p>
-<p><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012103528908-1728700535391-2.png" alt="image-20241012103528908"></p>
+<figure><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012103528908-1728700535391-2.png" alt="image-20241012103528908" tabindex="0" loading="lazy"><figcaption>image-20241012103528908</figcaption></figure>
 <p>编辑文件 <code v-pre>vim elasticsearch</code>，设置ES自己的jdk环境，<code v-pre>一定要把设置放在最下边</code></p>
-<p><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012103628927.png" alt="image-20241012103628927"></p>
+<figure><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012103628927.png" alt="image-20241012103628927" tabindex="0" loading="lazy"><figcaption>image-20241012103628927</figcaption></figure>
 <div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># JAVA_HOME 目录需要改成自己的es的jdk目录</span></span>
 <span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">export</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> JAVA_HOME</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">/</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">home</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">/</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">soft</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">/</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">elasticsearch-8</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">15</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">2</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">/</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">jdk</span></span>
 <span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">export</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> PATH</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">$JAVA_HOME</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">/</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">bin</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">:</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">$PATH</span></span>
@@ -153,7 +153,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_6-2-修改jvm启动参数" tabindex="-1"><a class="header-anchor" href="#_6-2-修改jvm启动参数"><span>6.2 修改jvm启动参数</span></a></h3>
 <p>防止撑满内存</p>
 <p>位置：<code v-pre>es包/config/jvm.options</code></p>
-<p><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012110731047.png" alt="image-20241012110731047"></p>
+<figure><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012110731047.png" alt="image-20241012110731047" tabindex="0" loading="lazy"><figcaption>image-20241012110731047</figcaption></figure>
 <h3 id="_6-3-修改-etc-security-limits-conf" tabindex="-1"><a class="header-anchor" href="#_6-3-修改-etc-security-limits-conf"><span>6.3 修改/etc/security/limits.conf</span></a></h3>
 <p>vim /etc/security/limits.conf</p>
 <div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 在文件末尾中增加下面内容</span></span>
@@ -194,9 +194,9 @@
 <p>进入 <code v-pre>es包/bin</code></p>
 <p>7.x版本和8.x版本有些不同，7.x版本没有设置密码只有重置密码</p>
 <p>7.x</p>
-<p><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012111552636.png" alt="image-20241012111552636"></p>
+<figure><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012111552636.png" alt="image-20241012111552636" tabindex="0" loading="lazy"><figcaption>image-20241012111552636</figcaption></figure>
 <p>8.x</p>
-<p><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012111620565.png" alt="image-20241012111620565"></p>
+<figure><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012111620565.png" alt="image-20241012111620565" tabindex="0" loading="lazy"><figcaption>image-20241012111620565</figcaption></figure>
 <p>设置密码方式：</p>
 <div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD"># 设置密码</span></span>
 <span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665"> ./elasticsearch-setup-passwords</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> interactive</span></span>
@@ -206,7 +206,7 @@
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_9-访问测试是否成功" tabindex="-1"><a class="header-anchor" href="#_9-访问测试是否成功"><span>9. 访问测试是否成功</span></a></h2>
 <p>使用默认的9200（上面配置文件设置的端口）端口访问，如下则表示启动成功</p>
-<p><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012112000741.png" alt="image-20241012112000741"></p>
+<figure><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012112000741.png" alt="image-20241012112000741" tabindex="0" loading="lazy"><figcaption>image-20241012112000741</figcaption></figure>
 <h2 id="_10-安装插件" tabindex="-1"><a class="header-anchor" href="#_10-安装插件"><span>10. 安装插件</span></a></h2>
 <div class="hint-container warning">
 <p class="hint-container-title">注意</p>
@@ -215,9 +215,9 @@
 <p>拼音插件地址：https://github.com/infinilabs/analysis-pinyin/releases
 分词插件地址：https://github.com/infinilabs/analysis-ik/releases</p>
 <p>下载这个zip</p>
-<p><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012114257117.png" alt="image-20241012114257117"></p>
+<figure><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012114257117.png" alt="image-20241012114257117" tabindex="0" loading="lazy"><figcaption>image-20241012114257117</figcaption></figure>
 <p>然后解压放到 <code v-pre>es包/plugins</code>下，重启es即可</p>
-<p><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012114401042.png" alt="image-20241012114401042"></p>
+<figure><img src="@source/notes/Elasticsearch/Centos下安装ES/assets/image-20241012114401042.png" alt="image-20241012114401042" tabindex="0" loading="lazy"><figcaption>image-20241012114401042</figcaption></figure>
 </div></template>
 
 

@@ -8,7 +8,7 @@
 <p>Jenkins一个开源项目，是<code v-pre>基于Java</code>开发的一种持续集成工具,因此需要Java环境</p>
 </blockquote>
 <p>Jenkins版本和Java版本对应关系如下图：https://www.jenkins.io/doc/book/platform-information/support-policy-java/</p>
-<p><img src="@source/notes/jenkins/安装/assets/image-20240717180606275.png" alt="image-20240717180606275"></p>
+<figure><img src="@source/notes/jenkins/安装/assets/image-20240717180606275.png" alt="image-20240717180606275" tabindex="0" loading="lazy"><figcaption>image-20240717180606275</figcaption></figure>
 <h3 id="_1-2-jenkins-yum安装" tabindex="-1"><a class="header-anchor" href="#_1-2-jenkins-yum安装"><span>1.2 Jenkins yum安装</span></a></h3>
 <blockquote>
 <p>官网：https://www.jenkins.io/doc/book/installing/linux/</p>

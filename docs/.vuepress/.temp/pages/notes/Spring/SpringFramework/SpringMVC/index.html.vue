@@ -23,7 +23,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 <li>
 <p>maven</p>
-<p><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712125039773.png" alt="image-20240712125039773"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712125039773.png" alt="image-20240712125039773" tabindex="0" loading="lazy"><figcaption>image-20240712125039773</figcaption></figure>
 </li>
 </ul>
 <h3 id="_1-2-dispatcherservlet" tabindex="-1"><a class="header-anchor" href="#_1-2-dispatcherservlet"><span>1.2 DispatcherServlet</span></a></h3>
@@ -40,9 +40,9 @@
 <li>返回方式有 视图页面跳转、请求转发、重定向、返回 JSON 数据 等</li>
 <li>在整个拦截 URL 执行的过程中 被全局 try 捕获异常、异常还提供全局异常处理</li>
 </ol>
-<p><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712131033232.png" alt="image-20240712131033232"></p>
-<p><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712131055157.png" alt="image-20240712131055157"></p>
-<p><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712131110900.png" alt="image-20240712131110900"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712131033232.png" alt="image-20240712131033232" tabindex="0" loading="lazy"><figcaption>image-20240712131033232</figcaption></figure>
+<figure><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712131055157.png" alt="image-20240712131055157" tabindex="0" loading="lazy"><figcaption>image-20240712131055157</figcaption></figure>
+<figure><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712131110900.png" alt="image-20240712131110900" tabindex="0" loading="lazy"><figcaption>image-20240712131110900</figcaption></figure>
 <h3 id="_1-3-启动逻辑" tabindex="-1"><a class="header-anchor" href="#_1-3-启动逻辑"><span>1.3 启动逻辑</span></a></h3>
 <blockquote>
 <p>SpringServletContainerInitialize类用于监听容器启动，用于引导spring运行</p>
@@ -55,11 +55,11 @@
 <ul>
 <li>
 <p><strong>关键代码</strong></p>
-<p><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712132153917.png" alt="image-20240712132153917"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712132153917.png" alt="image-20240712132153917" tabindex="0" loading="lazy"><figcaption>image-20240712132153917</figcaption></figure>
 </li>
 <li>
 <p>关键逻辑</p>
-<p><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712132235475.png" alt="image-20240712132235475"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712132235475.png" alt="image-20240712132235475" tabindex="0" loading="lazy"><figcaption>image-20240712132235475</figcaption></figure>
 </li>
 </ul>
 <h3 id="_1-4-json" tabindex="-1"><a class="header-anchor" href="#_1-4-json"><span>1.4 JSON</span></a></h3>
@@ -124,7 +124,7 @@
 <ul>
 <li><strong>官网</strong></li>
 </ul>
-<p><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712133504146.png" alt="image-20240712133504146"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712133504146.png" alt="image-20240712133504146" tabindex="0" loading="lazy"><figcaption>image-20240712133504146</figcaption></figure>
 <h3 id="_2-2-上下文入口" tabindex="-1"><a class="header-anchor" href="#_2-2-上下文入口"><span>2.2 上下文入口</span></a></h3>
 <blockquote>
 <p>AbstractAnnotationConfigDispatcherServletInitializer 提供三个方法</p>
@@ -174,7 +174,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 <li>
 <p>关键代码</p>
-<p><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712221643288.png" alt="image-20240712221643288"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240712221643288.png" alt="image-20240712221643288" tabindex="0" loading="lazy"><figcaption>image-20240712221643288</figcaption></figure>
 </li>
 </ul>
 <h2 id="_3-整合" tabindex="-1"><a class="header-anchor" href="#_3-整合"><span>3. <strong>整合</strong></span></a></h2>
@@ -774,7 +774,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>
 <p>dependency</p>
-<p><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240713233123312.png" alt="image-20240713233123312"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240713233123312.png" alt="image-20240713233123312" tabindex="0" loading="lazy"><figcaption>image-20240713233123312</figcaption></figure>
 </li>
 </ul>
 <h3 id="_9-2-配置" tabindex="-1"><a class="header-anchor" href="#_9-2-配置"><span>9.2 配置</span></a></h3>
@@ -1211,7 +1211,7 @@
 <blockquote>
 <p>Easy-Captcha 是用于生成验证码图片的 API、与 Servlet API 无关</p>
 </blockquote>
-<p><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240713233852098.png" alt="image-20240713233852098"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240713233852098.png" alt="image-20240713233852098" tabindex="0" loading="lazy"><figcaption>image-20240713233852098</figcaption></figure>
 <ul>
 <li>
 <p>pom.xml</p>
@@ -1476,7 +1476,7 @@
 </li>
 <li>
 <p>官网</p>
-<p><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240714093103109.png" alt="image-20240714093103109"></p>
+<figure><img src="@source/notes/Spring/SpringFramework/SpringMVC/assets/image-20240714093103109.png" alt="image-20240714093103109" tabindex="0" loading="lazy"><figcaption>image-20240714093103109</figcaption></figure>
 </li>
 </ul>
 <h2 id="_13-文件上传和下载" tabindex="-1"><a class="header-anchor" href="#_13-文件上传和下载"><span>13. 文件上传和下载</span></a></h2>

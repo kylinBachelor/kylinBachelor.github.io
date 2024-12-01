@@ -43,11 +43,11 @@
 <p><strong>Docker 服务默认会创建一个docker0的虚拟网桥，该桥接网络的名称就是docker0,它在内核层联通了其它的物理或虚拟网卡，这就将所有的容器和本地主机都放在了同一个物理网络。Docker默认指定了docker0接口的ip地址和子网掩码，让主机和容器之间可以通过网桥相互通信。</strong></p>
 <h3 id="_1-1-虚拟网桥" tabindex="-1"><a class="header-anchor" href="#_1-1-虚拟网桥"><span>1.1 虚拟网桥</span></a></h3>
 <p>当启动docker时会产生一个名字为docker0的虚拟网桥</p>
-<p><img src="@source/notes/Docker/network/assets/image-20240710102649394.png" alt="image-20240710102649394"></p>
+<figure><img src="@source/notes/Docker/network/assets/image-20240710102649394.png" alt="image-20240710102649394" tabindex="0" loading="lazy"><figcaption>image-20240710102649394</figcaption></figure>
 <p>docker就是通过docker0这个虚拟网桥和宿主机之间以及容器和容器之间进行网络通信的。</p>
 <p><strong>测试镜像： docker run -d -p 8083:8080 --name tomcat83 billygoo/tomcat8-jdk8</strong></p>
 <h3 id="_1-2-模型" tabindex="-1"><a class="header-anchor" href="#_1-2-模型"><span>1.2. 模型</span></a></h3>
-<p><img src="@source/notes/Docker/network/assets/image-20240710111406345.png" alt="image-20240710111406345"></p>
+<figure><img src="@source/notes/Docker/network/assets/image-20240710111406345.png" alt="image-20240710111406345" tabindex="0" loading="lazy"><figcaption>image-20240710111406345</figcaption></figure>
 <ol>
 <li>
 <p>整个宿主机的网桥模式都是docker0,类似于一个交换机有一堆接口，每个接口叫veth,在本地主机和容器内分别创建一个虚拟接口，并让他们彼此之间可以联通（这样一对接口叫做veth pair）</p>
@@ -74,13 +74,13 @@
 <p>host 模式下 -p  指定的端口将不会起到任何作用，端口号会以主机端口号为主。重复时则递增。</p>
 </div>
 <h3 id="_2-1-模型" tabindex="-1"><a class="header-anchor" href="#_2-1-模型"><span>2.1 模型</span></a></h3>
-<p><img src="@source/notes/Docker/network/assets/image-20240710123807058.png" alt="image-20240710123807058"></p>
+<figure><img src="@source/notes/Docker/network/assets/image-20240710123807058.png" alt="image-20240710123807058" tabindex="0" loading="lazy"><figcaption>image-20240710123807058</figcaption></figure>
 <p>容器将不会获得一个独立的Network Namespace,而是和宿主机共用一个Network Namespace。容器将不会虚拟出自己的网卡，而是使用宿主机的IP和端口。</p>
 <h2 id="_3-none" tabindex="-1"><a class="header-anchor" href="#_3-none"><span>3. none</span></a></h2>
 <blockquote>
 <p>=== 禁用了网络功能，只有lo标识（就是127.0.0.1标识本地回环）</p>
 </blockquote>
-<p><img src="@source/notes/Docker/network/assets/image-20240710132559964.png" alt="image-20240710132559964"></p>
+<figure><img src="@source/notes/Docker/network/assets/image-20240710132559964.png" alt="image-20240710132559964" tabindex="0" loading="lazy"><figcaption>image-20240710132559964</figcaption></figure>
 <div class="hint-container note">
 <p class="hint-container-title">注</p>
 <p>在none模式下，并不为Docker容器进行任何的网络配置</p>
@@ -92,7 +92,7 @@
 <p>两个容器除了网络方面，其它的如文件系统、进程列表等还是隔离的。</p>
 </blockquote>
 <h3 id="_4-1-模型" tabindex="-1"><a class="header-anchor" href="#_4-1-模型"><span>4.1 模型</span></a></h3>
-<p><img src="@source/notes/Docker/network/assets/image-20240710133326729.png" alt="image-20240710133326729"></p>
+<figure><img src="@source/notes/Docker/network/assets/image-20240710133326729.png" alt="image-20240710133326729" tabindex="0" loading="lazy"><figcaption>image-20240710133326729</figcaption></figure>
 <p><strong>docker run -d --network container:tomcat81 --name tomcat82 billygoo/tomcat8-jdk8</strong></p>
 <p>这里如果两个容器都是tomcat不适合，因为8080端口会产生冲突。</p>
 <h2 id="_5-自定义网络模式" tabindex="-1"><a class="header-anchor" href="#_5-自定义网络模式"><span>5. 自定义网络模式</span></a></h2>
@@ -106,7 +106,7 @@
 <p>docker run -d -p 8081:8080 --network test_network --name tomcat81 billygoo/tomcat8-jdk8</p>
 <p>docker run -d -p 8082:8080 --network test_network --name tomcat82 billygoo/tomcat8-jdk8</p>
 <h3 id="_5-3-通过服务名测试服务通信" tabindex="-1"><a class="header-anchor" href="#_5-3-通过服务名测试服务通信"><span>5.3 通过服务名测试服务通信</span></a></h3>
-<p><img src="@source/notes/Docker/network/assets/image-20240710141351877.png" alt="image-20240710141351877"></p>
+<figure><img src="@source/notes/Docker/network/assets/image-20240710141351877.png" alt="image-20240710141351877" tabindex="0" loading="lazy"><figcaption>image-20240710141351877</figcaption></figure>
 <h2 id="_6-主要用途" tabindex="-1"><a class="header-anchor" href="#_6-主要用途"><span>6. 主要用途</span></a></h2>
 <ol>
 <li>容器之间的互联和通信以及端口映射</li>

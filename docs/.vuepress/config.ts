@@ -62,7 +62,7 @@ export default defineUserConfig({
        */
       shiki: {
         // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
-        languages: ['shell', 'bash', 'typescript', 'javascript', 'java', 'yaml', 'yml', 'html', 'vue', 'sql', 'xml', 'dockerfile', 'bat', 'properties', 'jsx', 'powershell', 'tex', 'txt', 'tsx'],
+        languages: ['c', 'cpp', 'css', 'html', 'http', 'java', 'javascript', 'json', 'markdown', 'php', 'python', 'sass', 'scss', 'shellscript', 'sql', 'typescript', 'vue', 'vue-html', 'xml', 'yaml'],
       },
 
       /**
@@ -99,6 +99,19 @@ export default defineUserConfig({
           kotlin: true,
         },
       },
+      markdownImage: {
+        // 启用 figure
+        figure: true,
+
+        // 启用图片懒加载
+        lazyload: true,
+
+        // 启用图片标记
+        mark: true,
+
+        // 启用图片大小
+        size: true,
+      },
 
       /**
        * 评论 comments
@@ -115,5 +128,5 @@ export default defineUserConfig({
       //   inputPosition: 'top',
       // },
     },
-  }),
+  })
 })

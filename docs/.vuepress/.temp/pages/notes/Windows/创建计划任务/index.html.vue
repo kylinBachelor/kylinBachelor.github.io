@@ -38,29 +38,29 @@
 <li>ONEVENT: XPath事件查询字符串</li>
 </ul>
 <p>在windows7上执行schtasks /query显示错误，无法加载列资源，解决办法</p>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">    chcp437</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>    chcp437</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1 id="示例" tabindex="-1"><a class="header-anchor" href="#示例"><span>示例</span></a></h1>
 <h2 id="创建计划任务" tabindex="-1"><a class="header-anchor" href="#创建计划任务"><span>创建计划任务</span></a></h2>
 <p>创建名字为test的计划任务，每隔一分钟运行一次，任务执行时指定执行的程序为calc.exe</p>
 <p>重启后也会执行(程序启动的默认权限为当前用户)</p>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    schtasks</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /create /sc minute /mo </span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">1</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /tn test /tr C:\WINDOWS\system32\calc.exe</span></span>
-<span class="line"><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">    #以system权限运行</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    schtasks</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /create /sc minute /mo </span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">1</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /tn test /tr C:\WINDOWS\system32\calc.exe /ru system</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>    schtasks /create /sc minute /mo 1 /tn test /tr C:\WINDOWS\system32\calc.exe</span></span>
+<span class="line"><span>    #以system权限运行</span></span>
+<span class="line"><span>    schtasks /create /sc minute /mo 1 /tn test /tr C:\WINDOWS\system32\calc.exe /ru system</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="开机上线" tabindex="-1"><a class="header-anchor" href="#开机上线"><span>开机上线</span></a></h2>
 <ol>
 <li>系统启动时上线，无需登录，系统启动时运行poc.exe,但只当指定了运行账好为system时才成功上线：</li>
 </ol>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    schtasks</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /create /tn test /tr C:\Users\Administrator\Desktop\poc.exe /sc onstart /ru 不运行（计划任务显示准备就绪）</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    schtasks</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /create /tn test /tr C:\Users\Administrator\Desktop\poc.exe /sc onstart /ru administrator  不运行（计划任务显示准备就绪）</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>    schtasks /create /tn test /tr C:\Users\Administrator\Desktop\poc.exe /sc onstart /ru 不运行（计划任务显示准备就绪）</span></span>
+<span class="line"><span>    schtasks /create /tn test /tr C:\Users\Administrator\Desktop\poc.exe /sc onstart /ru administrator  不运行（计划任务显示准备就绪）</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="账号登录时上线" tabindex="-1"><a class="header-anchor" href="#账号登录时上线"><span>账号登录时上线</span></a></h2>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    schtasks</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /create /tn test /tr C:\Users\Administrator\Desktop\poc.exe /sc onlogon   如添加计划任务时使用的账号，登录成功后即上线</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>    schtasks /create /tn test /tr C:\Users\Administrator\Desktop\poc.exe /sc onlogon   如添加计划任务时使用的账号，登录成功后即上线</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="应用案例" tabindex="-1"><a class="header-anchor" href="#应用案例"><span>应用案例</span></a></h2>
 <p>创建计划任务‘updatex’,触发程序为poc.exe,运行级别为高级别，以system权限每隔4小时运行一次</p>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    schtasks</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /create /tn </span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">updatex</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /tr C:\Users\Administrator\Desktop\poc.exe /rl highest /F /sc hourly /mo </span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">4</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /RU system</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>    schtasks /create /tn "updatex" /tr C:\Users\Administrator\Desktop\poc.exe /rl highest /F /sc hourly /mo 4 /RU system</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>如果当前为普通用户执行计划任务，/ru参数值可以设置为 %username% 即当前用户，如果是管理员可以指定为system</p>
 <h1 id="查看计划任务" tabindex="-1"><a class="header-anchor" href="#查看计划任务"><span>查看计划任务</span></a></h1>
@@ -72,22 +72,22 @@
 <ol>
 <li>查询名称为test的计划任务</li>
 </ol>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    schtasks</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /query </span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">|</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> findstr</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> test</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>    schtasks /query | findstr test</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1 id="删除计划任务" tabindex="-1"><a class="header-anchor" href="#删除计划任务"><span>删除计划任务</span></a></h1>
 <p>删除计划任务的命令是schtasks /delete, 计划任务已运行的程序不会中断</p>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    schtasks</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /delete /tn test /f</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span></span></span>
+<span class="line"><span>    schtasks /delete /tn test /f</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="结束计划任务" tabindex="-1"><a class="header-anchor" href="#结束计划任务"><span>结束计划任务</span></a></h1>
 <p>该命令会结束此次运行的计划任务，即将计划任务执行的程序停止，但是到下一次任务执行的时间依然会执行任务，因为没有删除任务</p>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    schtasks</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /end /tn test</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span></span></span>
+<span class="line"><span>    schtasks /end /tn test</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="运行计划任务" tabindex="-1"><a class="header-anchor" href="#运行计划任务"><span>运行计划任务</span></a></h1>
 <p>可以立即运行test计划任务，但是不会影响计划，也不会改变设置的下一个运行时间</p>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">    schtasks</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /run /tn test</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span></span></span>
+<span class="line"><span>    schtasks /run /tn test</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 

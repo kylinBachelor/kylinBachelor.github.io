@@ -157,21 +157,21 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 </ul>
 <p>③jar包的导入问题</p>
 <p>在web工程中，jar包必须存放在指定位置：</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021101825708.png" alt="image-20231021101825708"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021101825708.png" alt="image-20231021101825708" tabindex="0" loading="lazy"><figcaption>image-20231021101825708</figcaption></figure>
 <p>在使用Maven之后，通过配置依赖(jar包)的坐标，查找本地仓库中相应jar包，若本地仓库没有，则统一从镜像网站或中央仓库中下载：</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021102831531.png" alt="image-20231021102831531"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021102831531.png" alt="image-20231021102831531" tabindex="0" loading="lazy"><figcaption>image-20231021102831531</figcaption></figure>
 <p>④jar包之间的依赖</p>
 <p>框架中使用的 jar 包，不仅数量庞大，而且彼此之间存在错综复杂的依赖关系。依赖关系的复杂程度，已经上升到了完全不能靠人力手动解决的程度。另外，jar 包之间有可能产生冲突。进一步增加了我们在 jar 包使用过程中的难度。</p>
 <p>下面是前面例子中 jar 包之间的依赖关系：</p>
-<p><img src="@source/notes/Other/maven/assets/img006.ab4f2e31.png" alt="images"></p>
+<figure><img src="@source/notes/Other/maven/assets/img006.ab4f2e31.png" alt="images" tabindex="0" loading="lazy"><figcaption>images</figcaption></figure>
 <p>而实际上 jar 包之间的依赖关系是普遍存在的，如果要由程序员手动梳理无疑会增加极高的学习成本，而这些工作又对实现业务功能毫无帮助。</p>
 <p>而使用 Maven 则几乎不需要管理这些关系，极个别的地方调整一下即可，极大的减轻了我们的工作量。</p>
 <h4 id="_1-2、maven是一个构建工具" tabindex="-1"><a class="header-anchor" href="#_1-2、maven是一个构建工具"><span>1.2、Maven是一个构建工具</span></a></h4>
 <p>①你没有注意过的构建</p>
 <p>你可以不使用 Maven，但是构建必须要做。当我们使用 IDEA 进行开发时，构建是 IDEA 替我们做的。</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021103758624.png" alt="image-20231021103758624"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021103758624.png" alt="image-20231021103758624" tabindex="0" loading="lazy"><figcaption>image-20231021103758624</figcaption></figure>
 <p>②脱离 IDE 环境仍需构建</p>
-<p><img src="@source/notes/Other/maven/assets/image.png" alt="img"></p>
+<figure><img src="@source/notes/Other/maven/assets/image.png" alt="img" tabindex="0" loading="lazy"><figcaption>img</figcaption></figure>
 <h4 id="_1-3、结论" tabindex="-1"><a class="header-anchor" href="#_1-3、结论"><span>1.3、结论</span></a></h4>
 <ul>
 <li><strong>管理规模庞大的 jar 包，需要专门工具。</strong></li>
@@ -190,13 +190,13 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 <p><strong>构建管理：</strong></p>
 <p>项目构建是指将源代码、配置文件、资源文件等转化为能够运行或部署的应用程序或库的过程</p>
 <p>Maven 可以管理项目的编译、测试、打包、部署等构建过程。通过实现标准的构建生命周期，Maven 可以确保每一个构建过程都遵循同样的规则和最佳实践。同时，Maven 的插件机制也使得开发者可以对构建过程进行扩展和定制。主动触发构建，只需要简单的命令操作即可。</p>
-<p><img src="@source/notes/Other/maven/assets/image_OSOE45UACw.png" alt=""></p>
+<figure><img src="@source/notes/Other/maven/assets/image_OSOE45UACw.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 </li>
 </ol>
 <p><strong>场景1：</strong> 例如我们项目需要第三方依赖如：Druid连接池、MySQL数据库驱动和Jackson JSON等处理。那么我们可以将想要的依赖项的信息编写到Maven工程的配置文件，Maven就会自动下载并复制这些依赖项到项目中，无需自己导入jar包，管理jar!</p>
 <p><strong>场景2：</strong> 项目完成开发，我们想要打成war部署到服务器中，使用maven的构建命令可以快速打包！节省大量时间！</p>
 <h3 id="_3-maven软件工作原理模型图-了解" tabindex="-1"><a class="header-anchor" href="#_3-maven软件工作原理模型图-了解"><span>3. Maven软件工作原理模型图（了解）</span></a></h3>
-<p><img src="@source/notes/Other/maven/assets/image_6AVFQbaXLj.png" alt=""></p>
+<figure><img src="@source/notes/Other/maven/assets/image_6AVFQbaXLj.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h2 id="二、maven安装和配置" tabindex="-1"><a class="header-anchor" href="#二、maven安装和配置"><span>二、Maven安装和配置</span></a></h2>
 <h3 id="_1-maven安装" tabindex="-1"><a class="header-anchor" href="#_1-maven安装"><span>1. Maven安装</span></a></h3>
 <p><a href="https://maven.apache.org/docs/history.html" target="_blank" rel="noopener noreferrer">https://maven.apache.org/docs/history.html</a></p>
@@ -226,7 +226,7 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 <p><strong>安装条件：</strong> maven需要本机安装java环境、必需包含java_home环境变量！</p>
 <p><strong>软件安装：</strong> 右键解压即可（绿色免安装）</p>
 <p><strong>软件结构：</strong></p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021110800113.png" alt="image-20231021110800113"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021110800113.png" alt="image-20231021110800113" tabindex="0" loading="lazy"><figcaption>image-20231021110800113</figcaption></figure>
 <p><strong>bin</strong>：含有Maven的运行脚本</p>
 <p>boot：含有plexus-classworlds类加载器框架</p>
 <p><strong>conf</strong>：含有Maven的核心配置文件</p>
@@ -236,11 +236,11 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 <ol>
 <li>
 <p>配置MAVEN_HOME</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021110938230.png" alt="image-20231021110938230"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021110938230.png" alt="image-20231021110938230" tabindex="0" loading="lazy"><figcaption>image-20231021110938230</figcaption></figure>
 </li>
 <li>
 <p>配置Path</p>
-<p><img src="@source/notes/Other/maven/assets/image_xNL5Fg_ucf.png" alt=""></p>
+<figure><img src="@source/notes/Other/maven/assets/image_xNL5Fg_ucf.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 </li>
 <li>
 <p>命令测试（cmd窗口）</p>
@@ -303,7 +303,7 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 <p>我们需要将配置好的maven软件，配置到idea开发工具中即可！ 注意：idea工具默认自带maven配置软件，但是因为没有修改配置，建议替换成本地配置好的maven！</p>
 </blockquote>
 <p>选择本地maven软件</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021112046512.png" alt="image-20231021112046512"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021112046512.png" alt="image-20231021112046512" tabindex="0" loading="lazy"><figcaption>image-20231021112046512</figcaption></figure>
 <p><strong>注意</strong>：</p>
 <p>1、如果本地仓库地址不变化，只有一个原因，就是maven/conf/settings.xml配置文件编写错误！仔细检查即可！</p>
 <p>2、一定保证User settings file对应之前修改的settings.xml的路径，若 不一致，选中Override复选框，手动选择配置文件</p>
@@ -330,11 +330,11 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 <h3 id="_2-idea构建maven-java-se工程" tabindex="-1"><a class="header-anchor" href="#_2-idea构建maven-java-se工程"><span>2. Idea构建Maven Java SE工程</span></a></h3>
 <p>注意：此处省略了version，直接给了一个默认值：<strong>1.0-SNAPSHOT</strong></p>
 <p>自己后期可以在项目中随意修改！</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021143559114.png" alt="image-20231021143559114"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021143559114.png" alt="image-20231021143559114" tabindex="0" loading="lazy"><figcaption>image-20231021143559114</figcaption></figure>
 <p>创建工程之后，若第一次使用maven，或者使用的是新的<strong>本地仓库</strong>，idea右下角会出现以下进度条，表示maven正在下载相关插件，等待下载完毕，进度条消失即可</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021145024505.png" alt="image-20231021145024505"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021145024505.png" alt="image-20231021145024505" tabindex="0" loading="lazy"><figcaption>image-20231021145024505</figcaption></figure>
 <p>验证maven工程是否创建成功，当创建完毕maven工程之后，idea中会自动打开Maven视图，如下图：</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021145713433.png" alt="image-20231021145713433"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021145713433.png" alt="image-20231021145713433" tabindex="0" loading="lazy"><figcaption>image-20231021145713433</figcaption></figure>
 <h3 id="_3-idea构建maven-java-web工程" tabindex="-1"><a class="header-anchor" href="#_3-idea构建maven-java-web工程"><span>3. Idea构建Maven Java Web工程</span></a></h3>
 <ol>
 <li>
@@ -342,7 +342,7 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 <ol>
 <li>
 <p>创建一个maven的javase工程</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021150134082.png" alt="image-20231021150134082"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021150134082.png" alt="image-20231021150134082" tabindex="0" loading="lazy"><figcaption>image-20231021150134082</figcaption></figure>
 </li>
 <li>
 <p>修改pom.xml文件打包方式</p>
@@ -357,14 +357,14 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 <li>
 <p>设置<strong>web资源路径</strong>和<strong>web.xml路径</strong></p>
 <p>点击File--&gt;Project Structure</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021151040531.png" alt="image-20231021151040531"></p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021151627161.png" alt="image-20231021151627161"></p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021151753318.png" alt="image-20231021151753318"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021151040531.png" alt="image-20231021151040531" tabindex="0" loading="lazy"><figcaption>image-20231021151040531</figcaption></figure>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021151627161.png" alt="image-20231021151627161" tabindex="0" loading="lazy"><figcaption>image-20231021151627161</figcaption></figure>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021151753318.png" alt="image-20231021151753318" tabindex="0" loading="lazy"><figcaption>image-20231021151753318</figcaption></figure>
 </li>
 <li>
 <p>刷新和校验</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021152310802.png" alt="image-20231021152310802"></p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021151921943.png" alt="image-20231021151921943"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021152310802.png" alt="image-20231021152310802" tabindex="0" loading="lazy"><figcaption>image-20231021152310802</figcaption></figure>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021151921943.png" alt="image-20231021151921943" tabindex="0" loading="lazy"><figcaption>image-20231021151921943</figcaption></figure>
 </li>
 </ol>
 </li>
@@ -374,14 +374,14 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 <li>
 <p>安装插件JBLJavaToWeb</p>
 <p>file / settings / plugins / marketplace</p>
-<p><img src="@source/notes/Other/maven/assets/image_cHUU_rABB6.png" alt=""></p>
+<figure><img src="@source/notes/Other/maven/assets/image_cHUU_rABB6.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 </li>
 <li>
 <p>创建一个javasemaven工程</p>
 </li>
 <li>
 <p>右键、使用插件快速补全web项目</p>
-<p><img src="@source/notes/Other/maven/assets/image_ZAPkM7VLgJ.png" alt=""></p>
+<figure><img src="@source/notes/Other/maven/assets/image_ZAPkM7VLgJ.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 </li>
 </ol>
 </li>
@@ -427,7 +427,7 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 <p>项目构建是指将源代码、依赖库和资源文件等转换成可执行或可部署的应用程序的过程，在这个过程中包括编译源代码、链接依赖库、打包和部署等多个步骤。</p>
 <p>项目构建是软件开发过程中至关重要的一部分，它能够大大提高软件开发效率，使得开发人员能够更加专注于应用程序的开发和维护，而不必关心应用程序的构建细节。</p>
 <p>同时，项目构建还能够将多个开发人员的代码汇合到一起，并能够自动化项目的构建和部署，大大降低了项目的出错风险和提高开发效率。常见的构建工具包括 Maven、Gradle、Ant 等。</p>
-<p><img src="@source/notes/Other/maven/assets/image_REm5kk7DnX.png" alt=""></p>
+<figure><img src="@source/notes/Other/maven/assets/image_REm5kk7DnX.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="_2-命令方式项目构建" tabindex="-1"><a class="header-anchor" href="#_2-命令方式项目构建"><span>2. 命令方式项目构建</span></a></h3>
 <table>
 <thead>
@@ -490,7 +490,7 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 <span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">mvn</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> test</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-可视化方式项目构建" tabindex="-1"><a class="header-anchor" href="#_3-可视化方式项目构建"><span>3. 可视化方式项目构建</span></a></h3>
-<p><img src="@source/notes/Other/maven/assets/image-20231021153444864.png" alt="image-20231021153444864"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021153444864.png" alt="image-20231021153444864" tabindex="0" loading="lazy"><figcaption>image-20231021153444864</figcaption></figure>
 <p>注意：打包（package）和安装（install）的区别是什么</p>
 <p>打包是将工程打成jar或war文件，保存在target目录下</p>
 <p>安装是将当前工程所生成的jar或war文件，安装到本地仓库，会按照坐标保存到指定位置</p>
@@ -664,54 +664,54 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">dependency</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>文件：</p>
-<p><img src="@source/notes/Other/maven/assets/image_m3iQtBLARz.png" alt=""></p>
+<figure><img src="@source/notes/Other/maven/assets/image_m3iQtBLARz.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 </li>
 <li>
 <p>或者可以将清除<strong>lastUpdated文件</strong>的操作写在一个脚本文件中，手动创建文件&quot;clearLastUpdated.bat&quot;，名字任意，但是后缀必须是bat，将以下内容复制到文件中</p>
-<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">cls</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
-<span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">@</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> OFF</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">SET</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> CLEAR_PATH</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">D: </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">SET</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> CLEAR_DIR</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">D:\maven-repository</span><span style="--shiki-light:#999999;--shiki-dark:#666666">(</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">本地仓库路径</span><span style="--shiki-light:#999999;--shiki-dark:#666666">)</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">color</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 0a </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">TITLE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> ClearLastUpdated </span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">For</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> Windows </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">GOTO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> MENU </span></span>
-<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">:</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">MENU</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">CLS</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * * *  ClearLastUpdated For Windows  * * * * </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * </span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">1</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 清理*.lastUpdated * </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * </span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">2</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 查看*.lastUpdated * </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * </span><span style="--shiki-light:#2F798A;--shiki-dark:#4C9A91">3</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> 退 出 * </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. * * * * * * * * * * * * * * * * * * * * * * * * </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.请输入选择项目的序号： </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">set</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /p </span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">ID</span><span style="--shiki-light:#999999;--shiki-dark:#666666">=</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">IF</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> "</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">id</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">==</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">1</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> GOTO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> cmd1 </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">IF</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> "</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">id</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">==</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">2</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> GOTO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> cmd2 </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">IF</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77"> "</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">id</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">==</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">3</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> EXIT</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">PAUSE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
-<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">:</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">cmd1</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. 开始清理</span></span>
-<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">CLEAR_PATH</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">cd</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> %</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">CLEAR_DIR</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">for</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /r </span><span style="--shiki-light:#999999;--shiki-dark:#666666">%%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">i</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> in</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> (</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">*.lastUpdated</span><span style="--shiki-light:#999999;--shiki-dark:#666666">)</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> do</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> del</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> %%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">i</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.OK </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">PAUSE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">GOTO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> MENU </span></span>
-<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">:</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">cmd2</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">. 查看*.lastUpdated文件</span></span>
-<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">CLEAR_PATH</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">cd</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> %</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">CLEAR_DIR</span><span style="--shiki-light:#999999;--shiki-dark:#666666">%</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">for</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> /r </span><span style="--shiki-light:#999999;--shiki-dark:#666666">%%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">i</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> in</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> (</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">*.lastUpdated</span><span style="--shiki-light:#999999;--shiki-dark:#666666">)</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> do</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375"> echo</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> %%</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A">i</span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">ECHO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">.OK </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">PAUSE</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> </span></span>
-<span class="line"><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">GOTO</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> MENU</span></span></code></pre>
+<div class="language-bat line-numbers-mode" data-ext="bat" data-title="bat"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>cls </span></span>
+<span class="line"><span>@ECHO OFF </span></span>
+<span class="line"><span>SET CLEAR_PATH=D: </span></span>
+<span class="line"><span>SET CLEAR_DIR=D:\maven-repository(本地仓库路径)</span></span>
+<span class="line"><span>color 0a </span></span>
+<span class="line"><span>TITLE ClearLastUpdated For Windows </span></span>
+<span class="line"><span>GOTO MENU </span></span>
+<span class="line"><span>:MENU </span></span>
+<span class="line"><span>CLS</span></span>
+<span class="line"><span>ECHO. </span></span>
+<span class="line"><span>ECHO. * * * *  ClearLastUpdated For Windows  * * * * </span></span>
+<span class="line"><span>ECHO. * * </span></span>
+<span class="line"><span>ECHO. * 1 清理*.lastUpdated * </span></span>
+<span class="line"><span>ECHO. * * </span></span>
+<span class="line"><span>ECHO. * 2 查看*.lastUpdated * </span></span>
+<span class="line"><span>ECHO. * * </span></span>
+<span class="line"><span>ECHO. * 3 退 出 * </span></span>
+<span class="line"><span>ECHO. * * </span></span>
+<span class="line"><span>ECHO. * * * * * * * * * * * * * * * * * * * * * * * * </span></span>
+<span class="line"><span>ECHO. </span></span>
+<span class="line"><span>ECHO.请输入选择项目的序号： </span></span>
+<span class="line"><span>set /p ID= </span></span>
+<span class="line"><span>IF "%id%"=="1" GOTO cmd1 </span></span>
+<span class="line"><span>IF "%id%"=="2" GOTO cmd2 </span></span>
+<span class="line"><span>IF "%id%"=="3" EXIT </span></span>
+<span class="line"><span>PAUSE </span></span>
+<span class="line"><span>:cmd1 </span></span>
+<span class="line"><span>ECHO. 开始清理</span></span>
+<span class="line"><span>%CLEAR_PATH%</span></span>
+<span class="line"><span>cd %CLEAR_DIR%</span></span>
+<span class="line"><span>for /r %%i in (*.lastUpdated) do del %%i</span></span>
+<span class="line"><span>ECHO.OK </span></span>
+<span class="line"><span>PAUSE </span></span>
+<span class="line"><span>GOTO MENU </span></span>
+<span class="line"><span>:cmd2 </span></span>
+<span class="line"><span>ECHO. 查看*.lastUpdated文件</span></span>
+<span class="line"><span>%CLEAR_PATH%</span></span>
+<span class="line"><span>cd %CLEAR_DIR%</span></span>
+<span class="line"><span>for /r %%i in (*.lastUpdated) do echo %%i</span></span>
+<span class="line"><span>ECHO.OK </span></span>
+<span class="line"><span>PAUSE </span></span>
+<span class="line"><span>GOTO MENU</span></span></code></pre>
 
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="@source/notes/Other/maven/assets/image-20231021161615994.png" alt="image-20231021161615994"></p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="@source/notes/Other/maven/assets/image-20231021161615994.png" alt="image-20231021161615994" tabindex="0" loading="lazy"><figcaption>image-20231021161615994</figcaption></figure>
 </li>
 </ol>
 <h3 id="_6-maven工程build构建配置" tabindex="-1"><a class="header-anchor" href="#_6-maven工程build构建配置"><span>6. Maven工程Build构建配置</span></a></h3>
@@ -817,9 +817,9 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 </ul>
 <p><strong>案例：导入jackson依赖</strong></p>
 <p>分析：jackson需要三个依赖</p>
-<p><img src="@source/notes/Other/maven/assets/image_9ViibmeAvU.png" alt=""></p>
+<figure><img src="@source/notes/Other/maven/assets/image_9ViibmeAvU.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>依赖传递关系：data-bind中，依赖其他两个依赖</p>
-<p><img src="@source/notes/Other/maven/assets/image_Wl0Lsj_BLk.png" alt=""></p>
+<figure><img src="@source/notes/Other/maven/assets/image_Wl0Lsj_BLk.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>最佳导入：直接可以导入data-bind，自动依赖传递需要的依赖</p>
 <div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">&#x3C;!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind --></span></span>
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">dependency</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
@@ -830,7 +830,7 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-maven依赖冲突特性" tabindex="-1"><a class="header-anchor" href="#_2-maven依赖冲突特性"><span>2. Maven依赖冲突特性</span></a></h3>
 <p>当直接引用或者间接引用出现了相同的jar包! 这时呢，一个项目就会出现相同的重复jar包，这就算作冲突！依赖冲突避免出现重复依赖，并且终止依赖传递！</p>
-<p><img src="@source/notes/Other/maven/assets/image_km7_szBRUw.png" alt=""></p>
+<figure><img src="@source/notes/Other/maven/assets/image_km7_szBRUw.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>maven自动解决依赖冲突问题能力，会按照自己的原则，进行重复依赖选择。同时也提供了手动解决的冲突的方式，不过不推荐！</p>
 <p><strong>解决依赖冲突（如何选择重复依赖）方式：</strong></p>
 <ol>
@@ -1056,7 +1056,7 @@ org.springframework.cloud:spring-cloud-netflix-archaius🫙2.2.6.RELEASE:compile
 请求 Maven 私服，将所需构件下载到本地仓库，若私服中不存在所需构件，则跳转到第 3 步。
 请求外部的远程仓库，将所需构件下载并缓存到 Maven 私服，若外部远程仓库不存在所需构件，则 Maven 直接报错。</p>
 <p>此外，一些无法从外部仓库下载到的构件，也能从本地上传到私服供其他人使用。</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231021164631791.png" alt="image-20231021164631791"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231021164631791.png" alt="image-20231021164631791" tabindex="0" loading="lazy"><figcaption>image-20231021164631791</figcaption></figure>
 <p>②Maven私服的优势</p>
 <ol>
 <li>
@@ -1091,25 +1091,25 @@ Maven私服位于局域网内，从私服下载构建更快更稳定。</p>
 <p>解压，以管理员身份打开CMD，进入bin目录下，执行./nexus /run命令启动</p>
 <p>访问 Nexus 首页</p>
 <p>首页地址：http://localhost:8081/，8081为默认端口号</p>
-<p><img src="@source/notes/Other/maven/assets/img001.612496a3.png" alt="images"></p>
+<figure><img src="@source/notes/Other/maven/assets/img001.612496a3.png" alt="images" tabindex="0" loading="lazy"><figcaption>images</figcaption></figure>
 <h3 id="_3-初始设置" tabindex="-1"><a class="header-anchor" href="#_3-初始设置"><span>3. 初始设置</span></a></h3>
-<p><img src="@source/notes/Other/maven/assets/img002.e1ac8197.png" alt="images"></p>
-<p><img src="@source/notes/Other/maven/assets/image-20231031171116756.png" alt="image-20231031171116756"></p>
+<figure><img src="@source/notes/Other/maven/assets/img002.e1ac8197.png" alt="images" tabindex="0" loading="lazy"><figcaption>images</figcaption></figure>
+<figure><img src="@source/notes/Other/maven/assets/image-20231031171116756.png" alt="image-20231031171116756" tabindex="0" loading="lazy"><figcaption>image-20231031171116756</figcaption></figure>
 <p>这里参考提示：</p>
 <ul>
 <li>用户名：admin</li>
 <li>密码：查看 <strong>E:\Server\nexus-3.61.0-02-win64\sonatype-work\nexus3\admin.password</strong> 文件</li>
 </ul>
-<p><img src="@source/notes/Other/maven/assets/image-20231031171242874.png" alt="image-20231031171242874"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231031171242874.png" alt="image-20231031171242874" tabindex="0" loading="lazy"><figcaption>image-20231031171242874</figcaption></figure>
 <p>继续执行初始化：</p>
-<p><img src="@source/notes/Other/maven/assets/img005.4b81e5ab.png" alt="images"></p>
-<p><img src="@source/notes/Other/maven/assets/img006.43ebb0ac.png" alt="images"></p>
+<figure><img src="@source/notes/Other/maven/assets/img005.4b81e5ab.png" alt="images" tabindex="0" loading="lazy"><figcaption>images</figcaption></figure>
+<figure><img src="@source/notes/Other/maven/assets/img006.43ebb0ac.png" alt="images" tabindex="0" loading="lazy"><figcaption>images</figcaption></figure>
 <p>匿名登录，启用还是禁用？由于启用匿名登录后，后续操作比较简单，这里我们演示禁用匿名登录的操作：</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231031171607378.png" alt="image-20231031171607378"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231031171607378.png" alt="image-20231031171607378" tabindex="0" loading="lazy"><figcaption>image-20231031171607378</figcaption></figure>
 <p>初始化完毕：</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231031171708085.png" alt="image-20231031171708085"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231031171708085.png" alt="image-20231031171708085" tabindex="0" loading="lazy"><figcaption>image-20231031171708085</figcaption></figure>
 <h3 id="_4-nexus上的各种仓库" tabindex="-1"><a class="header-anchor" href="#_4-nexus上的各种仓库"><span>4. Nexus上的各种仓库</span></a></h3>
-<p><img src="@source/notes/Other/maven/assets/img009.7f737ed7.png" alt="images"></p>
+<figure><img src="@source/notes/Other/maven/assets/img009.7f737ed7.png" alt="images" tabindex="0" loading="lazy"><figcaption>images</figcaption></figure>
 <table>
 <thead>
 <tr>
@@ -1159,7 +1159,7 @@ Maven私服位于局域网内，从私服下载构建更快更稳定。</p>
 </tbody>
 </table>
 <p>初始状态下，这几个仓库都没有内容：</p>
-<p><img src="@source/notes/Other/maven/assets/img010.e3573d0b.png" alt="images"></p>
+<figure><img src="@source/notes/Other/maven/assets/img010.e3573d0b.png" alt="images" tabindex="0" loading="lazy"><figcaption>images</figcaption></figure>
 <h3 id="_5-通过-nexus-下载-jar-包" tabindex="-1"><a class="header-anchor" href="#_5-通过-nexus-下载-jar-包"><span>5. 通过 Nexus 下载 jar 包</span></a></h3>
 <p>修改本地maven的核心配置文件settings.xml，设置新的本地仓库地址</p>
 <div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">&#x3C;!-- 配置一个新的 Maven 本地仓库 --></span></span>
@@ -1174,8 +1174,8 @@ Maven私服位于局域网内，从私服下载构建更快更稳定。</p>
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">mirror</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这里的 url 标签是这么来的：</p>
-<p><img src="@source/notes/Other/maven/assets/img012.5a3b1f11.png" alt="images"></p>
-<p><img src="@source/notes/Other/maven/assets/image-20231031172137288.png" alt="image-20231031172137288"></p>
+<figure><img src="@source/notes/Other/maven/assets/img012.5a3b1f11.png" alt="images" tabindex="0" loading="lazy"><figcaption>images</figcaption></figure>
+<figure><img src="@source/notes/Other/maven/assets/image-20231031172137288.png" alt="image-20231031172137288" tabindex="0" loading="lazy"><figcaption>image-20231031172137288</figcaption></figure>
 <p>把上图中看到的地址复制出来即可。如果我们在前面允许了匿名访问，到这里就够了。但如果我们禁用了匿名访问，那么接下来我们还要继续配置 settings.xml：</p>
 <div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">server</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">  &#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">id</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">nexus-mine</span><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">id</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
@@ -1199,11 +1199,11 @@ Downloading from nexus-mine: http://localhost:8081/repository/maven-public/net/m
 Downloaded from nexus-mine: http://localhost:8081/repository/maven-public/net/minidev/accessors-smart/1.2/accessors-smart-1.2.pom (12 kB at 463 kB/s)</p>
 </blockquote>
 <p>下载后，Nexus 服务器上就有了 jar 包：</p>
-<p><img src="@source/notes/Other/maven/assets/img014.cc0e87c3.png" alt="images"></p>
+<figure><img src="@source/notes/Other/maven/assets/img014.cc0e87c3.png" alt="images" tabindex="0" loading="lazy"><figcaption>images</figcaption></figure>
 <p>若下载速度太慢，可以设置私服中中央仓库的地址为阿里云仓库地址</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231031175035345.png" alt="image-20231031175035345"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231031175035345.png" alt="image-20231031175035345" tabindex="0" loading="lazy"><figcaption>image-20231031175035345</figcaption></figure>
 <p>修改为：http://maven.aliyun.com/nexus/content/groups/public/</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231031175134745.png" alt="image-20231031175134745"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231031175134745.png" alt="image-20231031175134745" tabindex="0" loading="lazy"><figcaption>image-20231031175134745</figcaption></figure>
 <h3 id="_6-将-jar-包部署到-nexus" tabindex="-1"><a class="header-anchor" href="#_6-将-jar-包部署到-nexus"><span>6. 将 jar 包部署到 Nexus</span></a></h3>
 <p>maven工程中配置：</p>
 <div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">distributionManagement</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
@@ -1238,7 +1238,7 @@ Uploaded to nexus-mine: http://localhost:8081/repository/maven-snapshots/com/atg
 [INFO] demo06-mysql-data-provider ......................... SUCCESS [ 6.779 s]
 [INFO] demo07-redis-data-provider 1.0-SNAPSHOT ............ SUCCESS [ 0.273 s]</p>
 </blockquote>
-<p><img src="@source/notes/Other/maven/assets/img015.b413af9d.png" alt="images"></p>
+<figure><img src="@source/notes/Other/maven/assets/img015.b413af9d.png" alt="images" tabindex="0" loading="lazy"><figcaption>images</figcaption></figure>
 <h3 id="_7-引用别人部署的-jar-包" tabindex="-1"><a class="header-anchor" href="#_7-引用别人部署的-jar-包"><span>7. 引用别人部署的 jar 包</span></a></h3>
 <p>maven工程中配置：</p>
 <div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">repositories</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span>
@@ -1257,7 +1257,7 @@ Uploaded to nexus-mine: http://localhost:8081/repository/maven-snapshots/com/atg
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="九、maven综合案例" tabindex="-1"><a class="header-anchor" href="#九、maven综合案例"><span>九、Maven综合案例</span></a></h2>
 <h3 id="_1-项目需求和结构分析" tabindex="-1"><a class="header-anchor" href="#_1-项目需求和结构分析"><span>1. 项目需求和结构分析</span></a></h3>
-<p><img src="@source/notes/Other/maven/assets/image123.png" alt="img"></p>
+<figure><img src="@source/notes/Other/maven/assets/image123.png" alt="img" tabindex="0" loading="lazy"><figcaption>img</figcaption></figure>
 <p>需求案例：搭建一个电商平台项目，该平台包括用户服务、订单服务、通用工具模块等。</p>
 <p>项目架构：</p>
 <ol>
@@ -1288,7 +1288,7 @@ Uploaded to nexus-mine: http://localhost:8081/repository/maven-snapshots/com/atg
 <h3 id="_2-项目搭建和统一构建" tabindex="-1"><a class="header-anchor" href="#_2-项目搭建和统一构建"><span>2. 项目搭建和统一构建</span></a></h3>
 <h4 id="_1父模块-micro-shop" tabindex="-1"><a class="header-anchor" href="#_1父模块-micro-shop"><span>①父模块 (micro-shop)</span></a></h4>
 <p>创建工程：</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231023112630117.png" alt="image-20231023112630117"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231023112630117.png" alt="image-20231023112630117" tabindex="0" loading="lazy"><figcaption>image-20231023112630117</figcaption></figure>
 <p>pom.xml配置：</p>
 <div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;?</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">xml</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> version</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">1.0</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> encoding</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">UTF-8</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#999999;--shiki-dark:#666666">?></span></span>
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">project</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> xmlns</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">http://maven.apache.org/POM/4.0.0</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span></span>
@@ -1364,8 +1364,8 @@ Uploaded to nexus-mine: http://localhost:8081/repository/maven-snapshots/com/atg
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>可选操作：删除src目录</p>
 <h4 id="_2通用模块-common-service" tabindex="-1"><a class="header-anchor" href="#_2通用模块-common-service"><span>②通用模块 (common-service)</span></a></h4>
 <p>创建工程：</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231023114531521.png" alt="image-20231023114531521"></p>
-<p><img src="@source/notes/Other/maven/assets/image-20231023114649705.png" alt="image-20231023114649705"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231023114531521.png" alt="image-20231023114531521" tabindex="0" loading="lazy"><figcaption>image-20231023114531521</figcaption></figure>
+<figure><img src="@source/notes/Other/maven/assets/image-20231023114649705.png" alt="image-20231023114649705" tabindex="0" loading="lazy"><figcaption>image-20231023114649705</figcaption></figure>
 <p>pom.xml配置：</p>
 <div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;?</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">xml</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> version</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">1.0</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> encoding</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">UTF-8</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#999999;--shiki-dark:#666666">?></span></span>
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">project</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> xmlns</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">http://maven.apache.org/POM/4.0.0</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span></span>
@@ -1416,8 +1416,8 @@ Uploaded to nexus-mine: http://localhost:8081/repository/maven-snapshots/com/atg
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3用户模块-user-service" tabindex="-1"><a class="header-anchor" href="#_3用户模块-user-service"><span>③用户模块 (user-service)</span></a></h4>
 <p>创建工程：</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231023115404302.png" alt="image-20231023115404302"></p>
-<p><img src="@source/notes/Other/maven/assets/image-20231023115707282.png" alt="image-20231023115707282"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231023115404302.png" alt="image-20231023115404302" tabindex="0" loading="lazy"><figcaption>image-20231023115404302</figcaption></figure>
+<figure><img src="@source/notes/Other/maven/assets/image-20231023115707282.png" alt="image-20231023115707282" tabindex="0" loading="lazy"><figcaption>image-20231023115707282</figcaption></figure>
 <p>pom.xml配置：</p>
 <div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;?</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">xml</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> version</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">1.0</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> encoding</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">UTF-8</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#999999;--shiki-dark:#666666">?></span></span>
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">project</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> xmlns</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">http://maven.apache.org/POM/4.0.0</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span></span>
@@ -1452,10 +1452,10 @@ Uploaded to nexus-mine: http://localhost:8081/repository/maven-snapshots/com/atg
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;/</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">project</span><span style="--shiki-light:#999999;--shiki-dark:#666666">></span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>依赖传递结果：</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231023120621402.png" alt="image-20231023120621402"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231023120621402.png" alt="image-20231023120621402" tabindex="0" loading="lazy"><figcaption>image-20231023120621402</figcaption></figure>
 <h4 id="_4订单模块-order-service" tabindex="-1"><a class="header-anchor" href="#_4订单模块-order-service"><span>④订单模块 (order-service)</span></a></h4>
 <p>创建工程，并使用插件转为web工程：</p>
-<p><img src="@source/notes/Other/maven/assets/image-20231023120733029.png" alt="image-20231023120733029"></p>
+<figure><img src="@source/notes/Other/maven/assets/image-20231023120733029.png" alt="image-20231023120733029" tabindex="0" loading="lazy"><figcaption>image-20231023120733029</figcaption></figure>
 <p>pom.xml配置：</p>
 <div class="language-xml line-numbers-mode" data-ext="xml" data-title="xml"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;?</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">xml</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> version</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">1.0</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> encoding</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">UTF-8</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#999999;--shiki-dark:#666666">?></span></span>
 <span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">&#x3C;</span><span style="--shiki-light:#1E754F;--shiki-dark:#4D9375">project</span><span style="--shiki-light:#B07D48;--shiki-dark:#BD976A"> xmlns</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE">=</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">http://maven.apache.org/POM/4.0.0</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">"</span></span>

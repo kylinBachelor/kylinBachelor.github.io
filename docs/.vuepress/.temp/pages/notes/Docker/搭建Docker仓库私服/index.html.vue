@@ -3,7 +3,7 @@
 <p>=== Docker私服使用Docker环境搭建的，首先需要有Docker环境</p>
 </blockquote>
 <p>很多时候，开发者本地是没有Docker的，但是可以使用远程的Docker服务来build镜像，通过远程Docker服务将本地镜像推送到 <strong>Harbor</strong> 仓库私服。</p>
-<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705125934120.png" alt="image-20240705125934120"></p>
+<figure><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705125934120.png" alt="image-20240705125934120" tabindex="0" loading="lazy"><figcaption>image-20240705125934120</figcaption></figure>
 <h2 id="_1-安装docker" tabindex="-1"><a class="header-anchor" href="#_1-安装docker"><span>1. 安装Docker</span></a></h2>
 <blockquote>
 <p>=== 保证机器可以访问外网</p>
@@ -48,9 +48,9 @@ docker run hello-world</p>
 <li>
 <p>配置阿里云镜像加速器 https://cr.console.aliyun.com/cn-beijing/instances/mirrors
 阿里云中有容器镜像服务，创建一个个人版本的就可以,针对Docker客户端版本大于 1.10.0 的用户,您可以通过修改daemon配置文件/etc/docker/daemon.json来使用加速器</p>
-<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705124456342.png" alt="image-20240705124456342"></p>
-<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705124612056.png" alt="image-20240705124612056"></p>
-<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705124631737.png" alt="image-20240705124631737"></p>
+<figure><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705124456342.png" alt="image-20240705124456342" tabindex="0" loading="lazy"><figcaption>image-20240705124456342</figcaption></figure>
+<figure><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705124612056.png" alt="image-20240705124612056" tabindex="0" loading="lazy"><figcaption>image-20240705124612056</figcaption></figure>
+<figure><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705124631737.png" alt="image-20240705124631737" tabindex="0" loading="lazy"><figcaption>image-20240705124631737</figcaption></figure>
 <div class="language-sh line-numbers-mode" data-ext="sh" data-title="sh"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">sudo</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> mkdir</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076"> -p</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> /etc/docker</span></span>
 <span class="line"><span style="--shiki-light:#59873A;--shiki-dark:#80A665">sudo</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> tee</span><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D"> /etc/docker/daemon.json</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> &#x3C;&#x3C;-</span><span style="--shiki-light:#B5695977;--shiki-dark:#C98A7D77">'EOF'</span></span>
 <span class="line"><span style="--shiki-light:#B56959;--shiki-dark:#C98A7D">{</span></span>
@@ -145,9 +145,9 @@ docker run hello-world</p>
 <p>=== 首先得配置好 <strong>Dockerfile</strong> , 这里不作阐述，我也没研究过</p>
 </blockquote>
 <p>配置 Docker 服务地址 和 Harbor地址</p>
-<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705135534009.png" alt="image-20240705135534009"></p>
+<figure><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705135534009.png" alt="image-20240705135534009" tabindex="0" loading="lazy"><figcaption>image-20240705135534009</figcaption></figure>
 <h3 id="_6-1-idea方式" tabindex="-1"><a class="header-anchor" href="#_6-1-idea方式"><span>6.1 IDEA方式</span></a></h3>
-<p><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705135633621.png" alt="image-20240705135633621"></p>
+<figure><img src="@source/notes/Docker/搭建Docker仓库私服/assets/image-20240705135633621.png" alt="image-20240705135633621" tabindex="0" loading="lazy"><figcaption>image-20240705135633621</figcaption></figure>
 <h3 id="_6-2-maven-fabric8-docker-构建插件" tabindex="-1"><a class="header-anchor" href="#_6-2-maven-fabric8-docker-构建插件"><span>6.2 maven fabric8 docker 构建插件</span></a></h3>
 <blockquote>
 <p>=== 即命令行的方式，需要构建哪个模块，相应的目录就是对应模块的pom.xml同一个目录（biz）</p>

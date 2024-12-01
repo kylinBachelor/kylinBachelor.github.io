@@ -5,7 +5,7 @@
 <ul>
 <li>
 <p>jakarta EE 10 管理 servelt6.0 规范</p>
-<p><img src="@source/notes/Spring/jakarta-servlet/assets/image-20240707222733952.png" alt="image-20240707222733952"></p>
+<figure><img src="@source/notes/Spring/jakarta-servlet/assets/image-20240707222733952.png" alt="image-20240707222733952" tabindex="0" loading="lazy"><figcaption>image-20240707222733952</figcaption></figure>
 </li>
 </ul>
 <h2 id="_1-机制及项目结构" tabindex="-1"><a class="header-anchor" href="#_1-机制及项目结构"><span>1. 机制及项目结构</span></a></h2>
@@ -15,7 +15,7 @@
 <ul>
 <li>
 <p>servlet 执行流程</p>
-<p><img src="@source/notes/Spring/jakarta-servlet/assets/image-20240707222843230.png" alt="image-20240707222843230"></p>
+<figure><img src="@source/notes/Spring/jakarta-servlet/assets/image-20240707222843230.png" alt="image-20240707222843230" tabindex="0" loading="lazy"><figcaption>image-20240707222843230</figcaption></figure>
 </li>
 <li>
 <p>Servlet 约定 maven目录结构</p>
@@ -132,7 +132,7 @@
 </li>
 <li>
 <p><strong>核心代码执行机制</strong></p>
-<p><img src="@source/notes/Spring/jakarta-servlet/assets/image-20240707225824285.png" alt="image-20240707225824285"></p>
+<figure><img src="@source/notes/Spring/jakarta-servlet/assets/image-20240707225824285.png" alt="image-20240707225824285" tabindex="0" loading="lazy"><figcaption>image-20240707225824285</figcaption></figure>
 </li>
 </ul>
 <h2 id="_4-cargo" tabindex="-1"><a class="header-anchor" href="#_4-cargo"><span>4. Cargo</span></a></h2>

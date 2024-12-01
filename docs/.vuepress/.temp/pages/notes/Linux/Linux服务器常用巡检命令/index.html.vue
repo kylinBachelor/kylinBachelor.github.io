@@ -53,7 +53,7 @@
 <div class="language- line-numbers-mode" data-ext="" data-title=""><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>命令：cat /etc/*release*</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHtMruaibXbY07WAq5ArNu6icJPGnMD7zx92HuLj1fySnfyBaw4eHlQbwQ/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<figure><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHtMruaibXbY07WAq5ArNu6icJPGnMD7zx92HuLj1fySnfyBaw4eHlQbwQ/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
 <h2 id="_1-3-通过lsb工具查询linux发行版信息" tabindex="-1"><a class="header-anchor" href="#_1-3-通过lsb工具查询linux发行版信息"><span>1.3 通过LSB工具查询Linux发行版信息</span></a></h2>
 <p>lsb_release是一个Linux Standard Base（LSB）的工具，用于显示Linux发行版的信息。它通常用于查询和显示Linux发行版的版本号、发行代号、描述等信息。</p>
 <div class="language- line-numbers-mode" data-ext="" data-title=""><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span># CentOS安装lsb_release包</span></span>
@@ -85,7 +85,7 @@
 <blockquote>
 <p>命令：uptime</p>
 </blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHOUAXBvOClzcaaHaW0ay9y8neg78GDBwYuXOmzdNYFtQ2jJOJ2KmlbA/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<figure><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHOUAXBvOClzcaaHaW0ay9y8neg78GDBwYuXOmzdNYFtQ2jJOJ2KmlbA/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
 <p>打印出来的信息说明：</p>
 <table>
 <thead>
@@ -123,13 +123,13 @@
 <div class="language- line-numbers-mode" data-ext="" data-title=""><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>命令：lsmod</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHlCanxLx13BWUAI7wY6sT7aA3QibaUg7T9u00jDXlqFh5D1bumVoibLZA/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<figure><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHlCanxLx13BWUAI7wY6sT7aA3QibaUg7T9u00jDXlqFh5D1bumVoibLZA/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
 <h1 id="_2-资源-利用情况" tabindex="-1"><a class="header-anchor" href="#_2-资源-利用情况"><span>2.<strong>资源****利用情况</strong></span></a></h1>
 <h2 id="_2-1-实时查看系统资源使用情况" tabindex="-1"><a class="header-anchor" href="#_2-1-实时查看系统资源使用情况"><span>2.1 实时查看系统资源使用情况</span></a></h2>
 <blockquote>
 <p>命令：top</p>
 </blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelH2mGvBoGiapO7nIfGjqCWFclynhakheg3LVSicpmYDa3qyXMoq5l3TsLw/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<figure><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelH2mGvBoGiapO7nIfGjqCWFclynhakheg3LVSicpmYDa3qyXMoq5l3TsLw/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
 <p>打印出来的信息说明：</p>
 <table>
 <thead>
@@ -349,7 +349,7 @@
 <p>free -g（单位GB）</p>
 <p>free -m（单位MB）</p>
 </blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelH9P43ibKMPjqgXp4GqNpaEibc5YWRKAYaezxOcIxCQFK5JAbklEiapeXSQ/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<figure><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelH9P43ibKMPjqgXp4GqNpaEibc5YWRKAYaezxOcIxCQFK5JAbklEiapeXSQ/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
 <p>打印出来的信息说明：</p>
 <table>
 <thead>
@@ -389,7 +389,7 @@
 <blockquote>
 <p>命令：df -h</p>
 </blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHkicVRJ0NeibsDfjp2GJ7AujrPgZ9kTogliaMsyr0CX3He5oMQoSWrBN6A/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片">查看发现根挂载点使用率100%，明明清理了大文件，但还是使用率100%，这就有可能是大量进程在占用内存使用率。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHkicVRJ0NeibsDfjp2GJ7AujrPgZ9kTogliaMsyr0CX3He5oMQoSWrBN6A/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" loading="lazy">查看发现根挂载点使用率100%，明明清理了大文件，但还是使用率100%，这就有可能是大量进程在占用内存使用率。</p>
 <p><strong>解决办法：</strong></p>
 <p>通过执行命令 <strong>lsof -n |grep deleted</strong> ，查看已经删除的文件，空间没有释放，kill掉pid。</p>
 <blockquote>
@@ -605,7 +605,7 @@
 <div class="language- line-numbers-mode" data-ext="" data-title=""><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>命令：netstat -tulnp</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHg3jRm9nRYDTNialCHXTDqskVSicU6cUDuyZh2XVz3bMRmqvpS2CaJzPQ/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片">打印出来的信息说明：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHg3jRm9nRYDTNialCHXTDqskVSicU6cUDuyZh2XVz3bMRmqvpS2CaJzPQ/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" loading="lazy">打印出来的信息说明：</p>
 <table>
 <thead>
 <tr>
@@ -657,7 +657,7 @@
 <div class="language- line-numbers-mode" data-ext="" data-title=""><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>命令：ps aux</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHfKGzSKib6FFkAo2udPq8JSvXgqYp0vrz6hiad5gTU8Ny4mgibhYF1J0Mg/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<figure><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHfKGzSKib6FFkAo2udPq8JSvXgqYp0vrz6hiad5gTU8Ny4mgibhYF1J0Mg/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
 <p>打印出来的信息说明：</p>
 <table>
 <thead>
@@ -723,7 +723,7 @@
 <blockquote>
 <p>命令：<code v-pre>journalctl</code></p>
 </blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHtxj63Dseltb4wR5a3Qfu2WP3eqCZ19zenmzxSGLY6ic1xl1JBP3KZeg/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<figure><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHtxj63Dseltb4wR5a3Qfu2WP3eqCZ19zenmzxSGLY6ic1xl1JBP3KZeg/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
 <h2 id="_3-2-通过tail查看系统日志" tabindex="-1"><a class="header-anchor" href="#_3-2-通过tail查看系统日志"><span>3.2 通过tail查看系统日志</span></a></h2>
 <blockquote>
 <div class="language- line-numbers-mode" data-ext="" data-title=""><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>查看日志文件多少行代码：tail -n [行数] [日志文件]</span></span></code></pre>
@@ -737,7 +737,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></blockquote>
 <div class="language- line-numbers-mode" data-ext="" data-title=""><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>比如查看防火墙的状态：</span></span></code></pre>
 
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelH0cxMOIB7Jbzz16YydXv9dbc5MzLsmT0icWakIT0vkFeeGPhgwFouXrw/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelH0cxMOIB7Jbzz16YydXv9dbc5MzLsmT0icWakIT0vkFeeGPhgwFouXrw/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
 <h2 id="_4-2-查看已启用的服务" tabindex="-1"><a class="header-anchor" href="#_4-2-查看已启用的服务"><span>4.2 查看已启用的服务</span></a></h2>
 <blockquote>
 <div class="language- line-numbers-mode" data-ext="" data-title=""><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>命令：systemctl list-unit-files --state=enabled</span></span></code></pre>
@@ -749,13 +749,13 @@
 <div class="language- line-numbers-mode" data-ext="" data-title=""><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>命令：ifconfig` 或 `ip addr</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHotpFFsCwib8QVA6UxvptfjqfiaxXlym44WcTLcdKtW2ib5arzDhk9Xw6w/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHLiaibs14azicLicsSE64MWhbfaicwXsMof6Liauyeyje82sN1MaCRScj8ycg/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<figure><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHotpFFsCwib8QVA6UxvptfjqfiaxXlym44WcTLcdKtW2ib5arzDhk9Xw6w/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHLiaibs14azicLicsSE64MWhbfaicwXsMof6Liauyeyje82sN1MaCRScj8ycg/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
 <h2 id="_5-2-测试网络连通性" tabindex="-1"><a class="header-anchor" href="#_5-2-测试网络连通性"><span>5.2 测试网络连通性</span></a></h2>
 <blockquote>
 <p>命令格式：<code v-pre>ping &lt;IP地址或域名&gt;</code></p>
 </blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHu7Gpu48ic6ZDvBvOrpI96mib4VCncdQB1iaTLagfEibGzB1MEib7MNSuVBQ/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片">如果有类似以上的输出，则网络通畅了。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHu7Gpu48ic6ZDvBvOrpI96mib4VCncdQB1iaTLagfEibGzB1MEib7MNSuVBQ/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" loading="lazy">如果有类似以上的输出，则网络通畅了。</p>
 <table>
 <thead>
 <tr>
@@ -782,12 +782,12 @@
 <blockquote>
 <p>命令格式：<code v-pre>traceroute &lt;IP地址或域名&gt;</code></p>
 </blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHyzVFIEU2XTfmm3uWkwFZsJohoEMNdMwdmTcbks479YabJLvcnZqmuQ/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片">上面示例中，显示了从本地主机到目标主机（192.168.243.102）经过的1个路由器或中间节点的信息，包括它们的IP地址（192.168.243.102）、主机名（linux102）、以及数据包往返时间RTT（0.161 ms  0.132 ms  0.097 ms）。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHyzVFIEU2XTfmm3uWkwFZsJohoEMNdMwdmTcbks479YabJLvcnZqmuQ/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" loading="lazy">上面示例中，显示了从本地主机到目标主机（192.168.243.102）经过的1个路由器或中间节点的信息，包括它们的IP地址（192.168.243.102）、主机名（linux102）、以及数据包往返时间RTT（0.161 ms  0.132 ms  0.097 ms）。</p>
 <h2 id="_5-4-查看网络io" tabindex="-1"><a class="header-anchor" href="#_5-4-查看网络io"><span>5.4 查看网络IO</span></a></h2>
 <blockquote>
 <p>命令：nload</p>
 </blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHPjrIXFJusBXkOGSRGDfsdl6d6ia7wtEunAxnyRnvBWC2kYrQyv3zibgg/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<figure><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHPjrIXFJusBXkOGSRGDfsdl6d6ia7wtEunAxnyRnvBWC2kYrQyv3zibgg/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
 <p>nload 默认分为上下两块：</p>
 <p>上半部分：Incoming，是进入网卡的流量；</p>
 <p>下半部分：Outgoing，是从这块网卡出去的流量。</p>
@@ -829,7 +829,7 @@
 <div class="language- line-numbers-mode" data-ext="" data-title=""><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span>命令：ss -tulwn</span></span></code></pre>
 
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></blockquote>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHuibn0AvYib9AosUnVEmk07e0LSmJtSMVy5J7kldicD07HkF3dEgchks6A/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片">打印出来的信息说明：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/RyLXZtIaJxCqt0tJg5KmyquJe0ZyxelHuibn0AvYib9AosUnVEmk07e0LSmJtSMVy5J7kldicD07HkF3dEgchks6A/640?wx_fmt=png&amp;from=appmsg&amp;tp=wxpic&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片" loading="lazy">打印出来的信息说明：</p>
 <table>
 <thead>
 <tr>
