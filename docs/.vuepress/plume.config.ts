@@ -27,7 +27,7 @@ export default defineThemeConfig({
         // location: '',
         // organization: '',
       },
-
+      outline: [1, 6],
       navbar: zhNavbar,
       notes: zhNotes,
     },

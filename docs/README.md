@@ -1,6 +1,10 @@
----
 
 ---
+home: true
+config:
+  - type: custom
+---
+
 
 ### 🔨 工具
 

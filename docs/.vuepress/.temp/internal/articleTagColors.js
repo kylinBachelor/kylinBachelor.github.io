@@ -1,5 +1,5 @@
 import './articleTagColors.css'
-export const articleTagColors = {"预览":"vnu8","组件":"g26u","markdown":"mra7","preview":"ig27","component":"1cmu","bar":"mra7","Docker":"macz","Emacs":"qvnj","Java":"kqt0","反射":"s2jw","xml":"s9v0","kylin":"jl1q","Linux":"macz","Nacos":"kxce","Redis":"s9v0","_":"y4kh","Shell":"ig27","Nginx":"a4dk","Vscode":"ig27","Spring":"jl1q","maven":"s9v0","SpringSecurity":"qvnj","Web":"vnu8","ElementUI":"ig27","TS":"p09q","Vue":"vnu8","JS":"y4kh","Windows":"y4kh","博客":"vnu8","MySQL":"a4dk","Centos":"kqt0","SQL":"vnu8","达梦数据库":"s2jw","数据库":"p09q","设计模式":"jl1q","RocketMQ MQ":"a4dk","SpringBoot":"p09q","git":"j38q","SVN":"i52g"}
+export const articleTagColors = {"预览":"p3pk","组件":"t1hk","markdown":"t827","preview":"v9qw","component":"31uv","Docker":"fuvd","Emacs":"j914","Java":"xn94","反射":"hsqq","xml":"wztw","kylin":"wvq9","Linux":"fuvd","Nacos":"rod2","Redis":"wztw","_":"n9wq","Shell":"v9qw","Nginx":"3149","Vscode":"v9qw","Spring":"wvq9","maven":"wztw","SpringSecurity":"j914","Web":"p3pk","ElementUI":"v9qw","TS":"e761","Vue":"p3pk","JS":"n9wq","Windows":"n9wq","博客":"p3pk","MySQL":"3149","Centos":"xn94","SQL":"p3pk","达梦数据库":"hsqq","数据库":"e761","设计模式":"wvq9","RocketMQ MQ":"3149","SpringBoot":"e761","git":"iveq","SVN":"no6f"}
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

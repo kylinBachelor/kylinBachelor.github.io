@@ -25,9 +25,11 @@ export const zhNavbar = defineNavbarConfig([
         { text: 'K8S', link: '/notes/K8S/README.md' },
         { text: 'Windows', link: '/notes/Windows/README.md' },
         { text: 'Other', link: '/notes/Other/README.md' },
-        { text: '示例', link: '/notes/demo/README.md' },
     ]
   },
+  {
+    text: '简历', link: '/RESUME.md'
+  }
 ])
 
 export const enNavbar = defineNavbarConfig([

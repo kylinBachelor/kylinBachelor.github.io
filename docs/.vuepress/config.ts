@@ -23,6 +23,37 @@ export default defineUserConfig({
   theme: plumeTheme({
     // 添加您的部署域名
     hostname: 'https://kylinBachelor.github.io',
+      profile: {
+      avatar: '/avatar.jpg',
+      name: 'kylinBachelor',
+      description: '不积跬步无以至千里，不积小流无以成江海',
+      circle: true,
+      location: '山东济南，中国',
+      organization: '山东舜德创信软件有限公司',
+      layout: 'right',
+    },
+    blog: {
+      // 禁用分页
+      // pagination: false,
+      // 每页显示的文章数量
+      pagination: 15,
+    },
+    editLink: false,  // 禁用编辑链接
+    contributors: false, // 不显示贡献者
+    // 完全禁用所有自动生成
+    // autoFrontmatter: false,
+    // 控制部分自动生成
+    autoFrontmatter: {
+      permalink: false, // 是否生成永久链接
+      createTime: true, // 是否生成创建时间
+      title: true, // 是否生成标题
+    },
+    // 加密
+    encrypt: {
+      rules: {
+        'RESUME.md': '160507140137'
+      }
+    },
 
     plugins: {
       /**
