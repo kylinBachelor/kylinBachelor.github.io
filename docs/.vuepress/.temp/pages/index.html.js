@@ -1,5 +1,5 @@
-import comp from "C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/pages/index.html.vue"
-const data = JSON.parse("{\"path\":\"/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"config\":[{\"type\":\"custom\"}],\"gitInclude\":[],\"pageLayout\":\"home\"},\"headers\":[],\"readingTime\":{\"minutes\":1.09,\"words\":328},\"filePathRelative\":\"README.md\",\"categoryList\":[],\"bulletin\":false}")
+import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/index.html.vue"
+const data = JSON.parse("{\"path\":\"/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"config\":[{\"type\":\"custom\"}],\"gitInclude\":[],\"pageLayout\":\"home\"},\"headers\":[],\"readingTime\":{\"minutes\":1.21,\"words\":363},\"filePathRelative\":\"README.md\",\"categoryList\":[],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

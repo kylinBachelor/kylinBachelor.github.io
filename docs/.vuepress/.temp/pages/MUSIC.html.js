@@ -1,4 +1,4 @@
-import comp from "C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/pages/MUSIC.html.vue"
+import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/MUSIC.html.vue"
 const data = JSON.parse("{\"path\":\"/MUSIC.html\",\"title\":\"MUSIC\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"MUSIC\",\"createTime\":\"2024/12/01 09:28:56\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.02,\"words\":7},\"filePathRelative\":\"MUSIC.md\",\"categoryList\":[],\"bulletin\":false}")
 export { comp, data }
 

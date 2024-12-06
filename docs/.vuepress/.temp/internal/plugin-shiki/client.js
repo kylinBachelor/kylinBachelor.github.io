@@ -1,6 +1,6 @@
 
-import { useCopyCode } from 'C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/node_modules/@vuepress-plume/plugin-shikiji/lib/client/composables/copy-code.js'
-import { useCollapsedLines } from 'C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/node_modules/@vuepress-plume/plugin-shikiji/lib/client/composables/collapsed-lines.js'
+import { useCopyCode } from 'F:/my_source_code/kylinBachelor.github.io/node_modules/@vuepress-plume/plugin-shikiji/lib/client/composables/copy-code.js'
+import { useCollapsedLines } from 'F:/my_source_code/kylinBachelor.github.io/node_modules/@vuepress-plume/plugin-shikiji/lib/client/composables/collapsed-lines.js'
 
 export default {
   

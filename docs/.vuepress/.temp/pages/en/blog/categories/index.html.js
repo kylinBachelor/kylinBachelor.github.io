@@ -1,4 +1,4 @@
-import comp from "C:/Users/kylinBachelor/Desktop/kylinBachelor.github.io/docs/.vuepress/.temp/pages/en/blog/categories/index.html.vue"
+import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/en/blog/categories/index.html.vue"
 const data = JSON.parse("{\"path\":\"/en/blog/categories/\",\"title\":\"Categories\",\"lang\":\"en-US\",\"frontmatter\":{\"lang\":\"en-US\",\"title\":\"Categories\",\"gitInclude\":[],\"draft\":true},\"headers\":[],\"readingTime\":{\"minutes\":0,\"words\":0},\"filePathRelative\":null,\"type\":\"blog-categories\",\"bulletin\":false}")
 export { comp, data }
 
