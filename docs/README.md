@@ -41,13 +41,12 @@ config:
 | :-------------------------------------------------------: | :----------------------------------------------: | ---- | ---- | ---- |
 
 ### 🔖 杂项记录
-
-- 查看Linux包    https://pkgs.org/
-- Centaur Emacs  https://seagle0128.github.io/.emacs.d/
-- Spacemacs     https://github.com/syl20bnr/spacemacs
-- SpringBoot使用@Async总结 https://www.cnblogs.com/qdhxhz/p/16671089.html
-- Linux文件备份 https://www.jb51.net/article/264914.htm#_label2
-- ElementUI表格换行符实现问题解决 https://blog.csdn.net/summerfor2015/article/details/106816064?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1.no_search_link&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1.no_search_link
-- Nvm配置 https://www.jianshu.com/p/10f7f7898e9d
-- Nssm使用 https://blog.csdn.net/weixin_46560589/article/details/126429230
-- SpringBoot配置过滤器 https://blog.csdn.net/qq_60458298/article/details/129737940
+1. [查看Linux包](https://pkgs.org/)
+2. [Centaur Emacs](https://seagle0128.github.io/.emacs.d/)   
+3. [Spacemacs](https://github.com/syl20bnr/spacemacs)      
+4. [SpringBoot使用@Async总结](https://www.cnblogs.com/qdhxhz/p/16671089.html)  
+5. [Linux文件备份](https://www.jb51.net/article/264914.htm#_label2)  
+6. [ElementUI表格换行符实现问题解决](https://blog.csdn.net/summerfor2015/article/details/106816064?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1.no_search_link&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1.no_search_link)  
+7. [Nvm配置](https://www.jianshu.com/p/10f7f7898e9d)  
+8. [Nssm使用](https://blog.csdn.net/weixin_46560589/article/details/126429230)  
+9. [SpringBoot配置过滤器](https://blog.csdn.net/qq_60458298/article/details/129737940)  

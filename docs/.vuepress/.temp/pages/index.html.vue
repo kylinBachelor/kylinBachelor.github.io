@@ -116,17 +116,17 @@
 </thead>
 </table>
 <h3 id="🔖-杂项记录" tabindex="-1"><a class="header-anchor" href="#🔖-杂项记录"><span>🔖 杂项记录</span></a></h3>
-<ul>
-<li>查看Linux包    https://pkgs.org/</li>
-<li>Centaur Emacs  https://seagle0128.github.io/.emacs.d/</li>
-<li>Spacemacs     https://github.com/syl20bnr/spacemacs</li>
-<li>SpringBoot使用@Async总结 https://www.cnblogs.com/qdhxhz/p/16671089.html</li>
-<li>Linux文件备份 https://www.jb51.net/article/264914.htm#_label2</li>
-<li>ElementUI表格换行符实现问题解决 https://blog.csdn.net/summerfor2015/article/details/106816064?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2<sub>default</sub>CTRLIST<sub>default-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2</sub>default<sub>CTRLIST</sub>default-1.no_search_link</li>
-<li>Nvm配置 https://www.jianshu.com/p/10f7f7898e9d</li>
-<li>Nssm使用 https://blog.csdn.net/weixin_46560589/article/details/126429230</li>
-<li>SpringBoot配置过滤器 https://blog.csdn.net/qq_60458298/article/details/129737940</li>
-</ul>
+<ol>
+<li><a href="https://pkgs.org/" target="_blank" rel="noopener noreferrer">查看Linux包</a></li>
+<li><a href="https://seagle0128.github.io/.emacs.d/" target="_blank" rel="noopener noreferrer">Centaur Emacs</a></li>
+<li><a href="https://github.com/syl20bnr/spacemacs" target="_blank" rel="noopener noreferrer">Spacemacs</a></li>
+<li><a href="https://www.cnblogs.com/qdhxhz/p/16671089.html" target="_blank" rel="noopener noreferrer">SpringBoot使用@Async总结</a></li>
+<li><a href="https://www.jb51.net/article/264914.htm#_label2" target="_blank" rel="noopener noreferrer">Linux文件备份</a></li>
+<li><a href="https://blog.csdn.net/summerfor2015/article/details/106816064?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1.no_search_link" target="_blank" rel="noopener noreferrer">ElementUI表格换行符实现问题解决</a></li>
+<li><a href="https://www.jianshu.com/p/10f7f7898e9d" target="_blank" rel="noopener noreferrer">Nvm配置</a></li>
+<li><a href="https://blog.csdn.net/weixin_46560589/article/details/126429230" target="_blank" rel="noopener noreferrer">Nssm使用</a></li>
+<li><a href="https://blog.csdn.net/qq_60458298/article/details/129737940" target="_blank" rel="noopener noreferrer">SpringBoot配置过滤器</a></li>
+</ol>
 </div></template>
 
 
