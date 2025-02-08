@@ -55,7 +55,7 @@ public interface ServletContainerInitializer {
 
 ### 3.2 *@HandlesTypes*
 
-对于实现了SCI接口的类来说，在实现类上打上该注解，并设置接口类，在容器启动时SCI机制则将@HandlesTypes中参数的类放入Set<Class> 中。
+对于实现了SCI接口的类来说，在实现类上打上该注解，并设置接口类，在容器启动时SCI机制则将@HandlesTypes中参数的类放入Set 中。
 
 **CustomServletContainerInitializer**
 
