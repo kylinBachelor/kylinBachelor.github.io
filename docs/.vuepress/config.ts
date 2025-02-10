@@ -29,7 +29,7 @@ export default defineUserConfig({
       description: '不积跬步无以至千里，不积小流无以成江海',
       circle: true,
       location: '山东济南，中国',
-      organization: '山东舜德创信软件有限公司',
+      organization: '软件开发大家庭',
       layout: 'right',
     },
     blog: {
