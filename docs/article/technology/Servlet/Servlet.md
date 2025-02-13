@@ -9,6 +9,8 @@ createTime: 2025/02/13 09:45:31
 
 # Jakarta Servlet
 
+*web组件，过滤器，监听器 这三大组件必须在容器启动之前注册。`必须必须必须`*
+
 ## 1. Servlet的定义
 
 Servlet 是一种 Java 编程语言类，它直接或间接地实现 jakarta.servlet.Servlet 接口。jakarta.servlet 和 jakarta.servlet.http 包提供了用于编写 servlet 的接口和类。所有 Servlet 都必须实现 jakarta.servlet.Servlet 接口，该接口定义生命周期方法，例如 init、service 和 destroy。在实现通用服务时，您可以扩展已实现 Servlet 接口的 jakarta.servlet.GenericServlet 类。在实现 HTTP 服务时，您可以扩展 jakarta.servlet.http.HttpServlet 类，该类已经扩展了 GenericServlet 类。
