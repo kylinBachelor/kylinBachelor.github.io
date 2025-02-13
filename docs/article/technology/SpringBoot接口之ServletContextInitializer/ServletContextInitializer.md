@@ -111,3 +111,36 @@ class TomcatStarter implements ServletContainerInitializer {
 5. DispatcherServletRegistrationBean - 专用注册 DispatcherServlet
 
 `以上 ServletContextInitializer 是被 SpringBoot 手动调用的`
+
+因此在SpringBoot中注册 `监听器`, `过滤器`,` servlet` 应使用SpringBoot提供的ServletContextinitializer的实现
+
+
+
+例如注册过滤器：
+
+```java
+// 自定义的过滤器类
+public class MyFilter implements HttpFilter {
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        System.out.println("执行过滤操作");
+        chain.doFilter(request, response);
+    }
+}
+
+
+@Configuration
+public class WebFilterConfig {
+ 
+    @Bean
+    // 过滤器注册
+    public FilterRegistrationBean<MyFilter> myFilter() {
+        FilterRegistrationBean<MyFilter> registrationBean = new FilterRegistrationBean<>();
+        registrationBean.setFilter(new MyFilter());
+        registrationBean.addUrlPatterns("/*");
+        registrationBean.setOrder(1);
+        return registrationBean;
+    }
+}
+```
+
