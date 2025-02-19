@@ -22,7 +22,7 @@ export default defineThemeConfig({
       profile: {
         avatar: 'https://theme-plume.vuejs.press/plume.png',
         name: 'kylinBachelor',
-        description: '不积跬步无以至千里，不积小流无以成江海',
+        description: '脱去皮囊，无非二百零六骨，穿上衣裳，可有一万八千相，观美人如白骨，使我无欲，观白骨如美人，使我无惧，君子当守正念，以养浩然之气，斩断色欲，利于不败，色而不淫，方为丈夫',
         circle: true,
         // location: '',
         // organization: '',

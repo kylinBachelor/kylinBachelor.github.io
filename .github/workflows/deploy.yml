@@ -35,8 +35,8 @@ jobs:
 
       # 运行构建脚本
       # Run the build script
-      - name: Build VuePress site
-        run: npm run docs:build
+      - name: Build kylinBachelor site
+        run: npm run build
 
 
       # 查看 workflow 的文档来获取更多信息
