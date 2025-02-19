@@ -1,5 +1,5 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/RocketMQ/index.html.vue"
-const data = JSON.parse("{\"path\":\"/RocketMQ/\",\"title\":\"RocketMQ\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"RocketMQ\",\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/RocketMQ/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.35,\"words\":106},\"filePathRelative\":\"notes/MQ/RocketMQ/README.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10011,\"name\":\"MQ\"},{\"id\":\"c7cac1\",\"sort\":10065,\"name\":\"RocketMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/RocketMQ/\",\"title\":\"RocketMQ\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"RocketMQ\",\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/RocketMQ/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.35,\"words\":106},\"filePathRelative\":\"notes/MQ/RocketMQ/README.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10010,\"name\":\"MQ\"},{\"id\":\"c7cac1\",\"sort\":10061,\"name\":\"RocketMQ\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

@@ -1,8 +1,9 @@
 ---
 title: "浅谈JWT,需要了解的认证登录方案"
-tags: ["JWT"]
-description: ""浅谈JWT,需要了解的认证登录方案"
-createTime: 2024/02/20 16:08:33
+tags: 
+  - JWT
+description: 浅谈JWT,需要了解的认证登录方案
+createTime: 2025/2/20 16:08:33
 ---
 
 
