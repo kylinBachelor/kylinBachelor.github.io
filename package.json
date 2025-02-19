@@ -2,7 +2,7 @@
   "name": "my-vuepress-site",
   "type": "module",
   "version": "1.0.0",
-  "description": "博客",
+  "description": "This is My Blog，use vuepress to build",
   "author": "kylinBachelor <kylinBachelor@outlook.com>",
   "license": "MIT",
   "engines": {

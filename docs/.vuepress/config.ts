@@ -36,7 +36,7 @@ export default defineUserConfig({
       // 禁用分页
       // pagination: false,
       // 每页显示的文章数量
-      pagination: 10,
+      pagination: 5,
     },
     editLink: false,  // 禁用编辑链接
     contributors: false, // 不显示贡献者

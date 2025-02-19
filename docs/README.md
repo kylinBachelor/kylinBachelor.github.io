@@ -3,6 +3,7 @@
 home: true
 config:
   - type: custom
+footer: Apache 2.0addaddasddas
 ---
 
 ### 🔨 工具
@@ -50,3 +51,4 @@ config:
 7. [Nvm配置](https://www.jianshu.com/p/10f7f7898e9d)  
 8. [Nssm使用](https://blog.csdn.net/weixin_46560589/article/details/126429230)  
 9. [SpringBoot配置过滤器](https://blog.csdn.net/qq_60458298/article/details/129737940)  
+
