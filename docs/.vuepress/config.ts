@@ -10,12 +10,7 @@ export default defineUserConfig({
       title: 'kylinBachelor',
       lang: 'zh-CN',
       description: '不积跬步无以至千里，不积小流无以成江海',
-    },
-    '/en/': {
-      title: 'kylinBachelor',
-      lang: 'en-US',
-      description: 'Stay Hungry Stay Foolish',
-    },
+    }
   },
 
   bundler: viteBundler(),

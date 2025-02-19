@@ -1,4 +1,4 @@
-export const searchIndex = {"/": () => import('@internal/minisearchIndex/searchBox-default.js'),"/en/": () => import('@internal/minisearchIndex/searchBox-en.js')}
+export const searchIndex = {"/": () => import('@internal/minisearchIndex/searchBox-default.js')}
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
