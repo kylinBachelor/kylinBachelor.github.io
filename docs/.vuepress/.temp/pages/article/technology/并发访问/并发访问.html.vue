@@ -1,0 +1,72 @@
+<template><div><h1 id="并发访问及控制" tabindex="-1"><a class="header-anchor" href="#并发访问及控制"><span>并发访问及控制</span></a></h1>
+<h2 id="_1-非线程安全是如何出现的" tabindex="-1"><a class="header-anchor" href="#_1-非线程安全是如何出现的"><span>1. 非线程安全是如何出现的</span></a></h2>
+<p>首先，<strong>非线程安全</strong>的问题存在于<strong>实例变量</strong>中，如果是<strong>方法内部的私有变量</strong>则不存在<strong>非线程安全问题</strong>。</p>
+<blockquote>
+<p>根据Java内存运行时的数据分配，静态变量存在于方法区中，实例对象存在于堆中，此二区域为线程共享，而方法中的变量存在于虚拟机栈中，为线程私有。因此<strong>方法内部的私有变量是线程安全的，实例变量是非线程安全的</strong></p>
+</blockquote>
+<h2 id="_2-使用锁" tabindex="-1"><a class="header-anchor" href="#_2-使用锁"><span>2. 使用锁</span></a></h2>
+<h3 id="_2-1-synchronized同步方法" tabindex="-1"><a class="header-anchor" href="#_2-1-synchronized同步方法"><span>2.1 synchronized同步方法</span></a></h3>
+<h4 id="_2-1-1-作用" tabindex="-1"><a class="header-anchor" href="#_2-1-1-作用"><span>2.1.1 作用</span></a></h4>
+<ol>
+<li><strong>互斥访问</strong>
+<ul>
+<li><strong>确保线程安全</strong>：在多线程环境中，当多个线程同时访问共享资源时，如果没有适当的同步机制，很容易导致数据不一致等线程安全问题。而 <code v-pre>synchronized</code> 可以保证在同一时刻只有一个线程能够执行被它修饰的代码块或方法，从而避免了多个线程同时访问共享资源造成的冲突，确保了线程的安全性。</li>
+<li><strong>防止数据不一致</strong>：例如，多个线程同时对一个共享的计数器进行递增操作，如果没有同步机制，可能会出现一些递增操作被丢失的情况，导致计数器的值不正确。使用 <code v-pre>synchronized</code> 可以保证每次只有一个线程对计数器进行操作，确保计数器的值能够正确地递增。</li>
+</ul>
+</li>
+<li><strong>可见性</strong>
+<ul>
+<li><strong>保证内存可见性</strong>：<code v-pre>synchronized</code> 可以保证一个线程对共享变量的修改对其他线程是可见的。在一个线程中对共享变量进行了修改后，其他线程能够立即看到这个修改后的值，而不是使用自己本地缓存中的旧值。这是通过 <code v-pre>synchronized</code> 关键字所依赖的对象监视器（monitor）来实现的，当一个线程释放锁时，它会将对象头中的变量信息和代码缓存刷新到主存中，以便其他获取锁的线程能够看到最新的值。</li>
+<li><strong>避免指令重排</strong>：Java 编译器和处理器为了优化性能，可能会对指令进行重排序。但是在多线程环境下，这种重排序可能会导致一些问题，比如一个线程中对共享变量的写操作在其他线程的读操作之前就被重排序了，从而导致数据不一致。<code v-pre>synchronized</code> 可以防止这种指令重排，保证程序按照代码的顺序执行，确保数据的一致性。</li>
+</ul>
+</li>
+<li><strong>原子性</strong>
+<ul>
+<li><strong>实现复合操作的原子性</strong>：原子性是指一个操作或者多个操作，要么全部执行并且执行的过程不会被任何因素打断，要么就都不执行。<code v-pre>synchronized</code> 可以保证被它修饰的代码块或方法中的操作是原子性的。例如，银行账户的转账操作涉及到读取余额、判断余额是否足够、扣除转账金额等多个步骤，这些步骤要么全部完成，要么都不执行，使用 <code v-pre>synchronized</code> 可以确保转账操作的原子性，避免出现转账过程中出现数据不一致的情况。</li>
+</ul>
+</li>
+<li><strong>简化并发编程</strong>
+<ul>
+<li><strong>易于理解和使用</strong>：相比于其他并发控制机制，<code v-pre>synchronized</code> 的使用相对简单，只需要在需要同步的方法或代码块前面添加 <code v-pre>synchronized</code> 关键字即可。对于初学者来说，更容易理解和掌握，降低了并发编程的难度。</li>
+<li><strong>提供可靠的同步机制</strong>：Java 语言本身对 <code v-pre>synchronized</code> 提供了良好的支持和优化，开发者无需过多关注底层的实现细节，就可以使用它来解决多线程中的同步问题，减少了开发过程中出现错误的可能性。</li>
+</ul>
+</li>
+</ol>
+<h4 id="_2-1-2-用法" tabindex="-1"><a class="header-anchor" href="#_2-1-2-用法"><span>2.1.2 用法</span></a></h4>
+<ol>
+<li>
+<p><strong>修饰实例方法</strong>：给当前对象实例加锁，当进入同步代码前就会获得<strong>当前对象实例的锁</strong></p>
+<div class="language-java line-numbers-mode" data-ext="java" data-title="java"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">class</span><span style="--shiki-light:#2E8F82;--shiki-dark:#5DA994"> lockClass</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> {</span></span>
+<span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">    synchronized</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> void</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> method </span><span style="--shiki-light:#999999;--shiki-dark:#666666">{</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">        // 业务代码</span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">    }</span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">}</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>修饰静态方法：即给当前的类加锁，会作用域基于该类生成的所有的对象实例，进入同步代码前要获得<strong>当前类</strong>的锁。因为静态成员是属于类成员的。</p>
+<div class="language-java line-numbers-mode" data-ext="java" data-title="java"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">class</span><span style="--shiki-light:#2E8F82;--shiki-dark:#5DA994"> lockClass</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> {</span></span>
+<span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">    synchronized</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> void</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> static</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> method </span><span style="--shiki-light:#999999;--shiki-dark:#666666">{</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">        // 业务代码</span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">    }</span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">}</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>修饰代码块： 指定加锁对象，<strong>对给定对象/类加锁</strong>。<code v-pre>synchronized(this|object)</code>表示进入同步代码块前要获得给定对象的锁。<code v-pre>synchronized(类.class)</code>表示进入同步代码前要获得<strong>当前class的锁</strong></p>
+<div class="language-java line-numbers-mode" data-ext="java" data-title="java"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">class</span><span style="--shiki-light:#2E8F82;--shiki-dark:#5DA994"> lockClass</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> {</span></span>
+<span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">    void</span><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676"> static</span><span style="--shiki-light:#393A34;--shiki-dark:#DBD7CAEE"> method </span><span style="--shiki-light:#999999;--shiki-dark:#666666">{</span></span>
+<span class="line"><span style="--shiki-light:#AB5959;--shiki-dark:#CB7676">        synchronized</span><span style="--shiki-light:#999999;--shiki-dark:#666666">(</span><span style="--shiki-light:#A65E2B;--shiki-dark:#C99076">this</span><span style="--shiki-light:#999999;--shiki-dark:#666666">)</span><span style="--shiki-light:#999999;--shiki-dark:#666666"> {</span></span>
+<span class="line"><span style="--shiki-light:#A0ADA0;--shiki-dark:#758575DD">            // 业务代码</span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">        }</span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">    }</span></span>
+<span class="line"><span style="--shiki-light:#999999;--shiki-dark:#666666">}</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ol>
+<h4 id="_2-1-3-锁重入" tabindex="-1"><a class="header-anchor" href="#_2-1-3-锁重入"><span>2.1.3 锁重入</span></a></h4>
+<p><em>synchronized</em>拥有锁重入的功能，即在使用synchronized时，当一个线程得到一个对象锁后，再次请求此对象锁时时可以再次得到该对象的锁的。所以在一个synchronized方法/块的内部调用本类的其他synchronized方法/块时，时永远可以得到锁的。</p>
+<h4 id="_2-1-4-同步不具有继承性" tabindex="-1"><a class="header-anchor" href="#_2-1-4-同步不具有继承性"><span>2.1.4 同步不具有继承性</span></a></h4>
+</div></template>
+
+
