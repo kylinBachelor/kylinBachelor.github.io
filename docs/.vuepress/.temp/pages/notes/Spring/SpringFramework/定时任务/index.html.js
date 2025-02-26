@@ -1,5 +1,5 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Spring/SpringFramework/定时任务/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/\",\"title\":\"Spring 定时任务\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.65,\"words\":795},\"filePathRelative\":\"notes/Spring/SpringFramework/定时任务/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10014,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10087,\"name\":\"SpringFramework\"},{\"id\":\"518c7f\",\"sort\":10122,\"name\":\"定时任务\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/\",\"title\":\"Spring 定时任务\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.65,\"words\":795},\"filePathRelative\":\"notes/Spring/SpringFramework/定时任务/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10014,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10087,\"name\":\"SpringFramework\"},{\"id\":\"518c7f\",\"sort\":10121,\"name\":\"定时任务\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "This is My Blog，use vuepress to build",
-  "author": "kylinBachelor <kylinBachelor@outlook.com>",
+  "author": "攻城狮 <kylinBachelor@outlook.com>",
   "license": "MIT",
   "engines": {
     "node": "^18.20.0 || >=20.0.0"
