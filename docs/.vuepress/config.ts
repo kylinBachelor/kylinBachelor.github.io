@@ -7,7 +7,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   locales: {
     '/': {
-      title: 'kylinBachelor',
+      title: '攻城狮',
       lang: 'zh-CN',
       description: '不积跬步无以至千里，不积小流无以成江海',
     }
@@ -20,7 +20,7 @@ export default defineUserConfig({
     hostname: 'https://kylinBachelor.github.io',
       profile: {
       avatar: '/avatar.jpg',
-      name: 'kylinBachelor',
+      name: '攻城狮',
       description: '不积跬步无以至千里，不积小流无以成江海',
       circle: true,
       location: '山东济南，中国',
