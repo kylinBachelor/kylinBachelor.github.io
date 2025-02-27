@@ -22,7 +22,7 @@ export default defineThemeConfig({
       profile: {
         avatar: 'https://www.gongchengshi.online/plume.svg',
         name: '攻城狮',
-        description: '脱去皮囊，无非二百零六骨，穿上衣裳，可有一万八千相，观美人如白骨，使我无欲，观白骨如美人，使我无惧，君子当守正念，以养浩然之气，斩断色欲，利于不败，色而不淫，方为丈夫',
+        description: '脱去皮囊，无非二百零六骨，穿上衣裳，可有一万八千相。',
         circle: true,
         // location: '',
         // organization: '',
