@@ -33,7 +33,7 @@ export default defineThemeConfig({
     },
     '/en/': {
       profile: {
-        avatar: 'https://theme-plume.vuejs.press/plume.png',
+        avatar: 'https://www.gongchengshi.online/plume.svg',
         name: '攻城狮',
         description: 'Stay Hungry Stay Foolish',
         circle: true,
