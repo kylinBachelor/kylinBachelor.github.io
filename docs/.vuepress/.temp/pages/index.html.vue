@@ -109,7 +109,7 @@
 <tr>
 <th style="text-align:center"><a href="https://apsgo.com/store/product/windows-11?id=703" target="_blank" rel="noopener noreferrer">软购</a></th>
 <th style="text-align:center"><a href="https://www.aiviy.com/item/workstations" target="_blank" rel="noopener noreferrer">Aiviy</a></th>
-<th></th>
+<th><a href="https://porkbun.com/" target="_blank" rel="noopener noreferrer">域名购买网站</a></th>
 <th></th>
 <th></th>
 </tr>

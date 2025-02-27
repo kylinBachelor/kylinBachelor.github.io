@@ -6,7 +6,7 @@ import { enNotes, zhNotes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: 'https://kylinBachelor.github.io/plume.png',
   // your git repo url
   docsRepo: 'https://github.com/kylinBachelor/kylinBachelor.github.io',
   docsDir: 'docs',
