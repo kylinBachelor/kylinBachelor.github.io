@@ -6,7 +6,7 @@ permalink: /Web/
 
 - [常用的JS函数](./常用的JS函数/index.md)
 - [vue2基础](./vue2基础/index.md)
-- [vue3基础](./vue3基础/index.md)
+- [vue3基础](./Vue3基础/index.md)
 - [TS-入门](./TS-入门/index.md)
 - [TS-面向对象](./TS-面向对象/index.md)
 - [规避请求方式的方法](./规避请求方式的方法/index.md)
