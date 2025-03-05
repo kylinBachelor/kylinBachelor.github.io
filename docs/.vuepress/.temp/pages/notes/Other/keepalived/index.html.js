@@ -1,5 +1,5 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Other/keepalived/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Other/keepalived/\",\"title\":\"KeepAlived\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0,\"words\":1},\"filePathRelative\":\"notes/Other/keepalived/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"05fd41\",\"sort\":10014,\"name\":\"Other\"},{\"id\":\"cddd85\",\"sort\":10080,\"name\":\"keepalived\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Other/keepalived/\",\"title\":\"KeepAlived\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0,\"words\":1},\"filePathRelative\":\"notes/Other/keepalived/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"05fd41\",\"sort\":10012,\"name\":\"Other\"},{\"id\":\"cddd85\",\"sort\":10079,\"name\":\"keepalived\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
