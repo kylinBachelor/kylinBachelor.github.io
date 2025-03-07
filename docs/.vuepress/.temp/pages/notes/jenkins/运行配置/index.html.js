@@ -1,5 +1,5 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/jenkins/运行配置/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/jenkins/%E8%BF%90%E8%A1%8C%E9%85%8D%E7%BD%AE/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0,\"words\":0},\"filePathRelative\":\"notes/jenkins/运行配置/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"ecdc7b\",\"sort\":10005,\"name\":\"jenkins\"},{\"id\":\"5635ed\",\"sort\":10067,\"name\":\"运行配置\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/jenkins/%E8%BF%90%E8%A1%8C%E9%85%8D%E7%BD%AE/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0,\"words\":0},\"filePathRelative\":\"notes/jenkins/运行配置/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"ecdc7b\",\"sort\":10008,\"name\":\"jenkins\"},{\"id\":\"5635ed\",\"sort\":10069,\"name\":\"运行配置\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

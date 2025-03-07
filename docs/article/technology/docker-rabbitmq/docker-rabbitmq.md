@@ -1,6 +1,6 @@
 ---
-title: Jakarta Filter
-tags: 那些年使用docker版rabbitmq踩过的坑
+title: 那些年使用docker版rabbitmq踩过的坑
+tags:
   - rabbitmq
 createTime: 2025/03/07 16:25:39
 ---
