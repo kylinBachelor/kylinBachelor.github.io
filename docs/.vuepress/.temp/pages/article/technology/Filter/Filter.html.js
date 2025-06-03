@@ -1,5 +1,5 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/Filter/Filter.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/Filter/Filter.html\",\"title\":\"Jakarta Filter\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Jakarta Filter\",\"tags\":[\"Filter\"],\"createTime\":\"2025/02/14 18:45:31\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":3.17,\"words\":951},\"filePathRelative\":\"article/technology/Filter/Filter.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10029,\"name\":\"technology\"},{\"id\":\"4f5f4f\",\"sort\":10032,\"name\":\"Filter\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/Filter/Filter.html\",\"title\":\"Jakarta Filter\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Jakarta Filter\",\"tags\":[\"Filter\"],\"createTime\":\"2025/02/14 18:45:31\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":3.17,\"words\":951},\"filePathRelative\":\"article/technology/Filter/Filter.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10027,\"name\":\"technology\"},{\"id\":\"4f5f4f\",\"sort\":10028,\"name\":\"Filter\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

@@ -3,9 +3,8 @@ title: java内存区域
 tags:
   - Java
 createTime: 2025/06/01 08:40:34
+draft: false
 ---
-
-
 
 ![image-20250603113504146](assets/image-20250603113504146.png)
 

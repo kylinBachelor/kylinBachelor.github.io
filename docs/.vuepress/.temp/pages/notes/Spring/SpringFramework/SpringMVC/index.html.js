@@ -1,5 +1,5 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Spring/SpringFramework/SpringMVC/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/SpringMVC/\",\"title\":\"SpringMVC\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":15.1,\"words\":4529},\"filePathRelative\":\"notes/Spring/SpringFramework/SpringMVC/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10015,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10089,\"name\":\"SpringFramework\"},{\"id\":\"a9c90d\",\"sort\":10132,\"name\":\"SpringMVC\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/SpringMVC/\",\"title\":\"SpringMVC\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":15.1,\"words\":4529},\"filePathRelative\":\"notes/Spring/SpringFramework/SpringMVC/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10014,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10091,\"name\":\"SpringFramework\"},{\"id\":\"a9c90d\",\"sort\":10130,\"name\":\"SpringMVC\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
