@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/消费端消息确认.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E6%B6%88%E8%B4%B9%E7%AB%AF%E6%B6%88%E6%81%AF%E7%A1%AE%E8%AE%A4.html\",\"title\":\"消费端消息确认\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"消费端消息确认\",\"createTime\":\"2024/12/01 13:54:24\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":5.43,\"words\":1629},\"filePathRelative\":\"notes/MQ/RabbitMQ/消费端消息确认.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10008,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10078,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E6%B6%88%E8%B4%B9%E7%AB%AF%E6%B6%88%E6%81%AF%E7%A1%AE%E8%AE%A4.html\",\"title\":\"消费端消息确认\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"消费端消息确认\",\"createTime\":\"2024/12/01 13:54:24\",\"description\":\"ACK是acknowledge的缩写，表示已确认 二、默认情况 默认情况下，消费端取回消息后，默认会自动返回ACK确认消息，所以在前面的测试中消息被消费端消费之后，RabbitMQ得到ACK确认信息就会删除消息 但实际开发中，消费端根据消息队列投递的消息执行对应的业务，未必都能执行成功，如果希望能够多次重试，那么默认设定就不满足要求了 所以还是要修改成...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E6%B6%88%E8%B4%B9%E7%AB%AF%E6%B6%88%E6%81%AF%E7%A1%AE%E8%AE%A4.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"消费端消息确认\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"ACK是acknowledge的缩写，表示已确认 二、默认情况 默认情况下，消费端取回消息后，默认会自动返回ACK确认消息，所以在前面的测试中消息被消费端消费之后，RabbitMQ得到ACK确认信息就会删除消息 但实际开发中，消费端根据消息队列投递的消息执行对应的业务，未必都能执行成功，如果希望能够多次重试，那么默认设定就不满足要求了 所以还是要修改成...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"消费端消息确认\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":5.43,\"words\":1629},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/消费端消息确认.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

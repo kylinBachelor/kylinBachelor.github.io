@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Nginx/Linux访问web目录提示403的问题/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Nginx/Linux%E8%AE%BF%E9%97%AEweb%E7%9B%AE%E5%BD%95%E6%8F%90%E7%A4%BA403%E7%9A%84%E9%97%AE%E9%A2%98/\",\"title\":\"Linux访问web目录提示403的问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Linux访问web目录提示403的问题\",\"aliases\":null,\"tags\":[\"Nginx\"],\"description\":\"Linux访问web目录提示403的问题\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.42,\"words\":125},\"filePathRelative\":\"notes/Nginx/Linux访问web目录提示403的问题/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"18ce3d\",\"sort\":10011,\"name\":\"Nginx\"},{\"id\":\"0fe7a5\",\"sort\":10080,\"name\":\"Linux访问web目录提示403的问题\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Nginx/Linux%E8%AE%BF%E9%97%AEweb%E7%9B%AE%E5%BD%95%E6%8F%90%E7%A4%BA403%E7%9A%84%E9%97%AE%E9%A2%98/\",\"title\":\"Linux访问web目录提示403的问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Linux访问web目录提示403的问题\",\"aliases\":null,\"tags\":[\"Nginx\"],\"description\":\"Linux访问web目录提示403的问题\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Nginx/Linux%E8%AE%BF%E9%97%AEweb%E7%9B%AE%E5%BD%95%E6%8F%90%E7%A4%BA403%E7%9A%84%E9%97%AE%E9%A2%98/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Linux访问web目录提示403的问题\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Linux访问web目录提示403的问题\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Nginx\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Linux访问web目录提示403的问题\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.42,\"words\":125},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Nginx/Linux访问web目录提示403的问题/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"18ce3d\",\"sort\":10036,\"name\":\"Nginx\"},{\"id\":\"0fe7a5\",\"sort\":10102,\"name\":\"Linux访问web目录提示403的问题\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

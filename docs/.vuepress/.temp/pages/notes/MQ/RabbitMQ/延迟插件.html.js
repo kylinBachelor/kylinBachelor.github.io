@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/延迟插件.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E5%BB%B6%E8%BF%9F%E6%8F%92%E4%BB%B6.html\",\"title\":\"延迟插件\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"延迟插件\",\"createTime\":\"2024/12/01 14:02:14\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.58,\"words\":473},\"filePathRelative\":\"notes/MQ/RabbitMQ/延迟插件.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10008,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10078,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E5%BB%B6%E8%BF%9F%E6%8F%92%E4%BB%B6.html\",\"title\":\"延迟插件\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"延迟插件\",\"createTime\":\"2024/12/01 14:02:14\",\"description\":\"官网地址：https://github.com/rabbitmq/rabbitmq-delayed-message-exchange 延迟极限：最多两天 二、插件安装 1、确定卷映射目录 运行结果： 和容器内/plugins目录对应的宿主机目录是：/var/lib/docker/volumes/rabbitmq-plugin/_data 2、下载延迟插...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E5%BB%B6%E8%BF%9F%E6%8F%92%E4%BB%B6.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"延迟插件\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"官网地址：https://github.com/rabbitmq/rabbitmq-delayed-message-exchange 延迟极限：最多两天 二、插件安装 1、确定卷映射目录 运行结果： 和容器内/plugins目录对应的宿主机目录是：/var/lib/docker/volumes/rabbitmq-plugin/_data 2、下载延迟插...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"延迟插件\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.58,\"words\":473},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/延迟插件.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

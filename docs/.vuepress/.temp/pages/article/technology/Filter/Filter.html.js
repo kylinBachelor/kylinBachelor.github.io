@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/Filter/Filter.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/Filter/Filter.html\",\"title\":\"Jakarta Filter\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Jakarta Filter\",\"tags\":[\"Filter\"],\"createTime\":\"2025/02/14 18:45:31\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":3.17,\"words\":951},\"filePathRelative\":\"article/technology/Filter/Filter.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10027,\"name\":\"technology\"},{\"id\":\"4f5f4f\",\"sort\":10028,\"name\":\"Filter\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/Filter/Filter.html\",\"title\":\"Jakarta Filter\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Jakarta Filter\",\"tags\":[\"Filter\"],\"createTime\":\"2025/02/14 18:45:31\",\"description\":\"Jakarta Filter web组件，过滤器，监听器 这三大组件必须在容器启动之前注册。必须必须必须 1. 介绍 过滤器 是Java web 三大组件之一、执行优先级比 web组件（servlet）高 [若是拦截到]，小插曲：（尽量避免在 SpringMVC 环境去使用 Filter、可使用 SpringMVC 拦截实现相同功能） 过滤器 API ...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/Filter/Filter.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Jakarta Filter\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Jakarta Filter web组件，过滤器，监听器 这三大组件必须在容器启动之前注册。必须必须必须 1. 介绍 过滤器 是Java web 三大组件之一、执行优先级比 web组件（servlet）高 [若是拦截到]，小插曲：（尽量避免在 SpringMVC 环境去使用 Filter、可使用 SpringMVC 拦截实现相同功能） 过滤器 API ...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-02-13T02:41:18.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Filter\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-02-13T02:41:18.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Jakarta Filter\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-02-13T02:41:18.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":3.17,\"words\":951},\"git\":{\"updatedTime\":1739414478000},\"autoDesc\":true,\"filePathRelative\":\"article/technology/Filter/Filter.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10004,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10005,\"name\":\"technology\"},{\"id\":\"4f5f4f\",\"sort\":10017,\"name\":\"Filter\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

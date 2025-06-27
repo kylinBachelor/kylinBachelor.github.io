@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/other/道之思辨/道之思辨.html.vue"
-const data = JSON.parse("{\"path\":\"/article/other/%E9%81%93%E4%B9%8B%E6%80%9D%E8%BE%A8/%E9%81%93%E4%B9%8B%E6%80%9D%E8%BE%A8.html\",\"title\":\"道之思辨：从哲学本源到生命觉醒\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"道之思辨：从哲学本源到生命觉醒\",\"tags\":[\"道\"],\"createTime\":\"2025/02/20 19:03:42\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":3.04,\"words\":912},\"filePathRelative\":\"article/other/道之思辨/道之思辨.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10021,\"name\":\"other\"},{\"id\":\"241211\",\"sort\":10030,\"name\":\"道之思辨\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/other/%E9%81%93%E4%B9%8B%E6%80%9D%E8%BE%A8/%E9%81%93%E4%B9%8B%E6%80%9D%E8%BE%A8.html\",\"title\":\"道之思辨：从哲学本源到生命觉醒\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"道之思辨：从哲学本源到生命觉醒\",\"tags\":[\"道\"],\"createTime\":\"2025/02/20 19:03:42\",\"description\":\"一、道的哲学内核：无形创生与万物同源 道家所言“道”，既是宇宙的终极本源，也是万物运行的根本法则。老子以“道可道，非常道”开宗明义，揭示“道”超越语言与感官的绝对性——它无形（“视之不见”）、无声（“听之不闻”）、无质（“搏之不得”），却以“混而为一”的状态贯穿天地‌。这种“无状之状”的本体论，将宇宙解释为从“道”中自然流溢的创生过程：“道生一，一生二...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/other/%E9%81%93%E4%B9%8B%E6%80%9D%E8%BE%A8/%E9%81%93%E4%B9%8B%E6%80%9D%E8%BE%A8.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"道之思辨：从哲学本源到生命觉醒\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"一、道的哲学内核：无形创生与万物同源 道家所言“道”，既是宇宙的终极本源，也是万物运行的根本法则。老子以“道可道，非常道”开宗明义，揭示“道”超越语言与感官的绝对性——它无形（“视之不见”）、无声（“听之不闻”）、无质（“搏之不得”），却以“混而为一”的状态贯穿天地‌。这种“无状之状”的本体论，将宇宙解释为从“道”中自然流溢的创生过程：“道生一，一生二...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-03-04T07:46:52.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"道\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-03-04T07:46:52.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"道之思辨：从哲学本源到生命觉醒\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-03-04T07:46:52.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":3.04,\"words\":912},\"git\":{\"updatedTime\":1741074412000},\"autoDesc\":true,\"filePathRelative\":\"article/other/道之思辨/道之思辨.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10004,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10018,\"name\":\"other\"},{\"id\":\"241211\",\"sort\":10019,\"name\":\"道之思辨\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Spring/SpringFramework/DI/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/DI/\",\"title\":\"1. 依赖注入机制及其运用\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":6.23,\"words\":1870},\"filePathRelative\":\"notes/Spring/SpringFramework/DI/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10014,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10091,\"name\":\"SpringFramework\"},{\"id\":\"752cf8\",\"sort\":10124,\"name\":\"DI\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/DI/\",\"title\":\"1. 依赖注入机制及其运用\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"=== Dependency Injection (DI) 依赖注入 1. 依赖注入机制及其运用 依赖注入是指 将容器的对象作为值，传递给容器的另外的对象的属性 示例 容器 class B{} 赋值给 class A{private B b;} 中的 B 属性 == 依赖注入使用方式 == 容器对象 构造方法注入 容器对象 Setter方法注入 容器对...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Spring/SpringFramework/DI/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"1. 依赖注入机制及其运用\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"=== Dependency Injection (DI) 依赖注入 1. 依赖注入机制及其运用 依赖注入是指 将容器的对象作为值，传递给容器的另外的对象的属性 示例 容器 class B{} 赋值给 class A{private B b;} 中的 B 属性 == 依赖注入使用方式 == 容器对象 构造方法注入 容器对象 Setter方法注入 容器对...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"1. 依赖注入机制及其运用\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":6.23,\"words\":1870},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Spring/SpringFramework/DI/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10031,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10090,\"name\":\"SpringFramework\"},{\"id\":\"752cf8\",\"sort\":10115,\"name\":\"DI\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Nginx/Nginx常用基础配置/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Nginx/Nginx%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/\",\"title\":\"Nginx常用基础配置\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Nginx常用基础配置\",\"aliases\":null,\"tags\":[\"Nginx\"],\"description\":\"Nginx常用基础配置\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.1,\"words\":631},\"filePathRelative\":\"notes/Nginx/Nginx常用基础配置/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"18ce3d\",\"sort\":10011,\"name\":\"Nginx\"},{\"id\":\"d5fb1e\",\"sort\":10083,\"name\":\"Nginx常用基础配置\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Nginx/Nginx%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/\",\"title\":\"Nginx常用基础配置\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Nginx常用基础配置\",\"aliases\":null,\"tags\":[\"Nginx\"],\"description\":\"Nginx常用基础配置\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Nginx/Nginx%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Nginx常用基础配置\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Nginx常用基础配置\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Nginx\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Nginx常用基础配置\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.1,\"words\":631},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Nginx/Nginx常用基础配置/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"18ce3d\",\"sort\":10036,\"name\":\"Nginx\"},{\"id\":\"d5fb1e\",\"sort\":10099,\"name\":\"Nginx常用基础配置\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

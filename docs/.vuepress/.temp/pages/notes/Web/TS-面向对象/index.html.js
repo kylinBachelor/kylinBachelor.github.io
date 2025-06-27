@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Web/TS-面向对象/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Web/TS-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/\",\"title\":\"TS 面向对象\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"TS 面向对象\",\"aliases\":null,\"tags\":[\"Web\",\"TS\",\"_\"],\"description\":\"TS 面向对象\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":6.35,\"words\":1906},\"filePathRelative\":\"notes/Web/TS-面向对象/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"eac769\",\"sort\":10015,\"name\":\"Web\"},{\"id\":\"ca7361\",\"sort\":10099,\"name\":\"TS-面向对象\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Web/TS-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/\",\"title\":\"TS 面向对象\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"TS 面向对象\",\"aliases\":null,\"tags\":[\"Web\",\"TS\",\"_\"],\"description\":\"TS 面向对象\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Web/TS-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"TS 面向对象\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"TS 面向对象\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Web\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"TS\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"_\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"TS 面向对象\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":6.35,\"words\":1906},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Web/TS-面向对象/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"eac769\",\"sort\":10032,\"name\":\"Web\"},{\"id\":\"ca7361\",\"sort\":10082,\"name\":\"TS-面向对象\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

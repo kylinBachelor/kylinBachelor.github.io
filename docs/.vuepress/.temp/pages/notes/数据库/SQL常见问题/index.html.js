@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/数据库/SQL常见问题/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/\",\"title\":\"SQL常见问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"SQL常见问题\",\"aliases\":null,\"tags\":[\"SQL\"],\"description\":\"SQL常见问题\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.86,\"words\":558},\"filePathRelative\":\"notes/数据库/SQL常见问题/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"324a5c\",\"sort\":10017,\"name\":\"数据库\"},{\"id\":\"175596\",\"sort\":10113,\"name\":\"SQL常见问题\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/\",\"title\":\"SQL常见问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"SQL常见问题\",\"aliases\":null,\"tags\":[\"SQL\"],\"description\":\"SQL常见问题\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"SQL常见问题\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"SQL常见问题\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"SQL\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"SQL常见问题\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.86,\"words\":558},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/数据库/SQL常见问题/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"324a5c\",\"sort\":10029,\"name\":\"数据库\"},{\"id\":\"175596\",\"sort\":10128,\"name\":\"SQL常见问题\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

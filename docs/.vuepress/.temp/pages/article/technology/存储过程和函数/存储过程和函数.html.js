@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/存储过程和函数/存储过程和函数.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E5%92%8C%E5%87%BD%E6%95%B0/%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E5%92%8C%E5%87%BD%E6%95%B0.html\",\"title\":\"存储过程与函数\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"存储过程与函数\",\"tags\":[\"MySQL\",\"SQL\"],\"description\":\"存储过程\",\"createTime\":\"2024/11/30 14:15:41\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":5.07,\"words\":1520},\"filePathRelative\":\"article/technology/存储过程和函数/存储过程和函数.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10027,\"name\":\"technology\"},{\"id\":\"835af0\",\"sort\":10040,\"name\":\"存储过程和函数\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E5%92%8C%E5%87%BD%E6%95%B0/%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E5%92%8C%E5%87%BD%E6%95%B0.html\",\"title\":\"存储过程与函数\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"存储过程与函数\",\"tags\":[\"MySQL\",\"SQL\"],\"description\":\"存储过程\",\"createTime\":\"2024/11/30 14:15:41\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E5%92%8C%E5%87%BD%E6%95%B0/%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E5%92%8C%E5%87%BD%E6%95%B0.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"存储过程与函数\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"存储过程\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-02-13T08:50:08.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"MySQL\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"SQL\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-02-13T08:50:08.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"存储过程与函数\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-02-13T08:50:08.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":5.07,\"words\":1520},\"git\":{\"updatedTime\":1739436608000},\"filePathRelative\":\"article/technology/存储过程和函数/存储过程和函数.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10004,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10005,\"name\":\"technology\"},{\"id\":\"835af0\",\"sort\":10007,\"name\":\"存储过程和函数\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

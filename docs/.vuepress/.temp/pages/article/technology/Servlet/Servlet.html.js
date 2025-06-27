@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/Servlet/Servlet.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/Servlet/Servlet.html\",\"title\":\"Jakarta Servlet\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Jakarta Servlet\",\"tags\":[\"Servlet\"],\"createTime\":\"2025/02/13 09:45:31\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":3.47,\"words\":1042},\"filePathRelative\":\"article/technology/Servlet/Servlet.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10027,\"name\":\"technology\"},{\"id\":\"e62c5c\",\"sort\":10037,\"name\":\"Servlet\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/Servlet/Servlet.html\",\"title\":\"Jakarta Servlet\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Jakarta Servlet\",\"tags\":[\"Servlet\"],\"createTime\":\"2025/02/13 09:45:31\",\"description\":\"Jakarta Servlet web组件，过滤器，监听器 这三大组件必须在容器启动之前注册。必须必须必须 1. Servlet的定义 Servlet 是一种 Java 编程语言类，它直接或间接地实现 jakarta.servlet.Servlet 接口。jakarta.servlet 和 jakarta.servlet.http 包提供了用于编写 s...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/Servlet/Servlet.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Jakarta Servlet\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Jakarta Servlet web组件，过滤器，监听器 这三大组件必须在容器启动之前注册。必须必须必须 1. Servlet的定义 Servlet 是一种 Java 编程语言类，它直接或间接地实现 jakarta.servlet.Servlet 接口。jakarta.servlet 和 jakarta.servlet.http 包提供了用于编写 s...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-02-13T02:41:18.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Servlet\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-02-13T02:41:18.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Jakarta Servlet\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-02-13T02:41:18.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":3.47,\"words\":1042},\"git\":{\"updatedTime\":1739414478000},\"autoDesc\":true,\"filePathRelative\":\"article/technology/Servlet/Servlet.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10004,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10005,\"name\":\"technology\"},{\"id\":\"e62c5c\",\"sort\":10012,\"name\":\"Servlet\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

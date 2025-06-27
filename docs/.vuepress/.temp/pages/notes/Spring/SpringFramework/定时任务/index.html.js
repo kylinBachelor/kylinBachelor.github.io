@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Spring/SpringFramework/定时任务/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/\",\"title\":\"Spring 定时任务\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.65,\"words\":795},\"filePathRelative\":\"notes/Spring/SpringFramework/定时任务/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10014,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10091,\"name\":\"SpringFramework\"},{\"id\":\"518c7f\",\"sort\":10127,\"name\":\"定时任务\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/\",\"title\":\"Spring 定时任务\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"Spring 定时任务 === Java的定时任务数以千计，不用担心任何性能问题，一般项目也就几个定时任务 @EnableScheduling 注解开启定时任务、定时任务和异步任务没有关联关系 1. 配置 === Spring 推荐为定时任务指定专门的线程池 SpringContextConfiguration.java 2 应用 === @Sched...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Spring/SpringFramework/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Spring 定时任务\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Spring 定时任务 === Java的定时任务数以千计，不用担心任何性能问题，一般项目也就几个定时任务 @EnableScheduling 注解开启定时任务、定时任务和异步任务没有关联关系 1. 配置 === Spring 推荐为定时任务指定专门的线程池 SpringContextConfiguration.java 2 应用 === @Sched...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Spring 定时任务\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.65,\"words\":795},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Spring/SpringFramework/定时任务/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10031,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10090,\"name\":\"SpringFramework\"},{\"id\":\"518c7f\",\"sort\":10112,\"name\":\"定时任务\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

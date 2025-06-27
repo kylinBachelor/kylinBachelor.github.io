@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/数据库/Centos安装MySQL5.7/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/Centos%E5%AE%89%E8%A3%85MySQL5.7/\",\"title\":\"Centos安装MySQL5.7\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Centos安装MySQL5.7\",\"aliases\":null,\"tags\":[\"MySQL\",\"Centos\"],\"description\":\"Centos安装MySQL5.7\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.25,\"words\":75},\"filePathRelative\":\"notes/数据库/Centos安装MySQL5.7/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"324a5c\",\"sort\":10017,\"name\":\"数据库\"},{\"id\":\"5e5bfb\",\"sort\":10109,\"name\":\"Centos安装MySQL5.7\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/Centos%E5%AE%89%E8%A3%85MySQL5.7/\",\"title\":\"Centos安装MySQL5.7\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Centos安装MySQL5.7\",\"aliases\":null,\"tags\":[\"MySQL\",\"Centos\"],\"description\":\"Centos安装MySQL5.7\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/Centos%E5%AE%89%E8%A3%85MySQL5.7/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Centos安装MySQL5.7\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Centos安装MySQL5.7\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"MySQL\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Centos\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Centos安装MySQL5.7\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.25,\"words\":75},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/数据库/Centos安装MySQL5.7/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"324a5c\",\"sort\":10029,\"name\":\"数据库\"},{\"id\":\"5e5bfb\",\"sort\":10131,\"name\":\"Centos安装MySQL5.7\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

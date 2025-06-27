@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Docker/制作基础镜像/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Docker/%E5%88%B6%E4%BD%9C%E5%9F%BA%E7%A1%80%E9%95%9C%E5%83%8F/\",\"title\":\"使用Dockerfile制作基础镜像\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.4,\"words\":721},\"filePathRelative\":\"notes/Docker/制作基础镜像/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10003,\"name\":\"Docker\"},{\"id\":\"9ad5b9\",\"sort\":10050,\"name\":\"制作基础镜像\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Docker/%E5%88%B6%E4%BD%9C%E5%9F%BA%E7%A1%80%E9%95%9C%E5%83%8F/\",\"title\":\"使用Dockerfile制作基础镜像\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"使用Dockerfile制作基础镜像 === 这里基础镜像使用的时centos:7 1. 制作java17的Dockerfile 1.1 Dockerfile文件 注意 jdk17 tar包要跟Dockerfile在同一个目录下，如果tar包使用绝对路径生成镜像的时候会报错 1.2 执行构建命令 === 安装包、Dockerfile文件、命令执行 都在...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Docker/%E5%88%B6%E4%BD%9C%E5%9F%BA%E7%A1%80%E9%95%9C%E5%83%8F/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"使用Dockerfile制作基础镜像\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"使用Dockerfile制作基础镜像 === 这里基础镜像使用的时centos:7 1. 制作java17的Dockerfile 1.1 Dockerfile文件 注意 jdk17 tar包要跟Dockerfile在同一个目录下，如果tar包使用绝对路径生成镜像的时候会报错 1.2 执行构建命令 === 安装包、Dockerfile文件、命令执行 都在...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"使用Dockerfile制作基础镜像\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.4,\"words\":721},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Docker/制作基础镜像/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10002,\"name\":\"Docker\"},{\"id\":\"9ad5b9\",\"sort\":10070,\"name\":\"制作基础镜像\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

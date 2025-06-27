@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/事务消息之生产者端.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E4%BA%8B%E5%8A%A1%E6%B6%88%E6%81%AF%E4%B9%8B%E7%94%9F%E4%BA%A7%E8%80%85%E7%AB%AF.html\",\"title\":\"事务消息之生产者端\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"事务消息之生产者端\",\"createTime\":\"2024/12/01 14:03:37\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.69,\"words\":506},\"filePathRelative\":\"notes/MQ/RabbitMQ/事务消息之生产者端.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10008,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10078,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E4%BA%8B%E5%8A%A1%E6%B6%88%E6%81%AF%E4%B9%8B%E7%94%9F%E4%BA%A7%E8%80%85%E7%AB%AF.html\",\"title\":\"事务消息之生产者端\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"事务消息之生产者端\",\"createTime\":\"2024/12/01 14:03:37\",\"description\":\"1、引入依赖 2、yaml配置 3、主启动类 4、相关配置 5、测试代码 二、执行测试 1、未使用事务 抛出异常前的消息发送了，抛异常后的消息没有发送： image-20231109131321901image-20231109131321901 image-20231109131413185image-20231109131413185 为了不影响后...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E4%BA%8B%E5%8A%A1%E6%B6%88%E6%81%AF%E4%B9%8B%E7%94%9F%E4%BA%A7%E8%80%85%E7%AB%AF.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"事务消息之生产者端\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1、引入依赖 2、yaml配置 3、主启动类 4、相关配置 5、测试代码 二、执行测试 1、未使用事务 抛出异常前的消息发送了，抛异常后的消息没有发送： image-20231109131321901image-20231109131321901 image-20231109131413185image-20231109131413185 为了不影响后...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"事务消息之生产者端\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.69,\"words\":506},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/事务消息之生产者端.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

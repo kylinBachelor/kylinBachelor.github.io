@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/other/古诗词/七律·和郭沫若同志.html.vue"
-const data = JSON.parse("{\"path\":\"/article/other/%E5%8F%A4%E8%AF%97%E8%AF%8D/%E4%B8%83%E5%BE%8B%C2%B7%E5%92%8C%E9%83%AD%E6%B2%AB%E8%8B%A5%E5%90%8C%E5%BF%97.html\",\"title\":\"七律·和郭沫若同志\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"七律·和郭沫若同志\",\"tags\":[\"古诗词\"],\"createTime\":\"2025/02/19 17:03:42\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.46,\"words\":138},\"filePathRelative\":\"article/other/古诗词/七律·和郭沫若同志.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10021,\"name\":\"other\"},{\"id\":\"7dde5b\",\"sort\":10024,\"name\":\"古诗词\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/other/%E5%8F%A4%E8%AF%97%E8%AF%8D/%E4%B8%83%E5%BE%8B%C2%B7%E5%92%8C%E9%83%AD%E6%B2%AB%E8%8B%A5%E5%90%8C%E5%BF%97.html\",\"title\":\"七律·和郭沫若同志\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"七律·和郭沫若同志\",\"tags\":[\"古诗词\"],\"createTime\":\"2025/02/19 17:03:42\",\"description\":\"23860ecd8c4a1384edcc1e5f88a34b623860ecd8c4a1384edcc1e5f88a34b6 七律·和郭沫若同志 近现代 · 毛泽东 一从大地起风雷，便有精生白骨堆。 僧是愚氓犹可训，妖为鬼蜮必成灾。 金猴奋起千钧棒，玉宇澄清万里埃。 今日欢呼孙大圣，只缘妖雾又重来。\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/other/%E5%8F%A4%E8%AF%97%E8%AF%8D/%E4%B8%83%E5%BE%8B%C2%B7%E5%92%8C%E9%83%AD%E6%B2%AB%E8%8B%A5%E5%90%8C%E5%BF%97.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"七律·和郭沫若同志\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"23860ecd8c4a1384edcc1e5f88a34b623860ecd8c4a1384edcc1e5f88a34b6 七律·和郭沫若同志 近现代 · 毛泽东 一从大地起风雷，便有精生白骨堆。 僧是愚氓犹可训，妖为鬼蜮必成灾。 金猴奋起千钧棒，玉宇澄清万里埃。 今日欢呼孙大圣，只缘妖雾又重来。\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-02-19T09:27:30.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"古诗词\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-02-19T09:27:30.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"七律·和郭沫若同志\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-02-19T09:27:30.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.46,\"words\":138},\"git\":{\"updatedTime\":1739957250000},\"autoDesc\":true,\"filePathRelative\":\"article/other/古诗词/七律·和郭沫若同志.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10004,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10018,\"name\":\"other\"},{\"id\":\"7dde5b\",\"sort\":10023,\"name\":\"古诗词\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

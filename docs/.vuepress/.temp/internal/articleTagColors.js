@@ -1,15 +1,2 @@
 import './articleTagColors.css'
-export const articleTagColors = {"markdown":"dlnf","政府":"bhhh","名人录":"97lh","古诗词":"3cxb","Life":"qvke","周易":"dlnf","人工智能":"emn2","道":"cby1","rabbitmq":"3cxb","Filter":"97lh","Java":"3cxb","多线程":"g92n","JWT":"l9om","MySQL":"juwm","SQL":"0uv3","Servlet":"l9om","SpringBoot":"o7ku","枚举":"3cxb","Docker":"qvke","Emacs":"l9om","反射":"bhhh","xml":"y3j8","kylin":"cby1","Linux":"qvke","Nacos":"g92n","Redis":"y3j8","_":"ipk8","Shell":"hneb","Nginx":"juwm","Vscode":"hneb","Spring":"cby1","maven":"y3j8","SpringSecurity":"l9om","Web":"0uv3","ElementUI":"hneb","TS":"o7ku","Vue":"0uv3","JS":"ipk8","Windows":"ipk8","博客":"0uv3","Centos":"3cxb","达梦数据库":"bhhh","数据库":"o7ku","设计模式":"cby1","RocketMQ MQ":"juwm","git":"emn2","SVN":"cnha"}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateArticleTagColors) {
-    __VUE_HMR_RUNTIME__.updateArticleTagColors(articleTagColors)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ articleTagColors }) => {
-    __VUE_HMR_RUNTIME__.updateArticleTagColors(articleTagColors)
-  })
-}
+export const articleTagColors = {"markdown":"02ui","政府":"q47c","名人录":"gxce","古诗词":"of1a","Life":"fikd","周易":"02ui","人工智能":"4tq0","道":"s2x1","rabbitmq":"of1a","Filter":"gxce","Java":"of1a","多线程":"o6s0","JWT":"brqz","MySQL":"igkk","SQL":"s4qa","Servlet":"brqz","SpringBoot":"tnx2","枚举":"of1a","Docker":"fikd","Emacs":"brqz","反射":"q47c","xml":"jc77","kylin":"s2x1","Linux":"fikd","Nacos":"o6s0","Redis":"jc77","_":"202c","Shell":"o3uy","Nginx":"igkk","Vscode":"o3uy","Spring":"s2x1","maven":"jc77","SpringSecurity":"brqz","Web":"s4qa","ElementUI":"o3uy","TS":"tnx2","Vue":"s4qa","JS":"202c","Windows":"202c","博客":"s4qa","Centos":"of1a","达梦数据库":"q47c","数据库":"tnx2","设计模式":"s2x1","RocketMQ MQ":"igkk","git":"4tq0","SVN":"g3ub"}

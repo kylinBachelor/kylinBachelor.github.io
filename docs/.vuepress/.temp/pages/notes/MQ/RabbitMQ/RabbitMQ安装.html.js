@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/RabbitMQ安装.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/RabbitMQ%E5%AE%89%E8%A3%85.html\",\"title\":\"RabbitMQ安装\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"RabbitMQ安装\",\"createTime\":\"2024/12/01 13:30:21\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.52,\"words\":457},\"filePathRelative\":\"notes/MQ/RabbitMQ/RabbitMQ安装.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10008,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10078,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/RabbitMQ%E5%AE%89%E8%A3%85.html\",\"title\":\"RabbitMQ安装\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"RabbitMQ安装\",\"createTime\":\"2024/12/01 13:30:21\",\"description\":\"二、验证 访问后台管理界面：http://192.168.200.100:15672 image-20231102194452610image-20231102194452610 使用上面创建Docker容器时指定的默认用户名、密码登录： image-20231102194633997image-20231102194633997 image-2023...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/RabbitMQ%E5%AE%89%E8%A3%85.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"RabbitMQ安装\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"二、验证 访问后台管理界面：http://192.168.200.100:15672 image-20231102194452610image-20231102194452610 使用上面创建Docker容器时指定的默认用户名、密码登录： image-20231102194633997image-20231102194633997 image-2023...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"RabbitMQ安装\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.52,\"words\":457},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/RabbitMQ安装.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

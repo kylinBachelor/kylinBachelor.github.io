@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/发布订阅模式.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F.html\",\"title\":\"发布订阅模式\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"发布订阅模式\",\"createTime\":\"2024/12/01 13:39:42\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.62,\"words\":787},\"filePathRelative\":\"notes/MQ/RabbitMQ/发布订阅模式.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10008,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10078,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F.html\",\"title\":\"发布订阅模式\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"发布订阅模式\",\"createTime\":\"2024/12/01 13:39:42\",\"description\":\"发布订阅模式中有一个交换机的概念，交换机和队列绑定，生产者生产消息发送到交换机，而交换机本身不会存储数据，通过广播的方式会将每一条消息发送到和他绑定的所有队列，由消费者去消费队列中的消息，多个消费者绑定同一个队列的消费者之间是竞争关系。 一、生产者代码 二、消费者代码 1、消费者1号 2、消费者2号 三、运行效果 还是先启动消费者，然后再运行生产者程序...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"发布订阅模式\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"发布订阅模式中有一个交换机的概念，交换机和队列绑定，生产者生产消息发送到交换机，而交换机本身不会存储数据，通过广播的方式会将每一条消息发送到和他绑定的所有队列，由消费者去消费队列中的消息，多个消费者绑定同一个队列的消费者之间是竞争关系。 一、生产者代码 二、消费者代码 1、消费者1号 2、消费者2号 三、运行效果 还是先启动消费者，然后再运行生产者程序...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"发布订阅模式\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.62,\"words\":787},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/发布订阅模式.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/主题模式.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E4%B8%BB%E9%A2%98%E6%A8%A1%E5%BC%8F.html\",\"title\":\"主题模式\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"主题模式\",\"createTime\":\"2024/12/01 13:43:12\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.92,\"words\":577},\"filePathRelative\":\"notes/MQ/RabbitMQ/主题模式.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10008,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10078,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E4%B8%BB%E9%A2%98%E6%A8%A1%E5%BC%8F.html\",\"title\":\"主题模式\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"主题模式\",\"createTime\":\"2024/12/01 13:43:12\",\"description\":\"Topic类型和Direct类型相比，都是可以根据Routing key把消息路由绑定到不同的队列。只不过Topic类型Exchange可以让队列在绑定Routing key 的时候使用通配符。 Routing key 一般都是由一个或者多个单词组成，多个单词之间使用 \\\".\\\" 分割，例如 item.name 通配符规则： #: 匹配零个或多个单词 *:...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E4%B8%BB%E9%A2%98%E6%A8%A1%E5%BC%8F.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"主题模式\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Topic类型和Direct类型相比，都是可以根据Routing key把消息路由绑定到不同的队列。只不过Topic类型Exchange可以让队列在绑定Routing key 的时候使用通配符。 Routing key 一般都是由一个或者多个单词组成，多个单词之间使用 \\\".\\\" 分割，例如 item.name 通配符规则： #: 匹配零个或多个单词 *:...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"主题模式\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.92,\"words\":577},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/主题模式.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

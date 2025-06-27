@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/46taxetw/index.html.vue"
-const data = JSON.parse("{\"path\":\"/article/46taxetw/\",\"title\":\"Markdown\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Markdown\",\"tags\":[\"markdown\"],\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/article/46taxetw/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.45,\"words\":734},\"filePathRelative\":\"preview/markdown.md\",\"categoryList\":[{\"id\":\"5ebeb6\",\"sort\":10001,\"name\":\"preview\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/46taxetw/\",\"title\":\"Markdown\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Markdown\",\"tags\":[\"markdown\"],\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/article/46taxetw/\",\"description\":\"标题 2 标题 3 标题 4 标题 5 标题 6 加粗：加粗文字 斜体： 斜体文字 内容 标记 数学表达式： −(2n−1) ~ 2n−1−1 ∂ωr∂r​(ωyω​)=(ωyω​){(logy)r+∑i=1r​ωi(−1)Ir⋯(r−i+1)(logy)ri​} 19th H2O 内容居中 内容右对齐 无序列表1 无序列表2 无序列表3 有序列表1 ...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/46taxetw/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Markdown\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"标题 2 标题 3 标题 4 标题 5 标题 6 加粗：加粗文字 斜体： 斜体文字 内容 标记 数学表达式： −(2n−1) ~ 2n−1−1 ∂ωr∂r​(ωyω​)=(ωyω​){(logy)r+∑i=1r​ωi(−1)Ir⋯(r−i+1)(logy)ri​} 19th H2O 内容居中 内容右对齐 无序列表1 无序列表2 无序列表3 有序列表1 ...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"markdown\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Markdown\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.45,\"words\":734},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"preview/markdown.md\",\"categoryList\":[{\"id\":\"5ebeb6\",\"sort\":10043,\"name\":\"preview\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

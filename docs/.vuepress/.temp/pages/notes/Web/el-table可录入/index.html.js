@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Web/el-table可录入/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Web/el-table%E5%8F%AF%E5%BD%95%E5%85%A5/\",\"title\":\"El Table可录入\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"El Table可录入\",\"aliases\":null,\"tags\":[\"Web\",\"ElementUI\"],\"description\":\"El Table可录入\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.9,\"words\":570},\"filePathRelative\":\"notes/Web/el-table可录入/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"eac769\",\"sort\":10015,\"name\":\"Web\"},{\"id\":\"c54e49\",\"sort\":10096,\"name\":\"el-table可录入\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Web/el-table%E5%8F%AF%E5%BD%95%E5%85%A5/\",\"title\":\"El Table可录入\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"El Table可录入\",\"aliases\":null,\"tags\":[\"Web\",\"ElementUI\"],\"description\":\"El Table可录入\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Web/el-table%E5%8F%AF%E5%BD%95%E5%85%A5/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"El Table可录入\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"El Table可录入\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Web\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"ElementUI\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"El Table可录入\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.9,\"words\":570},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Web/el-table可录入/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"eac769\",\"sort\":10032,\"name\":\"Web\"},{\"id\":\"c54e49\",\"sort\":10087,\"name\":\"el-table可录入\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

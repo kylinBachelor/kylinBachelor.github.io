@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Java/麒麟操作系统安装JAVA环境/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Java/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85JAVA%E7%8E%AF%E5%A2%83/\",\"title\":\"麒麟操作系统安装Java环境\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"麒麟操作系统安装Java环境\",\"aliases\":[],\"tags\":[\"kylin\",\"Java\"],\"createTime\":\"2024/11/30 14:15:41\",\"time\":621,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.78,\"words\":233},\"filePathRelative\":\"notes/Java/麒麟操作系统安装JAVA环境/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"f88215\",\"sort\":10009,\"name\":\"Java\"},{\"id\":\"9a9a7f\",\"sort\":10065,\"name\":\"麒麟操作系统安装JAVA环境\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Java/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85JAVA%E7%8E%AF%E5%A2%83/\",\"title\":\"麒麟操作系统安装Java环境\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"麒麟操作系统安装Java环境\",\"aliases\":[],\"tags\":[\"kylin\",\"Java\"],\"createTime\":\"2024/11/30 14:15:41\",\"time\":621,\"description\":\"参考文章 https://blog.csdn.net/job_csdn/article/details/128136490 1. 下载Linux版本的JDK1.8 https://www.oracle.com/java/technologies/downloads/#java8 一定要下载对应操作架构的JDK，否则会报错：可通过uname -a 命令查...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Java/%E9%BA%92%E9%BA%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85JAVA%E7%8E%AF%E5%A2%83/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"麒麟操作系统安装Java环境\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"参考文章 https://blog.csdn.net/job_csdn/article/details/128136490 1. 下载Linux版本的JDK1.8 https://www.oracle.com/java/technologies/downloads/#java8 一定要下载对应操作架构的JDK，否则会报错：可通过uname -a 命令查...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"kylin\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Java\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"1970-01-01T00:00:00.621Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"麒麟操作系统安装Java环境\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"1970-01-01T00:00:00.621Z\\\",\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.78,\"words\":233},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Java/麒麟操作系统安装JAVA环境/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"f88215\",\"sort\":10040,\"name\":\"Java\"},{\"id\":\"9a9a7f\",\"sort\":10053,\"name\":\"麒麟操作系统安装JAVA环境\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

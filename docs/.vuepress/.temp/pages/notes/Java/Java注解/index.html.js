@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Java/Java注解/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Java/Java%E6%B3%A8%E8%A7%A3/\",\"title\":\"Java注解\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Java注解\",\"aliases\":[],\"tags\":[\"Java\"],\"createTime\":\"2024/11/30 14:15:41\",\"time\":621,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.29,\"words\":386},\"filePathRelative\":\"notes/Java/Java注解/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"f88215\",\"sort\":10009,\"name\":\"Java\"},{\"id\":\"b85098\",\"sort\":10061,\"name\":\"Java注解\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Java/Java%E6%B3%A8%E8%A7%A3/\",\"title\":\"Java注解\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Java注解\",\"aliases\":[],\"tags\":[\"Java\"],\"createTime\":\"2024/11/30 14:15:41\",\"time\":621,\"description\":\"注解定义 使用@interface语法来定义注解（Annotation），格式如下： 注解的参数类似无参数方法，可以用default设定一个默认值（强烈推荐）。最常用的参数应当命名为value。 元注解 有一些注解可以修饰其他注解，这些注解就称为元注解（meta annotation）。Java标准库已经定义了一些元注解，我们只需要使用元注解，通常不需...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Java/Java%E6%B3%A8%E8%A7%A3/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Java注解\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"注解定义 使用@interface语法来定义注解（Annotation），格式如下： 注解的参数类似无参数方法，可以用default设定一个默认值（强烈推荐）。最常用的参数应当命名为value。 元注解 有一些注解可以修饰其他注解，这些注解就称为元注解（meta annotation）。Java标准库已经定义了一些元注解，我们只需要使用元注解，通常不需...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Java\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"1970-01-01T00:00:00.621Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Java注解\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"1970-01-01T00:00:00.621Z\\\",\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.29,\"words\":386},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Java/Java注解/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"f88215\",\"sort\":10040,\"name\":\"Java\"},{\"id\":\"b85098\",\"sort\":10060,\"name\":\"Java注解\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

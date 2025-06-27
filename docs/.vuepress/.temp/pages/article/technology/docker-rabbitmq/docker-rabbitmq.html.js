@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/docker-rabbitmq/docker-rabbitmq.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/docker-rabbitmq/docker-rabbitmq.html\",\"title\":\"那些年使用docker版rabbitmq踩过的坑\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"那些年使用docker版rabbitmq踩过的坑\",\"tags\":[\"rabbitmq\"],\"createTime\":\"2025/03/07 16:25:39\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.96,\"words\":289},\"filePathRelative\":\"article/technology/docker-rabbitmq/docker-rabbitmq.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10027,\"name\":\"technology\"},{\"id\":\"551049\",\"sort\":10031,\"name\":\"docker-rabbitmq\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/docker-rabbitmq/docker-rabbitmq.html\",\"title\":\"那些年使用docker版rabbitmq踩过的坑\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"那些年使用docker版rabbitmq踩过的坑\",\"tags\":[\"rabbitmq\"],\"createTime\":\"2025/03/07 16:25:39\",\"description\":\"那些年使用docker版rabbitmq踩过的坑 1. 拉取rabbitmq镜像 如果拉取失败可配置镜像加速器，亲测第一个可用，测试时间（2025年3月7日） 2. 使用命令行启动 3. 访问rabbitmq界面 ip:15672 image-20250307162339678image-20250307162339678 如果无法访问需要进入容器内部...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/docker-rabbitmq/docker-rabbitmq.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"那些年使用docker版rabbitmq踩过的坑\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"那些年使用docker版rabbitmq踩过的坑 1. 拉取rabbitmq镜像 如果拉取失败可配置镜像加速器，亲测第一个可用，测试时间（2025年3月7日） 2. 使用命令行启动 3. 访问rabbitmq界面 ip:15672 image-20250307162339678image-20250307162339678 如果无法访问需要进入容器内部...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-03-07T08:32:24.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"rabbitmq\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-03-07T08:32:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"那些年使用docker版rabbitmq踩过的坑\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-03-07T08:32:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.96,\"words\":289},\"git\":{\"updatedTime\":1741336344000},\"autoDesc\":true,\"filePathRelative\":\"article/technology/docker-rabbitmq/docker-rabbitmq.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10004,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10005,\"name\":\"technology\"},{\"id\":\"551049\",\"sort\":10020,\"name\":\"docker-rabbitmq\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

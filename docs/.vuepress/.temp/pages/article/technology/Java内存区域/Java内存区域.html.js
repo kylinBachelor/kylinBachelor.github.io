@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/Java内存区域/Java内存区域.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.html\",\"title\":\"java内存区域\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"java内存区域\",\"tags\":[\"Java\"],\"createTime\":\"2025/06/01 08:40:34\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":4.82,\"words\":1447},\"filePathRelative\":\"article/technology/Java内存区域/Java内存区域.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10027,\"name\":\"technology\"},{\"id\":\"c8178e\",\"sort\":10032,\"name\":\"Java内存区域\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.html\",\"title\":\"java内存区域\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"java内存区域\",\"tags\":[\"Java\"],\"createTime\":\"2025/06/01 08:40:34\",\"draft\":false,\"description\":\"image-20250603113504146image-20250603113504146 程序计数器 程序计数器是一块较小的内存空间，它可以看作是当前线程所执行的字节码的行号指示器。字节码解释器的工作就是通过改变这个计数器的值来选取下一条需要执行的字节码指令，分支、循环、跳转、异常处理、线程恢复等基础功能都需要依赖计数器来完成。 由于Java虚拟机...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"java内存区域\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"image-20250603113504146image-20250603113504146 程序计数器 程序计数器是一块较小的内存空间，它可以看作是当前线程所执行的字节码的行号指示器。字节码解释器的工作就是通过改变这个计数器的值来选取下一条需要执行的字节码指令，分支、循环、跳转、异常处理、线程恢复等基础功能都需要依赖计数器来完成。 由于Java虚拟机...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-06-03T07:39:41.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Java\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-06-03T07:39:41.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"java内存区域\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-06-03T07:39:41.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":4.82,\"words\":1447},\"git\":{\"updatedTime\":1748936381000},\"autoDesc\":true,\"filePathRelative\":\"article/technology/Java内存区域/Java内存区域.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10004,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10005,\"name\":\"technology\"},{\"id\":\"c8178e\",\"sort\":10016,\"name\":\"Java内存区域\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/Elasticsearch/index.html.vue"
-const data = JSON.parse("{\"path\":\"/Elasticsearch/\",\"title\":\"Elasticsearch\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Elasticsearch\",\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/Elasticsearch/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.09,\"words\":28},\"filePathRelative\":\"notes/Elasticsearch/README.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"2c3702\",\"sort\":10005,\"name\":\"Elasticsearch\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/Elasticsearch/\",\"title\":\"Elasticsearch\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Elasticsearch\",\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/Elasticsearch/\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/Elasticsearch/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Elasticsearch\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Elasticsearch\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.09,\"words\":28},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Elasticsearch/README.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"2c3702\",\"sort\":10042,\"name\":\"Elasticsearch\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
