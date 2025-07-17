@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/集群搭建.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.html\",\"title\":\"集群搭建\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"集群搭建\",\"createTime\":\"2024/12/01 14:07:26\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":8.01,\"words\":2402},\"filePathRelative\":\"notes/MQ/RabbitMQ/集群搭建.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10081,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.html\",\"title\":\"集群搭建\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"集群搭建\",\"createTime\":\"2024/12/01 14:07:26\",\"description\":\"1、前置要求 CentOS发行版的版本≥CentOS 8 Stream 镜像下载地址：https://mirrors.163.com/centos/8-stream/isos/x86_64/CentOS-Stream-8-20240318.0-x86_64-dvd1.iso RabbitMQ安装方式官方指南： image-202403252124259...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"集群搭建\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1、前置要求 CentOS发行版的版本≥CentOS 8 Stream 镜像下载地址：https://mirrors.163.com/centos/8-stream/isos/x86_64/CentOS-Stream-8-20240318.0-x86_64-dvd1.iso RabbitMQ安装方式官方指南： image-202403252124259...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"集群搭建\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":8.01,\"words\":2402},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/集群搭建.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10039,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10045,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

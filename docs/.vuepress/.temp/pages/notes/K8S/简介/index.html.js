@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/K8S/简介/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/K8S/%E7%AE%80%E4%BB%8B/\",\"title\":\"1. k8s基本介绍\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.14,\"words\":643},\"filePathRelative\":\"notes/K8S/简介/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"9d9b75\",\"sort\":10007,\"name\":\"K8S\"},{\"id\":\"25d3fa\",\"sort\":10071,\"name\":\"简介\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/K8S/%E7%AE%80%E4%BB%8B/\",\"title\":\"1. k8s基本介绍\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"1. k8s基本介绍 1. 概述 k8s是谷歌在2014年开源的容器化集群管理系统 使用k8s进行容器化应用部署 使用k8s有利于应用扩展 使用k8s最终目的就是为了让部署容器化应用的过程更加简洁和高效 ## 2. K8S功能特性 它支持自动化部署、大规模可伸缩、应用容器化管理。在生产环境中部署一个应用程序时，通常要部署该应用的多个实例以便对应用请求进...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/K8S/%E7%AE%80%E4%BB%8B/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"1. k8s基本介绍\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1. k8s基本介绍 1. 概述 k8s是谷歌在2014年开源的容器化集群管理系统 使用k8s进行容器化应用部署 使用k8s有利于应用扩展 使用k8s最终目的就是为了让部署容器化应用的过程更加简洁和高效 ## 2. K8S功能特性 它支持自动化部署、大规模可伸缩、应用容器化管理。在生产环境中部署一个应用程序时，通常要部署该应用的多个实例以便对应用请求进...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"1. k8s基本介绍\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.14,\"words\":643},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/K8S/简介/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"9d9b75\",\"sort\":10037,\"name\":\"K8S\"},{\"id\":\"25d3fa\",\"sort\":10058,\"name\":\"简介\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

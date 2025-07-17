@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Emacs/Emacs安装/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Emacs/Emacs%E5%AE%89%E8%A3%85/\",\"title\":\"Emacs安装\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Emacs安装\",\"aliases\":null,\"tags\":[\"Emacs\"],\"description\":\"Emacs安装\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.28,\"words\":84},\"filePathRelative\":\"notes/Emacs/Emacs安装/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"344cee\",\"sort\":10003,\"name\":\"Emacs\"},{\"id\":\"1f2348\",\"sort\":10049,\"name\":\"Emacs安装\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Emacs/Emacs%E5%AE%89%E8%A3%85/\",\"title\":\"Emacs安装\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Emacs安装\",\"aliases\":null,\"tags\":[\"Emacs\"],\"description\":\"Emacs安装\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Emacs/Emacs%E5%AE%89%E8%A3%85/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Emacs安装\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Emacs安装\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Emacs\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Emacs安装\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.28,\"words\":84},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Emacs/Emacs安装/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"344cee\",\"sort\":10012,\"name\":\"Emacs\"},{\"id\":\"1f2348\",\"sort\":10014,\"name\":\"Emacs安装\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/other/鬼谷之道/鬼谷之道.html.vue"
-const data = JSON.parse("{\"path\":\"/article/other/%E9%AC%BC%E8%B0%B7%E4%B9%8B%E9%81%93/%E9%AC%BC%E8%B0%B7%E4%B9%8B%E9%81%93.html\",\"title\":\"鬼谷之道\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"鬼谷之道\",\"tags\":[\"明理\"],\"createTime\":\"2025/07/18 15:15:41\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.21,\"words\":363},\"filePathRelative\":\"article/other/鬼谷之道/鬼谷之道.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10019,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10020,\"name\":\"other\"},{\"id\":\"ab331c\",\"sort\":10029,\"name\":\"鬼谷之道\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/other/%E9%AC%BC%E8%B0%B7%E4%B9%8B%E9%81%93/%E9%AC%BC%E8%B0%B7%E4%B9%8B%E9%81%93.html\",\"title\":\"鬼谷之道\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"鬼谷之道\",\"tags\":[\"明理\"],\"createTime\":\"2025/07/18 15:15:41\",\"description\":\"寻求答案，等于让他人来帮你做选择， 而你，放弃了自己的选择。 为了获得老师的赞赏而寻求的答案，那么老师的高度就限制了你们的视野。 为了寻求世人的认同而寻求答案，那么世人就会在你们身边围起一道道高墙。 寻求答案能重复先辈上一次的正确，但是永远无法走出一条新路，也永远无法走出一条自己的路。 答案并不重要， 抉择本身没有对和错，每一个抉择都必然会产生一个结果...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/other/%E9%AC%BC%E8%B0%B7%E4%B9%8B%E9%81%93/%E9%AC%BC%E8%B0%B7%E4%B9%8B%E9%81%93.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"鬼谷之道\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"寻求答案，等于让他人来帮你做选择， 而你，放弃了自己的选择。 为了获得老师的赞赏而寻求的答案，那么老师的高度就限制了你们的视野。 为了寻求世人的认同而寻求答案，那么世人就会在你们身边围起一道道高墙。 寻求答案能重复先辈上一次的正确，但是永远无法走出一条新路，也永远无法走出一条自己的路。 答案并不重要， 抉择本身没有对和错，每一个抉择都必然会产生一个结果...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-07-17T05:00:51.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"明理\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-07-17T05:00:51.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"鬼谷之道\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-07-17T05:00:51.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.21,\"words\":363},\"git\":{\"updatedTime\":1752728451000},\"autoDesc\":true,\"filePathRelative\":\"article/other/鬼谷之道/鬼谷之道.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10061,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10062,\"name\":\"other\"},{\"id\":\"ab331c\",\"sort\":10133,\"name\":\"鬼谷之道\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

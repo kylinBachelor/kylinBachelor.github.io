@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Web/npm/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Web/npm/\",\"title\":\"Npm操作记录\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.84,\"words\":252},\"filePathRelative\":\"notes/Web/npm/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"eac769\",\"sort\":10014,\"name\":\"Web\"},{\"id\":\"64cff9\",\"sort\":10099,\"name\":\"npm\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Web/npm/\",\"title\":\"Npm操作记录\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"Npm操作记录 1. npm update 命令 npm update 命令用于更新项目中已安装的包到最新版本。 基本用法 执行npm update命令后，npm会检查node_modules目录下所有包的版本，并尝试更新到符合package.json中指定的版本范围的最新版本。‌ 特定包更新 如果你想更新一个或几个特定的包，可以使用以下命令：npm ...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Web/npm/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Npm操作记录\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Npm操作记录 1. npm update 命令 npm update 命令用于更新项目中已安装的包到最新版本。 基本用法 执行npm update命令后，npm会检查node_modules目录下所有包的版本，并尝试更新到符合package.json中指定的版本范围的最新版本。‌ 特定包更新 如果你想更新一个或几个特定的包，可以使用以下命令：npm ...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Npm操作记录\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.84,\"words\":252},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Web/npm/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"eac769\",\"sort\":10032,\"name\":\"Web\"},{\"id\":\"64cff9\",\"sort\":10091,\"name\":\"npm\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

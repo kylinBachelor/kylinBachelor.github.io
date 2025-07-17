@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/other/易经-跃动千年的智慧密码/易经-跃动千年的智慧密码.html.vue"
-const data = JSON.parse("{\"path\":\"/article/other/%E6%98%93%E7%BB%8F-%E8%B7%83%E5%8A%A8%E5%8D%83%E5%B9%B4%E7%9A%84%E6%99%BA%E6%85%A7%E5%AF%86%E7%A0%81/%E6%98%93%E7%BB%8F-%E8%B7%83%E5%8A%A8%E5%8D%83%E5%B9%B4%E7%9A%84%E6%99%BA%E6%85%A7%E5%AF%86%E7%A0%81.html\",\"title\":\"易经：跃动千年的智慧密码\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"易经：跃动千年的智慧密码\",\"tags\":[\"周易\"],\"createTime\":\"2025/03/08 21:13:26\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":3.41,\"words\":1022},\"filePathRelative\":\"article/other/易经-跃动千年的智慧密码/易经-跃动千年的智慧密码.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10019,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10020,\"name\":\"other\"},{\"id\":\"f8b66d\",\"sort\":10026,\"name\":\"易经-跃动千年的智慧密码\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/other/%E6%98%93%E7%BB%8F-%E8%B7%83%E5%8A%A8%E5%8D%83%E5%B9%B4%E7%9A%84%E6%99%BA%E6%85%A7%E5%AF%86%E7%A0%81/%E6%98%93%E7%BB%8F-%E8%B7%83%E5%8A%A8%E5%8D%83%E5%B9%B4%E7%9A%84%E6%99%BA%E6%85%A7%E5%AF%86%E7%A0%81.html\",\"title\":\"易经：跃动千年的智慧密码\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"易经：跃动千年的智慧密码\",\"tags\":[\"周易\"],\"createTime\":\"2025/03/08 21:13:26\",\"description\":\"一、‌宇宙的基因图谱：阴阳双螺旋 翻开《周易》，仿佛触摸到华夏文明最初的脉动——六十四卦不是冰冷符号，而是刻录宇宙韵律的甲骨文唱片。六千年前，先民仰望星空时发现：昼夜交替是天地在眨眼，四季轮回是万物在呼吸。他们将这永恒的律动凝结为阴阳爻线，如同基因双螺旋般缠绕出万物生灭的密码‌。老子在《蒙》卦中看到藤蔓攀援的哲学：根系深扎大地（坤），枝叶追逐苍穹（乾）...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/other/%E6%98%93%E7%BB%8F-%E8%B7%83%E5%8A%A8%E5%8D%83%E5%B9%B4%E7%9A%84%E6%99%BA%E6%85%A7%E5%AF%86%E7%A0%81/%E6%98%93%E7%BB%8F-%E8%B7%83%E5%8A%A8%E5%8D%83%E5%B9%B4%E7%9A%84%E6%99%BA%E6%85%A7%E5%AF%86%E7%A0%81.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"易经：跃动千年的智慧密码\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"一、‌宇宙的基因图谱：阴阳双螺旋 翻开《周易》，仿佛触摸到华夏文明最初的脉动——六十四卦不是冰冷符号，而是刻录宇宙韵律的甲骨文唱片。六千年前，先民仰望星空时发现：昼夜交替是天地在眨眼，四季轮回是万物在呼吸。他们将这永恒的律动凝结为阴阳爻线，如同基因双螺旋般缠绕出万物生灭的密码‌。老子在《蒙》卦中看到藤蔓攀援的哲学：根系深扎大地（坤），枝叶追逐苍穹（乾）...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-03-05T01:21:50.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"周易\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-03-05T01:21:50.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"易经：跃动千年的智慧密码\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-03-05T01:21:50.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":3.41,\"words\":1022},\"git\":{\"updatedTime\":1741137710000},\"autoDesc\":true,\"filePathRelative\":\"article/other/易经-跃动千年的智慧密码/易经-跃动千年的智慧密码.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10061,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10062,\"name\":\"other\"},{\"id\":\"f8b66d\",\"sort\":10065,\"name\":\"易经-跃动千年的智慧密码\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

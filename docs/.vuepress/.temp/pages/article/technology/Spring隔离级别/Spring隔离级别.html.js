@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/Spring隔离级别/Spring隔离级别.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/Spring%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/Spring%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB.html\",\"title\":\"Spring隔离级\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Spring隔离级\",\"tags\":[\"Spring\"],\"createTime\":\"2025/07/15 09:45:31\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.12,\"words\":337},\"filePathRelative\":\"article/technology/Spring隔离级别/Spring隔离级别.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10019,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10030,\"name\":\"technology\"},{\"id\":\"a64559\",\"sort\":10043,\"name\":\"Spring隔离级别\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/Spring%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/Spring%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB.html\",\"title\":\"Spring隔离级\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Spring隔离级\",\"tags\":[\"Spring\"],\"createTime\":\"2025/07/15 09:45:31\",\"description\":\"Spring提供了五种的隔离级别： DEFAULT(默认)：使用底层数据库的默认隔离级别。如果数据库没有特定的设置，通常默认为 READ_COMMITTED READ_UNCOMMITTED(读未提交)：最低的隔离级别，允许事务读取尚未提交的数据，可能会导致脏读、不可重复读和幻读。 READ_COMMITTED(读已提交)：仅允许读取已经提交的数据，避...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/Spring%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/Spring%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Spring隔离级\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Spring提供了五种的隔离级别： DEFAULT(默认)：使用底层数据库的默认隔离级别。如果数据库没有特定的设置，通常默认为 READ_COMMITTED READ_UNCOMMITTED(读未提交)：最低的隔离级别，允许事务读取尚未提交的数据，可能会导致脏读、不可重复读和幻读。 READ_COMMITTED(读已提交)：仅允许读取已经提交的数据，避...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-07-17T02:22:50.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Spring\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-07-17T02:22:50.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Spring隔离级\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-07-17T02:22:50.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.12,\"words\":337},\"git\":{\"updatedTime\":1752718970000},\"autoDesc\":true,\"filePathRelative\":\"article/technology/Spring隔离级别/Spring隔离级别.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10061,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10118,\"name\":\"technology\"},{\"id\":\"a64559\",\"sort\":10119,\"name\":\"Spring隔离级别\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

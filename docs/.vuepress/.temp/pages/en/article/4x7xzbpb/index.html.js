@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/en/article/4x7xzbpb/index.html.vue"
-const data = JSON.parse("{\"path\":\"/en/article/4x7xzbpb/\",\"title\":\"Markdown\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Markdown\",\"tags\":[\"markdown\"],\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/en/article/4x7xzbpb/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.98,\"words\":594},\"filePathRelative\":\"en/preview/markdown.md\",\"categoryList\":[{\"id\":\"9cfefe\",\"sort\":10000,\"name\":\"en\"},{\"id\":\"3a331f\",\"sort\":10001,\"name\":\"preview\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/en/article/4x7xzbpb/\",\"title\":\"Markdown\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Markdown\",\"tags\":[\"markdown\"],\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/en/article/4x7xzbpb/\",\"description\":\"Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Bold: Bold text Italic: Italic text Content Highlight Mathematical expression: −(2n−1) ~ 2n−1−1 ∂ωr∂r​(ωyω​)=(ωyω​){(logy)r+∑i=...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/en/article/4x7xzbpb/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Markdown\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Bold: Bold text Italic: Italic text Content Highlight Mathematical expression: −(2n−1) ~ 2n−1−1 ∂ωr∂r​(ωyω​)=(ωyω​){(logy)r+∑i=...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"markdown\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Markdown\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.98,\"words\":594},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"en/preview/markdown.md\",\"categoryList\":[{\"id\":\"9cfefe\",\"sort\":10000,\"name\":\"en\"},{\"id\":\"3a331f\",\"sort\":10028,\"name\":\"preview\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

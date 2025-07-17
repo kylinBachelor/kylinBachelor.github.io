@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/感觉比较好用的Enum/感觉比较好用的Enum.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/%E6%84%9F%E8%A7%89%E6%AF%94%E8%BE%83%E5%A5%BD%E7%94%A8%E7%9A%84Enum/%E6%84%9F%E8%A7%89%E6%AF%94%E8%BE%83%E5%A5%BD%E7%94%A8%E7%9A%84Enum.html\",\"title\":\"感觉比较好用的Enum\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"感觉比较好用的Enum\",\"tags\":[\"Java\",\"枚举\"],\"createTime\":\"2025/02/19 14:45:13\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.82,\"words\":245},\"filePathRelative\":\"article/technology/感觉比较好用的Enum/感觉比较好用的Enum.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10019,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10030,\"name\":\"technology\"},{\"id\":\"c79cc4\",\"sort\":10044,\"name\":\"感觉比较好用的Enum\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/%E6%84%9F%E8%A7%89%E6%AF%94%E8%BE%83%E5%A5%BD%E7%94%A8%E7%9A%84Enum/%E6%84%9F%E8%A7%89%E6%AF%94%E8%BE%83%E5%A5%BD%E7%94%A8%E7%9A%84Enum.html\",\"title\":\"感觉比较好用的Enum\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"感觉比较好用的Enum\",\"tags\":[\"Java\",\"枚举\"],\"createTime\":\"2025/02/19 14:45:13\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/%E6%84%9F%E8%A7%89%E6%AF%94%E8%BE%83%E5%A5%BD%E7%94%A8%E7%9A%84Enum/%E6%84%9F%E8%A7%89%E6%AF%94%E8%BE%83%E5%A5%BD%E7%94%A8%E7%9A%84Enum.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"感觉比较好用的Enum\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-02-19T06:30:22.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Java\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"枚举\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-02-19T06:30:22.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"感觉比较好用的Enum\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-02-19T06:30:22.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.82,\"words\":245},\"git\":{\"updatedTime\":1739946622000},\"filePathRelative\":\"article/technology/感觉比较好用的Enum/感觉比较好用的Enum.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10061,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10118,\"name\":\"technology\"},{\"id\":\"c79cc4\",\"sort\":10123,\"name\":\"感觉比较好用的Enum\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/SpringBoot/index.html.vue"
-const data = JSON.parse("{\"path\":\"/SpringBoot/\",\"title\":\"Spring Boot框架\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Spring Boot框架\",\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/SpringBoot/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.08,\"words\":25},\"filePathRelative\":\"notes/Spring/SpringBoot/README.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10013,\"name\":\"Spring\"},{\"id\":\"c97f9b\",\"sort\":10094,\"name\":\"SpringBoot\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/SpringBoot/\",\"title\":\"Spring Boot框架\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Spring Boot框架\",\"createTime\":\"2024/11/30 14:15:41\",\"permalink\":\"/SpringBoot/\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/SpringBoot/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Spring Boot框架\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Spring Boot框架\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.08,\"words\":25},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Spring/SpringBoot/README.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10033,\"name\":\"Spring\"},{\"id\":\"c97f9b\",\"sort\":10094,\"name\":\"SpringBoot\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

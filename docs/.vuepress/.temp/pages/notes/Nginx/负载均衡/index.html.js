@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Nginx/负载均衡/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Nginx/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/\",\"title\":\"Nginx负载均衡\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.1,\"words\":631},\"filePathRelative\":\"notes/Nginx/负载均衡/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"18ce3d\",\"sort\":10010,\"name\":\"Nginx\"},{\"id\":\"c36541\",\"sort\":10085,\"name\":\"负载均衡\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Nginx/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/\",\"title\":\"Nginx负载均衡\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"Nginx负载均衡 在高并发的情况下，一台服务器的负载承受不住，我们就需要使用服务器集群来解决高并发问题，但是这就出现一个问题，就是客户端的请求如何分配给多个服务器，所以在服务器集群中，需要一个服务器充当一个 【负载均衡器-Ningx】 用户的所有的请求都会由负载均衡器进行接收，调度者根据每台服务器的负载情况通过负载均衡算法将请求分配给某一台后端服务器...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Nginx/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Nginx负载均衡\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Nginx负载均衡 在高并发的情况下，一台服务器的负载承受不住，我们就需要使用服务器集群来解决高并发问题，但是这就出现一个问题，就是客户端的请求如何分配给多个服务器，所以在服务器集群中，需要一个服务器充当一个 【负载均衡器-Ningx】 用户的所有的请求都会由负载均衡器进行接收，调度者根据每台服务器的负载情况通过负载均衡算法将请求分配给某一台后端服务器...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Nginx负载均衡\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.1,\"words\":631},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Nginx/负载均衡/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"18ce3d\",\"sort\":10035,\"name\":\"Nginx\"},{\"id\":\"c36541\",\"sort\":10102,\"name\":\"负载均衡\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

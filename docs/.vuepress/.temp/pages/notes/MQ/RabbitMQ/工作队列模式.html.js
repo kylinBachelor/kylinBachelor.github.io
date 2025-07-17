@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/工作队列模式.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E5%B7%A5%E4%BD%9C%E9%98%9F%E5%88%97%E6%A8%A1%E5%BC%8F.html\",\"title\":\"工作队列模式\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"工作队列模式\",\"createTime\":\"2024/12/01 13:37:14\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.63,\"words\":489},\"filePathRelative\":\"notes/MQ/RabbitMQ/工作队列模式.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10081,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E5%B7%A5%E4%BD%9C%E9%98%9F%E5%88%97%E6%A8%A1%E5%BC%8F.html\",\"title\":\"工作队列模式\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"工作队列模式\",\"createTime\":\"2024/12/01 13:37:14\",\"description\":\"生产者只有一个。 发送一个消息。 消费者只有一个，消息也只能被这个消费者消费。 多个消费者监听同一个队列，则各消费者之间对同一个消息是竞争关系，谁抢到是谁的。 Work Queues 工作模式适用于任务较重或任务较多的情况，多消费者分摊任务可以提高消息处理的效率。 一、生产者代码 1、封装工具类 2、编写代码 3、发送消息效果 imgimg 二、消费者...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E5%B7%A5%E4%BD%9C%E9%98%9F%E5%88%97%E6%A8%A1%E5%BC%8F.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"工作队列模式\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"生产者只有一个。 发送一个消息。 消费者只有一个，消息也只能被这个消费者消费。 多个消费者监听同一个队列，则各消费者之间对同一个消息是竞争关系，谁抢到是谁的。 Work Queues 工作模式适用于任务较重或任务较多的情况，多消费者分摊任务可以提高消息处理的效率。 一、生产者代码 1、封装工具类 2、编写代码 3、发送消息效果 imgimg 二、消费者...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"工作队列模式\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.63,\"words\":489},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/工作队列模式.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10039,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10045,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

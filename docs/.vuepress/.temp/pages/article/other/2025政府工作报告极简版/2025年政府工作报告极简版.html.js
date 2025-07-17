@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/other/2025政府工作报告极简版/2025年政府工作报告极简版.html.vue"
-const data = JSON.parse("{\"path\":\"/article/other/2025%E6%94%BF%E5%BA%9C%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A%E6%9E%81%E7%AE%80%E7%89%88/2025%E5%B9%B4%E6%94%BF%E5%BA%9C%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A%E6%9E%81%E7%AE%80%E7%89%88.html\",\"title\":\"2025年政府工作报告-极简版\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"2025年政府工作报告-极简版\",\"tags\":[\"政府\"],\"createTime\":\"2025/03/05 21:39:00\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.7,\"words\":811},\"filePathRelative\":\"article/other/2025政府工作报告极简版/2025年政府工作报告极简版.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10019,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10020,\"name\":\"other\"},{\"id\":\"6a95a8\",\"sort\":10021,\"name\":\"2025政府工作报告极简版\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/other/2025%E6%94%BF%E5%BA%9C%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A%E6%9E%81%E7%AE%80%E7%89%88/2025%E5%B9%B4%E6%94%BF%E5%BA%9C%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A%E6%9E%81%E7%AE%80%E7%89%88.html\",\"title\":\"2025年政府工作报告-极简版\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"2025年政府工作报告-极简版\",\"tags\":[\"政府\"],\"createTime\":\"2025/03/05 21:39:00\",\"description\":\"一、2024年工作回顾 ‌经济运行总体平稳‌ 全国GDP总量达134.9万亿元，同比增长5%，增速居全球主要经济体前列，对全球经济增长贡献率约30%‌。 城镇新增就业1256万人，城镇调查失业率平均5.1%，居民消费价格（CPI）涨幅0.2%。 对外贸易规模创历史新高，外汇储备超3.2万亿美元，国际市场份额稳中有升‌。 ‌高质量发展扎实推进‌ 粮食产量...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/other/2025%E6%94%BF%E5%BA%9C%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A%E6%9E%81%E7%AE%80%E7%89%88/2025%E5%B9%B4%E6%94%BF%E5%BA%9C%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A%E6%9E%81%E7%AE%80%E7%89%88.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"2025年政府工作报告-极简版\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"一、2024年工作回顾 ‌经济运行总体平稳‌ 全国GDP总量达134.9万亿元，同比增长5%，增速居全球主要经济体前列，对全球经济增长贡献率约30%‌。 城镇新增就业1256万人，城镇调查失业率平均5.1%，居民消费价格（CPI）涨幅0.2%。 对外贸易规模创历史新高，外汇储备超3.2万亿美元，国际市场份额稳中有升‌。 ‌高质量发展扎实推进‌ 粮食产量...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-03-05T10:18:44.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"政府\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-03-05T10:18:44.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"2025年政府工作报告-极简版\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-03-05T10:18:44.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.7,\"words\":811},\"git\":{\"updatedTime\":1741169924000},\"autoDesc\":true,\"filePathRelative\":\"article/other/2025政府工作报告极简版/2025年政府工作报告极简版.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10061,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10062,\"name\":\"other\"},{\"id\":\"6a95a8\",\"sort\":10068,\"name\":\"2025政府工作报告极简版\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

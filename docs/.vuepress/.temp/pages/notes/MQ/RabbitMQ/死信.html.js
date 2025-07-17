@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/死信.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E6%AD%BB%E4%BF%A1.html\",\"title\":\"死信\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"死信\",\"createTime\":\"2024/12/01 14:00:38\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.16,\"words\":647},\"filePathRelative\":\"notes/MQ/RabbitMQ/死信.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10081,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E6%AD%BB%E4%BF%A1.html\",\"title\":\"死信\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"死信\",\"createTime\":\"2024/12/01 14:00:38\",\"description\":\"1、创建死信交换机和死信队列 常规设定即可，没有特殊设置： 死信交换机：exchange.dead.letter.video 死信队列：queue.dead.letter.video 死信路由键：routing.key.dead.letter.video 2、创建正常交换机和正常队列 注意：一定要注意正常队列有诸多限定和设置，这样才能让无法处理的消息进...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E6%AD%BB%E4%BF%A1.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"死信\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1、创建死信交换机和死信队列 常规设定即可，没有特殊设置： 死信交换机：exchange.dead.letter.video 死信队列：queue.dead.letter.video 死信路由键：routing.key.dead.letter.video 2、创建正常交换机和正常队列 注意：一定要注意正常队列有诸多限定和设置，这样才能让无法处理的消息进...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"死信\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.16,\"words\":647},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/死信.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10039,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10045,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Spring/SpringFramework/SpringMVC/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/SpringMVC/\",\"title\":\"SpringMVC\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":15.1,\"words\":4529},\"filePathRelative\":\"notes/Spring/SpringFramework/SpringMVC/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10013,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10095,\"name\":\"SpringFramework\"},{\"id\":\"a9c90d\",\"sort\":10135,\"name\":\"SpringMVC\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/SpringMVC/\",\"title\":\"SpringMVC\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"SpringMVC SpringMVC 是 Spring 框架针对 Web 提供的技术支持模块、并不是独立的框架,专门针对WEB的功能 1. 机制说明 1.1 环境 spring-web 完成对 web 的抽象和基础实现 spring-webmvc 完成对 servlet-api 规范的封装 pom.xml maven image-2024071212...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Spring/SpringFramework/SpringMVC/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"SpringMVC\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"SpringMVC SpringMVC 是 Spring 框架针对 Web 提供的技术支持模块、并不是独立的框架,专门针对WEB的功能 1. 机制说明 1.1 环境 spring-web 完成对 web 的抽象和基础实现 spring-webmvc 完成对 servlet-api 规范的封装 pom.xml maven image-2024071212...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"SpringMVC\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":15.1,\"words\":4529},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Spring/SpringFramework/SpringMVC/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10033,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10098,\"name\":\"SpringFramework\"},{\"id\":\"a9c90d\",\"sort\":10109,\"name\":\"SpringMVC\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

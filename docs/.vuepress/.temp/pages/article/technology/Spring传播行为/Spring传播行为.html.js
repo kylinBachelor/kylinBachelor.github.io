@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/Spring传播行为/Spring传播行为.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/Spring%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA/Spring%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA.html\",\"title\":\"Spring传播行为\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Spring传播行为\",\"tags\":[\"Spring\"],\"createTime\":\"2025/07/16 10:45:31\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.52,\"words\":455},\"filePathRelative\":\"article/technology/Spring传播行为/Spring传播行为.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10019,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10030,\"name\":\"technology\"},{\"id\":\"2f577d\",\"sort\":10042,\"name\":\"Spring传播行为\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/Spring%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA/Spring%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA.html\",\"title\":\"Spring传播行为\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Spring传播行为\",\"tags\":[\"Spring\"],\"createTime\":\"2025/07/16 10:45:31\",\"description\":\"1. 作用 定义和管理事务边界，尤其是一个事务方法调用另一个事务方法时，事务如何传播的问题。他解决了多个事务方法嵌套执行时，是否要开启新事物、复用现有事务或者挂起事务等复杂的情况。 用途 控制事务的传播和嵌套：根据具体的业务需求，可以执行是否使用现有事务或开启新的事务，解决事务的传播问题。 确保独立操作的事务隔离：某些操作（如日志记录、发送通知）应当独...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/Spring%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA/Spring%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Spring传播行为\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1. 作用 定义和管理事务边界，尤其是一个事务方法调用另一个事务方法时，事务如何传播的问题。他解决了多个事务方法嵌套执行时，是否要开启新事物、复用现有事务或者挂起事务等复杂的情况。 用途 控制事务的传播和嵌套：根据具体的业务需求，可以执行是否使用现有事务或开启新的事务，解决事务的传播问题。 确保独立操作的事务隔离：某些操作（如日志记录、发送通知）应当独...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-07-17T02:22:50.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Spring\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-07-17T02:22:50.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Spring传播行为\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-07-17T02:22:50.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.52,\"words\":455},\"git\":{\"updatedTime\":1752718970000},\"autoDesc\":true,\"filePathRelative\":\"article/technology/Spring传播行为/Spring传播行为.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10061,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10118,\"name\":\"technology\"},{\"id\":\"2f577d\",\"sort\":10122,\"name\":\"Spring传播行为\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

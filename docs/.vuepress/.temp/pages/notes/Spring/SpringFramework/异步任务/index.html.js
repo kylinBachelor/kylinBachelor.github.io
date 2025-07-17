@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Spring/SpringFramework/异步任务/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.68,\"words\":203},\"filePathRelative\":\"notes/Spring/SpringFramework/异步任务/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10013,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10095,\"name\":\"SpringFramework\"},{\"id\":\"cd56db\",\"sort\":10131,\"name\":\"异步任务\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"=== Spring 异步任务就是开启一个新的线程去执行其它耗时任务 Spring 异步分为常规异步 和 servlet 异步【他是要通知 容器是否执行完毕】 官方手册截图 image-20240630220741469image-20240630220741469 1. 容器对象异步 === @EnableAsync 开启异步任务、AsyncConf...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Spring/SpringFramework/%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"=== Spring 异步任务就是开启一个新的线程去执行其它耗时任务 Spring 异步分为常规异步 和 servlet 异步【他是要通知 容器是否执行完毕】 官方手册截图 image-20240630220741469image-20240630220741469 1. 容器对象异步 === @EnableAsync 开启异步任务、AsyncConf...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.68,\"words\":203},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Spring/SpringFramework/异步任务/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10033,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10098,\"name\":\"SpringFramework\"},{\"id\":\"cd56db\",\"sort\":10112,\"name\":\"异步任务\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

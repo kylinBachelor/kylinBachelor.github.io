@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/数据库/数据库由于断电等异常关机导致损坏的处理办法/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%94%B1%E4%BA%8E%E6%96%AD%E7%94%B5%E7%AD%89%E5%BC%82%E5%B8%B8%E5%85%B3%E6%9C%BA%E5%AF%BC%E8%87%B4%E6%8D%9F%E5%9D%8F%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.99,\"words\":598},\"filePathRelative\":\"notes/数据库/数据库由于断电等异常关机导致损坏的处理办法/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"324a5c\",\"sort\":10016,\"name\":\"数据库\"},{\"id\":\"377ae6\",\"sort\":10120,\"name\":\"数据库由于断电等异常关机导致损坏的处理办法\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%94%B1%E4%BA%8E%E6%96%AD%E7%94%B5%E7%AD%89%E5%BC%82%E5%B8%B8%E5%85%B3%E6%9C%BA%E5%AF%BC%E8%87%B4%E6%8D%9F%E5%9D%8F%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"1. 问题出现 遇到的这个问题是因为突然停电，由于电脑是一个台式机导致电脑突然关机，就导致了MySQL数据库损坏的问题（无法启动） image-20241024085841542image-20241024085841542 2. 解决方式 注意 首先备份首先备份MySQL的data文件夹！！！！！！！！！！！！！！ image-20241024090...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%94%B1%E4%BA%8E%E6%96%AD%E7%94%B5%E7%AD%89%E5%BC%82%E5%B8%B8%E5%85%B3%E6%9C%BA%E5%AF%BC%E8%87%B4%E6%8D%9F%E5%9D%8F%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1. 问题出现 遇到的这个问题是因为突然停电，由于电脑是一个台式机导致电脑突然关机，就导致了MySQL数据库损坏的问题（无法启动） image-20241024085841542image-20241024085841542 2. 解决方式 注意 首先备份首先备份MySQL的data文件夹！！！！！！！！！！！！！！ image-20241024090...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.99,\"words\":598},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/数据库/数据库由于断电等异常关机导致损坏的处理办法/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"324a5c\",\"sort\":10030,\"name\":\"数据库\"},{\"id\":\"377ae6\",\"sort\":10071,\"name\":\"数据库由于断电等异常关机导致损坏的处理办法\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

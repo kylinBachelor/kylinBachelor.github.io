@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Docker/network/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Docker/network/\",\"title\":\"Docker 网络\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":3.64,\"words\":1093},\"filePathRelative\":\"notes/Docker/network/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10004,\"name\":\"Docker\"},{\"id\":\"a1f1a3\",\"sort\":10055,\"name\":\"network\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Docker/network/\",\"title\":\"Docker 网络\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"Docker 网络 网络模式： 注 查看网络模式：docker netword ls 查看网络模式详情： docker inspect network bridge/host/自定义网络模式 查看容器网络：docker inspect 容器name或容器id 1. bridge Docker 服务默认会创建一个docker0的虚拟网桥，该桥接网络的名称...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Docker/network/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Docker 网络\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Docker 网络 网络模式： 注 查看网络模式：docker netword ls 查看网络模式详情： docker inspect network bridge/host/自定义网络模式 查看容器网络：docker inspect 容器name或容器id 1. bridge Docker 服务默认会创建一个docker0的虚拟网桥，该桥接网络的名称...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Docker 网络\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":3.64,\"words\":1093},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Docker/network/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10015,\"name\":\"Docker\"},{\"id\":\"a1f1a3\",\"sort\":10024,\"name\":\"network\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

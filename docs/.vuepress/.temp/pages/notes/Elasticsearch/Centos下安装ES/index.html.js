@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Elasticsearch/Centos下安装ES/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Elasticsearch/Centos%E4%B8%8B%E5%AE%89%E8%A3%85ES/\",\"title\":\"Centos下安装Elasticsearch记录\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":4.69,\"words\":1407},\"filePathRelative\":\"notes/Elasticsearch/Centos下安装ES/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"2c3702\",\"sort\":10008,\"name\":\"Elasticsearch\"},{\"id\":\"522fc8\",\"sort\":10072,\"name\":\"Centos下安装ES\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Elasticsearch/Centos%E4%B8%8B%E5%AE%89%E8%A3%85ES/\",\"title\":\"Centos下安装Elasticsearch记录\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"Centos下安装Elasticsearch记录 1. 下载ES 下载地址：https://www.elastic.co/cn/downloads/past-releases 相应的版本对应相应地址规则，例如：https://www.elastic.co/cn/downloads/past-releases/elasticsearch-7-8-0 如图...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Elasticsearch/Centos%E4%B8%8B%E5%AE%89%E8%A3%85ES/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Centos下安装Elasticsearch记录\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Centos下安装Elasticsearch记录 1. 下载ES 下载地址：https://www.elastic.co/cn/downloads/past-releases 相应的版本对应相应地址规则，例如：https://www.elastic.co/cn/downloads/past-releases/elasticsearch-7-8-0 如图...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Centos下安装Elasticsearch记录\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":4.69,\"words\":1407},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Elasticsearch/Centos下安装ES/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"2c3702\",\"sort\":10008,\"name\":\"Elasticsearch\"},{\"id\":\"522fc8\",\"sort\":10009,\"name\":\"Centos下安装ES\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

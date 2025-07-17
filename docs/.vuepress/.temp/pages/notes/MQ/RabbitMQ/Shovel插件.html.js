@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/Shovel插件.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/Shovel%E6%8F%92%E4%BB%B6.html\",\"title\":\"Shovel插件\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Shovel插件\",\"createTime\":\"2024/12/01 14:24:13\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.31,\"words\":94},\"filePathRelative\":\"notes/MQ/RabbitMQ/Shovel插件.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10081,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/Shovel%E6%8F%92%E4%BB%B6.html\",\"title\":\"Shovel插件\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Shovel插件\",\"createTime\":\"2024/12/01 14:24:13\",\"description\":\"image-20240425184237327image-20240425184237327 二、配置Shovel image-20240425185107197image-20240425185107197 三、测试 1、测试计划 2、测试效果 ①发布消息 image-20240425185349525image-20240425185349525 ...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/Shovel%E6%8F%92%E4%BB%B6.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Shovel插件\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"image-20240425184237327image-20240425184237327 二、配置Shovel image-20240425185107197image-20240425185107197 三、测试 1、测试计划 2、测试效果 ①发布消息 image-20240425185349525image-20240425185349525 ...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Shovel插件\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.31,\"words\":94},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/Shovel插件.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10039,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10045,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Docker/Dockerfile/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Docker/Dockerfile/\",\"title\":\"Dockerfile\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":4.79,\"words\":1437},\"filePathRelative\":\"notes/Docker/Dockerfile/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10004,\"name\":\"Docker\"},{\"id\":\"feb8ab\",\"sort\":10052,\"name\":\"Dockerfile\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Docker/Dockerfile/\",\"title\":\"Dockerfile\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"Dockerfile 官网（需要翻墙）：https://docs.docker.com/reference/dockerfile/ 中文网： http://www.dockerinfo.net/dockerfile%e4%bb%8b%e7%bb%8d 1. 概述 === Dockerfile 是用来构建 Docker 镜像的文本文件，是由一条条构建镜像...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Docker/Dockerfile/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Dockerfile\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Dockerfile 官网（需要翻墙）：https://docs.docker.com/reference/dockerfile/ 中文网： http://www.dockerinfo.net/dockerfile%e4%bb%8b%e7%bb%8d 1. 概述 === Dockerfile 是用来构建 Docker 镜像的文本文件，是由一条条构建镜像...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Dockerfile\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":4.79,\"words\":1437},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Docker/Dockerfile/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10015,\"name\":\"Docker\"},{\"id\":\"feb8ab\",\"sort\":10023,\"name\":\"Dockerfile\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

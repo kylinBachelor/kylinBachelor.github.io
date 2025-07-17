@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Redis/Redis缓存击穿-穿透-雪崩/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Redis/Redis%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F-%E9%9B%AA%E5%B4%A9/\",\"title\":\"Redis缓存击穿-穿透-雪崩\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.58,\"words\":775},\"filePathRelative\":\"notes/Redis/Redis缓存击穿-穿透-雪崩/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"9a0913\",\"sort\":10011,\"name\":\"Redis\"},{\"id\":\"5e71e5\",\"sort\":10091,\"name\":\"Redis缓存击穿-穿透-雪崩\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Redis/Redis%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F-%E9%9B%AA%E5%B4%A9/\",\"title\":\"Redis缓存击穿-穿透-雪崩\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"Redis缓存击穿-穿透-雪崩 1. 缓存一般使用思路简介 image-20241115103837372image-20241115103837372 客户端请求服务 服务去redis试着拿取数据。 redis将数据返回给服务，如果返回的结果有数据则执行上图第七步，如果没有数据则继续向下执行。 服务从数据库中查询数据。 数据库将查询结果返回给服务。 ...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Redis/Redis%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F-%E9%9B%AA%E5%B4%A9/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Redis缓存击穿-穿透-雪崩\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Redis缓存击穿-穿透-雪崩 1. 缓存一般使用思路简介 image-20241115103837372image-20241115103837372 客户端请求服务 服务去redis试着拿取数据。 redis将数据返回给服务，如果返回的结果有数据则执行上图第七步，如果没有数据则继续向下执行。 服务从数据库中查询数据。 数据库将查询结果返回给服务。 ...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Redis缓存击穿-穿透-雪崩\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.58,\"words\":775},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Redis/Redis缓存击穿-穿透-雪崩/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"9a0913\",\"sort\":10034,\"name\":\"Redis\"},{\"id\":\"5e71e5\",\"sort\":10101,\"name\":\"Redis缓存击穿-穿透-雪崩\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Spring/maven多模块无法扫描到xml问题/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Spring/maven%E5%A4%9A%E6%A8%A1%E5%9D%97%E6%97%A0%E6%B3%95%E6%89%AB%E6%8F%8F%E5%88%B0xml%E9%97%AE%E9%A2%98/\",\"title\":\"maven多模块无法扫描到xml问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"maven多模块无法扫描到xml问题\",\"aliases\":[],\"tags\":[\"maven\",\"Java\"],\"createTime\":\"2024/11/30 14:15:41\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.34,\"words\":102},\"filePathRelative\":\"notes/Spring/maven多模块无法扫描到xml问题/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10013,\"name\":\"Spring\"},{\"id\":\"7ac152\",\"sort\":10093,\"name\":\"maven多模块无法扫描到xml问题\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Spring/maven%E5%A4%9A%E6%A8%A1%E5%9D%97%E6%97%A0%E6%B3%95%E6%89%AB%E6%8F%8F%E5%88%B0xml%E9%97%AE%E9%A2%98/\",\"title\":\"maven多模块无法扫描到xml问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"maven多模块无法扫描到xml问题\",\"aliases\":[],\"tags\":[\"maven\",\"Java\"],\"createTime\":\"2024/11/30 14:15:41\",\"description\":\"一个SpringBoot项目，有多个模块，每个模块都有自己的pom.xml，但是maven无法扫描其它模块的xml文件。 查询解决办法：application.yml中配置spring.config.location，用的是classpath: /mapper/**/*mapper.xml,只会扫描当前module的配置需要在classpath:后面添加*\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Spring/maven%E5%A4%9A%E6%A8%A1%E5%9D%97%E6%97%A0%E6%B3%95%E6%89%AB%E6%8F%8F%E5%88%B0xml%E9%97%AE%E9%A2%98/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"maven多模块无法扫描到xml问题\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"一个SpringBoot项目，有多个模块，每个模块都有自己的pom.xml，但是maven无法扫描其它模块的xml文件。 查询解决办法：application.yml中配置spring.config.location，用的是classpath: /mapper/**/*mapper.xml,只会扫描当前module的配置需要在classpath:后面添加*\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"maven\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Java\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"maven多模块无法扫描到xml问题\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.34,\"words\":102},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Spring/maven多模块无法扫描到xml问题/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10033,\"name\":\"Spring\"},{\"id\":\"7ac152\",\"sort\":10096,\"name\":\"maven多模块无法扫描到xml问题\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

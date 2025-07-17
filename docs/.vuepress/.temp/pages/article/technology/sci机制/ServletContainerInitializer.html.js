@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/sci机制/ServletContainerInitializer.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/sci%E6%9C%BA%E5%88%B6/ServletContainerInitializer.html\",\"title\":\"ServletContainerInitializer机制\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"ServletContainerInitializer机制\",\"tags\":[\"Servlet\"],\"createTime\":\"2025/02/08 14:15:41\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.71,\"words\":512},\"filePathRelative\":\"article/technology/sci机制/ServletContainerInitializer.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10019,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10030,\"name\":\"technology\"},{\"id\":\"96e09e\",\"sort\":10038,\"name\":\"sci机制\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/sci%E6%9C%BA%E5%88%B6/ServletContainerInitializer.html\",\"title\":\"ServletContainerInitializer机制\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"ServletContainerInitializer机制\",\"tags\":[\"Servlet\"],\"createTime\":\"2025/02/08 14:15:41\",\"description\":\"1. 什么是SCI ServletContainerInitializer 是 Jakarta EE (Servlet API) 规范预留的监听入口，当容器启动时会进行SCI的扫描，比监听器、过滤器这些更顶层。将 ServletContext进行回调，可以让我们自己拿着项目的ServletContext去做一些事情（未完成项目启动之前）。 2. 官方 ...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/sci%E6%9C%BA%E5%88%B6/ServletContainerInitializer.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"ServletContainerInitializer机制\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1. 什么是SCI ServletContainerInitializer 是 Jakarta EE (Servlet API) 规范预留的监听入口，当容器启动时会进行SCI的扫描，比监听器、过滤器这些更顶层。将 ServletContext进行回调，可以让我们自己拿着项目的ServletContext去做一些事情（未完成项目启动之前）。 2. 官方 ...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-02-08T06:34:03.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Servlet\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-02-08T06:34:03.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"ServletContainerInitializer机制\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-02-08T06:34:03.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.71,\"words\":512},\"git\":{\"updatedTime\":1738996443000},\"autoDesc\":true,\"filePathRelative\":\"article/technology/sci机制/ServletContainerInitializer.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10061,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10118,\"name\":\"technology\"},{\"id\":\"96e09e\",\"sort\":10130,\"name\":\"sci机制\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

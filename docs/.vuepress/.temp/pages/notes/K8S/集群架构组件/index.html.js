@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/K8S/集群架构组件/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/K8S/%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84%E7%BB%84%E4%BB%B6/\",\"title\":\"k8s集群架构组件\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.08,\"words\":324},\"filePathRelative\":\"notes/K8S/集群架构组件/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"9d9b75\",\"sort\":10007,\"name\":\"K8S\"},{\"id\":\"12d1f3\",\"sort\":10074,\"name\":\"集群架构组件\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/K8S/%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84%E7%BB%84%E4%BB%B6/\",\"title\":\"k8s集群架构组件\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"k8s集群架构组件 image-20240711160204601image-20240711160204601 1. 集群架构节点角色功能 1.1 Master Node（主控节点） k8s集群控制节点，对集群进行调度管理，接受集群外的用户去集群操作请求。 Master Node 由 API Server、Scheduler、ClusterState...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/K8S/%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84%E7%BB%84%E4%BB%B6/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"k8s集群架构组件\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"k8s集群架构组件 image-20240711160204601image-20240711160204601 1. 集群架构节点角色功能 1.1 Master Node（主控节点） k8s集群控制节点，对集群进行调度管理，接受集群外的用户去集群操作请求。 Master Node 由 API Server、Scheduler、ClusterState...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"k8s集群架构组件\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.08,\"words\":324},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/K8S/集群架构组件/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"9d9b75\",\"sort\":10037,\"name\":\"K8S\"},{\"id\":\"12d1f3\",\"sort\":10053,\"name\":\"集群架构组件\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

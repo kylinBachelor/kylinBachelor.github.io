@@ -1,16 +1,3 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/数据库/Windows下MySQL备份/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/Windows%E4%B8%8BMySQL%E5%A4%87%E4%BB%BD/\",\"title\":\"Windows下MySQL备份\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Windows下MySQL备份\",\"aliases\":null,\"tags\":[\"MySQL\",\"Windows\"],\"description\":\"Windows下MySQL备份\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.87,\"words\":561},\"filePathRelative\":\"notes/数据库/Windows下MySQL备份/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"324a5c\",\"sort\":10016,\"name\":\"数据库\"},{\"id\":\"6afe7a\",\"sort\":10116,\"name\":\"Windows下MySQL备份\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/Windows%E4%B8%8BMySQL%E5%A4%87%E4%BB%BD/\",\"title\":\"Windows下MySQL备份\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Windows下MySQL备份\",\"aliases\":null,\"tags\":[\"MySQL\",\"Windows\"],\"description\":\"Windows下MySQL备份\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/Windows%E4%B8%8BMySQL%E5%A4%87%E4%BB%BD/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Windows下MySQL备份\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Windows下MySQL备份\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"MySQL\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Windows\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Windows下MySQL备份\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.87,\"words\":561},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/数据库/Windows下MySQL备份/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"324a5c\",\"sort\":10030,\"name\":\"数据库\"},{\"id\":\"6afe7a\",\"sort\":10074,\"name\":\"Windows下MySQL备份\"}],\"bulletin\":false}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
