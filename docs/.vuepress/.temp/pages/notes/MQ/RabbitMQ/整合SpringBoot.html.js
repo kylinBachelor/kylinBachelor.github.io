@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/整合SpringBoot.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E6%95%B4%E5%90%88SpringBoot.html\",\"title\":\"整合SpringBoot\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"整合SpringBoot\",\"createTime\":\"2024/12/01 13:44:51\",\"description\":\"1、消费者工程 ①创建module imagesimages ②配置POM ③YAML 增加日志打印的配置： ④主启动类 仿照生产者工程的主启动类，改一下类名即可 ⑤监听器 2、@RabbitListener注解属性对比 ①bindings属性 表面作用： 指定交换机和队列之间的绑定关系 指定当前方法要监听的队列 隐藏效果：如果RabbitMQ服务器上...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E6%95%B4%E5%90%88SpringBoot.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"整合SpringBoot\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1、消费者工程 ①创建module imagesimages ②配置POM ③YAML 增加日志打印的配置： ④主启动类 仿照生产者工程的主启动类，改一下类名即可 ⑤监听器 2、@RabbitListener注解属性对比 ①bindings属性 表面作用： 指定交换机和队列之间的绑定关系 指定当前方法要监听的队列 隐藏效果：如果RabbitMQ服务器上...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"整合SpringBoot\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.61,\"words\":482},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/整合SpringBoot.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E6%95%B4%E5%90%88SpringBoot.html\",\"title\":\"整合SpringBoot\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"整合SpringBoot\",\"createTime\":\"2024/12/01 13:44:51\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.61,\"words\":482},\"filePathRelative\":\"notes/MQ/RabbitMQ/整合SpringBoot.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10079,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Other/maven/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Other/maven/\",\"title\":\"Maven依赖管理项目构建工具\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"Maven依赖管理项目构建工具 来源尚硅谷：https://www.bilibili.com/video/BV1JN411G7gX/?p=3&spm_id_from=pageDriver&vd_source=f9ba3419c44a2404c33309a196442515 目录 [TOC] 一、Maven简介 1、为什么学习Maven 1.1、Mave...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Other/maven/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Maven依赖管理项目构建工具\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Maven依赖管理项目构建工具 来源尚硅谷：https://www.bilibili.com/video/BV1JN411G7gX/?p=3&spm_id_from=pageDriver&vd_source=f9ba3419c44a2404c33309a196442515 目录 [TOC] 一、Maven简介 1、为什么学习Maven 1.1、Mave...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Maven依赖管理项目构建工具\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":37.09,\"words\":11126},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Other/maven/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"05fd41\",\"sort\":10033,\"name\":\"Other\"},{\"id\":\"3ee189\",\"sort\":10097,\"name\":\"maven\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Other/maven/\",\"title\":\"Maven依赖管理项目构建工具\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":37.09,\"words\":11126},\"filePathRelative\":\"notes/Other/maven/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"05fd41\",\"sort\":10012,\"name\":\"Other\"},{\"id\":\"3ee189\",\"sort\":10093,\"name\":\"maven\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

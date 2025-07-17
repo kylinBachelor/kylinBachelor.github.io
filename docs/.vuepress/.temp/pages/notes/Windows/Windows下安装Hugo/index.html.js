@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Windows/Windows下安装Hugo/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Windows/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Hugo/\",\"title\":\"Windows下安装Hugo\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Windows下安装Hugo\",\"aliases\":null,\"tags\":[\"Windows\",\"博客\"],\"description\":\"Windows下安装Hugo\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Windows/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Hugo/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Windows下安装Hugo\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Windows下安装Hugo\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Windows\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"博客\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Windows下安装Hugo\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.31,\"words\":393},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Windows/Windows下安装Hugo/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"fac604\",\"sort\":10030,\"name\":\"Windows\"},{\"id\":\"e2ffff\",\"sort\":10078,\"name\":\"Windows下安装Hugo\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Windows/Windows%E4%B8%8B%E5%AE%89%E8%A3%85Hugo/\",\"title\":\"Windows下安装Hugo\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Windows下安装Hugo\",\"aliases\":null,\"tags\":[\"Windows\",\"博客\"],\"description\":\"Windows下安装Hugo\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.31,\"words\":393},\"filePathRelative\":\"notes/Windows/Windows下安装Hugo/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"fac604\",\"sort\":10016,\"name\":\"Windows\"},{\"id\":\"e2ffff\",\"sort\":10105,\"name\":\"Windows下安装Hugo\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

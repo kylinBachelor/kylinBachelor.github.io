@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/消息预取机制Prefetch.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E6%B6%88%E6%81%AF%E9%A2%84%E5%8F%96%E6%9C%BA%E5%88%B6Prefetch.html\",\"title\":\"消息预取机制Prefetch\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"消息预取机制Prefetch\",\"createTime\":\"2024/12/01 13:56:44\",\"description\":\"消息预取机制（Prefetch Mechanism）是RabbitMQ中用于控制消息传递给消费者的一种机制。它定义了在一个信道上，消费者允许的最大未确认的消息数量。一旦未确认的消息数量达到了设置的预取值，RabbitMQ就会停止向该消费者发送更多消息，直到至少有一条未完成的消息得到了确认。 一、思路 生产者发送100个消息 对照两种情况： 消费端没有设...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E6%B6%88%E6%81%AF%E9%A2%84%E5%8F%96%E6%9C%BA%E5%88%B6Prefetch.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"消息预取机制Prefetch\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"消息预取机制（Prefetch Mechanism）是RabbitMQ中用于控制消息传递给消费者的一种机制。它定义了在一个信道上，消费者允许的最大未确认的消息数量。一旦未确认的消息数量达到了设置的预取值，RabbitMQ就会停止向该消费者发送更多消息，直到至少有一条未完成的消息得到了确认。 一、思路 生产者发送100个消息 对照两种情况： 消费端没有设...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"消息预取机制Prefetch\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.87,\"words\":561},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/消息预取机制Prefetch.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E6%B6%88%E6%81%AF%E9%A2%84%E5%8F%96%E6%9C%BA%E5%88%B6Prefetch.html\",\"title\":\"消息预取机制Prefetch\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"消息预取机制Prefetch\",\"createTime\":\"2024/12/01 13:56:44\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.87,\"words\":561},\"filePathRelative\":\"notes/MQ/RabbitMQ/消息预取机制Prefetch.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10079,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

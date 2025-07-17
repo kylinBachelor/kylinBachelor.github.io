@@ -1,2 +1,15 @@
 import './articleTagColors.css'
-export const articleTagColors = {"markdown":"02ui","政府":"q47c","名人录":"gxce","古诗词":"of1a","Life":"fikd","周易":"02ui","人工智能":"4tq0","道":"s2x1","rabbitmq":"of1a","Filter":"gxce","Java":"of1a","多线程":"o6s0","JWT":"brqz","MySQL":"igkk","SQL":"s4qa","Servlet":"brqz","SpringBoot":"tnx2","枚举":"of1a","Docker":"fikd","Emacs":"brqz","反射":"q47c","xml":"jc77","kylin":"s2x1","Linux":"fikd","Nacos":"o6s0","Redis":"jc77","_":"202c","Shell":"o3uy","Nginx":"igkk","Vscode":"o3uy","Spring":"s2x1","maven":"jc77","SpringSecurity":"brqz","Web":"s4qa","ElementUI":"o3uy","TS":"tnx2","Vue":"s4qa","JS":"202c","Windows":"202c","博客":"s4qa","Centos":"of1a","达梦数据库":"q47c","数据库":"tnx2","设计模式":"s2x1","RocketMQ MQ":"igkk","git":"4tq0","SVN":"g3ub"}
+export const articleTagColors = {"markdown":"mygm","政府":"mo5a","名人录":"nq5y","Life":"e1cm","古诗词":"8sku","周易":"mygm","道":"cbqv","人工智能":"6h1j","Filter":"nq5y","rabbitmq":"8sku","Java":"8sku","多线程":"pk8f","JWT":"jc25","MySQL":"lt0x","SQL":"4zne","Servlet":"jc25","SpringBoot":"op10","Spring":"cbqv","枚举":"8sku","Docker":"e1cm","Emacs":"jc25","反射":"mo5a","xml":"tp7w","kylin":"cbqv","Linux":"e1cm","Nacos":"pk8f","Redis":"tp7w","_":"a8jj","Shell":"qw7p","Nginx":"lt0x","Vscode":"qw7p","maven":"tp7w","SpringSecurity":"jc25","Web":"4zne","ElementUI":"qw7p","TS":"op10","Vue":"4zne","JS":"a8jj","Windows":"a8jj","博客":"4zne","Centos":"8sku","达梦数据库":"mo5a","数据库":"op10","设计模式":"cbqv","RocketMQ MQ":"lt0x","git":"6h1j","SVN":"6udd"}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateArticleTagColors) {
+    __VUE_HMR_RUNTIME__.updateArticleTagColors(articleTagColors)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ articleTagColors }) => {
+    __VUE_HMR_RUNTIME__.updateArticleTagColors(articleTagColors)
+  })
+}

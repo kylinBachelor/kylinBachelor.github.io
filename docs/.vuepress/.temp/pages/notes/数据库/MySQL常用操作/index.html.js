@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/数据库/MySQL常用操作/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/\",\"title\":\"MySQL常用操作\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"MySQL常用操作 1. 数据库基本操作 2. 用户操作 创建用户时： 用户名：创建的用户名称 IP地址：指定用户可以从哪个服务器登陆，本地用户localhost，任意远程机用“%” 密码：该用户登陆的密码 3. 权限相关 权限：用户的操作权限，如SELECT，INSERT，UPDATE等，如果要授予所的权限则使用ALL。 通过下面的命令让指定用户可以...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"MySQL常用操作\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"MySQL常用操作 1. 数据库基本操作 2. 用户操作 创建用户时： 用户名：创建的用户名称 IP地址：指定用户可以从哪个服务器登陆，本地用户localhost，任意远程机用“%” 密码：该用户登陆的密码 3. 权限相关 权限：用户的操作权限，如SELECT，INSERT，UPDATE等，如果要授予所的权限则使用ALL。 通过下面的命令让指定用户可以...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"MySQL常用操作\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.25,\"words\":676},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/数据库/MySQL常用操作/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"324a5c\",\"sort\":10029,\"name\":\"数据库\"},{\"id\":\"a651da\",\"sort\":10130,\"name\":\"MySQL常用操作\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/\",\"title\":\"MySQL常用操作\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.25,\"words\":676},\"filePathRelative\":\"notes/数据库/MySQL常用操作/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"324a5c\",\"sort\":10018,\"name\":\"数据库\"},{\"id\":\"a651da\",\"sort\":10113,\"name\":\"MySQL常用操作\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

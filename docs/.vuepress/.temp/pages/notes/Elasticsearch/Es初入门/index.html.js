@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Elasticsearch/Es初入门/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Elasticsearch/Es%E5%88%9D%E5%85%A5%E9%97%A8/\",\"title\":\"Elasticsearch\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"Elasticsearch 作者:丛培通 时间:2024-07-01 Elaticsearch，简称为 ES，ES 是一个开源的高扩展的分布式全文搜索引擎，是整个 Elastic Stack 技术栈的核心。它可以近乎实时的存储、检索数据；本身扩展性很好，可以扩展到上百台服务器，处理 PB 级别的数据。 ## １. 入门 1.1 说明 官方地址:http...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Elasticsearch/Es%E5%88%9D%E5%85%A5%E9%97%A8/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Elasticsearch\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Elasticsearch 作者:丛培通 时间:2024-07-01 Elaticsearch，简称为 ES，ES 是一个开源的高扩展的分布式全文搜索引擎，是整个 Elastic Stack 技术栈的核心。它可以近乎实时的存储、检索数据；本身扩展性很好，可以扩展到上百台服务器，处理 PB 级别的数据。 ## １. 入门 1.1 说明 官方地址:http...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Elasticsearch\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":3.33,\"words\":998},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Elasticsearch/Es初入门/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"2c3702\",\"sort\":10042,\"name\":\"Elasticsearch\"},{\"id\":\"a2ba85\",\"sort\":10063,\"name\":\"Es初入门\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Elasticsearch/Es%E5%88%9D%E5%85%A5%E9%97%A8/\",\"title\":\"Elasticsearch\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":3.33,\"words\":998},\"filePathRelative\":\"notes/Elasticsearch/Es初入门/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"2c3702\",\"sort\":10004,\"name\":\"Elasticsearch\"},{\"id\":\"a2ba85\",\"sort\":10059,\"name\":\"Es初入门\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

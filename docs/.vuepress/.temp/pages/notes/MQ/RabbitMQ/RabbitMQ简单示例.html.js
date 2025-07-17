@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/RabbitMQ简单示例.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/RabbitMQ%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.html\",\"title\":\"RabbitMQ简单示例\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"RabbitMQ简单示例\",\"createTime\":\"2024/12/01 13:32:58\",\"description\":\"生产者发送消息，消费者接收消息，用最简单的方式实现 官网说明参见下面超链接： RabbitMQ tutorial - \\\"Hello World!\\\" — RabbitMQ (P) -> [|||] -> (C)(P) -> [|||] -> (C) 二、具体操作 1、创建Java工程 ①消息发送端（生产者） imagesimages ②消息接收端（消费者...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/RabbitMQ%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"RabbitMQ简单示例\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"生产者发送消息，消费者接收消息，用最简单的方式实现 官网说明参见下面超链接： RabbitMQ tutorial - \\\"Hello World!\\\" — RabbitMQ (P) -> [|||] -> (C)(P) -> [|||] -> (C) 二、具体操作 1、创建Java工程 ①消息发送端（生产者） imagesimages ②消息接收端（消费者...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"RabbitMQ简单示例\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":3.22,\"words\":966},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/RabbitMQ简单示例.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/RabbitMQ%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.html\",\"title\":\"RabbitMQ简单示例\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"RabbitMQ简单示例\",\"createTime\":\"2024/12/01 13:32:58\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":3.22,\"words\":966},\"filePathRelative\":\"notes/MQ/RabbitMQ/RabbitMQ简单示例.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10079,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/消息超时.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E6%B6%88%E6%81%AF%E8%B6%85%E6%97%B6.html\",\"title\":\"消息超时\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"消息超时\",\"createTime\":\"2024/12/01 13:59:29\",\"description\":\"1、设置 image-20231107162548129image-20231107162548129 别忘了设置绑定关系： image-20231107162705883image-20231107162705883 2、测试 不启动消费端程序 向设置了过期时间的队列中发送100条消息 等10秒后，看是否全部被过期删除 image-202311071...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E6%B6%88%E6%81%AF%E8%B6%85%E6%97%B6.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"消息超时\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1、设置 image-20231107162548129image-20231107162548129 别忘了设置绑定关系： image-20231107162705883image-20231107162705883 2、测试 不启动消费端程序 向设置了过期时间的队列中发送100条消息 等10秒后，看是否全部被过期删除 image-202311071...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"消息超时\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.57,\"words\":171},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/消息超时.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E6%B6%88%E6%81%AF%E8%B6%85%E6%97%B6.html\",\"title\":\"消息超时\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"消息超时\",\"createTime\":\"2024/12/01 13:59:29\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.57,\"words\":171},\"filePathRelative\":\"notes/MQ/RabbitMQ/消息超时.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10079,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

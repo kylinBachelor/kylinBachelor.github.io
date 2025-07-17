@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/jenkins/安装/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/jenkins/%E5%AE%89%E8%A3%85/\",\"title\":\"jenkins的安装和删除\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"jenkins的安装和删除 Jenkins官网：https://www.jenkins.io/ 1. 安装 1.1 前提条件 Jenkins一个开源项目，是基于Java开发的一种持续集成工具,因此需要Java环境 Jenkins版本和Java版本对应关系如下图：https://www.jenkins.io/doc/book/platform-infor...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/jenkins/%E5%AE%89%E8%A3%85/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"jenkins的安装和删除\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"jenkins的安装和删除 Jenkins官网：https://www.jenkins.io/ 1. 安装 1.1 前提条件 Jenkins一个开源项目，是基于Java开发的一种持续集成工具,因此需要Java环境 Jenkins版本和Java版本对应关系如下图：https://www.jenkins.io/doc/book/platform-infor...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"jenkins的安装和删除\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.04,\"words\":312},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/jenkins/安装/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"ecdc7b\",\"sort\":10038,\"name\":\"jenkins\"},{\"id\":\"d7e6db\",\"sort\":10054,\"name\":\"安装\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/jenkins/%E5%AE%89%E8%A3%85/\",\"title\":\"jenkins的安装和删除\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.04,\"words\":312},\"filePathRelative\":\"notes/jenkins/安装/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"ecdc7b\",\"sort\":10007,\"name\":\"jenkins\"},{\"id\":\"d7e6db\",\"sort\":10060,\"name\":\"安装\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

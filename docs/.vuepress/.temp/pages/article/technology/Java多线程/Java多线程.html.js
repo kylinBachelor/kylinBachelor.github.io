@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/Java多线程/Java多线程.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B.html\",\"title\":\"Java多线程\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Java多线程\",\"tags\":[\"Java\",\"多线程\"],\"createTime\":\"2025/02/19 10:45:33\",\"description\":\"Java 多线程 1. 什么是多线程 说到线程不得不说进程： 1.1 进程 **进程是计算机中的一个重要概念，指的是一个可并发执行的程序在给定的工作空间和数据集合上的一次执行过程。**‌它是操作系统进行资源分配和调度的一个独立或基本单位。进程是动态的，由操作系统创建并独立执行，可能在某个条件不足时被暂时“阻塞”，当条件满足时又被“唤醒”并继续执行，直到...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Java多线程\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Java 多线程 1. 什么是多线程 说到线程不得不说进程： 1.1 进程 **进程是计算机中的一个重要概念，指的是一个可并发执行的程序在给定的工作空间和数据集合上的一次执行过程。**‌它是操作系统进行资源分配和调度的一个独立或基本单位。进程是动态的，由操作系统创建并独立执行，可能在某个条件不足时被暂时“阻塞”，当条件满足时又被“唤醒”并继续执行，直到...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-02-19T06:30:11.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Java\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"多线程\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-02-19T06:30:11.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Java多线程\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-02-19T06:30:11.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.65,\"words\":794},\"git\":{\"updatedTime\":1739946611000},\"autoDesc\":true,\"filePathRelative\":\"article/technology/Java多线程/Java多线程.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10004,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10005,\"name\":\"technology\"},{\"id\":\"c7fa3d\",\"sort\":10015,\"name\":\"Java多线程\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B.html\",\"title\":\"Java多线程\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Java多线程\",\"tags\":[\"Java\",\"多线程\"],\"createTime\":\"2025/02/19 10:45:33\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.65,\"words\":794},\"filePathRelative\":\"article/technology/Java多线程/Java多线程.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10029,\"name\":\"technology\"},{\"id\":\"c7fa3d\",\"sort\":10033,\"name\":\"Java多线程\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

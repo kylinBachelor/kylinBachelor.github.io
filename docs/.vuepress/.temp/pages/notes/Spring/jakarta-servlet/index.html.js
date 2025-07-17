@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Spring/jakarta-servlet/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Spring/jakarta-servlet/\",\"title\":\"jakarta servlet\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"jakarta servlet === Web项目主要由 Jakarta EE 规范 servlet.api 提供技术支持 jakarta EE 10 管理 servelt6.0 规范 image-20240707222733952image-20240707222733952 1. 机制及项目结构 === https://jakarta.ee/lea...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Spring/jakarta-servlet/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"jakarta servlet\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"jakarta servlet === Web项目主要由 Jakarta EE 规范 servlet.api 提供技术支持 jakarta EE 10 管理 servelt6.0 规范 image-20240707222733952image-20240707222733952 1. 机制及项目结构 === https://jakarta.ee/lea...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"jakarta servlet\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":4.46,\"words\":1337},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Spring/jakarta-servlet/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10031,\"name\":\"Spring\"},{\"id\":\"e91d91\",\"sort\":10093,\"name\":\"jakarta-servlet\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Spring/jakarta-servlet/\",\"title\":\"jakarta servlet\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":4.46,\"words\":1337},\"filePathRelative\":\"notes/Spring/jakarta-servlet/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10015,\"name\":\"Spring\"},{\"id\":\"e91d91\",\"sort\":10092,\"name\":\"jakarta-servlet\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/index.html.vue"
-const data = JSON.parse("{\"path\":\"/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"config\":[{\"type\":\"custom\"}],\"footer\":\"Apache 2.0addaddasddas\",\"description\":\"🔨 工具 📑 文档 🍺 博客 ☕ 休闲 🧲 友情链接 🔖 杂项记录 查看Linux包 Centaur Emacs Spacemacs SpringBoot使用@Async总结 Linux文件备份 ElementUI表格换行符实现问题解决 Nvm配置 Nssm使用 SpringBoot配置过滤器\",\"pageLayout\":\"home\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"🔨 工具 📑 文档 🍺 博客 ☕ 休闲 🧲 友情链接 🔖 杂项记录 查看Linux包 Centaur Emacs Spacemacs SpringBoot使用@Async总结 Linux文件备份 ElementUI表格换行符实现问题解决 Nvm配置 Nssm使用 SpringBoot配置过滤器\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.28,\"words\":383},\"git\":{},\"autoDesc\":true,\"filePathRelative\":\"README.md\",\"categoryList\":[],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"config\":[{\"type\":\"custom\"}],\"footer\":\"Apache 2.0addaddasddas\",\"gitInclude\":[],\"pageLayout\":\"home\"},\"headers\":[],\"readingTime\":{\"minutes\":1.28,\"words\":383},\"filePathRelative\":\"README.md\",\"categoryList\":[],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

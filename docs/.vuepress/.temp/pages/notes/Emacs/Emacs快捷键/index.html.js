@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Emacs/Emacs快捷键/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Emacs/Emacs%E5%BF%AB%E6%8D%B7%E9%94%AE/\",\"title\":\"Emacs快捷键\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Emacs快捷键\",\"aliases\":null,\"tags\":[\"Emacs\"],\"description\":\"Emacs快捷键\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Emacs/Emacs%E5%BF%AB%E6%8D%B7%E9%94%AE/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Emacs快捷键\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Emacs快捷键\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Emacs\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Emacs快捷键\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.85,\"words\":256},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Emacs/Emacs快捷键/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"344cee\",\"sort\":10041,\"name\":\"Emacs\"},{\"id\":\"4bbb11\",\"sort\":10065,\"name\":\"Emacs快捷键\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Emacs/Emacs%E5%BF%AB%E6%8D%B7%E9%94%AE/\",\"title\":\"Emacs快捷键\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Emacs快捷键\",\"aliases\":null,\"tags\":[\"Emacs\"],\"description\":\"Emacs快捷键\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.85,\"words\":256},\"filePathRelative\":\"notes/Emacs/Emacs快捷键/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"344cee\",\"sort\":10003,\"name\":\"Emacs\"},{\"id\":\"4bbb11\",\"sort\":10058,\"name\":\"Emacs快捷键\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

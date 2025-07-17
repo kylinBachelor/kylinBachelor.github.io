@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Spring/SpringFramework/AOP/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/AOP/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"=== Aspect Oriented Programming (AOP) 意为面向切面编程 1. 概念机制 面向切面编程 是众多编程思想中的一种、面向过程、面向对象、面向切面 面向切面编程 一般主流使用为 增强源代码 而不修改源代码的操作手段 面向切面编程 在增强上可以做到 目标对象、增强手段可变、对代码零侵入 面向切面编程 常借助动态代理实现 如 ...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Spring/SpringFramework/AOP/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"=== Aspect Oriented Programming (AOP) 意为面向切面编程 1. 概念机制 面向切面编程 是众多编程思想中的一种、面向过程、面向对象、面向切面 面向切面编程 一般主流使用为 增强源代码 而不修改源代码的操作手段 面向切面编程 在增强上可以做到 目标对象、增强手段可变、对代码零侵入 面向切面编程 常借助动态代理实现 如 ...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":5.53,\"words\":1658},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Spring/SpringFramework/AOP/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10031,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10090,\"name\":\"SpringFramework\"},{\"id\":\"cc1913\",\"sort\":10117,\"name\":\"AOP\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/AOP/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":5.53,\"words\":1658},\"filePathRelative\":\"notes/Spring/SpringFramework/AOP/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10015,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10090,\"name\":\"SpringFramework\"},{\"id\":\"cc1913\",\"sort\":10127,\"name\":\"AOP\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

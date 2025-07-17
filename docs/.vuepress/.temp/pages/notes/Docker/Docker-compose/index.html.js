@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Docker/Docker-compose/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Docker/Docker-compose/\",\"title\":\"Docker-compose\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"Docker-compose Compose 是 Docker 公司推出的一个软件，可以管理多个Docker容器组成一个应用。需要定义一个YAML格式的配置文件 docker-compose.yaml,写好多个容器之间的调用关系。然后只要一个命令就能同时 启动/关闭 这些容器。 Docker-compose 允许用户通过一个单独的docker-comp...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Docker/Docker-compose/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Docker-compose\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Docker-compose Compose 是 Docker 公司推出的一个软件，可以管理多个Docker容器组成一个应用。需要定义一个YAML格式的配置文件 docker-compose.yaml,写好多个容器之间的调用关系。然后只要一个命令就能同时 启动/关闭 这些容器。 Docker-compose 允许用户通过一个单独的docker-comp...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Docker-compose\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.74,\"words\":821},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Docker/Docker-compose/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10002,\"name\":\"Docker\"},{\"id\":\"799164\",\"sort\":10003,\"name\":\"Docker-compose\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Docker/Docker-compose/\",\"title\":\"Docker-compose\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.74,\"words\":821},\"filePathRelative\":\"notes/Docker/Docker-compose/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10005,\"name\":\"Docker\"},{\"id\":\"799164\",\"sort\":10044,\"name\":\"Docker-compose\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

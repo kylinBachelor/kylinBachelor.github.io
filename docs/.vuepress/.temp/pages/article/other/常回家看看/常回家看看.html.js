@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/other/常回家看看/常回家看看.html.vue"
-const data = JSON.parse("{\"path\":\"/article/other/%E5%B8%B8%E5%9B%9E%E5%AE%B6%E7%9C%8B%E7%9C%8B/%E5%B8%B8%E5%9B%9E%E5%AE%B6%E7%9C%8B%E7%9C%8B.html\",\"title\":\"常回家看看\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"常回家看看\",\"tags\":[\"Life\"],\"description\":\"常回家看看呐回家看看，哪怕帮爸爸妈妈刷刷筷子洗洗碗\",\"createTime\":\"2025/03/18 13:04:13\",\"draft\":true,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/other/%E5%B8%B8%E5%9B%9E%E5%AE%B6%E7%9C%8B%E7%9C%8B/%E5%B8%B8%E5%9B%9E%E5%AE%B6%E7%9C%8B%E7%9C%8B.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"常回家看看\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"常回家看看呐回家看看，哪怕帮爸爸妈妈刷刷筷子洗洗碗\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-06-03T07:39:41.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Life\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-06-03T07:39:41.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"常回家看看\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-06-03T07:39:41.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":2.32,\"words\":697},\"git\":{\"updatedTime\":1748936381000},\"filePathRelative\":\"article/other/常回家看看/常回家看看.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10004,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10018,\"name\":\"other\"},{\"id\":\"8fa3ce\",\"sort\":10025,\"name\":\"常回家看看\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/other/%E5%B8%B8%E5%9B%9E%E5%AE%B6%E7%9C%8B%E7%9C%8B/%E5%B8%B8%E5%9B%9E%E5%AE%B6%E7%9C%8B%E7%9C%8B.html\",\"title\":\"常回家看看\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"常回家看看\",\"tags\":[\"Life\"],\"description\":\"常回家看看呐回家看看，哪怕帮爸爸妈妈刷刷筷子洗洗碗\",\"createTime\":\"2025/03/18 13:04:13\",\"draft\":true,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":2.32,\"words\":697},\"filePathRelative\":\"article/other/常回家看看/常回家看看.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"b77f46\",\"sort\":10021,\"name\":\"other\"},{\"id\":\"8fa3ce\",\"sort\":10022,\"name\":\"常回家看看\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

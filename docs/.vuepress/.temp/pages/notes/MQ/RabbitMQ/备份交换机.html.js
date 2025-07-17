@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/备份交换机.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E5%A4%87%E4%BB%BD%E4%BA%A4%E6%8D%A2%E6%9C%BA.html\",\"title\":\"备份交换机\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"备份交换机\",\"createTime\":\"2024/12/01 13:47:25\",\"description\":\"1、创建备份交换机 注意：备份交换机一定要选择fanout类型，因为原交换机转入备份交换机时并不会指定路由键 image-20231203231926247image-20231203231926247 image-20231202183701454image-20231202183701454 2、创建备份交换机要绑定的队列 ①创建队列 image-...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E5%A4%87%E4%BB%BD%E4%BA%A4%E6%8D%A2%E6%9C%BA.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"备份交换机\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1、创建备份交换机 注意：备份交换机一定要选择fanout类型，因为原交换机转入备份交换机时并不会指定路由键 image-20231203231926247image-20231203231926247 image-20231202183701454image-20231202183701454 2、创建备份交换机要绑定的队列 ①创建队列 image-...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"备份交换机\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.98,\"words\":295},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/备份交换机.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E5%A4%87%E4%BB%BD%E4%BA%A4%E6%8D%A2%E6%9C%BA.html\",\"title\":\"备份交换机\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"备份交换机\",\"createTime\":\"2024/12/01 13:47:25\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.98,\"words\":295},\"filePathRelative\":\"notes/MQ/RabbitMQ/备份交换机.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10079,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

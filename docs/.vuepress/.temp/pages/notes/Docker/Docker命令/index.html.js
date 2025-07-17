@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Docker/Docker命令/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Docker/Docker%E5%91%BD%E4%BB%A4/\",\"title\":\"Docker初识\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Docker初识\",\"aliases\":null,\"tags\":[\"Docker\"],\"description\":\"描述\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Docker/Docker%E5%91%BD%E4%BB%A4/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Docker初识\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"描述\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Docker\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Docker初识\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":3.39,\"words\":1017},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Docker/Docker命令/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10002,\"name\":\"Docker\"},{\"id\":\"2dfa64\",\"sort\":10077,\"name\":\"Docker命令\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Docker/Docker%E5%91%BD%E4%BB%A4/\",\"title\":\"Docker初识\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Docker初识\",\"aliases\":null,\"tags\":[\"Docker\"],\"description\":\"描述\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":3.39,\"words\":1017},\"filePathRelative\":\"notes/Docker/Docker命令/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10005,\"name\":\"Docker\"},{\"id\":\"2dfa64\",\"sort\":10047,\"name\":\"Docker命令\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

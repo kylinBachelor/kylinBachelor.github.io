@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/Stream队列.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/Stream%E9%98%9F%E5%88%97.html\",\"title\":\"Stream队列\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Stream队列\",\"createTime\":\"2024/12/01 14:18:14\",\"description\":\"‌RabbitMQ的Stream队列‌是一种高性能、可持久化、可复制的队列类型，特别适用于需要高性能和大量消息处理的场景。Stream队列的设计目标是提供高吞吐量、非破坏性消费、只追加写入的日志功能。 Stream队列的特点： ‌高性能‌：Stream队列设计以性能为主要目标，能够处理大量消息而不影响系统性能。 可持久化‌：消息默认是持久化的，确保在系...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/Stream%E9%98%9F%E5%88%97.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Stream队列\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"‌RabbitMQ的Stream队列‌是一种高性能、可持久化、可复制的队列类型，特别适用于需要高性能和大量消息处理的场景。Stream队列的设计目标是提供高吞吐量、非破坏性消费、只追加写入的日志功能。 Stream队列的特点： ‌高性能‌：Stream队列设计以性能为主要目标，能够处理大量消息而不影响系统性能。 可持久化‌：消息默认是持久化的，确保在系...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Stream队列\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":4.86,\"words\":1459},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/Stream队列.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/Stream%E9%98%9F%E5%88%97.html\",\"title\":\"Stream队列\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Stream队列\",\"createTime\":\"2024/12/01 14:18:14\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":4.86,\"words\":1459},\"filePathRelative\":\"notes/MQ/RabbitMQ/Stream队列.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10079,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

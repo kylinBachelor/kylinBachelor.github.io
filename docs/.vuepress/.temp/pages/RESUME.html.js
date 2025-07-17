@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/RESUME.html.vue"
-const data = JSON.parse("{\"path\":\"/RESUME.html\",\"title\":\"个人简历\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"个人简历\",\"createTime\":\"2020/06/30 09:00:33\",\"description\":\"1. Java软件开发工程师\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/RESUME.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"个人简历\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1. Java软件开发工程师\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-03-05T10:09:09.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-03-05T10:09:09.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"个人简历\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-03-05T10:09:09.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.14,\"words\":41},\"git\":{\"updatedTime\":1741169349000},\"autoDesc\":true,\"filePathRelative\":\"RESUME.md\",\"categoryList\":[],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/RESUME.html\",\"title\":\"个人简历\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"个人简历\",\"createTime\":\"2020/06/30 09:00:33\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.14,\"words\":41},\"filePathRelative\":\"RESUME.md\",\"categoryList\":[],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

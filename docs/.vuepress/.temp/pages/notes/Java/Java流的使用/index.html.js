@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Java/Java流的使用/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Java/Java%E6%B5%81%E7%9A%84%E4%BD%BF%E7%94%A8/\",\"title\":\"Java流的使用\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Java流的使用\",\"aliases\":[],\"tags\":[\"Java\"],\"createTime\":\"2024/11/30 14:15:41\",\"time\":621,\"description\":\"Stream概述 Stream将要处理的元素集合看作一种流，在流的过程中，借助Stream API对流中的元素进行操作，可以由数组或者集合创建，比如：筛选、排序、聚合等 Stream 可以由数组或集合创建，对流的操作访问两种： 中间操作，每次返回一个新的流，可以有多个。 终端操作，每个流只能进行一次终端操作，终端操作结束流无法再次使用。终端操作会产生一...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Java/Java%E6%B5%81%E7%9A%84%E4%BD%BF%E7%94%A8/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Java流的使用\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Stream概述 Stream将要处理的元素集合看作一种流，在流的过程中，借助Stream API对流中的元素进行操作，可以由数组或者集合创建，比如：筛选、排序、聚合等 Stream 可以由数组或集合创建，对流的操作访问两种： 中间操作，每次返回一个新的流，可以有多个。 终端操作，每个流只能进行一次终端操作，终端操作结束流无法再次使用。终端操作会产生一...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Java\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"1970-01-01T00:00:00.621Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Java流的使用\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"1970-01-01T00:00:00.621Z\\\",\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":12.01,\"words\":3604},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Java/Java流的使用/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"f88215\",\"sort\":10040,\"name\":\"Java\"},{\"id\":\"d2821a\",\"sort\":10059,\"name\":\"Java流的使用\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Java/Java%E6%B5%81%E7%9A%84%E4%BD%BF%E7%94%A8/\",\"title\":\"Java流的使用\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Java流的使用\",\"aliases\":[],\"tags\":[\"Java\"],\"createTime\":\"2024/11/30 14:15:41\",\"time\":621,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":12.01,\"words\":3604},\"filePathRelative\":\"notes/Java/Java流的使用/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"f88215\",\"sort\":10006,\"name\":\"Java\"},{\"id\":\"d2821a\",\"sort\":10065,\"name\":\"Java流的使用\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

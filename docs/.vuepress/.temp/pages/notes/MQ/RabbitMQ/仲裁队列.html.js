@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/仲裁队列.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E4%BB%B2%E8%A3%81%E9%98%9F%E5%88%97.html\",\"title\":\"仲裁队列\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"仲裁队列\",\"createTime\":\"2024/12/01 14:15:28\",\"description\":\"仲裁队列通过 Raft 协议，实现了不同节点间队列消息数据的复制，使得在 创建这个队列的节点 宕机时，其他节点仍然可以使用该队列进行服务. 说明：鉴于仲裁队列的功能，肯定是需要在前面集群的基础上操作！ 1、创建交换机 和仲裁队列绑定的交换机没有特殊，我们还是创建一个direct交换机即可 交换机名称：exchange.quorum.test image...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E4%BB%B2%E8%A3%81%E9%98%9F%E5%88%97.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"仲裁队列\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"仲裁队列通过 Raft 协议，实现了不同节点间队列消息数据的复制，使得在 创建这个队列的节点 宕机时，其他节点仍然可以使用该队列进行服务. 说明：鉴于仲裁队列的功能，肯定是需要在前面集群的基础上操作！ 1、创建交换机 和仲裁队列绑定的交换机没有特殊，我们还是创建一个direct交换机即可 交换机名称：exchange.quorum.test image...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"仲裁队列\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.14,\"words\":343},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/仲裁队列.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E4%BB%B2%E8%A3%81%E9%98%9F%E5%88%97.html\",\"title\":\"仲裁队列\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"仲裁队列\",\"createTime\":\"2024/12/01 14:15:28\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.14,\"words\":343},\"filePathRelative\":\"notes/MQ/RabbitMQ/仲裁队列.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10079,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

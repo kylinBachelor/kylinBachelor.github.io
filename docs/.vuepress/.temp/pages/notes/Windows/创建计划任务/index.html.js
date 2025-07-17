@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Windows/创建计划任务/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Windows/%E5%88%9B%E5%BB%BA%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/\",\"title\":\"创建计划任务\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"创建计划任务\",\"aliases\":null,\"tags\":[\"Windows\"],\"description\":\"创建计划任务\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Windows/%E5%88%9B%E5%BB%BA%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"创建计划任务\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"创建计划任务\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Windows\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"创建计划任务\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":4.42,\"words\":1327},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Windows/创建计划任务/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"fac604\",\"sort\":10030,\"name\":\"Windows\"},{\"id\":\"394c32\",\"sort\":10133,\"name\":\"创建计划任务\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Windows/%E5%88%9B%E5%BB%BA%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/\",\"title\":\"创建计划任务\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"创建计划任务\",\"aliases\":null,\"tags\":[\"Windows\"],\"description\":\"创建计划任务\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":4.42,\"words\":1327},\"filePathRelative\":\"notes/Windows/创建计划任务/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"fac604\",\"sort\":10016,\"name\":\"Windows\"},{\"id\":\"394c32\",\"sort\":10109,\"name\":\"创建计划任务\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

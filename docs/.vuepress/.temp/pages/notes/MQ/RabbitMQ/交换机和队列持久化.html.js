@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RabbitMQ/交换机和队列持久化.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E5%92%8C%E9%98%9F%E5%88%97%E6%8C%81%E4%B9%85%E5%8C%96.html\",\"title\":\"交换机和队列持久化\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"交换机和队列持久化\",\"createTime\":\"2024/12/01 13:49:11\",\"description\":\"1、创建非持久化交换机 image-20231106192621173image-20231106192621173 创建之后，可以在列表中看到： image-20231106192708597image-20231106192708597 2、创建非持久化队列 image-20231106195216265image-2023110619521626...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RabbitMQ/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E5%92%8C%E9%98%9F%E5%88%97%E6%8C%81%E4%B9%85%E5%8C%96.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"交换机和队列持久化\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1、创建非持久化交换机 image-20231106192621173image-20231106192621173 创建之后，可以在列表中看到： image-20231106192708597image-20231106192708597 2、创建非持久化队列 image-20231106195216265image-2023110619521626...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-12-01T06:25:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"交换机和队列持久化\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-12-01T06:25:24.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.44,\"words\":432},\"git\":{\"updatedTime\":1733034324000},\"autoDesc\":true,\"filePathRelative\":\"notes/MQ/RabbitMQ/交换机和队列持久化.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10044,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RabbitMQ/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E5%92%8C%E9%98%9F%E5%88%97%E6%8C%81%E4%B9%85%E5%8C%96.html\",\"title\":\"交换机和队列持久化\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"交换机和队列持久化\",\"createTime\":\"2024/12/01 13:49:11\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.44,\"words\":432},\"filePathRelative\":\"notes/MQ/RabbitMQ/交换机和队列持久化.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"49c4b2\",\"sort\":10079,\"name\":\"RabbitMQ\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

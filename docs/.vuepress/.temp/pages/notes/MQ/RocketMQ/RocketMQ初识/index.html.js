@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/MQ/RocketMQ/RocketMQ初识/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/MQ/RocketMQ/RocketMQ%E5%88%9D%E8%AF%86/\",\"title\":\"RocketMQ初识\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"RocketMQ初识\",\"aliases\":null,\"tags\":[\"RocketMQ MQ\"],\"description\":\"RocketMQ初识\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/MQ/RocketMQ/RocketMQ%E5%88%9D%E8%AF%86/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"RocketMQ初识\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"RocketMQ初识\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"RocketMQ MQ\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"RocketMQ初识\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":6.08,\"words\":1823},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/MQ/RocketMQ/RocketMQ初识/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10035,\"name\":\"MQ\"},{\"id\":\"c7cac1\",\"sort\":10104,\"name\":\"RocketMQ\"},{\"id\":\"63d0e0\",\"sort\":10119,\"name\":\"RocketMQ初识\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/MQ/RocketMQ/RocketMQ%E5%88%9D%E8%AF%86/\",\"title\":\"RocketMQ初识\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"RocketMQ初识\",\"aliases\":null,\"tags\":[\"RocketMQ MQ\"],\"description\":\"RocketMQ初识\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":6.08,\"words\":1823},\"filePathRelative\":\"notes/MQ/RocketMQ/RocketMQ初识/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"e98b0b\",\"sort\":10009,\"name\":\"MQ\"},{\"id\":\"c7cac1\",\"sort\":10077,\"name\":\"RocketMQ\"},{\"id\":\"63d0e0\",\"sort\":10123,\"name\":\"RocketMQ初识\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

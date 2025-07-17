@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Linux/Shell编程基础/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Linux/Shell%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/\",\"title\":\"Shell编程基础\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Shell编程基础\",\"aliases\":null,\"tags\":[\"Linux\",\"Shell\"],\"description\":\"Shell编程基础\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Linux/Shell%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Shell编程基础\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Shell编程基础\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Linux\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Shell\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Shell编程基础\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":16.09,\"words\":4826},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Linux/Shell编程基础/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"65335e\",\"sort\":10037,\"name\":\"Linux\"},{\"id\":\"7c6829\",\"sort\":10046,\"name\":\"Shell编程基础\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Linux/Shell%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/\",\"title\":\"Shell编程基础\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Shell编程基础\",\"aliases\":null,\"tags\":[\"Linux\",\"Shell\"],\"description\":\"Shell编程基础\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":16.09,\"words\":4826},\"filePathRelative\":\"notes/Linux/Shell编程基础/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"65335e\",\"sort\":10010,\"name\":\"Linux\"},{\"id\":\"7c6829\",\"sort\":10080,\"name\":\"Shell编程基础\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Docker/一般部署方式/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Docker/%E4%B8%80%E8%88%AC%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F/\",\"title\":\"使用Docker部署方式\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"使用Docker部署方式 1. 不使用Harbor仓库部署 本地可以连接远程Docker，以Dcoker进行构建镜像（该Docker需为部署自己服务程序的服务器上的Docker,因为构建镜像时是直接构建到远程Docker上的）。 1.1 前提准备 1.1.1 maven docker打包插件：fabric8及远程Docker配置 1.1.2 构建镜像的...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Docker/%E4%B8%80%E8%88%AC%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"使用Docker部署方式\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"使用Docker部署方式 1. 不使用Harbor仓库部署 本地可以连接远程Docker，以Dcoker进行构建镜像（该Docker需为部署自己服务程序的服务器上的Docker,因为构建镜像时是直接构建到远程Docker上的）。 1.1 前提准备 1.1.1 maven docker打包插件：fabric8及远程Docker配置 1.1.2 构建镜像的...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"使用Docker部署方式\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":1.29,\"words\":387},\"git\":{\"updatedTime\":1732963016000},\"autoDesc\":true,\"filePathRelative\":\"notes/Docker/一般部署方式/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10002,\"name\":\"Docker\"},{\"id\":\"76cc60\",\"sort\":10072,\"name\":\"一般部署方式\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Docker/%E4%B8%80%E8%88%AC%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F/\",\"title\":\"使用Docker部署方式\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":1.29,\"words\":387},\"filePathRelative\":\"notes/Docker/一般部署方式/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"7acc78\",\"sort\":10005,\"name\":\"Docker\"},{\"id\":\"76cc60\",\"sort\":10052,\"name\":\"一般部署方式\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

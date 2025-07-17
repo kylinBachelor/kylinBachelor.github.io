@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Other/Vscode使用/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Other/Vscode%E4%BD%BF%E7%94%A8/\",\"title\":\"Vscode使用\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Vscode使用\",\"aliases\":null,\"tags\":[\"Vscode\"],\"description\":\"Vscode使用\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/notes/Other/Vscode%E4%BD%BF%E7%94%A8/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Vscode使用\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Vscode使用\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Vscode\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-11-30T10:36:56.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Vscode使用\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-11-30T10:36:56.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.6,\"words\":181},\"git\":{\"updatedTime\":1732963016000},\"filePathRelative\":\"notes/Other/Vscode使用/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"05fd41\",\"sort\":10033,\"name\":\"Other\"},{\"id\":\"6f5d0d\",\"sort\":10096,\"name\":\"Vscode使用\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Other/Vscode%E4%BD%BF%E7%94%A8/\",\"title\":\"Vscode使用\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Vscode使用\",\"aliases\":null,\"tags\":[\"Vscode\"],\"description\":\"Vscode使用\",\"createTime\":\"2024/11/30 14:15:41\",\"draft\":false,\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.6,\"words\":181},\"filePathRelative\":\"notes/Other/Vscode使用/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"05fd41\",\"sort\":10012,\"name\":\"Other\"},{\"id\":\"6f5d0d\",\"sort\":10088,\"name\":\"Vscode使用\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

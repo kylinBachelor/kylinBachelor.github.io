@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/web嵌入式容器/EmbedContainer.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/web%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AE%B9%E5%99%A8/EmbedContainer.html\",\"title\":\"web嵌入式容器\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"web嵌入式容器\",\"tags\":[\"Servlet\"],\"createTime\":\"2025/02/09 14:15:41\",\"description\":\"1. 什么是web嵌入式的容器 Web嵌入式容器‌是指在应用程序内部嵌入一个完整的Web服务器，使得应用程序可以直接运行而不需要依赖外部的Web服务器。这种设计简化了部署过程，提高了开发效率和灵活性。 嵌入式容器是一种将Web服务器功能嵌入到应用程序中的技术。通过这种方式，应用程序可以直接启动和管理自己的Web服务器，而不需要依赖外部的Web服务器。这...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/web%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AE%B9%E5%99%A8/EmbedContainer.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"web嵌入式容器\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1. 什么是web嵌入式的容器 Web嵌入式容器‌是指在应用程序内部嵌入一个完整的Web服务器，使得应用程序可以直接运行而不需要依赖外部的Web服务器。这种设计简化了部署过程，提高了开发效率和灵活性。 嵌入式容器是一种将Web服务器功能嵌入到应用程序中的技术。通过这种方式，应用程序可以直接启动和管理自己的Web服务器，而不需要依赖外部的Web服务器。这...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-02-10T05:38:29.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Servlet\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-02-10T05:38:29.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"web嵌入式容器\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-02-10T05:38:29.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":3.22,\"words\":967},\"git\":{\"updatedTime\":1739165909000},\"autoDesc\":true,\"filePathRelative\":\"article/technology/web嵌入式容器/EmbedContainer.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10004,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10005,\"name\":\"technology\"},{\"id\":\"9b4e00\",\"sort\":10008,\"name\":\"web嵌入式容器\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/web%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AE%B9%E5%99%A8/EmbedContainer.html\",\"title\":\"web嵌入式容器\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"web嵌入式容器\",\"tags\":[\"Servlet\"],\"createTime\":\"2025/02/09 14:15:41\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":3.22,\"words\":967},\"filePathRelative\":\"article/technology/web嵌入式容器/EmbedContainer.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10029,\"name\":\"technology\"},{\"id\":\"9b4e00\",\"sort\":10040,\"name\":\"web嵌入式容器\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

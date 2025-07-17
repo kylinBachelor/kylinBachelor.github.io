@@ -1,3 +1,16 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/article/technology/并发访问/并发访问.html.vue"
-const data = JSON.parse("{\"path\":\"/article/technology/%E5%B9%B6%E5%8F%91%E8%AE%BF%E9%97%AE/%E5%B9%B6%E5%8F%91%E8%AE%BF%E9%97%AE.html\",\"title\":\"并发访问及控制\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"并发访问及控制\",\"tags\":[\"Java\"],\"createTime\":\"2025/02/20 10:40:34\",\"description\":\"并发访问及控制 1. 非线程安全是如何出现的 首先，非线程安全的问题存在于实例变量中，如果是方法内部的私有变量则不存在非线程安全问题。 根据Java内存运行时的数据分配，静态变量存在于方法区中，实例对象存在于堆中，此二区域为线程共享，而方法中的变量存在于虚拟机栈中，为线程私有。因此方法内部的私有变量是线程安全的，实例变量是非线程安全的 2. 使用锁 2...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://kylinBachelor.github.io/article/technology/%E5%B9%B6%E5%8F%91%E8%AE%BF%E9%97%AE/%E5%B9%B6%E5%8F%91%E8%AE%BF%E9%97%AE.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"攻城狮\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"并发访问及控制\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"并发访问及控制 1. 非线程安全是如何出现的 首先，非线程安全的问题存在于实例变量中，如果是方法内部的私有变量则不存在非线程安全问题。 根据Java内存运行时的数据分配，静态变量存在于方法区中，实例对象存在于堆中，此二区域为线程共享，而方法中的变量存在于虚拟机栈中，为线程私有。因此方法内部的私有变量是线程安全的，实例变量是非线程安全的 2. 使用锁 2...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-02-20T06:21:22.000Z\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Java\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-02-20T06:21:22.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"并发访问及控制\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-02-20T06:21:22.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":4.39,\"words\":1316},\"git\":{\"updatedTime\":1740032482000},\"autoDesc\":true,\"filePathRelative\":\"article/technology/并发访问/并发访问.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10004,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10005,\"name\":\"technology\"},{\"id\":\"839298\",\"sort\":10006,\"name\":\"并发访问\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/technology/%E5%B9%B6%E5%8F%91%E8%AE%BF%E9%97%AE/%E5%B9%B6%E5%8F%91%E8%AE%BF%E9%97%AE.html\",\"title\":\"并发访问及控制\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"并发访问及控制\",\"tags\":[\"Java\"],\"createTime\":\"2025/02/20 10:40:34\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":4.39,\"words\":1316},\"filePathRelative\":\"article/technology/并发访问/并发访问.md\",\"categoryList\":[{\"id\":\"92a2b5\",\"sort\":10020,\"name\":\"article\"},{\"id\":\"4b8d8b\",\"sort\":10029,\"name\":\"technology\"},{\"id\":\"839298\",\"sort\":10042,\"name\":\"并发访问\"}],\"bulletin\":false}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
