@@ -2,6 +2,7 @@
 ---
 home: true
 config:
+
   - type: custom
 footer: Apache 2.0addaddasddas
 ---
@@ -19,8 +20,6 @@ footer: Apache 2.0addaddasddas
 | :----------------------------------------------------------: | -------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------ |
 |     [Vue3](https://cn.vuejs.org/guide/introduction.html)     | [Vue2](https://v2.cn.vuejs.org/)                   | [TS](https://ts.nodejs.cn/docs/handbook/typescript-from-scratch.html) | [pina](https://pinia.vuejs.org/zh/introduction.html) | [Vite](https://vitejs.cn/vite3-cn/)                          | [LayUI文档](https://lln.kim/layui/doc/)                     | [Web入门](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web) |
 | [CommonLisp](https://www.bookstack.cn/read/acl-zh/e3d8509f672f3e2e.md) | [poi-tl](https://deepoove.com/poi-tl/#_why_poi_tl) |                                                              |                                                      |                                                              |                                                             |                                                              |
-
-
 
 ### 🍺 博客
 

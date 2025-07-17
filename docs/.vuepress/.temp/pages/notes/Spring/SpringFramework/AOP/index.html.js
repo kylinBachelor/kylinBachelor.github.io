@@ -1,5 +1,5 @@
 import comp from "F:/my_source_code/kylinBachelor.github.io/docs/.vuepress/.temp/pages/notes/Spring/SpringFramework/AOP/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/AOP/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":5.53,\"words\":1658},\"filePathRelative\":\"notes/Spring/SpringFramework/AOP/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10015,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10090,\"name\":\"SpringFramework\"},{\"id\":\"cc1913\",\"sort\":10127,\"name\":\"AOP\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/notes/Spring/SpringFramework/AOP/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":5.53,\"words\":1658},\"filePathRelative\":\"notes/Spring/SpringFramework/AOP/index.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10002,\"name\":\"notes\"},{\"id\":\"d6205f\",\"sort\":10013,\"name\":\"Spring\"},{\"id\":\"55b122\",\"sort\":10095,\"name\":\"SpringFramework\"},{\"id\":\"cc1913\",\"sort\":10126,\"name\":\"AOP\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
