@@ -1,1 +1,0 @@
-export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"zh-CN\",\"title\":\"\",\"description\":\"\",\"head\":[],\"locales\":{\"/\":{\"title\":\"海阔天空\",\"lang\":\"zh-CN\",\"description\":\"不积跬步无以至千里，不积小流无以成江海\"}}}")

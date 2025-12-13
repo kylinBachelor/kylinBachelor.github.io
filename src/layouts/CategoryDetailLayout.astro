@@ -1,0 +1,75 @@
+---
+import "../styles/layouts/CategoryDetailLayout.css";
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../../src/styles/global.css';
+import '../styles/pages/categories/path-content.css';
+
+export interface Props {
+  title: string;
+  description: string;
+  author: string;
+  url: string;
+  categoryName: string;  // 改为单个分类名称
+  postCount: number;
+  noIndex?: boolean;
+  keywords?: string;
+  structuredData?: any;
+  ogImage?: string;
+}
+
+const { 
+  title, 
+  description, 
+  author, 
+  url, 
+  categoryName, 
+  postCount, 
+  noIndex = false,
+  keywords = '',
+  structuredData,
+  ogImage
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <Head 
+    title={title}
+    description={description}
+    author={author}
+    url={url}
+    canonical={url}
+    noindex={noIndex}
+    keywords={keywords}
+    structuredData={structuredData}
+    ogImage={ogImage}
+  >
+    {noIndex && <meta name="robots" content="noindex, nofollow" slot="robots" />}
+  </Head>
+  <body>
+    <script>
+      import '../scripts/background.ts';
+    </script>
+    <Header />
+    <main class="category-detail-container" data-pagefind-ignore>
+      <div class="page-header">        <h1 class="page-title">
+          <span class="category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </span>
+          分类: {categoryName}
+        </h1>
+        <p class="page-description">共找到 {postCount} 篇相关文章</p>
+        <a href="/categories/" class="back-link">返回分类列表</a>
+      </div>
+
+      <div class="post-list-container">
+        <slot />
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

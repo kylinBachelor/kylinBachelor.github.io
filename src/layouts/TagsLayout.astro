@@ -1,0 +1,62 @@
+---
+import { config_site } from '../utils/yaml-config-adapter';
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../../src/styles/global.css';
+import '../styles/layouts/tags.css';
+
+export interface Props {
+  title: string;
+  description: string;
+  url: string;
+  noindex?: boolean;
+  keywords?: string;
+  structuredData?: any;
+  ogImage?: string;
+}
+
+const { 
+  title, 
+  description, 
+  url, 
+  noindex = false, 
+  keywords = '',
+  structuredData,
+  ogImage
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={config_site.lang}>
+  <Head 
+    title={title}
+    description={description}
+    author={config_site.author}
+    url={url}
+    canonical={url}
+    noindex={noindex}
+    keywords={keywords}
+    structuredData={structuredData}
+    ogImage={ogImage}
+    siteName={config_site.siteName}
+    lang={config_site.lang}
+    locale={config_site.locale}
+  >
+    <slot name="head" />
+  </Head>
+  <body>
+    <script>
+      import '../scripts/background.ts';
+    </script>
+    <Header />
+    <main class="tags-layout-container">
+      <div class="page-header">
+        <slot name="header" />
+      </div>
+
+      <slot name="content" />
+    </main>
+    <Footer />
+  </body>
+</html>

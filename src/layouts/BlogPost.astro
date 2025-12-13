@@ -1,0 +1,493 @@
+---
+import type { CollectionEntry } from "astro:content";
+import type { MarkdownHeading } from "astro";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import WalineComment from "../components/comments/WalineComment.vue";
+import "../styles/layouts/BlogPost.css";
+import "../styles/components/PostNavigation.css";
+import { config_site } from "../utils/yaml-config-adapter";
+import { description150 } from "../utils/description";
+import "../styles/blog.css";
+import "../styles/global.css";
+import LeftSiderbar from "./LeftSiderbar.astro";
+import RightSiderbar from "./RightSiderbar.astro";
+import CC from "../components/others/CC.astro";
+import "katex/dist/katex.min.css";
+const {
+	title,
+	date,
+	updated,
+	tags,
+	categories,
+	headings = [],
+	description,
+	author,
+	abbrlink,
+	prev,
+	next,
+	minutesRead,
+} = Astro.props;
+
+function categoriesToString(categories?: string[]): string {
+	if (!categories || categories.length === 0) {
+		return "";
+	}
+
+	// 现在 categories 已经是简单的字符串数组，直接处理即可
+	return categories
+		.filter((cat) => cat && cat.trim() !== "") // 过滤空字符串
+		.map((cat) => cat.trim()) // 去除首尾空格
+		.join(","); // 用逗号连接
+}
+
+// 将标签和分类合并并去重
+const combinedKeywords = new Set<string>();
+
+// 添加所有标签
+if (tags && tags.length > 0) {
+	tags.forEach((tag) => combinedKeywords.add(tag));
+}
+
+// 添加所有分类（已扁平化）
+const categoryArray = categories
+	? categoriesToString(categories)
+			.split(",")
+			.filter((cat) => cat.trim() !== "")
+	: [];
+categoryArray.forEach((category) => {
+	combinedKeywords.add(category.trim());
+});
+
+// 转换为逗号分隔的字符串
+const keyws =
+	combinedKeywords.size > 0
+		? Array.from(combinedKeywords).slice(0, 10).join(",")
+		: "";
+
+const categoryStr = categoriesToString(categories);
+---
+
+<html lang={config_site.lang} class="dark">
+	<Head
+		title={title + " | " + config_site.siteName}
+		description={description150(description || "这是默认的文章描述")}
+		author={author || config_site.author}
+		url={config_site.url + "/posts/" + abbrlink}
+		canonical={config_site.url + "/posts/" + abbrlink}
+		keywords={keyws || "关键字1, 关键字2"}
+		structuredData={{
+			"@context": "https://schema.org",
+			"@type": "BlogPosting",
+			headline: title,
+			description: description150(description || "这是默认的文章描述"),
+			author: {
+				"@type": "Person",
+				name: author || config_site.author,
+			},
+			datePublished: date,
+			dateModified: updated || date,
+			mainEntityOfPage: {
+				"@type": "WebPage",
+				"@id": config_site.url + "/posts/" + abbrlink,
+			},
+		}}
+	>
+		<!-- Vercount统计脚本 -->
+		<script defer src="https://events.vercount.one/js"></script>
+	</Head>
+	<body>
+		<Header />
+		<main>
+			<div class="main-content">
+				<LeftSiderbar />
+				<article class="article-content">
+					<div class="hero-image">
+						<!-- 如果有特色图片可以在这里添加 -->
+					</div>
+					<div class="prose fade-in-up delay-200">
+						<div class="title">
+							<h1>{title}</h1>
+							<div class="date">
+								{
+									date && (
+										<div class="published-on">
+											发布时间：
+											<time>
+												{date instanceof Date
+													? date.toLocaleDateString('zh-CN')
+													: date}
+											</time>
+										</div>
+									)
+								}
+								{
+									updated && (
+										<div class="last-updated-on">
+											更新时间：
+											<time>
+												{updated instanceof Date
+													? updated.toLocaleDateString('zh-CN')
+													: updated}
+											</time>
+										</div>
+									)
+								}
+							</div>
+							<!-- 文章阅读量统计 -->
+							<div class="page-stats">
+								{minutesRead && (
+									<span class="reading-time">
+										🕒 阅读时间：{minutesRead}
+									</span>
+								)}
+								<span id="vercount_container_page_pv">
+									👀 阅读量：<span id="vercount_value_page_pv">Loading...</span>
+								</span>
+							</div>
+						</div>
+						<slot />
+					</div>
+					<CC
+						title={title}
+						author={config_site.author}
+						url={config_site.url + "/posts/" + abbrlink}
+					/>
+					{
+						prev || next ? (
+							<nav class="post-navigation" aria-label="文章导航">
+								<div class="post-navigation-inner">
+									{prev ? (
+										<a
+											href={prev.url}
+											class="post-nav-link prev-post"
+											rel="prev"
+										>
+											<span class="post-nav-arrow">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 24 24"
+													width="24"
+													height="24"
+													fill="none"
+													stroke="currentColor"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												>
+													<path d="M19 12H5M12 19l-7-7 7-7" />
+												</svg>
+											</span>
+											<div class="post-nav-content">
+												<span class="post-nav-label">
+													上一篇
+												</span>
+												<span class="post-nav-title">
+													{prev.title}
+												</span>
+											</div>
+										</a>
+									) : (
+										<span class="post-nav-link prev-post disabled">
+											<span class="post-nav-arrow">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 24 24"
+													width="24"
+													height="24"
+													fill="none"
+													stroke="currentColor"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												>
+													<path d="M19 12H5M12 19l-7-7 7-7" />
+												</svg>
+											</span>
+											<div class="post-nav-content">
+												<span class="post-nav-label">
+													上一篇
+												</span>
+												<span class="post-nav-title">
+													没有更早的文章
+												</span>
+											</div>
+										</span>
+									)}
+
+									{next ? (
+										<a
+											href={next.url}
+											class="post-nav-link next-post"
+											rel="next"
+										>
+											<div class="post-nav-content">
+												<span class="post-nav-label">
+													下一篇
+												</span>
+												<span class="post-nav-title">
+													{next.title}
+												</span>
+											</div>
+											<span class="post-nav-arrow">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 24 24"
+													width="24"
+													height="24"
+													fill="none"
+													stroke="currentColor"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												>
+													<path d="M5 12h14M12 5l7 7-7 7" />
+												</svg>
+											</span>
+										</a>
+									) : (
+										<span class="post-nav-link next-post disabled">
+											<div class="post-nav-content">
+												<span class="post-nav-label">
+													下一篇
+												</span>
+												<span class="post-nav-title">
+													没有更新的文章
+												</span>
+											</div>
+											<span class="post-nav-arrow">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 24 24"
+													width="24"
+													height="24"
+													fill="none"
+													stroke="currentColor"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												>
+													<path d="M5 12h14M12 5l7 7-7 7" />
+												</svg>
+											</span>
+										</span>
+									)}
+								</div>
+							</nav>
+						) : null
+					}
+					<WalineComment
+						serverURL={config_site.comment?.waline?.serverURL}
+						path={Astro.url.pathname}
+						title={title}
+						lang={config_site.comment?.waline?.lang || "zh-CN"}
+						emoji={config_site.comment?.waline?.emoji}
+						reaction={config_site.comment?.waline?.reaction}
+						meta={config_site.comment?.waline?.meta as import('@waline/client').WalineMeta[] | undefined}
+						wordLimit={config_site.comment?.waline?.wordLimit}
+						pageSize={config_site.comment?.waline?.pageSize}
+						client:idle
+					/>
+				</article>
+				<RightSiderbar {tags} {categories} {headings} />
+			</div>
+		</main>
+		<Footer />
+	</body><script>
+		import "../scripts/background.ts";
+		import "../scripts/fancybox.ts";
+					import panZoomTiger  from "svg-pan-zoom";
+		// 为文章内容中的所有图片添加懒加载
+		document.addEventListener("DOMContentLoaded", () => {
+			const articleImages = document.querySelectorAll(
+				".article-content img",
+			);
+
+			// 为每个图片添加懒加载属性
+			articleImages.forEach((img) => {
+				// 如果没有loading属性，添加loading="lazy"
+				if (!img.hasAttribute("loading")) {
+					img.setAttribute("loading", "lazy");
+				}
+
+				// 添加淡入效果类
+				img.classList.add("lazy-image");
+
+				// 监听图片加载完成事件
+				img.addEventListener("load", () => {
+					img.classList.add("loaded");
+				});
+
+				// 处理图片加载错误
+				img.addEventListener("error", () => {
+					console.warn(
+						"图片加载失败:",
+						(img as HTMLImageElement).src,
+					);
+					// 可以在这里添加一个占位图
+					// (img as HTMLImageElement).src = '/images/placeholder.svg';
+				});
+			});
+
+			// 使用 Intersection Observer API 监测图片可见性
+			if ("IntersectionObserver" in window) {
+				const imageObserver = new IntersectionObserver(
+					(entries) => {
+						entries.forEach((entry) => {
+							if (entry.isIntersecting) {
+								const img = entry.target;
+								// 如果有data-src属性，则加载该图片
+								const dataSrc = img.getAttribute("data-src");
+								if (dataSrc) {
+									(img as HTMLImageElement).src = dataSrc;
+									img.removeAttribute("data-src");
+								}
+								imageObserver.unobserve(img);
+							}
+						});
+					},
+					{
+						rootMargin: "200px 0px", // 提前200px加载
+						threshold: 0.01,
+					},
+				);
+
+				// 观察所有图片
+				articleImages.forEach((img) => {
+					imageObserver.observe(img);
+				});
+			}
+		});
+		// 定义应用 panZoomTiger 的函数
+		function applyPanZoomToMermaid(retryCount = 0, maxRetries = 10) {
+		  let svgs = document.querySelectorAll("[id^='mermaid-']");
+		  console.log('Found Mermaid SVGs:', svgs.length);
+		  if (!svgs || svgs.length === 0) {
+		    // 如果没有找到 SVG，且重试次数未达到上限，则延迟重试
+		    if (retryCount < maxRetries) {
+		      console.log(`No Mermaid SVGs found, retrying in 500ms (attempt ${retryCount + 1}/${maxRetries})`);
+		      setTimeout(() => applyPanZoomToMermaid(retryCount + 1, maxRetries), 500);
+		    } else {
+		      console.log('Max retries reached, no Mermaid SVGs found');
+		    }
+		    return;
+		  }
+		  svgs.forEach((svg, index) => {
+		    // 检查是否已经应用过 panZoomTiger
+		    if ((svg as any)._panZoomTiger) {
+		      console.log('SVG', index, 'already has panZoomTiger applied');
+		      return;
+		    }
+		    (svg as SVGElement).style.height = '500px';
+		    (svg as SVGElement).style.width = '100%';
+		    console.log('Processing SVG', index, ':', svg.id, svg);
+		    if (svg instanceof SVGElement) {
+		      try {
+		        const panZoomInstance = panZoomTiger(svg, {
+		          zoomEnabled: true,
+		          controlIconsEnabled: true,
+		          fit: false,
+		          center: true,
+		        });
+		        // 标记已应用
+		        (svg as any)._panZoomTiger = panZoomInstance;
+		        console.log('Applied panZoomTiger to SVG', index);
+		        // 删除父 DOM 以防止遮盖
+		        if (svg.parentElement) {
+		          const parent = svg.parentElement;
+		          if (parent.parentElement) {
+		            parent.parentElement.insertBefore(svg, parent);
+		            parent.remove();
+		            console.log('Removed parent DOM for SVG', index);
+		          }
+		        }
+		      } catch (error) {
+		        console.error('Error applying panZoomTiger to SVG', index, ':', error);
+		      }
+		    } else {
+		      console.warn('Element is not SVGElement:', svg);
+		    }
+		  });
+		}
+
+		// 初始页面加载时应用
+		document.addEventListener('DOMContentLoaded', () => applyPanZoomToMermaid());
+
+		// 视图过渡页面加载时重新应用（添加延迟以确保 DOM 更新）
+		document.addEventListener('astro:page-load', () => {
+		  setTimeout(() => applyPanZoomToMermaid(), 100);
+		});
+
+		// 使用 MutationObserver 监听动态添加的 Mermaid SVG
+		const observer = new MutationObserver((mutations) => {
+		  mutations.forEach((mutation) => {
+		    if (mutation.type === 'childList') {
+		      mutation.addedNodes.forEach((node) => {
+		        if (node.nodeType === Node.ELEMENT_NODE) {
+		          const element = node as Element;
+		          // 检查新添加的元素是否包含 Mermaid SVG
+		          const mermaidSvgs = element.querySelectorAll("[id^='mermaid-']");
+		          if (mermaidSvgs.length > 0) {
+		            console.log('Detected new Mermaid SVGs via MutationObserver');
+		            applyPanZoomToMermaid();
+		          }
+		          // 也检查元素本身是否是 Mermaid SVG
+		          if (element.id && element.id.startsWith('mermaid-')) {
+		            console.log('Detected new Mermaid SVG element via MutationObserver');
+		            applyPanZoomToMermaid();
+		          }
+		        }
+		      });
+		    }
+		  });
+		});
+	</script>
+	<!-- 添加响应式视口设置 -->
+	<style>
+		/* 图片懒加载相关样式 */
+		.lazy-image {
+			opacity: 0;
+			transition: opacity 0.5s ease;
+		}
+
+		.lazy-image.loaded {
+			opacity: 1;
+		}
+		/* 文章页面统计样式 */
+		.page-stats {
+			margin-top: 1rem;
+			padding-top: 0.8rem;
+			border-top: 1px solid rgba(255, 255, 255, 0.1);
+			font-size: 0.9rem;
+			color: rgba(255, 255, 255, 0.7);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+		}
+
+		.page-stats span {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.3rem;
+		}
+		#vercount_value_page_pv {
+			font-weight: 600;
+			color: rgba(255, 255, 255, 0.9);
+		}
+
+		#vercount_container_page_pv {
+			transition: opacity 0.3s ease;
+		}
+
+		/* 响应式设计 */
+		@media (max-width: 768px) {
+			.page-stats {
+				font-size: 0.85rem;
+				margin-top: 0.8rem;
+				padding-top: 0.6rem;
+			}
+		}
+	</style>
+</html>

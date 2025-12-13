@@ -1,0 +1,65 @@
+---
+import Head from "../components/Head.astro";
+import {site} from "../consts";
+import {config_site} from "../utils/yaml-config-adapter";
+import Footer from "../components/Footer.astro";
+import '../styles/global.css';
+import Header from "../components/Header.astro";
+import type { FriendLink } from "../types";
+
+type Props = {
+    links: FriendLink[]
+}
+const { links } = Astro.props;
+import '../styles/layouts/Links.css';
+---
+<!DOCTYPE html>
+<html lang={config_site.lang}>    <Head
+    title={config_site.friendlinks_title +' | '+ config_site.siteName}
+    description={config_site.friendlinks_description || config_site.description}
+    url={config_site.url + '/links/'}
+    canonical={config_site.url + '/links/'}
+    keywords={config_site.keywords}
+    author={config_site.author}
+    lang={config_site.lang}
+    locale={config_site.locale}
+    siteName={config_site.siteName}
+    favicon={config_site.favicon}
+    structuredData={{
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": config_site.friendlinks_title,
+      "description": config_site.friendlinks_description || config_site.description,
+      "url": config_site.url + '/links/'
+    }}
+/>
+<script>
+    import '../scripts/background.ts';
+</script>
+<body>
+    <div class="main-wrapper">
+        <Header />
+        <div class="page-container">
+            <div class="page-header">
+                <h1 class="page-title">{config_site.friendlinks_title}</h1>
+                <p class="page-description">{config_site.friendlinks_description}</p>
+            </div>            <ul class="friend-links">
+                {links.map((link) => (
+                <li class="friend-link">
+                    <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    <div class="friend-avatar">
+                        <img src={link.avatar || '/favicon.ico'} alt={`${link.title}'s avatar`} width="80" height="80" loading="lazy" />
+                    </div>
+                    <div class="friend-content">
+                        <h2>{link.title}</h2>
+                        <p>{link.description || '暂无描述'}</p>
+                    </div>
+                    </a>
+                </li>
+                ))}
+            </ul>
+        </div>
+    </div>
+    <Footer />
+</body>
+</html>

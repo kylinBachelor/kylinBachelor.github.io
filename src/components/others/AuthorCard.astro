@@ -1,0 +1,63 @@
+---
+import { config_site } from '../../utils/yaml-config-adapter';
+import { Image }  from 'astro:assets';
+import  avatar from '../../images/avatar.webp' 
+interface Props {
+  avatarPath: any; // 接受任何图像类型
+  avatarWidth?: number;
+  avatarHeight?: number;
+  author?: string;
+}
+
+const { 
+  avatarPath, 
+  avatarWidth = 100, 
+  avatarHeight = 100, 
+  author = config_site.author
+} = Astro.props;
+
+// 定义不同设备的图像尺寸
+const mobileSizes = 70; // 移动设备图片尺寸
+const tabletSizes = 80; // 平板设备图片尺寸
+const desktopSizes = 100; // 桌面设备图片尺寸
+import '../../styles/components/others/AuthorCard.css';
+---
+
+<div class="card">
+  <div class="author">
+    <div class="avatar-container">
+      {(typeof avatarPath === 'string' && avatarPath!=='') ? (
+        <img 
+          src={avatarPath} 
+          alt={`${author} avatar`} 
+          class="avatar"
+          width={avatarWidth}
+          height={avatarHeight}
+          loading="eager"
+          decoding="async"
+          srcset={`${avatarPath}?w=${mobileSizes} ${mobileSizes}w, 
+                   ${avatarPath}?w=${tabletSizes} ${tabletSizes}w, 
+                   ${avatarPath}?w=${desktopSizes} ${desktopSizes}w`}
+          sizes="(max-width: 480px) ${mobileSizes}px, 
+                 (max-width: 768px) ${tabletSizes}px, 
+                 ${desktopSizes}px"
+        />
+      ) : (
+        <Image 
+          src={avatarPath} 
+          alt={`${author} avatar`} 
+          class="avatar"
+          width={avatarWidth}
+          height={avatarHeight}
+          densities={[1, 1.5, 2]}
+          loading="eager"
+        />
+      )}
+    </div>
+    <div class="author-info">
+      <div class="name"><h2>{author}</h2></div>
+      <slot name="description" />
+    </div>
+    <slot name="social-links" />
+  </div>
+</div>

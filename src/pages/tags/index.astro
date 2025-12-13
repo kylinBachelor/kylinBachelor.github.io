@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+import { config_site } from '../../utils/yaml-config-adapter';
+import { processFrontmatter } from '../../integrations/process-frontmatter';
+import TagsLayout from '../../layouts/TagsLayout.astro';
+
+// 获取文章集合并处理frontmatter
+const allPosts = await getCollection('posts');
+const posts = await Promise.all(allPosts.map(post => processFrontmatter(post)));
+
+// 提取所有标签并计算数量
+const tagCounts: Record<string, number> = {};
+posts.forEach(post => {
+  const tags = post.data.tags || [];
+  tags.forEach((tag: string) => {
+    if (tag.trim()) {
+      tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+    }
+  });
+});
+
+// 转换为排序后的数组
+const sortedTags = Object.entries(tagCounts)
+  .sort(([, countA], [, countB]) => countB - countA) // 按数量降序排序
+  .map(([tag, count]) => ({ tag, count }));
+
+// 页面标题
+const pageTitle = '标签云 | ' + config_site.siteName;
+---
+
+<TagsLayout
+  title={pageTitle}
+  description="所有文章标签列表"
+  url={config_site.url + '/tags/'}
+  noindex={false}
+>
+  <Fragment slot="header">
+    <h1 class="page-title">标签云</h1>
+    <p class="page-description">探索不同主题的文章标签</p>
+  </Fragment>
+  
+  <div slot="content" class="tags-cloud">
+    {sortedTags.length > 0 ? (
+      sortedTags.map(({ tag, count }) => (
+        <a href={`/tags/${tag}/`} class="tag-item" data-count={count}>
+          <span class="tag-name">{tag}</span>
+          <span class="tag-count">{count}</span>
+        </a>
+      ))
+    ) : (
+      <div class="no-tags">暂无标签</div>
+    )}
+  </div>
+</TagsLayout>
+

@@ -1,0 +1,98 @@
+---
+import { config_site } from '../utils/yaml-config-adapter'
+import Head from '../components/Head.astro'
+---
+
+<!DOCTYPE html>
+<html lang={config_site.lang}>
+<Head
+  title="404 - 页面未找到"
+  description="抱歉，您访问的页面不存在。"
+  url={config_site.url}
+  keywords={config_site.keywords}
+  author={config_site.author}
+  lang={config_site.lang}
+  locale={config_site.locale}
+  siteName={config_site.siteName}
+  favicon={config_site.favicon}
+  titleDefault={config_site.titleDefault}
+  canonical={config_site.canonical}
+  head={config_site.head}
+  noindex={true}
+/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body data-pagefind-ignore>
+  <div class="error-container">
+    <div class="error-content">
+      <h1>404</h1>
+      <p>页面未找到</p>
+      <a href="/" class="home-btn">返回首页</a>
+    </div>
+  </div>
+
+  <script>
+    // 3秒后自动跳转首页
+    setTimeout(() => {
+      window.location.href = '/';
+    }, 3000);
+  </script>
+</body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #1a1a1a;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .error-container {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .error-content h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  }
+
+  .error-content p {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
+    color: #cccccc;
+  }
+
+  .home-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #333333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+  }
+
+  .home-btn:hover {
+    background: #555555;
+  }
+
+  @media (max-width: 768px) {
+    .error-content h1 {
+      font-size: 4rem;
+    }
+
+    .error-content p {
+      font-size: 1.2rem;
+    }
+  }
+</style>

@@ -1,0 +1,64 @@
+---
+import { site } from '../consts' 
+import { config_site } from '../utils/yaml-config-adapter'
+import Head from '../components/Head.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import { Image } from 'astro:assets';
+import avatar from '../images/avatar.webp';
+import '../styles/home.css'
+import Clock from '../components/others/Clock.vue'
+import SocialLinks from '../components/others/SocialLinks.astro'
+import TextTyping from '../components/others/TextTyping.astro'
+import AuthorCard from '../components/others/AuthorCard.astro'
+import Postlist from '../components/Postlist.astro'
+const avatarImage = config_site.avatarPath || avatar
+---
+<!DOCTYPE html>
+<html lang={config_site.lang}>    <Head
+        title={config_site.title}
+        description={config_site.description}
+        url={config_site.url}
+        keywords={config_site.keywords}
+        author={config_site.author}
+        lang={config_site.lang}
+        locale={config_site.locale}
+        siteName={config_site.siteName}
+        favicon={config_site.favicon}
+        titleDefault={config_site.titleDefault}
+        canonical={config_site.canonical}
+        head={config_site.head}
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <script>
+        import '../scripts/background.ts';
+    </script>
+    <body>
+        <div class="main-wrapper">
+            <div class="container">
+                <div class="Hometitle"><h1>{config_site.title}</h1></div>
+                <Header />
+                <AuthorCard 
+                    author={config_site.author} 
+                    avatarPath={avatarImage}
+                    avatarWidth={100}
+                    avatarHeight={100}
+                >
+                </AuthorCard>
+                <TextTyping/>
+                <Clock client:idle format="24hour" showDate={true} updateInterval={1000} />
+                <SocialLinks mediaLinks={config_site.medialinks || []} />
+                <div class="scroll-indicator">
+                    <div class="scroll-symbol">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M5 12l7 7 7-7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <Postlist />
+        <Footer/>
+    </body>
+</html>
+</html>

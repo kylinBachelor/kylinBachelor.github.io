@@ -1,0 +1,73 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WalineComment from '../components/comments/WalineComment.vue';
+import { config_site } from '../utils/yaml-config-adapter';
+import '../styles/global.css';
+import '../styles/blog.css';
+import '../styles/layouts/AboutPage.css';
+
+interface Props {
+    title?: string;
+    description?: string;
+    noindex?: boolean;
+}
+
+const { title = '关于', description = '关于我', noindex } = Astro.props;
+
+// 页面标题
+const pageTitle = `${title} | ${config_site.title}`;
+---
+
+<!DOCTYPE html>
+<html lang={config_site.lang} class="dark">  <Head 
+    title={title + ' | '+ config_site.siteName}
+    description={description || title}
+    author={config_site.author}
+    url={config_site.url + '/about/'}
+    canonical={config_site.url + '/about/'}
+    noindex={noindex}
+    structuredData={{
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": title,
+      "description": description || title,
+      "url": config_site.url + '/about/'
+    }}
+  >
+  <link
+            slot="head"
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+            integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+            crossorigin="anonymous"
+  />
+  </Head>
+  <body>
+    <script>
+      import '../scripts/background.ts';
+    </script>
+    <Header />
+    <main class="about-container">
+      <div class="about-header">
+        <h1 class="about-title">{title}</h1>      <div class="about-content">
+        <slot />
+      </div>
+      <WalineComment 
+        serverURL={config_site.comment?.waline?.serverURL}
+        path={Astro.url.pathname}
+        title={title}
+        lang={config_site.comment?.waline?.lang || 'zh-CN'}
+        emoji={config_site.comment?.waline?.emoji}
+        reaction={config_site.comment?.waline?.reaction}
+				meta={config_site.comment?.waline?.meta as import('@waline/client').WalineMeta[] | undefined}
+        wordLimit={config_site.comment?.waline?.wordLimit}
+        pageSize={config_site.comment?.waline?.pageSize}
+        client:idle
+      />
+    </main>
+    <Footer />
+  </body>
+</html>

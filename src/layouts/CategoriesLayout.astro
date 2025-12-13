@@ -1,0 +1,70 @@
+---
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../../src/styles/global.css';
+import '../styles/layouts/CategoriesLayout.css';
+import '../styles/pages/categories/index-content.css';
+import { config_site } from '../utils/yaml-config-adapter';
+import type { CategoryNode } from '../utils/category-utils';
+
+export interface Props {
+  title: string;
+  description: string;
+  author: string;
+  url: string;
+  categories: CategoryNode[];  // 扁平化分类数组
+  noIndex?: boolean;
+}
+
+const { title, description, author, url, categories, noIndex = false } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">  <Head 
+    title={title}
+    description={description}
+    author={author}
+    url={url}
+    canonical={url}
+    noindex={noIndex}
+  >
+    {noIndex && <meta name="robots" content="noindex, nofollow" slot="robots" />}
+  </Head>
+  <body>
+    <script>
+      import '../scripts/background.ts';
+    </script>
+    <Header />
+    <main class="categories-container">
+      <div class="page-header">
+        <h1 class="page-title">文章分类</h1>
+        <p class="page-description">按主题分类浏览</p>
+      </div>      <!-- 分类卡片网格 - 扁平化展示 -->
+      <div class="categories-grid">
+        {categories.length > 0 ? (
+          categories.map((category) => (
+            <div class="category-card">
+              <a href={`/categories/${category.path}/`} class="category-header">
+                <div class="category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </div>
+                <div class="category-content">
+                  <h2 class="category-name">{category.name}</h2>
+                  <div class="category-count">{category.count} 篇文章</div>
+                </div>
+              </a>
+            </div>
+          ))
+        ) : (
+          <div class="no-categories">暂无分类</div>
+        )}
+      </div>
+      
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

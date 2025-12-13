@@ -1,0 +1,7 @@
+---
+import LinksLayout from "../layouts/Links.astro";
+import { config_site } from '../utils/yaml-config-adapter' 
+---
+
+<LinksLayout links={config_site.friendlinks || []}>
+</LinksLayout>

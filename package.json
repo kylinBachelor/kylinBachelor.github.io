@@ -1,32 +1,77 @@
 {
-  "name": "my-vuepress-site",
+  "name": "astro-theme-stalux",
   "type": "module",
   "version": "1.0.0",
-  "description": "This is My Blog，use vuepress to build",
-  "author": "攻城狮 <kylinBachelor@outlook.com>",
+  "description": "Stalux - 一款高效、美观、灵活的 Astro 博客主题",
+  "author": "xingwangzhe",
   "license": "MIT",
-  "engines": {
-    "node": "^18.20.0 || >=20.0.0"
+  "homepage": "https://stalux.needhelp.icu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xingwangzhe/stalux"
   },
+  "keywords": [
+    "astro-theme",
+    "blog",
+    "chinese",
+    "responsive",
+    "seo-friendly",
+    "typescript",
+    "vue"
+  ],
   "scripts": {
-    "dev": "vuepress dev docs",
-    "dev-clean": "vuepress dev docs --clean-cache --clean-temp",
-    "build": "vuepress build docs --clean-cache --clean-temp",
-    "preview": "http-server docs/.vuepress/dist",
-    "vp-update": "npx vp-update"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check-timestamps": "node src/scripts/check-timestamps.mjs",
+    "fix-timestamps": "node src/scripts/fix-timestamps.mjs",
+    "check-timezone": "node src/scripts/check-timezone.mjs"
+  },
+  "bin": {
+    "stalux-init": "./scripts/init.js"
+  },
+  "exports": {
+    ".": "./integration.js",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "4.3.0",
+    "@astrojs/rss": "^4.0.14",
+    "@astrojs/sitemap": "^3.6.0",
+    "@astrojs/ts-plugin": "^1.10.6",
+    "@astrojs/vue": "5.1.0",
+    "@expressive-code/plugin-line-numbers": "^0.41.3",
+    "@fancyapps/ui": "^6.1.6",
+    "@rollup/plugin-yaml": "^4.1.2",
+    "@types/svg-pan-zoom": "^3.4.0",
+    "animejs": "^4.2.2",
+    "astro": "^5.16.1",
+    "astro-expressive-code": "^0.41.3",
+    "astro-pagefind": "^1.8.5",
+    "astro-seo": "^0.8.4",
+    "badge-maker": "^5.0.2",
+    "dayjs": "^1.11.19",
+    "feather-icons": "^4.29.2",
+    "gray-matter": "^4.0.3",
+    "katex": "^0.16.25",
+    "lightningcss": "^1.30.2",
+    "mdast-util-to-string": "^4.0.0",
+    "reading-time": "^1.5.0",
+    "rehype-katex": "^7.0.1",
+    "remark-admonitions": "^1.2.1",
+    "remark-math": "^6.0.0",
+    "remark-toc": "^9.0.0",
+    "remove-markdown": "^0.6.2",
+    "sanitize-html": "^2.17.0",
+    "sharp": "^0.34.5",
+    "simple-icons": "^15.22.0",
+    "stylus": "^0.64.0",
+    "vue": "^3.5.25",
+    "zoom": "^0.0.3"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.18",
-    "chart.js": "^4.4.6",
-    "echarts": "^5.5.1",
-    "flowchart.ts": "^3.0.1",
-    "http-server": "^14.1.1",
-    "mermaid": "^11.4.1",
-    "sass-embedded": "^1.80.6",
-    "typescript": "^5.6.3",
-    "vue": "^3.5.13",
-    "vuepress": "2.0.0-rc.18",
-    "vuepress-plugin-md-enhance": "^2.0.0-rc.59",
-    "vuepress-theme-plume": "1.0.0-rc.119"
+    "@types/js-yaml": "^4.0.9",
+    "@waline/client": "^3.8.0"
   }
 }
